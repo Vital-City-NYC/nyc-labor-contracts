@@ -1,0 +1,415 @@
+{
+ "note": "Hand-maintained grouping of every document by union and sector. Union names are taken from each document's own text. A document signed jointly by two unions appears under both.",
+ "sectors": [
+  {
+   "id": "police",
+   "name": "Police",
+   "unions": [
+    {
+     "name": "Patrolmen's Benevolent Association (PBA)",
+     "docs": [
+      "pba-mou-2017-2025"
+     ]
+    },
+    {
+     "name": "Sergeants Benevolent Association (SBA)",
+     "docs": [
+      "sba-unit-agreement-2021-2026"
+     ]
+    },
+    {
+     "name": "Lieutenants Benevolent Association (LBA)",
+     "docs": [
+      "lba-10-5-2023-unit-bargaining-agreement"
+     ]
+    },
+    {
+     "name": "Captains' Endowment Association (CEA)",
+     "docs": [
+      "cea-unit-agreement-2022-2027"
+     ]
+    },
+    {
+     "name": "Detectives' Endowment Association (DEA)",
+     "docs": [
+      "dea-unit-agreement-2022-2027"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fire",
+   "name": "Fire",
+   "unions": [
+    {
+     "name": "Uniformed Firefighters Association (UFA)",
+     "docs": [
+      "ufa-moa-2017-2020"
+     ]
+    },
+    {
+     "name": "Uniformed Fire Officers Association (UFOA)",
+     "docs": [
+      "ufoa-fire-officers-2018-2021"
+     ]
+    },
+    {
+     "name": "Fire Alarm Dispatchers Benevolent Association (FADBA)",
+     "docs": [
+      "fadba-moa-2021-2027"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "correction",
+   "name": "Correction",
+   "unions": [
+    {
+     "name": "Correction Officers' Benevolent Association (COBA)",
+     "docs": [
+      "coba-unit-agreement-2022-2027"
+     ]
+    },
+    {
+     "name": "Correction Captains Association (CCA)",
+     "docs": [
+      "cca-unit-agreement-2022-2028"
+     ]
+    },
+    {
+     "name": "Assistant Deputy Wardens/Deputy Wardens Association (ADW/DWA)",
+     "docs": [
+      "adwa-unit-agreement-2023-2028"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sanitation",
+   "name": "Sanitation",
+   "unions": [
+    {
+     "name": "Uniformed Sanitationmen's Association (USA), Teamsters Local 831",
+     "docs": [
+      "usa-executed-contract-2022-2028"
+     ]
+    },
+    {
+     "name": "Uniformed Sanitation Chiefs Association (USCA)",
+     "docs": [
+      "usca-unit-agreement-2022-2027"
+     ]
+    },
+    {
+     "name": "Sanitation Officers Association (SOA)",
+     "docs": [
+      "soa-unit-agreement-2023-2028"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "law",
+   "name": "Other law enforcement and probation",
+   "unions": [
+    {
+     "name": "Law Enforcement Employees Benevolent Association (LEEBA)",
+     "docs": [
+      "leeba-epo-moa-2017-2026",
+      "highway-and-sewer-inspectors-moa-2022-2028"
+     ]
+    },
+    {
+     "name": "Detective Investigator Association (DIA), district attorneys' offices",
+     "docs": [
+      "dia-moa-2023-2028"
+     ]
+    },
+    {
+     "name": "Deputy Sheriffs Benevolent Association",
+     "docs": [
+      "deputy-sheriffs-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "United Probation Officers Association (UPOA)",
+     "docs": [
+      "upoa-moa-2020-2026"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "education",
+   "name": "Schools and CUNY",
+   "unions": [
+    {
+     "name": "United Federation of Teachers (UFT)",
+     "docs": [
+      "uft-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "Council of School Supervisors and Administrators (CSA)",
+     "docs": [
+      "csa-moa-2023-2028-amended-appendix-a"
+     ]
+    },
+    {
+     "name": "Professional Staff Congress (PSC), City University of New York",
+     "docs": [
+      "psc-cuny-moa-2023-2027",
+      "psc-cuny-agreement-2017-2023"
+     ]
+    },
+    {
+     "name": "IUOE Local 891, school custodian engineers",
+     "docs": [
+      "local-891-school-custodians"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "name": "Health care",
+   "unions": [
+    {
+     "name": "New York State Nurses Association (NYSNA)",
+     "docs": [
+      "nysna-staff-nurses-2019-2023"
+     ]
+    },
+    {
+     "name": "1199 SEIU United Healthcare Workers East",
+     "docs": [
+      "l1199-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "Doctors Council SEIU",
+     "docs": [
+      "doctors-council-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "Committee of Interns and Residents (CIR), SEIU",
+     "docs": [
+      "cir-executed-contract-2021-2027"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "civilian",
+   "name": "Clerical, professional and administrative",
+   "unions": [
+    {
+     "name": "District Council 37, AFSCME (DC 37) and its locals",
+     "docs": [
+      "dc37-moa-2021-2026",
+      "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027",
+      "dc37-l983-urban-park-rangers-moa-2021-2027",
+      "dc37-l983-high-pressure-plant-tenders-consent-determination-2022-2027",
+      "dc-37-local-1320-sewage-treatment-workers-moa-2021-2026",
+      "dc37-l1087-clock-repairer-moa-2021-2026",
+      "dc37-l1087-compositors-moa-2021-2026",
+      "dc37-l1087-locksmiths-consent-determination-2021-2026",
+      "dc37-l1087-printing-press-operators-moa-2021-2026",
+      "dc37-l1087-radio-repair-mechanics-moa-2021-2026",
+      "dc37-l1157-supervisor-highway-repairers-moa-2021-2026",
+      "dc37-l376-construction-laborers-moa-2021-2026",
+      "dc37-l376-highway-repairers-moa-2021-2026",
+      "dc37-l924-laborers-consent-determination-2021-2026"
+     ]
+    },
+    {
+     "name": "Communications Workers of America (CWA) Locals 1180, 1181, 1182 and 1183",
+     "docs": [
+      "cwa-1180-moa-2021-2026",
+      "cwa-l1181-moa-2021-2027",
+      "cwa-l1182-moa-2021-2027",
+      "cwa-1183-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "Teamsters Local 237",
+     "docs": [
+      "ibt-l237-moa-2022-2027",
+      "local-237-parking-control-specialists-moa-2021-2026",
+      "ibt-l237-bricklayers-moa-2021-2026",
+      "ibt-l237-cement-masons-consent-determination-2020-2025",
+      "ibt-l237-elevator-mechanics-consent-determination-2024-2029",
+      "ibt-l237-maintenance-workers-consent-determination-2022-2027",
+      "ibt-l237-masons-helpers-moa-2021-2026",
+      "ibt-l237-plasterers-consent-determination-2020-2025",
+      "ibt-l237-roofers-moa-2020-2025",
+      "local-237-horseshoers-fully-executed-moa-102323-2021-2026"
+     ]
+    },
+    {
+     "name": "Organization of Staff Analysts (OSA)",
+     "docs": [
+      "osa-moa-2021-2027",
+      "osa-school-security-traffic-moa-2022-2027",
+      "osa-public-advocate-executed-contract-2022-2026"
+     ]
+    },
+    {
+     "name": "SEIU Local 300",
+     "docs": [
+      "local-300-seiu-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "Civil Service Bar Association (CSBA)",
+     "docs": [
+      "csba-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "Association of Legislative Employees (ALE), City Council staff",
+     "docs": [
+      "ale-executed-contract-2021-2027"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "trades",
+   "name": "Skilled trades and maritime",
+   "unions": [
+    {
+     "name": "SEIU Local 246, automotive and shop trades",
+     "docs": [
+      "local-246-automotive-service-workers-moa-2021-2026",
+      "local-246-auto-mechanics-consent-determination-2021-2026",
+      "local-246-carriage-upholsterer-consent-determination-2021-2026",
+      "local-246-letterer-and-sign-painter-consent-determination-2021-2026",
+      "local-246-rubber-tire-repairer-consent-determination-2021-2026",
+      "local-246-sheet-metal-worker-consent-determination-2021-2026",
+      "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025",
+      "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025"
+     ]
+    },
+    {
+     "name": "International Union of Operating Engineers (IUOE) Locals 14, 15 and 30",
+     "docs": [
+      "crane-operator-2021-2026",
+      "local-14-15-gasoline-roller-engineers-wage-indenture-2021-2026",
+      "local-15-welders-moa-2021-2026",
+      "local-15-30-oilers-stationary-engineer-and-senior-stationary-engineer-consent-de",
+      "oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021",
+      "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025",
+      "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025"
+     ]
+    },
+    {
+     "name": "IUOE Local 211, Allied Building Inspectors",
+     "docs": [
+      "local-211-building-inspectors-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "SEIU Local 621, supervisors of mechanics",
+     "docs": [
+      "supervisor-of-mechanics-l621-executed-contract-2021-2026"
+     ]
+    },
+    {
+     "name": "IBEW Local 3, electrical workers",
+     "docs": [
+      "l3-electricians-consent-determination-20232028",
+      "l3-communication-electricians-moa-20232028",
+      "l3-electrical-inspectors-moa-2022-2027",
+      "l3-stationary-engineer-electric-moa-20202025",
+      "l3-supervisor-of-mechanics-consent-determination-2021-2026"
+     ]
+    },
+    {
+     "name": "District Council 9, Painters (IUPAT) Locals 806 and 1969",
+     "docs": [
+      "dc9-l1969-painters-consent-determination-2021-2026",
+      "dc9-l1969-glaziers-consent-determination-2021-2026",
+      "dc9-l806-bridge-painters-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "New York City District Council of Carpenters (UBCJA)",
+     "docs": [
+      "carpenters-consent-determination-2021-2027",
+      "ubcj-dockbuilders-moa-2022-2027",
+      "ubcj-riggers-moa-2022-2027",
+      "ubcj-ship-carpenter-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "Boilermakers Local Lodge 5",
+     "docs": [
+      "boilermaker-moa-2021-2026",
+      "blacksmith-moa-2021-2026",
+      "metal-work-mechanic-moa-2021-2026"
+     ]
+    },
+    {
+     "name": "Plumbers Local 1",
+     "docs": [
+      "l1-plumbers-consent-determination-2022-2027"
+     ]
+    },
+    {
+     "name": "Steamfitters Local 638",
+     "docs": [
+      "l638-steamfitters-consent-determination-2022-2027"
+     ]
+    },
+    {
+     "name": "Iron Workers Local 40",
+     "docs": [
+      "local-40-bridge-repairer-consent-determination-2022-2025"
+     ]
+    },
+    {
+     "name": "IATSE Local 306, audiovisual aide technicians",
+     "docs": [
+      "local-306-audiovisual-aide-technicians-moa-2022-2027"
+     ]
+    },
+    {
+     "name": "Marine Engineers' Beneficial Association (MEBA)",
+     "docs": [
+      "meba-moa-2010-2027"
+     ]
+    },
+    {
+     "name": "Masters, Mates and Pilots (MMP), Atlantic Maritime Group",
+     "docs": [
+      "mmp-moa-2021-2027"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "multi",
+   "name": "Agreements covering several unions",
+   "unions": [
+    {
+     "name": "Uniformed Officers Coalition Economic Agreement (11 police, fire, correction and sanitation unions)",
+     "docs": [
+      "uniformed-coalition-economic-agreement-2022-2027"
+     ]
+    },
+    {
+     "name": "Citywide Agreement",
+     "docs": [
+      "2001-2021-citywide-agreement"
+     ]
+    }
+   ]
+  }
+ ],
+ "continued_by": {
+  "psc-cuny-agreement-2017-2023": "psc-cuny-moa-2023-2027"
+ }
+}

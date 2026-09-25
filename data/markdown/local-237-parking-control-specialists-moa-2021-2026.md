@@ -3,7 +3,7 @@ contract_id: local-237-parking-control-specialists-moa-2021-2026
 label: "Local 237 - Parking Control Specialists MOA, 2021-2026"
 expanded_label: "Local 237 - Parking Control Specialists Memorandum of Agreement, 2021-2026"
 term_start: 2021
-term_end: 2026
+term_end: 2027
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2027-l237-parking-control-moa.pdf"
 pages: 3
 ocr_pages: 2
@@ -14,7 +14,7 @@ sector: "other"
 
 # Local 237 - Parking Control Specialists Memorandum of Agreement, 2021-2026
 
-**Term:** 2021–2026  
+**Term:** 2021–2027  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2027-l237-parking-control-moa.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2027-l237-parking-control-moa.pdf)  
 **Pages:** 3 (2 OCR-reconstructed)  
 **Clauses extracted:** 4

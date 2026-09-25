@@ -21,7 +21,7 @@ headcount_approx: 8000
 **Pages:** 77  
 **Clauses extracted:** 88
 
-**Workforce:** Represents registered nurses at NYC Health + Hospitals (the City's public hospital system) and the Mayoral / civilian workforce. Most recent published contract on OLR is the 2019-2023 Staff Nurses Agreement; the historic 2023+ pay-parity successor agreement (announced July 2023) is not yet posted on OLR at time of corpus build.
+**Workforce:** Represents registered nurses at NYC Health + Hospitals (the City's public hospital system) and the Mayoral / civilian workforce. This 2019-2023 agreement has been replaced: a five-and-a-half-year successor with pay parity was settled in July 2023, but its text has not been published by the Office of Labor Relations or NYC Health + Hospitals.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 
@@ -31,7 +31,7 @@ headcount_approx: 8000
 
 - [NYSNA Staff Nurses, 2019-2023](#page-1)
 - [REGISTRATION](#page-1)
-- [NEW YORK STATE NURSFS ASSOCIATION CONTRACT](#page-2)
+- [REGISTRATION (continued)](#page-2)
 - [Article VI — GRIEVANCE PROCEDURE](#page-2)
 - [Article XXII — SAFE PATIENT HANDLING](#page-2)
 - [STAFF NURSES 2019-2023](#page-2)
@@ -41,7 +41,7 @@ headcount_approx: 8000
 - [Article III — SALARIES](#page-6)
 - [Section 3 — General Wage Increases](#page-12)
 - [Section 4 — Parity Provision](#page-13)
-- [HOSPITALS](#page-14)
+- [Signatures](#page-14)
 - [Section 5 — Exper~cnce/Longevity Pay](#page-14)
 - [Section 6 — Evening and Night Shift Differential](#page-15)
 - [Section 6 — and shall receive a night shift differential in accordance with Article XX, _Sectiofl 1-.(b) of](#page-16)
@@ -87,19 +87,19 @@ headcount_approx: 8000
 - [Article XXIX — SAVINGS CLAUSE](#page-42)
 - [Article XXX — CONTRACTING-Our CLAUSE](#page-42)
 - [RELATED PUBLIC EMPLOYERS ASSOCIATION](#page-43)
-- [APPROVED AS TO FORM](#page-43)
+- [Signatures](#page-43)
 - [FINANCIAL CONTROL BOARD](#page-43)
-- [OFFICIAL](#page-43)
-- [TITLE CODE TITLE](#page-44)
-- [TITLE CODE TITLE](#page-45)
-- [TITLE CODE TITLE](#page-46)
-- [THE CITY OF NEW YORK](#page-48)
-- [OFFICE LABOR RELATIONS](#page-48)
-- [OFFICE OF LABOR RELATIONS](#page-49)
+- [FINANCIAL CONTROL BOARD (continued)](#page-43)
+- [FINANCIAL CONTROL BOARD (continued)](#page-44)
+- [FINANCIAL CONTROL BOARD (continued)](#page-45)
+- [FINANCIAL CONTROL BOARD (continued)](#page-46)
+- [Letterhead](#page-48)
+- [Letterhead](#page-48)
+- [Letterhead](#page-49)
 - [OFFICE OF LABOR AELAT I0NS](#page-50)
-- [OFFICE OF LABOR RELATIONS](#page-53)
-- [THE CITY OF NEW YORK](#page-54)
-- [OFFICE LABOR RELATIONS](#page-54)
+- [Letterhead](#page-53)
+- [Letterhead](#page-54)
+- [Letterhead](#page-54)
 - [Section 2 — of the 199S-2001 Citywide Agreement with regard to the scheduling of the group of](#page-56)
 - [Section 4 — ELIGIBILITY AND PARTICIPATION IN AWS](#page-56)
 - [Section 5 — TERMINATION OR REDUCTION OF AW S](#page-57)
@@ -108,15 +108,15 @@ headcount_approx: 8000
 - [Section 8 — OVERTIME](#page-59)
 - [Section 10 — RESPONSIBILOY PAY](#page-60)
 - [Article VI — oft he l 99S-200 I Citywide Contnict, or its successors, which addressed time](#page-60)
-- [NURSES ASSOCIATION](#page-60)
-- [RENEE CAMPION](#page-60)
-- [THE CITY OF NEW YORK](#page-61)
-- [OFFICE LABOR RELATIONS](#page-61)
-- [THE CITY OF NEW YORK](#page-64)
+- [Article VI — oft he l 99S-200 I Citywide Contnict, or its successors, which addressed time (continued)](#page-60)
+- [Signatures](#page-60)
+- [Letterhead](#page-61)
+- [Letterhead](#page-61)
+- [Letterhead](#page-64)
 - [NEW YORK CITT HEALTH ANO HOSPITALS CORPORATION](#page-65)
 - [VORK CITY HEALTH ANO HOSPITALS COAPOAATION](#page-66)
-- [OFFICE OF LABOR RELATIONS](#page-71)
-- [CLAIRELEVITT](#page-71)
+- [Letterhead](#page-71)
+- [Signatures](#page-71)
 
 ---
 

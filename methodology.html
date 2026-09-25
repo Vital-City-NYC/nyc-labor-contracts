@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
-<link rel="stylesheet" href="style.css?v=20260925d">
+<link rel="stylesheet" href="style.css?v=20260925g">
 <style>
   .doc { background: #fff; border: 1px solid var(--vc-rule); padding: 32px 36px; max-width: 760px; margin: 0 auto; }
   .doc h2 { font-family: var(--vc-font-serif); font-weight: 200; font-synthesis: none; font-size: 1.6rem; line-height: 1.15; margin: 28px 0 8px; letter-spacing: -0.005em; }
@@ -57,9 +57,18 @@
         </ul>
       </li>
       <li><strong>Segment.</strong> <code>scripts/segment.py</code> splits each contract into clauses using article/section heading regexes (Article I, Section 1, all-caps headings, and numbered headings). Each clause carries an article, section, heading, page number, and OCR flag. Text before the first detected heading is kept as a preamble clause, table-of-contents lines are ignored, and any contract where heading detection covers less than 70% of the text is indexed page by page instead — so letter-style agreements without formal headings are fully searchable.</li>
+      <li><strong>Clean headings.</strong> <code>scripts/clean_headings.py</code> relabels "headings" that are not section titles: signers' names ("RENEE CAMPION"), letterhead, the caption block of each Comptroller's consent determination and table column labels ("MONTHLY ACCRUAL"). They become "Signatures," "Side letter," "Caption" or "(continued)" under the previous real heading. About 840 of 2,220 clause headings were relabeled. No text, page or permalink changes, and the original heading stays searchable.</li>
       <li><strong>Tag.</strong> <code>scripts/tag.py</code> applies a topic taxonomy via keyword regex against each clause: wages, longevity, overtime, holidays, vacation, sick leave, parental leave, health & welfare, pension, grievance, discipline, layoff, hours, shift differential, uniform allowance, training, safety, no-strike, management rights, work rules, union security, recognition, promotion, telework, anti-discrimination, workforce composition. A clause can carry multiple topics.</li>
       <li><strong>Index.</strong> The frontend loads <code>data/clauses.json</code> and builds a FlexSearch full-text index in the browser. No server-side query — everything runs client-side. Searches are union-acronym aware: a query containing an acronym (PBA, DC37, CIR, &hellip;) also searches the union's full name, and vice versa, so results don't depend on which form a given contract happens to use.</li>
     </ol>
+
+    <h2 id="terms">Term dates and status</h2>
+    <p>Each document's term is taken from the document itself, not from its title or file name: the exact start and end dates, with the sentence and page they come from (<code>data/term_dates.json</code>; hover over a date on the site to see the wording). 97 of the 100 documents state a term. Three do not: the Sergeants and Detectives unit letters and the Uniformed Officers Coalition Economic Agreement, whose terms run 60 months from each unit's previous agreement; for those the site shows the years only.</p>
+    <p>The documents' own dates corrected six sets of years listed by OLR: CWA Local 1180 (runs to June 12, 2027), Local 237 Parking Control Specialists (May 10, 2027), Metal Work Mechanic (ended Nov. 2, 2025), SEIU Local 621 Supervisor of Mechanics (ended Nov. 18, 2025), the Sanitation Chiefs unit agreement (Jan. 1, 2023 to Feb. 29, 2028) and the Locksmiths determination (Dec. 29, 2020 to Jan. 28, 2026). Titles still follow OLR's listing.</p>
+    <p>Status on the site compares the end date with today. A contract past its end date generally stays in force under the Triborough Amendment until a successor is reached. Where a later document continues an expired one "as modified," or a successor exists but is unpublished, the status says so.</p>
+
+    <h2 id="unions">How documents are grouped by union</h2>
+    <p>The home page groups every document by the union that signed it, taking each union's name from the document's own text. Two unions were previously mislabeled on this site and are corrected: Local 246 is Service Employees International Union (SEIU) Local 246, not part of DC 37, and Local 211 is the Allied Building Inspectors, International Union of Operating Engineers (IUOE) Local 211. The two joint motor grader and tractor operator agreements, signed by SEIU Local 246 and IUOE Local 15 together, appear under both. The grouping is kept by hand in <code>data/unions.json</code>.</p>
 
     <h2 id="doc-types">What these documents are (and aren't)</h2>
     <p>Most of what the Office of Labor Relations publishes is not a complete contract. Of the 100 documents in this corpus, <strong>63 expressly state that an underlying agreement remains in force</strong> and change only the terms written in them.</p>
@@ -106,13 +115,13 @@
       <li><strong>Heading detection is heuristic.</strong> If a contract uses unusual numbering or all-caps body text, segmentation may merge or split clauses incorrectly. The page number on each clause anchors it back to the source PDF for verification.</li>
       <li><strong>Topic tags are keyword-based.</strong> A clause that mentions "discipline" in passing while really being about safety will get a discipline tag. Tags are a navigation aid, not a legal classification.</li>
       <li><strong>Side letters.</strong> Some agreements have side letters or memoranda of understanding that aren't in the linked PDF. Where OLR publishes these as separate documents, they appear as separate entries.</li>
-      <li><strong>Workforce summaries and headcounts</strong> are curated by hand for the largest units, from the NYC Mayor's Office settlement announcements, the NYC Council Finance Division's workforce reports and union statements, with the source named on each. Headcounts are for the workers covered by the specific agreement, not a union's total membership. Most smaller units have no headcount yet.</li>
+      <li><strong>Headcounts</strong> appear only where the figure was checked against a named primary source: a NYC Mayor's Office settlement announcement, the NYC Council Finance Division's October 2025 NYPD and FDNY workforce reports, NYSNA or CUNY. That is 14 bargaining units; each contract page quotes the source. Headcounts are for the workers covered by the specific agreement, not a union's total membership. The 1199 SEIU figure (about 2,500) is not shown because its only source is a 2014 announcement. Other units have no headcount yet.</li>
       <li><strong>Other employers.</strong> The Recent Agreements page includes major agreements covering the Department of Education (DOE), the New York City Housing Authority (NYCHA) and NYC Health + Hospitals. Apart from the five documents described under <a href="#gaps">coverage</a>, agreements not posted by OLR are not here.</li>
       <li><strong>NYC Health + Hospitals (H+H) is partially covered.</strong> H+H is a public benefit corporation that sometimes negotiates contracts directly with unions instead of through OLR, and not all H+H agreements get posted to OLR. The database includes Doctors Council (about 500 city-employed physicians at H+H, the Department of Health and Mental Hygiene and the medical examiner's office; attending physicians employed by H+H affiliate groups bargain separately), 1199 SEIU (about 2,500 non-physician health care workers in its citywide City and H+H unit) and the Committee of Interns and Residents (CIR, resident physicians). DC 37 locals such as Local 420 (Municipal Hospital Employees Union) and Local 768 (Health Services) cover several thousand more H+H workers under the DC 37 economic agreement, which is in the database. NYSNA's current contract, covering about 8,000 registered nurses, is a known gap: only its replaced 2019-2023 agreement is here.</li>
     </ul>
 
     <h2>Wage tracker — verification</h2>
-    <p>The wage pattern tracker shows curated general wage increase (GWI) schedules for 13 large contracts. Percentages and effective dates were checked against the contract text wherever the contract states them; the badges show where they come from instead:</p>
+    <p>The wage pattern tracker shows curated general wage increase (GWI) schedules for 13 large contracts. <code>scripts/verify_wages.py</code> checks every step against the contract text: each effective date must appear next to its percentage. Contract pages show a wage schedule only for the 10 contracts where every step passes; the ratification bonus shown with six of them was checked the same way. The badges on the tracker show where the other figures come from:</p>
     <ul>
       <li><strong>Verified</strong> — both percentages and dates were quoted from the contract.</li>
       <li><strong>Set by parent (UOCEA)</strong> — the Sergeants Benevolent Association (SBA) and Detectives' Endowment Association (DEA) unit agreements incorporate the Uniformed Officers Coalition Economic Agreement (UOCEA); percentages are the parent's.</li>
@@ -141,6 +150,12 @@ python scripts/scrape.py
 python scripts/extract.py
 python scripts/segment.py
 python scripts/tag.py
+python scripts/reflow_paragraphs.py   # once only; it is not safe to repeat
+python scripts/clean_headings.py
+python scripts/build_units.py
+python scripts/build_wages.py
+python scripts/verify_wages.py
+python scripts/export_markdown.py
 python scripts/build_manifest.py
 python -m http.server 8000   # then open http://localhost:8000
 </pre>

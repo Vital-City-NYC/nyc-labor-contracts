@@ -1,0 +1,905 @@
+{
+ "checked": "2026-09-25",
+ "dates": {
+  "adwa-unit-agreement-2023-2028": {
+   "start": "2023-06-01",
+   "end": "2028-07-31",
+   "quote": "Therefore, the term of the unit agreement shall be June 1, 2023 through July 31, 2028.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term (UOCEA 60 months extended by 2 months). Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "ale-executed-contract-2021-2027": {
+   "start": "2021-01-04",
+   "end": "2027-01-17",
+   "quote": "for the period from January 4, 2021 (for Legislative Financial Analyst and Senior Legislative Financial Analyst) and August 13, 2021 (for Council Member Aide) to January 17, 2027",
+   "page": 3,
+   "method": "text",
+   "notes": "Cover memo p1: 'TERM: JANUARY 4, 2021 TO JANUARY 17, 2027'. Council Member Aide title starts August 13, 2021.",
+   "disagrees_with_label": false
+  },
+  "cca-unit-agreement-2022-2028": {
+   "start": "2022-11-30",
+   "end": "2028-01-29",
+   "quote": "Therefore, the term of the CCA unit agreement shall be November 30, 2022 through January 29, 2028.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "cea-unit-agreement-2022-2027": {
+   "start": "2022-08-01",
+   "end": "2027-09-30",
+   "quote": "Therefore, the term of the CEA unit agreement shall be August 1, 2022 through September 30, 2027.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "cir-executed-contract-2021-2027": {
+   "start": "2021-12-16",
+   "end": "2027-06-15",
+   "quote": "for the period from December 16, 2021 through June 15, 2027.",
+   "page": 3,
+   "method": "text",
+   "notes": "Cover memo p1 agrees: 'TERM: DECEMBER 16, 2021 TO JUNE 15, 2027'.",
+   "disagrees_with_label": false
+  },
+  "coba-unit-agreement-2022-2027": {
+   "start": "2022-03-01",
+   "end": "2027-04-30",
+   "quote": "the term of the Correction Officers Benevolent Association unit agreement shall be March 1, 2022 through April 30, 2027.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "csa-moa-2023-2028-amended-appendix-a": {
+   "start": "2023-01-29",
+   "end": "2028-03-29",
+   "quote": "The term of the successor agreement shall be from January 29, 2023, through March 29, 2028.",
+   "page": 1,
+   "method": "text",
+   "notes": "Predecessor expired January 28, 2023.",
+   "disagrees_with_label": false
+  },
+  "csba-moa-2021-2026": {
+   "start": "2021-04-18",
+   "end": "2026-10-17",
+   "quote": "Term: 5 years, 6 months (66 months) 4/18/2021 - 10/17/2026",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "cwa-1180-moa-2021-2026": {
+   "start": "2021-12-13",
+   "end": "2027-06-12",
+   "quote": "Term: 5 years and 6 months 12/13/2021-6/12/2027",
+   "page": 1,
+   "method": "text",
+   "notes": "Document itself is headed '2021-2027 Memorandum of Agreement'.",
+   "disagrees_with_label": true
+  },
+  "cwa-l1181-moa-2021-2027": {
+   "start": "2021-11-11",
+   "end": "2027-05-10",
+   "quote": "Term: 5 years and 6 months 11/11/21 - 5/10//27",
+   "page": 1,
+   "method": "text",
+   "notes": "Double slash is in the original (checked page image).",
+   "disagrees_with_label": false
+  },
+  "cwa-l1182-moa-2021-2027": {
+   "start": "2021-11-11",
+   "end": "2027-05-10",
+   "quote": "Term: 5 years and 6 months 11/11/21 - 5/10//27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "cwa-1183-moa-2021-2026": {
+   "start": "2021-01-19",
+   "end": "2026-07-18",
+   "quote": "Term: 5 years and 6 months 1/19/2021-7/18/2026",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027": {
+   "start": "2021-11-11",
+   "end": "2027-05-10",
+   "quote": "Term: 5 years and 6 months 11/11/21 - 5/10//27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l983-urban-park-rangers-moa-2021-2027": {
+   "start": "2021-10-26",
+   "end": "2027-04-25",
+   "quote": "Term: 5 years, 6 months 10/26/21 - 4/25/27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-moa-2021-2026": {
+   "start": "2021-05-26",
+   "end": "2026-11-06",
+   "quote": "Term: 5 years, 5 months, and 12 days (65 months and 12 days) 5/26/21 - 11/6/26 or 65 months and 12 days from the date of termination of the applicable existing Successor Separate Unit Agreement.",
+   "page": 1,
+   "method": "text",
+   "notes": "Pattern MOA: dates are the main term; units whose existing agreements expire on other dates run 65 months 12 days from their own expiration.",
+   "disagrees_with_label": false
+  },
+  "dea-unit-agreement-2022-2027": {
+   "start": null,
+   "end": null,
+   "quote": "RE: 2022-2027 Uniform Officers Coalition Economic Agreement (\"UOCEA\")",
+   "page": 1,
+   "method": "text",
+   "notes": "Unit letter states no term and no extension. Per the separate UOCEA document (DEA predecessor expired May 31, 2022; 60 months), the DEA term would be 2022-06-01 to 2027-05-31, but that is not stated in this document.",
+   "disagrees_with_label": false
+  },
+  "dia-moa-2023-2028": {
+   "start": "2023-01-19",
+   "end": "2028-07-18",
+   "quote": "Term: 5 years and 6 months 1/19/2023 - 7/18/2028",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "doctors-council-moa-2021-2026": {
+   "start": "2021-06-28",
+   "end": "2026-12-27",
+   "quote": "Term: 5 years and 6 months 6/28/21 -12/27/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "fadba-moa-2021-2027": {
+   "start": "2021-08-01",
+   "end": "2027-01-31",
+   "quote": "Term: 8/1/21 - 1/31/27 5 years and 6 months",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "highway-and-sewer-inspectors-moa-2022-2028": {
+   "start": "2022-09-09",
+   "end": "2028-03-08",
+   "quote": "Term: 5 years, 6 months 9/9/22 - 3/8/28",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-moa-2022-2027": {
+   "start": "2022-04-26",
+   "end": "2027-10-25",
+   "quote": "Term: 5 years, 6 months (66 months) 4/26/22 - 10/25/27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l3-electrical-inspectors-moa-2022-2027": {
+   "start": "2022-03-29",
+   "end": "2027-09-28",
+   "quote": "Term: 3/29/2022 through 9/28/2027 (66 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l1199-moa-2022-2027": {
+   "start": "2022-04-10",
+   "end": "2027-10-09",
+   "quote": "Term: 5 years and 6 months 4/10/2022 - 10/9/2027",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "lba-10-5-2023-unit-bargaining-agreement": {
+   "start": "2022-02-16",
+   "end": "2027-04-15",
+   "quote": "Therefore, the term of the LBA unit agreement shall be February 16, 2022 through April 15, 2027.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "leeba-epo-moa-2017-2026": {
+   "start": "2017-10-01",
+   "end": "2026-11-01",
+   "quote": "Term: 10/1/17 - 11/1/26",
+   "page": 1,
+   "method": "text",
+   "notes": "Environmental Police Officers.",
+   "disagrees_with_label": false
+  },
+  "local-211-building-inspectors-moa-2021-2026": {
+   "start": "2021-04-03",
+   "end": "2026-10-02",
+   "quote": "Term: 5 years, 6 months 4/3/21 - 10/2/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-237-parking-control-specialists-moa-2021-2026": {
+   "start": "2021-11-11",
+   "end": "2027-05-10",
+   "quote": "Term: 5 years and 6 months 11/11/2021-5/10/2027",
+   "page": 1,
+   "method": "text",
+   "notes": "Document is headed '2021-2026 Memorandum of Agreement' but its stated term ends 5/10/2027.",
+   "disagrees_with_label": true
+  },
+  "local-246-automotive-service-workers-moa-2021-2026": {
+   "start": "2021-07-07",
+   "end": "2026-10-06",
+   "quote": "Term: July 7, 2021 - October 6, 2026 (63 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-300-seiu-moa-2022-2027": {
+   "start": "2022-02-23",
+   "end": "2027-04-14",
+   "quote": "Term: 5 years, 1 month, 23 days (61 months, 23 days) February 23, 2022 - April 14, 2027",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-306-audiovisual-aide-technicians-moa-2022-2027": {
+   "start": "2022-03-15",
+   "end": "2027-09-14",
+   "quote": "Term: 5 years, 6 months 3/15/22 - 9/14/27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-891-school-custodians": {
+   "start": "2020-08-01",
+   "end": "2025-12-31",
+   "quote": "The term of this Agreement shall be from August 1, 2020 through December 31, 2025",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "meba-moa-2010-2027": {
+   "start": "2010-11-07",
+   "end": "2027-01-04",
+   "quote": "Term November 7, 2010 to January 4, 2027 (16 years, 2 months and 3 days)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "metal-work-mechanic-moa-2021-2026": {
+   "start": "2020-10-03",
+   "end": "2025-11-02",
+   "quote": "Term: October 3, 2020 - November 2, 2025 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "Document is headed '2020-2025 Memorandum of Agreement'.",
+   "disagrees_with_label": true
+  },
+  "mmp-moa-2021-2027": {
+   "start": "2021-08-06",
+   "end": "2027-02-05",
+   "quote": "Term August 6, 2021 to February 5, 2027 (5 years and 6 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "osa-moa-2021-2027": {
+   "start": "2021-09-06",
+   "end": "2027-03-05",
+   "quote": "Term: 5 years, 6 months 9/6/21 - 3/5/27",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "osa-public-advocate-executed-contract-2022-2026": {
+   "start": "2022-10-02",
+   "end": "2026-10-21",
+   "quote": "for the period from October 2, 2022 to October 21, 2026.",
+   "page": 3,
+   "method": "text",
+   "notes": "Cover memo p1 agrees: 'TERM: OCTOBER 2, 2022 TO OCTOBER 21, 2026'.",
+   "disagrees_with_label": false
+  },
+  "osa-school-security-traffic-moa-2022-2027": {
+   "start": "2022-06-12",
+   "end": "2027-12-11",
+   "quote": "Term: 6/12/22 - 12/11/27 (66 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "pba-mou-2017-2025": {
+   "start": "2017-08-01",
+   "end": "2025-07-31",
+   "quote": "The term of the successor collective bargaining agreement shall cover the period from August 1, 2017 through July 31, 2025.",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "sba-unit-agreement-2021-2026": {
+   "start": null,
+   "end": null,
+   "quote": "RE: 2022-2027 Uniform Officers Coalition Economic Agreement C'UOCEA\")",
+   "page": 1,
+   "method": "text",
+   "notes": "Unit letter states no term and no extension. Per the separate UOCEA document (SBA predecessor expired December 9, 2021; 60 months), the SBA term would be 2021-12-10 to 2026-12-09, but that is not stated in this document.",
+   "disagrees_with_label": false
+  },
+  "soa-unit-agreement-2023-2028": {
+   "start": "2023-06-25",
+   "end": "2028-08-24",
+   "quote": "Therefore, the term of the Sanitation Officer unit agreement shall be June 25, 2023 through August 24, 2028.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": false
+  },
+  "supervisor-of-mechanics-l621-executed-contract-2021-2026": {
+   "start": "2020-10-13",
+   "end": "2025-11-18",
+   "quote": "for the sixty-one (61) months and six (6) days period from October 13, 2020 to November 18, 2025 for all titles listed below in Article I Section 1 except for the Deputy Director of Motor Equipment Maintenance (Sanitation)",
+   "page": 3,
+   "method": "image",
+   "notes": "Deputy Director of Motor Equipment Maintenance (Sanitation): May 31, 2021 to July 5, 2026. Agreement headed '2020-2025 Supervisor of Mechanics (M.E.) et al. Agreement'. Read from page image.",
+   "disagrees_with_label": true
+  },
+  "uft-moa-2022-2027": {
+   "start": "2022-09-14",
+   "end": "2027-11-28",
+   "quote": "The terms of the successor agreements shall be from September 14, 2022 through November 28, 2027.",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "uniformed-coalition-economic-agreement-2022-2027": {
+   "start": null,
+   "end": null,
+   "quote": "The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements.",
+   "page": 1,
+   "method": "text",
+   "notes": "Umbrella agreement; no single term. Computed 60-month terms from the predecessor expirations it lists (before any unit-letter extensions): UPOA 2021-07-31 to 2026-07-30; LBA 2022-02-16 to 2027-02-15; USCA 2023-01-01 to 2027-12-31; COBA 2022-03-01 to 2027-02-28; CEA 2022-08-01 to 2027-07-31; CCA 2022-11-30 to 2027-11-29; SOA 2023-06-25 to 2028-06-24; ADW/DWA 2023-06-01 to 2028-05-31; SBA 2021-12-10 to 2026-12-09; DEA 2022-06-01 to 2027-05-31; UFA Firefighters/Fire Marshals and Wipers 2020-08-01 to 2025-07-31; UFA Pilots/Marine Engineers 2021-07-28 to 2026-07-27. Several unit letters later extend these by 2 months.",
+   "disagrees_with_label": false
+  },
+  "upoa-moa-2020-2026": {
+   "start": "2020-11-28",
+   "end": "2026-06-12",
+   "quote": "Term: 5 years 6 months and 16 days 11/28/2020 - 6/12/2026",
+   "page": 1,
+   "method": "text",
+   "notes": "Note: the UOCEA document lists a UPOA agreement expiring July 30, 2021; this MOA's own stated term is used.",
+   "disagrees_with_label": false
+  },
+  "usa-executed-contract-2022-2028": {
+   "start": "2022-12-28",
+   "end": "2028-02-27",
+   "quote": "for the period from December 28, 2022 to February 27, 2028.",
+   "page": 2,
+   "method": "text",
+   "notes": "Cover memo p1 agrees: 'TERM: December 28, 2022 to February 27, 2028'.",
+   "disagrees_with_label": false
+  },
+  "usca-unit-agreement-2022-2027": {
+   "start": "2023-01-01",
+   "end": "2028-02-29",
+   "quote": "Therefore, the term of the Sanitation Chief unit agreement shall be January 1, 2023 through February 29, 2028.",
+   "page": 1,
+   "method": "text",
+   "notes": "UOCEA unit letter; states its own term. Dates match the UOCEA predecessor expiration plus 62 months.",
+   "disagrees_with_label": true
+  },
+  "2001-2021-citywide-agreement": {
+   "start": "2001-07-01",
+   "end": "2021-12-31",
+   "quote": "for the period from July 1, 2001 - December 31, 2021.",
+   "page": 3,
+   "method": "image",
+   "notes": "OCR text reads '200 I'; read from page image. Cover memo p1: 'JULY 1, 2001 TO DECEMBER 31, 2021'.",
+   "disagrees_with_label": false
+  },
+  "blacksmith-moa-2021-2026": {
+   "start": "2021-07-03",
+   "end": "2026-08-02",
+   "quote": "Term: July 3, 2021 - August 2, 2026 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "boilermaker-moa-2021-2026": {
+   "start": "2021-01-03",
+   "end": "2026-02-02",
+   "quote": "Term: January 3, 2021 - February 2, 2026 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "carpenters-consent-determination-2021-2027": {
+   "start": "2021-01-01",
+   "end": "2027-01-31",
+   "quote": "UNIT: Carpenter and Supervisor Carpenter TERM: January 1, 2021 through January 31, 2027",
+   "page": 11,
+   "method": "text",
+   "notes": "Matches wage-rate periods 01/01/2021 through 01/31/2027 (p4).",
+   "disagrees_with_label": false
+  },
+  "dc37-l376-construction-laborers-moa-2021-2026": {
+   "start": "2021-03-31",
+   "end": "2026-04-29",
+   "quote": "Term: 5 years, 1 month (61 months) 3/31/21 - 4/29/26",
+   "page": 1,
+   "method": "image",
+   "notes": "OCR text reads 'Ierm'; read from page image.",
+   "disagrees_with_label": false
+  },
+  "dc37-l376-highway-repairers-moa-2021-2026": {
+   "start": "2021-03-01",
+   "end": "2026-03-31",
+   "quote": "UNIT: Highway Repairer et al. TERM: March 1, 2021 to March 31, 2026",
+   "page": 11,
+   "method": "text",
+   "notes": "Same TERM line repeated on pp. 12-13.",
+   "disagrees_with_label": false
+  },
+  "dc37-l924-laborers-consent-determination-2021-2026": {
+   "start": "2021-06-16",
+   "end": "2026-07-15",
+   "quote": "UNIT: Laborer et al. TERM: June 16, 2021 through July 15, 2026.",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l983-high-pressure-plant-tenders-consent-determination-2022-2027": {
+   "start": "2022-05-24",
+   "end": "2027-11-23",
+   "quote": "UNIT: High Pressure Plant Tender TERM: May 24, 2022 to November 23, 2027",
+   "page": 12,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l1087-clock-repairer-moa-2021-2026": {
+   "start": "2021-08-26",
+   "end": "2026-08-29",
+   "quote": "Term: 5 years, 4 days 8/26/21 - 8/29/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l1087-compositors-moa-2021-2026": {
+   "start": "2021-08-26",
+   "end": "2026-08-29",
+   "quote": "Term: 5 years, 4 days 8/26/21 - 8/29/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l1087-locksmiths-consent-determination-2021-2026": {
+   "start": "2020-12-29",
+   "end": "2026-01-28",
+   "quote": "UNIT: Locksmith and Supervisor Locksmith TERM: December 29, 2020 to January 28, 2026",
+   "page": 9,
+   "method": "text",
+   "notes": "Footer on same page reads 'Locksmiths 2020-2026 Consent Determination'.",
+   "disagrees_with_label": true
+  },
+  "dc37-l1087-printing-press-operators-moa-2021-2026": {
+   "start": "2021-08-26",
+   "end": "2026-08-29",
+   "quote": "Term: 5 years, 4 days 8/26/21 - 8/29/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l1087-radio-repair-mechanics-moa-2021-2026": {
+   "start": "2021-08-27",
+   "end": "2026-08-30",
+   "quote": "Term: 5 years, 4 days 8/27/21 - 8/30/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc37-l1157-supervisor-highway-repairers-moa-2021-2026": {
+   "start": "2021-01-31",
+   "end": "2026-02-27",
+   "quote": "UNIT: Supervisor Highway Repairer TERM: January 31, 2021 to February 27, 2026",
+   "page": 13,
+   "method": "text",
+   "notes": "Same TERM on pp. 11 and 15.",
+   "disagrees_with_label": false
+  },
+  "dc-37-local-1320-sewage-treatment-workers-moa-2021-2026": {
+   "start": "2021-09-23",
+   "end": "2026-10-22",
+   "quote": "Term: 5 years, 1 month 9/23/21 - 10/22/26",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc9-l806-bridge-painters-moa-2021-2026": {
+   "start": "2021-11-13",
+   "end": "2026-12-09",
+   "quote": "Term: November 13, 2021 - December 9, 2026 (60 months, 27 days)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc9-l1969-glaziers-consent-determination-2021-2026": {
+   "start": "2021-06-21",
+   "end": "2026-07-20",
+   "quote": "UNIT: Glaziers, Supervisor Glaziers TERM: June 21, 2021 through July 20, 2026",
+   "page": 9,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "dc9-l1969-painters-consent-determination-2021-2026": {
+   "start": "2021-06-25",
+   "end": "2026-07-24",
+   "quote": "UNIT: Painter, Supervisor Painter TERM: June 25, 2021 to July 24, 2026",
+   "page": 12,
+   "method": "text",
+   "notes": "p9 agrees: 'for the period from and including June 25, 2021 through and including July 24, 2026'.",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-bricklayers-moa-2021-2026": {
+   "start": "2021-01-09",
+   "end": "2026-02-08",
+   "quote": "Term: 61 Months (1/9/21 - 2/8/26)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-cement-masons-consent-determination-2020-2025": {
+   "start": "2020-09-27",
+   "end": "2025-10-26",
+   "quote": "UNIT: Cement Masons TERM: September 27, 2020 through October 26, 2025",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-237-horseshoers-fully-executed-moa-102323-2021-2026": {
+   "start": "2021-07-13",
+   "end": "2026-08-12",
+   "quote": "Term: 5 years, 1 month (7/13/21 - 8/12/26)",
+   "page": 1,
+   "method": "text",
+   "notes": "No stored years in contracts.json.",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-elevator-mechanics-consent-determination-2024-2029": {
+   "start": "2024-04-18",
+   "end": "2029-05-17",
+   "quote": "UNIT: Elevator Mechanics et al. TERM: April 18, 2024 through May 17, 2029",
+   "page": 12,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-maintenance-workers-consent-determination-2022-2027": {
+   "start": "2022-01-02",
+   "end": "2027-02-01",
+   "quote": "UNIT: Maintenance Worker TERM: January 2, 2022 through February 1, 2027",
+   "page": 11,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-masons-helpers-moa-2021-2026": {
+   "start": "2021-07-13",
+   "end": "2026-08-12",
+   "quote": "Term: 61 Months (7/13/21 - 8/12/26)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-plasterers-consent-determination-2020-2025": {
+   "start": "2020-10-18",
+   "end": "2025-11-17",
+   "quote": "UNIT: Plasterer and Supervisor Plasterer TERM: October 18, 2020 to November 17, 2025",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ibt-l237-roofers-moa-2020-2025": {
+   "start": "2020-10-18",
+   "end": "2025-11-17",
+   "quote": "Term: 61 Months (10/18/20 - 11/17/25)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025": {
+   "start": "2020-01-03",
+   "end": "2025-02-02",
+   "quote": "Term: January 3, 2020 - February 2, 2025 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025": {
+   "start": "2020-01-03",
+   "end": "2025-02-02",
+   "quote": "The First Party hereby agrees for the period between January 3, 2020 to February 2, 2025",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l1-plumbers-consent-determination-2022-2027": {
+   "start": "2022-08-01",
+   "end": "2027-08-31",
+   "quote": "UNIT: Plumbers, et. al TERM: August 1, 2022 through August 31, 2027",
+   "page": 12,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l3-communication-electricians-moa-20232028": {
+   "start": "2023-01-17",
+   "end": "2028-02-16",
+   "quote": "Term: January 17, 2023 - February 16, 2028 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l3-electricians-consent-determination-20232028": {
+   "start": "2023-03-11",
+   "end": "2028-04-10",
+   "quote": "UNIT: Electricians et al TERM: March 11, 2023 through April 10, 2028",
+   "page": 13,
+   "method": "text",
+   "notes": "Wage-rate table's first period begins 05/05/2023, not March 11, 2023; the TERM line is used.",
+   "disagrees_with_label": false
+  },
+  "l3-stationary-engineer-electric-moa-20202025": {
+   "start": "2020-04-01",
+   "end": "2025-04-30",
+   "quote": "Term: April 1, 2020 - April 30, 2025 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l3-supervisor-of-mechanics-consent-determination-2021-2026": {
+   "start": "2021-04-09",
+   "end": "2026-05-08",
+   "quote": "UNIT: Supervisor of Mechanics TERM: April 9, 2021 through May 8, 2026",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "l638-steamfitters-consent-determination-2022-2027": {
+   "start": "2022-08-01",
+   "end": "2027-08-31",
+   "quote": "UNIT: Steamfitter, Supervisor Steamfitter, Steamfitter's Helper TERM: August 1, 2022 - August 31, 2027",
+   "page": 11,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021": {
+   "start": "2021-03-01",
+   "end": "2026-03-31",
+   "quote": "Term March 1, 2021 – March 31, 2026 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "No stored years in contracts.json.",
+   "disagrees_with_label": false
+  },
+  "crane-operator-2021-2026": {
+   "start": "2021-01-03",
+   "end": "2026-02-02",
+   "quote": "The First Party hereby agrees for the period between January 3, 2021 to February 2, 2026",
+   "page": 1,
+   "method": "text",
+   "notes": "No stored years in contracts.json.",
+   "disagrees_with_label": false
+  },
+  "local-14-15-gasoline-roller-engineers-wage-indenture-2021-2026": {
+   "start": "2021-02-03",
+   "end": "2026-03-02",
+   "quote": "The First Party hereby agrees for the period between February 3, 2021 to March 2, 2026",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-15-welders-moa-2021-2026": {
+   "start": "2021-02-01",
+   "end": "2026-02-28",
+   "quote": "Term: February 1, 2021 - February 28, 2026 (61 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-15-30-oilers-stationary-engineer-and-senior-stationary-engineer-consent-de": {
+   "start": "2021-03-01",
+   "end": "2026-03-31",
+   "quote": "TERM: March 1, 2021 through March 31, 2026.",
+   "page": 13,
+   "method": "text",
+   "notes": "Unit line: Oiler, Plant Maintainer/Oiler, Stationary Engineer (Steam), Stationary Engineer (Steam) (Outside NYC), and Senior Stationary Engineer (Steam).",
+   "disagrees_with_label": false
+  },
+  "local-40-bridge-repairer-consent-determination-2022-2025": {
+   "start": "2022-07-01",
+   "end": "2025-12-31",
+   "quote": "UNIT: Iron Workers TERM: July 1, 2022 through December 31, 2025",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-246-auto-mechanics-consent-determination-2021-2026": {
+   "start": "2021-05-01",
+   "end": "2026-05-31",
+   "quote": "UNIT: Auto Mechanic et al. TERM: May 1, 2021 through May 31, 2026",
+   "page": 11,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-246-carriage-upholsterer-consent-determination-2021-2026": {
+   "start": "2021-02-16",
+   "end": "2026-03-15",
+   "quote": "UNIT: Carriage Upholsterer TERM: February 16, 2021 to March 15, 2026",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-246-letterer-and-sign-painter-consent-determination-2021-2026": {
+   "start": "2021-02-25",
+   "end": "2026-03-24",
+   "quote": "UNIT: Sign Painter, et al. TERM: February 25, 2021 through March 24, 2026",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-246-rubber-tire-repairer-consent-determination-2021-2026": {
+   "start": "2021-05-06",
+   "end": "2026-06-05",
+   "quote": "UNIT: Rubber Tire Repairer TERM: May 6, 2021 to June 5, 2026",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "local-246-sheet-metal-worker-consent-determination-2021-2026": {
+   "start": "2021-09-17",
+   "end": "2026-10-16",
+   "quote": "UNIT: Sheet Metal Workers, et al. TERM: September 17, 2021 through October 16, 2026",
+   "page": 10,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ubcj-dockbuilders-moa-2022-2027": {
+   "start": "2022-02-01",
+   "end": "2027-01-31",
+   "quote": "Term: February 1, 2022 through January 31, 2027 (60 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ubcj-riggers-moa-2022-2027": {
+   "start": "2022-02-01",
+   "end": "2027-01-31",
+   "quote": "Term: February 1, 2022 through January 31, 2027 (60 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ubcj-ship-carpenter-moa-2022-2027": {
+   "start": "2022-02-01",
+   "end": "2027-01-31",
+   "quote": "Term: February 1, 2022 through January 31, 2027 (60 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "ufa-moa-2017-2020": {
+   "start": "2017-08-01",
+   "end": "2020-07-31",
+   "quote": "The term of the agreement shall be from August 1, 2017 through July 31, 2020 (for Firefighters, Fire Marshals, and Wipers)",
+   "page": 1,
+   "method": "text",
+   "notes": "Pilots and Marine Engineers: July 28, 2018 through July 27, 2021.",
+   "disagrees_with_label": false
+  },
+  "ufoa-fire-officers-2018-2021": {
+   "start": "2018-03-20",
+   "end": "2021-07-30",
+   "quote": "for the period from March 20, 2018 to July 30, 2021.",
+   "page": 4,
+   "method": "text",
+   "notes": "Cover memo p1 agrees: 'TERM: MARCH 20, 2018 TO JULY 30, 2021'.",
+   "disagrees_with_label": false
+  },
+  "nysna-staff-nurses-2019-2023": {
+   "start": "2019-06-06",
+   "end": "2023-03-02",
+   "quote": "for the period from June 6, 2019 through March 2, 2023.",
+   "page": 4,
+   "method": "text",
+   "notes": "Cover memo p1 and signature page p43 ('TERM: June 6, 2019 to March 2, 2023', read from page image; OCR garbled it as 'Mardi 1') agree.",
+   "disagrees_with_label": false
+  },
+  "psc-cuny-moa-2023-2027": {
+   "start": "2023-03-01",
+   "end": "2027-11-30",
+   "quote": "Term: 3/1/2023 - 11/30/2027 (57 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "",
+   "disagrees_with_label": false
+  },
+  "psc-cuny-agreement-2017-2023": {
+   "start": "2017-12-01",
+   "end": "2023-02-28",
+   "quote": "This Agreement shall become effective December 1, 2017 ... This Agreement shall be in effect through February 28, 2023.",
+   "page": 123,
+   "method": "text",
+   "notes": "Article 43 Duration. Title page p1: 'December 1, 2017 - February 28, 2023'.",
+   "disagrees_with_label": false
+  },
+  "deputy-sheriffs-moa-2022-2027": {
+   "start": "2022-01-01",
+   "end": "2027-02-28",
+   "quote": "Term: 1/1/2022 2/28/2027 (62 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "Text layer omits the separator between the two dates.",
+   "disagrees_with_label": false
+  }
+ }
+}

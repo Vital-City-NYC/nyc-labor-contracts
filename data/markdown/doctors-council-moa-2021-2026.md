@@ -23,7 +23,7 @@ wage_cumulative_pct: 16.21
 **Pages:** 6 (6 OCR-reconstructed)  
 **Clauses extracted:** 4
 
-**Workforce:** Represents salaried physicians and dentists working for the City — at H+H, NYC DOHMH, DOC, and other agencies.
+**Workforce:** Represents salaried physicians and dentists working for the city at NYC Health + Hospitals, the Department of Health and Mental Hygiene (DOHMH) and the Office of Chief Medical Examiner (OCME).
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 

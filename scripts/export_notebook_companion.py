@@ -121,7 +121,7 @@ def doc_units(units):
         lines.append(f"- Union: {u.get('union_full')}")
         if u.get("employer"):
             lines.append(f"- Employer: {u['employer']}")
-        if u.get("headcount"):
+        if u.get("headcount_verified"):
             lines.append(f"- Approximate headcount: {u['headcount']:,} — {u.get('headcount_note', '')}")
         if u.get("summary"):
             lines.append(f"- Coverage: {u['summary']}")

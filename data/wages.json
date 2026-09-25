@@ -140,7 +140,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "CSA MOA: 'i. January 29, 2023 ... ii. June 29, 2024 ... iii. January 29, 2025 ... iv. January 29, 2026 (3.25%) ... v. January 29, 2027 (3.50%).' Note step ii is June 29 (not January 29) and the final step is 3.50%, slightly above the standard civilian pattern's 3.25%."
+  "source_note": "CSA MOA: 'i. January 29, 2023 ... ii. June 29, 2024 ... iii. January 29, 2025 ... iv. January 29, 2026 (3.25%) ... v. January 29, 2027 (3.50%).' Note step ii is June 29 (not January 29) and the final step is 3.50%, slightly above the standard civilian pattern's 3.25%.",
+  "text_checked": true
  },
  {
   "contract_id": "csba-moa-2021-2026",
@@ -167,7 +168,7 @@
   "contract_id": "cwa-1180-moa-2021-2026",
   "contract_label": "CWA 1180 MOA, 2021-2026",
   "term_start": 2021,
-  "term_end": 2026,
+  "term_end": 2027,
   "increases": [
    {
     "effective": "2021-12-13",
@@ -208,7 +209,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "CWA 1180 MOA: all five Dec 13 anchor dates (2021 through 2025) verified against the GWI block in the source contract."
+  "source_note": "CWA 1180 MOA: all five Dec 13 anchor dates (2021 through 2025) verified against the GWI block in the source contract.",
+  "text_checked": true
  },
  {
   "contract_id": "cwa-l1181-moa-2021-2027",
@@ -357,7 +359,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "DC 37 MOA p.1: 'May 26, 2021 ... 3.00% ... May 26, 2025 ... 3.25%.' Bonus quoted from same MOA."
+  "source_note": "DC 37 MOA p.1: 'May 26, 2021 ... 3.00% ... May 26, 2025 ... 3.25%.' Bonus quoted from same MOA.",
+  "text_checked": true
  },
  {
   "contract_id": "dea-unit-agreement-2022-2027",
@@ -461,7 +464,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "Doctors Council MOA: 'i. June 28, 2021 ... ii. June 28, 2022 ... iii. November 28, 2023 ... iv. June 28, 2024 ... v. June 28, 2025 ... 3.25% compounded.' All five dates verified against the GWI block."
+  "source_note": "Doctors Council MOA: 'i. June 28, 2021 ... ii. June 28, 2022 ... iii. November 28, 2023 ... iv. June 28, 2024 ... v. June 28, 2025 ... 3.25% compounded.' All five dates verified against the GWI block.",
+  "text_checked": true
  },
  {
   "contract_id": "fadba-moa-2021-2027",
@@ -550,7 +554,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "Local 237 MOA p.1: 'a. April 26, 2022 b. April 26, 2023 ... c. October 2, 2024 ... d. April 26, 2025 ... e. April 26, 2026 3.25% compounded.'"
+  "source_note": "Local 237 MOA p.1: 'a. April 26, 2022 b. April 26, 2023 ... c. October 2, 2024 ... d. April 26, 2025 ... e. April 26, 2026 3.25% compounded.'",
+  "text_checked": true
  },
  {
   "contract_id": "l3-electrical-inspectors-moa-2022-2027",
@@ -621,7 +626,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "1199 SEIU MOA: 'i. September 6, 2022 ... ii. April 10, 2023 ... v. April 10, 2026 ... 3.25% compounded.' The term begins April 10, 2022, but the first increase is effective September 6, 2022; later steps anchor to April 10. Caveat: the MOA says the April 10, 2025 (3%) and April 10, 2026 (3.25%) increases 'will not be paid until the equity discussion are concluded.'"
+  "source_note": "1199 SEIU MOA: 'i. September 6, 2022 ... ii. April 10, 2023 ... v. April 10, 2026 ... 3.25% compounded.' The term begins April 10, 2022, but the first increase is effective September 6, 2022; later steps anchor to April 10. Caveat: the MOA says the April 10, 2025 (3%) and April 10, 2026 (3.25%) increases 'will not be paid until the equity discussion are concluded.'",
+  "text_checked": true
  },
  {
   "contract_id": "lba-10-5-2023-unit-bargaining-agreement",
@@ -688,7 +694,7 @@
   "contract_id": "local-237-parking-control-specialists-moa-2021-2026",
   "contract_label": "Local 237 - Parking Control Specialists MOA, 2021-2026",
   "term_start": 2021,
-  "term_end": 2026,
+  "term_end": 2027,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -810,8 +816,8 @@
  {
   "contract_id": "metal-work-mechanic-moa-2021-2026",
   "contract_label": "Metal Work Mechanic MOA, 2021-2026",
-  "term_start": 2021,
-  "term_end": 2026,
+  "term_start": 2020,
+  "term_end": 2025,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -955,7 +961,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "PBA MOU p.1-2: 'August 1, 2017 ... 2.25% ... August 1, 2024 ... 4.00%.' Eight steps over an eight-year retroactive term, settled in 2023. No $3,000 ratification bonus in the PBA MOU itself; settlement included separate retroactive-pay provisions instead."
+  "source_note": "PBA MOU p.1-2: 'August 1, 2017 ... 2.25% ... August 1, 2024 ... 4.00%.' Eight steps over an eight-year retroactive term, settled in 2023. No $3,000 ratification bonus in the PBA MOU itself; settlement included separate retroactive-pay provisions instead.",
+  "text_checked": true
  },
  {
   "contract_id": "sba-unit-agreement-2021-2026",
@@ -1011,8 +1018,8 @@
  {
   "contract_id": "supervisor-of-mechanics-l621-executed-contract-2021-2026",
   "contract_label": "Supervisor of Mechanics L621 Executed Contract, 2021-2026",
-  "term_start": 2021,
-  "term_end": 2026,
+  "term_start": 2020,
+  "term_end": 2025,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -1101,7 +1108,8 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "Uniformed Coalition Economic Agreement: 3.25% on day 1; +3.25% at month 13; +3.5% at month 25; +3.5% at month 37; +4.00% at month 49 of each unit's successor agreement. No ratification bonus in the coalition agreement itself."
+  "source_note": "Uniformed Coalition Economic Agreement: 3.25% on day 1; +3.25% at month 13; +3.5% at month 25; +3.5% at month 37; +4.00% at month 49 of each unit's successor agreement. No ratification bonus in the coalition agreement itself.",
+  "text_checked": true
  },
  {
   "contract_id": "upoa-moa-2020-2026",
@@ -1156,13 +1164,14 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "USA contract: 'December 28, 2022 ... 3.25% ... December 28, 2026 ... 4.00%.' Anchored UOCEA pattern. No ratification bonus. The contract separately schedules annual supplemental annuity contributions ($569.59 in December 2022, rising to $655.18 in December 2026) for sanitation workers who have reached 20-year service retirement."
+  "source_note": "USA contract: 'December 28, 2022 ... 3.25% ... December 28, 2026 ... 4.00%.' Anchored UOCEA pattern. No ratification bonus. The contract separately schedules annual supplemental annuity contributions ($569.59 in December 2022, rising to $655.18 in December 2026) for sanitation workers who have reached 20-year service retirement.",
+  "text_checked": true
  },
  {
   "contract_id": "usca-unit-agreement-2022-2027",
   "contract_label": "USCA Unit Agreement, 2022-2027",
-  "term_start": 2022,
-  "term_end": 2027,
+  "term_start": 2023,
+  "term_end": 2028,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -1346,7 +1355,7 @@
  {
   "contract_id": "dc37-l1087-locksmiths-consent-determination-2021-2026",
   "contract_label": "DC37 L1087 Locksmiths Consent Determination, 2021-2026",
-  "term_start": 2021,
+  "term_start": 2020,
   "term_end": 2026,
   "increases": [],
   "bonuses": [],
@@ -1515,9 +1524,9 @@
  },
  {
   "contract_id": "local-237-horseshoers-fully-executed-moa-102323-2021-2026",
-  "contract_label": "Local 237 Horseshoers Fully Executed Moa 102323 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 237 Horseshoers MOA, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -1563,7 +1572,7 @@
  },
  {
   "contract_id": "ibt-l237-masons-helpers-moa-2021-2026",
-  "contract_label": "IBT L237 Mason\u2019s Helpers MOA, 2021-2026",
+  "contract_label": "IBT L237 Mason’s Helpers MOA, 2021-2026",
   "term_start": 2021,
   "term_end": 2026,
   "increases": [],
@@ -1665,7 +1674,7 @@
  },
  {
   "contract_id": "l3-communication-electricians-moa-20232028",
-  "contract_label": "L3 Communication Electricians MOA, 2023\u20132028",
+  "contract_label": "L3 Communication Electricians MOA, 2023–2028",
   "term_start": 2023,
   "term_end": 2028,
   "increases": [],
@@ -1685,7 +1694,7 @@
  },
  {
   "contract_id": "l3-electricians-consent-determination-20232028",
-  "contract_label": "L3 Electricians Consent Determination, 2023\u20132028",
+  "contract_label": "L3 Electricians Consent Determination, 2023–2028",
   "term_start": 2023,
   "term_end": 2028,
   "increases": [],
@@ -1699,7 +1708,7 @@
  },
  {
   "contract_id": "l3-stationary-engineer-electric-moa-20202025",
-  "contract_label": "L3 Stationary Engineer (Electric) MOA, 2020\u20132025",
+  "contract_label": "L3 Stationary Engineer (Electric) MOA, 2020–2025",
   "term_start": 2020,
   "term_end": 2025,
   "increases": [],
@@ -1747,9 +1756,9 @@
  },
  {
   "contract_id": "oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021",
-  "contract_label": "Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -1770,9 +1779,9 @@
  },
  {
   "contract_id": "crane-operator-2021-2026",
-  "contract_label": "Crane Operator 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 14 Crane Operators Wage Indenture, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "increases": [],
   "bonuses": [],
   "cumulative_pct": null,
@@ -2075,6 +2084,7 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "Deputy Sheriffs MOA Section 2: 'January 1, 2022 3.25% ... January 1, 2026 4.00% compounded.' Calendar-anchored UOCEA uniformed pattern over a 62-month term (1/1/2022-2/28/2027). No ratification bonus; the MOA instead raises the uniform allowance by $475 (to $1,042) and the welfare fund contribution by $100, both effective January 1, 2026. Caveat: for Deputy Sheriffs Level I, a new salary schedule takes effect January 1, 2025 and the MOA says the 3.5% increase in section 2(iv) does not apply on top of it, so the compounded total overstates Level I."
+  "source_note": "Deputy Sheriffs MOA Section 2: 'January 1, 2022 3.25% ... January 1, 2026 4.00% compounded.' Calendar-anchored UOCEA uniformed pattern over a 62-month term (1/1/2022-2/28/2027). No ratification bonus; the MOA instead raises the uniform allowance by $475 (to $1,042) and the welfare fund contribution by $100, both effective January 1, 2026. Caveat: for Deputy Sheriffs Level I, a new salary schedule takes effect January 1, 2025 and the MOA says the 3.5% increase in section 2(iv) does not apply on top of it, so the compounded total overstates Level I.",
+  "text_checked": true
  }
 ]

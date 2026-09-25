@@ -117,7 +117,7 @@ def export_contract(c: dict, clauses: list, units_by_id: dict, wages_by_id: dict
         out.append(f'sector: "{unit["sector"]}"')
     if unit.get("union_full"):
         out.append(f'union_full: "{unit["union_full"]}"')
-    if unit.get("headcount"):
+    if unit.get("headcount_verified"):
         out.append(f"headcount_approx: {unit['headcount']}")
     if wage.get("verified"):
         out.append(f'wage_verified: "{wage["verified"]}"')

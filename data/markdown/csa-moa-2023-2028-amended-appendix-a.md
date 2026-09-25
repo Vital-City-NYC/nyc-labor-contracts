@@ -11,7 +11,7 @@ pages_with_tables: 1
 clauses: 3
 sector: "education-management"
 union_full: "Council of School Supervisors and Administrators (CSA), Local 1 AFSA, AFL-CIO"
-headcount_approx: 6500
+headcount_approx: 6400
 wage_verified: "full"
 wage_cumulative_pct: 16.77
 ---

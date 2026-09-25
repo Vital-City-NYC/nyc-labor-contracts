@@ -1,7 +1,9 @@
 ---
 contract_id: oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021
-label: "Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026"
-expanded_label: "Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026"
+label: "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026"
+expanded_label: "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) Memorandum of Agreement, 2021-2026"
+term_start: 2021
+term_end: 2026
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021-2026.pdf"
 pages: 9
 ocr_pages: 9
@@ -10,14 +12,14 @@ clauses: 6
 sector: "skilled-trades"
 ---
 
-# Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026
+# Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) Memorandum of Agreement, 2021-2026
 
-**Term:** term n/a  
+**Term:** 2021–2026  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021-2026.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021-2026.pdf)  
 **Pages:** 9 (9 OCR-reconstructed)  
 **Clauses extracted:** 6
 
-**Workforce:** Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 — see contract for the full recognition clause defining covered titles.
+**Workforce:** Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026 — see contract for the full recognition clause defining covered titles.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 
@@ -26,11 +28,11 @@ sector: "skilled-trades"
 ## Contents
 
 - [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026](#page-1)
-- [FOR THE CITY OF NEW YORK](#page-3)
-- [LOCAL 30](#page-5)
-- [Section 220 — of the Labor Law for a determination of wages and benefits for the period](#page-8)
-- [LOCAL 15](#page-9)
-- [LOCAL 30](#page-9)
+- [Signatures](#page-3)
+- [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 (continued)](#page-5)
+- [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 (continued)](#page-8)
+- [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 (continued)](#page-9)
+- [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 (continued)](#page-9)
 
 ---
 

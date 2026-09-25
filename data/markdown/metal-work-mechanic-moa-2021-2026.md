@@ -2,8 +2,8 @@
 contract_id: metal-work-mechanic-moa-2021-2026
 label: "Metal Work Mechanic MOA, 2021-2026"
 expanded_label: "Metal Work Mechanic Memorandum of Agreement, 2021-2026"
-term_start: 2021
-term_end: 2026
+term_start: 2020
+term_end: 2025
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/metal-work-mechanic-moa-exectuted-2021-2026.pdf"
 pages: 2
 ocr_pages: 2
@@ -14,7 +14,7 @@ sector: "skilled-trades"
 
 # Metal Work Mechanic Memorandum of Agreement, 2021-2026
 
-**Term:** 2021–2026  
+**Term:** 2020–2025  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/metal-work-mechanic-moa-exectuted-2021-2026.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/metal-work-mechanic-moa-exectuted-2021-2026.pdf)  
 **Pages:** 2 (2 OCR-reconstructed)  
 **Clauses extracted:** 4

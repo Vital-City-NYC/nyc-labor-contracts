@@ -84,14 +84,14 @@
   // Local-number → parent union, used to disambiguate similarly-named contracts.
   // Sources: NYC OLR + each parent union's published affiliate roster.
   const LOCAL_PARENT = {
-    "5":     "Boilermakers International",
+    "5":     "Boilermakers Local Lodge 5",
     "14":    "Operating Engineers (IUOE)",
     "15":    "Operating Engineers (IUOE)",
     "30":    "Operating Engineers (IUOE)",
     "40":    "Iron Workers Local 40",
-    "211":   "DC 37 Local 211",
+    "211":   "IUOE Local 211 (Allied Building Inspectors)",
     "237":   "Teamsters Local 237",
-    "246":   "DC 37 Local 246 (Auto Service)",
+    "246":   "SEIU Local 246",
     "300":   "SEIU Local 300",
     "306":   "IATSE Local 306",
     "372":   "DC 37 Local 372 (School Aides)",
@@ -100,7 +100,7 @@
     "621":   "SEIU Local 621",
     "638":   "Steamfitters Local 638",
     "806":   "District Council 9 Local 806 (Bridge Painters)",
-    "891":   "Custodian Engineers Local 891",
+    "891":   "IUOE Local 891 (Custodian Engineers)",
     "924":   "DC 37 Local 924",
     "983":   "DC 37 Local 983",
     "1087":  "DC 37 Local 1087",

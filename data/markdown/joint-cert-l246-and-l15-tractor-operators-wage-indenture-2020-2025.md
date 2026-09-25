@@ -29,14 +29,14 @@ sector: "skilled-trades"
 
 - [Joint Cert L246 and L15 Tractor Operators Wage Indenture, 2020-2025](#page-1)
 - [WI TNESSETH](#page-1)
-- [RENEE CAMPION](#page-6)
-- [FIRST PARTY](#page-6)
-- [THOMAS CALLAHAN](#page-6)
-- [SECOND PARTY](#page-6)
-- [SECOND PARIY](#page-6)
+- [Signatures](#page-6)
+- [Signatures](#page-6)
+- [Signatures](#page-6)
+- [Signatures](#page-6)
+- [Signatures](#page-6)
 - [GENERAL RELEASE AND WAIVER](#page-7)
 - [GENERAL RELEASE AND WAIVER](#page-8)
-- [THOMAS CALLAHAN](#page-8)
+- [Signatures](#page-8)
 
 ---
 

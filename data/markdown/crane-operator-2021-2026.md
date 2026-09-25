@@ -1,7 +1,9 @@
 ---
 contract_id: crane-operator-2021-2026
-label: "Crane Operator 2021 2026"
-expanded_label: "Crane Operator 2021 2026"
+label: "Local 14 Crane Operators Wage Indenture, 2021-2026"
+expanded_label: "Local 14 Crane Operators Wage Indenture, 2021-2026"
+term_start: 2021
+term_end: 2026
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/crane-operator-2021-2026.pdf"
 pages: 26
 ocr_pages: 21
@@ -10,14 +12,14 @@ clauses: 43
 sector: "skilled-trades"
 ---
 
-# Crane Operator 2021 2026
+# Local 14 Crane Operators Wage Indenture, 2021-2026
 
-**Term:** term n/a  
+**Term:** 2021–2026  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/crane-operator-2021-2026.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/crane-operator-2021-2026.pdf)  
 **Pages:** 26 (21 OCR-reconstructed)  
 **Clauses extracted:** 43
 
-**Workforce:** Crane Operator 2021 2026 — see contract for the full recognition clause defining covered titles.
+**Workforce:** Local 14 Crane Operators Wage Indenture, 2021-2026 — see contract for the full recognition clause defining covered titles.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 
@@ -27,15 +29,15 @@ sector: "skilled-trades"
 
 - [Crane Operator 2021 2026](#page-1)
 - [W IT N E S S E T H](#page-1)
-- [CITY OF NEW YORK](#page-6)
-- [SECOND PARTY](#page-6)
+- [Letterhead](#page-6)
+- [Signatures](#page-6)
 - [GENERAL RELEASE AND WAIVER](#page-7)
-- [IN THE EVENT OF ANY INCONSISTENCY BETWEEN APPENDIX A AND](#page-11)
+- [GENERAL RELEASE AND WAIVER (continued)](#page-11)
 - [APPENDIX A](#page-11)
 - [Section 2](#page-11)
-- [CATEGORY](#page-11)
-- [ANNUAL LEAVE ALLOWANCE](#page-11)
-- [MONTHLY ACCRUAL](#page-11)
+- [Section 2 (continued)](#page-11)
+- [Section 2 (continued)](#page-11)
+- [Section 2 (continued)](#page-11)
 - [Section 3](#page-11)
 - [Section 4](#page-11)
 - [Section 5](#page-12)
@@ -63,11 +65,11 @@ sector: "skilled-trades"
 - [Section 2](#page-18)
 - [Section 3](#page-18)
 - [Section 1](#page-19)
-- [OFFICE OF LABOR RELATIONS](#page-20)
-- [RENEE CAMPION](#page-23)
-- [CLAIRE LEVITT](#page-23)
-- [OFFICE OF LABOR RELATIONS](#page-23)
-- [GEORGETTE GESTELY](#page-23)
+- [Side letter](#page-20)
+- [Signatures](#page-23)
+- [Signatures](#page-23)
+- [Letterhead](#page-23)
+- [Signatures](#page-23)
 
 ---
 

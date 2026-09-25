@@ -10,7 +10,7 @@ ocr_pages: 5
 pages_with_tables: 0
 clauses: 19
 sector: "uniformed-pattern"
-union_full: "Uniformed Coalition (multi-union umbrella: UFA, UFOA, COBA, ADWA, USCA, USA, etc.)"
+union_full: "Uniformed Officers Coalition (11 unions: DEA, SBA, LBA, CEA, UFA, UFOA, COBA, CCA, ADW/DWA, SOA and USCA)"
 wage_verified: "full"
 wage_cumulative_pct: 18.77
 ---
@@ -22,7 +22,7 @@ wage_cumulative_pct: 18.77
 **Pages:** 5 (5 OCR-reconstructed)  
 **Clauses extracted:** 19
 
-**Workforce:** The economic-pattern agreement that sets wage increases and lump sums for the city's uniformed forces collectively (Fire, Sanitation, Correction). Each underlying unit then negotiates a unit-specific agreement that incorporates these terms.
+**Workforce:** The economic-pattern agreement that sets wage increases and lump sums for 11 uniformed unions in police, fire, correction and sanitation. Each union's terms are then written into its own successor unit agreement; the UFA's and UFOA's have not been published.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 
@@ -33,21 +33,21 @@ wage_cumulative_pct: 18.77
 - [Uniformed Coalition Economic Agreement, 2022-2027](#page-1)
 - [WITNESSETE](#page-1)
 - [Section 8 — Incorporation of Certain Provisions Into Other Agreements,](#page-4)
-- [FOR THE CITY OF NEW YORK](#page-4)
-- [RENEE CAMPION](#page-4)
-- [FOR THE CAPTAINS ENDOWMENT ASSOCIATION](#page-4)
-- [CHRIS MONAHAN](#page-4)
-- [FOR THE LIEUTENANTS BENEVOLENT ASSOCIATION](#page-4)
-- [LOU TURCO](#page-4)
-- [FOR THE SERGEANTS BENEVOLENT ASSOCIATION](#page-4)
-- [VINCENT VALLELONG](#page-4)
-- [FOR THE DETECTIVESENDOWMENT ASSOOLATION](#page-5)
-- [PAUL DIGIACOMO](#page-5)
-- [FAMES MOSARTAY](#page-5)
-- [FOR THE UNIFORMED FIRESTERS ABSOCIATION](#page-5)
-- [ANDREW ANGBRO](#page-5)
-- [JOSPRIT RUSSO](#page-5)
-- [PATRICK PERRAINOLO](#page-5)
+- [Signatures](#page-4)
+- [Signatures](#page-4)
+- [Section 8 — Incorporation of Certain Provisions Into Other Agreements, (continued)](#page-4)
+- [Signatures](#page-4)
+- [Section 8 — Incorporation of Certain Provisions Into Other Agreements, (continued)](#page-4)
+- [Signatures](#page-4)
+- [Section 8 — Incorporation of Certain Provisions Into Other Agreements, (continued)](#page-4)
+- [Signatures](#page-4)
+- [Signatures](#page-5)
+- [Signatures](#page-5)
+- [Signatures](#page-5)
+- [Section 8 — Incorporation of Certain Provisions Into Other Agreements, (continued)](#page-5)
+- [Signatures](#page-5)
+- [Signatures](#page-5)
+- [Signatures](#page-5)
 - [BOR THEYNIFORMED SANITATION CERNS ASSOCIATION](#page-5)
 
 ---

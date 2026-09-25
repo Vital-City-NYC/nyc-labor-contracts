@@ -45,6 +45,9 @@
     unitByContract: {},
     missing: { unpublished: [] },
     missingByContract: {},
+    unions: { sectors: [], continued_by: {} },
+    unionByContract: {},
+    wagesByContract: {},
     index: null,
     view: "results",
     query: "",
@@ -122,10 +125,28 @@
         (state.missingByContract[cid] = state.missingByContract[cid] || []).push(g);
       }));
     } catch (e) { state.missing = { unpublished: [] }; }
+    try {
+      state.unions = await loadJSON("data/unions.json");
+      state.unions.sectors.forEach(sec => sec.unions.forEach(u => u.docs.forEach(id => {
+        if (!state.unionByContract[id]) state.unionByContract[id] = { union: u, sector: sec };
+      })));
+    } catch (e) { state.unions = { sectors: [], continued_by: {} }; }
+    try {
+      const wages = await loadJSON("data/wages.json");
+      state.wagesByContract = Object.fromEntries(wages.filter(w => w.text_checked).map(w => [w.contract_id, w]));
+    } catch (e) { state.wagesByContract = {}; }
+    // Exact term dates read from each document (see methodology).
+    try {
+      const td = await loadJSON("data/term_dates.json");
+      Object.entries(td.dates || {}).forEach(([id, d]) => {
+        const c = state.contractById[id];
+        if (c && d) Object.assign(c, { start_date: d.start, end_date: d.end, term_quote: d.quote, term_page: d.page });
+      });
+    } catch (e) { /* fall back to stated years */ }
 
     // Search is an exact scan over every clause (see compileQuery); keep a
     // combined heading + text string per clause so each query scans once.
-    state.clauses.forEach(c => { c._hay = (c.heading || "") + "\n" + (c.text || ""); });
+    state.clauses.forEach(c => { c._hay = (c.heading || "") + "\n" + (c.heading_raw || "") + "\n" + (c.text || ""); });
 
     populateFilters();
     bindEvents();
@@ -435,11 +456,11 @@
     // contract (e.g. the 2017-2023 PSC-CUNY agreement and its 2023-2027 MOA are
     // the same ~30,000 people) so the total isn't inflated by double-counting.
     const totalCovered = state.units.reduce(
-      (s, u) => s + (u.headcount_duplicate_of ? 0 : (u.headcount || 0)), 0);
+      (s, u) => s + (u.headcount_duplicate_of || !u.headcount_verified ? 0 : (u.headcount || 0)), 0);
     // Count the units actually contributing to the total, not every curated
     // unit — some curated entries have no sourced headcount, and one is a
     // duplicate population.
-    const counted = state.units.filter(u => u.headcount && !u.headcount_duplicate_of).length;
+    const counted = state.units.filter(u => u.headcount_verified && !u.headcount_duplicate_of).length;
     header.innerHTML = `
       <h2>Bargaining units — who's covered</h2>
       <p>${state.units.length} documents across New York City government. Headcounts shown for ${counted} large units, totaling ~${totalCovered.toLocaleString()} covered employees, where a public source is available; smaller units' headcounts are still being sourced.</p>
@@ -477,7 +498,7 @@
     units.forEach(u => {
       const card = document.createElement("div");
       card.className = "unit-card";
-      const headcount = u.headcount
+      const headcount = u.headcount && u.headcount_verified
         ? `<div class="unit-headcount"><span class="unit-headcount-num">${u.headcount.toLocaleString()}</span><span class="unit-headcount-label">covered employees${u.curated ? "" : " (estimate)"}</span></div>`
         : `<div class="unit-headcount unit-headcount-tbd"><span class="unit-headcount-num">—</span><span class="unit-headcount-label">headcount being sourced</span></div>`;
       const titles = (u.titles && u.titles.length)
@@ -506,7 +527,7 @@
   function renderResults(root) {
     // Empty default: no query, no topic, no contract filter → show contract tile grid.
     if (!state.query && !state.topic && !state.contractFilter) {
-      return renderContractTiles(root);
+      return renderUnionIndex(root);
     }
     let clauses = searchHits(applyFilters(state.clauses));
     if (!clauses) clauses = applyFilters(state.clauses.slice());
@@ -542,7 +563,11 @@
     }
   }
 
-  function renderContractTiles(root) {
+  function renderContracts(root) {
+    return renderContractTiles(root, false);
+  }
+
+  function renderContractTiles(root, withIntro = true) {
     const contracts = state.contracts.slice().sort((a, b) => {
       const ua = state.unitByContract[a.id]?.headcount || 0;
       const ub = state.unitByContract[b.id]?.headcount || 0;
@@ -554,8 +579,7 @@
     const intro = document.createElement("div");
     intro.className = "tiles-intro";
     intro.innerHTML = `<p>Click any document to read it in full. They are grouped by what they are: ${nAmend} of the ${state.contracts.length} are amendments that keep an older agreement in force and change only some terms. <a href="methodology.html#doc-types">What that means for coverage</a>.</p>`;
-    root.appendChild(intro);
-    root.appendChild(missingPanel());
+    if (withIntro) { root.appendChild(intro); root.appendChild(missingPanel()); }
 
     const byType = new Map();
     contracts.forEach(c => {
@@ -621,6 +645,151 @@
     return panel;
   }
 
+  /* ---------- Dates and status ---------- */
+  const AP_MONTHS = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
+  function fmtDate(iso) {
+    if (!iso) return "";
+    const [y, m, d] = iso.split("-").map(Number);
+    return `${AP_MONTHS[m - 1]} ${d}, ${y}`;
+  }
+  function termText(c) {
+    if (c.start_date && c.end_date) return `${fmtDate(c.start_date)} to ${fmtDate(c.end_date)}`;
+    if (c.term_start && c.term_end) return `${c.term_start}–${c.term_end}`;
+    return "Term not stated";
+  }
+  // Where a contract stands today. Expired contracts generally stay in force
+  // under the Triborough Amendment until a successor is reached.
+  function contractStatus(c) {
+    const gap = (state.missingByContract[c.id] || [])[0];
+    if (gap && gap.status) return { key: gap.status_key || "continued", text: gap.status };
+    const nextId = (state.unions.continued_by || {})[c.id];
+    if (nextId && state.contractById[nextId]) {
+      const next = state.contractById[nextId];
+      return { key: "continued", text: `Expired; continued, as changed by the ${next.term_start}-${next.term_end} agreement` };
+    }
+    const today = new Date().toISOString().slice(0, 10);
+    if (c.end_date) {
+      if (c.end_date < today) return { key: "expired", text: `Expired ${fmtDate(c.end_date)}; terms continue until a successor is reached` };
+      const days = (new Date(c.end_date) - new Date(today)) / 86400000;
+      if (days <= 183) return { key: "expiring", text: `Expires ${fmtDate(c.end_date)}` };
+      return { key: "current", text: `Runs to ${fmtDate(c.end_date)}` };
+    }
+    const y = new Date().getFullYear();
+    if (!c.term_end) return { key: "unknown", text: "End date not stated" };
+    if (c.term_end < y) return { key: "expired", text: `Expired in ${c.term_end}; terms continue until a successor is reached` };
+    if (c.term_end === y) return { key: "expiring", text: `Ends in ${c.term_end} (exact date not stated)` };
+    return { key: "current", text: `Runs to ${c.term_end}` };
+  }
+
+  // The label without the union name in front, for lists already grouped by union.
+  function docShortLabel(c) {
+    const full = window.expandContractLabel ? window.expandContractLabel(c.label) : c.label;
+    const i = full.indexOf(" — ");
+    return i > 0 ? full.slice(i + 3) : full;
+  }
+
+  // "UFT: Memorandum of Agreement, 2022-2027" — short but unambiguous.
+  function chipLabel(c) {
+    const name = state.unionByContract[c.id]?.union.name || "";
+    const m = name.match(/\(([^)]+)\)/);
+    const who = m ? m[1] : name.split(/[,(]/)[0].trim();
+    return who ? `${who}: ${docShortLabel(c)}` : docShortLabel(c);
+  }
+
+  function docBadges(c) {
+    const gaps = (state.missingByContract[c.id] || [])
+      .map(g => `<span class="contract-tile-missing" title="${escapeHtml(g.missing)}">${escapeHtml(g.badge)}</span>`).join("");
+    const under = c.amends_predecessor && !c.predecessor
+      ? `<span class="contract-tile-missing" title="This document keeps an older agreement in force for everything it doesn't change. That older agreement is not in this database.">underlying agreement missing</span>` : "";
+    return gaps + under;
+  }
+
+  /* ---------- Home: every union, by sector ---------- */
+  function renderUnionIndex(root) {
+    const nUnions = state.unions.sectors.reduce((n, s) => n + s.unions.length, 0);
+    $("#result-count").textContent = `${state.contracts.length} documents from ${nUnions} unions and groups · click any document to read it`;
+    const nAmend = state.contracts.filter(c => c.amends_predecessor).length;
+    const intro = document.createElement("div");
+    intro.className = "tiles-intro";
+    intro.innerHTML = `<p>Every document, grouped by the union that signed it. ${nAmend} of the ${state.contracts.length} are amendments that keep an older agreement in force and change only some terms. <a href="methodology.html#doc-types">What that means for coverage</a>. To browse by document type instead, use the Directory tab.</p>`;
+    root.appendChild(intro);
+    root.appendChild(missingPanel());
+
+    const jump = document.createElement("nav");
+    jump.className = "sector-jump";
+    jump.setAttribute("aria-label", "Jump to a sector");
+    jump.innerHTML = state.unions.sectors.map(sec => `<a href="#" data-sector="${escapeHtml(sec.id)}">${escapeHtml(sec.name)}</a>`).join("");
+    jump.querySelectorAll("a").forEach(a => a.addEventListener("click", ev => {
+      ev.preventDefault();
+      const el = document.getElementById(`sector-${a.dataset.sector}`);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+    root.appendChild(jump);
+
+    state.unions.sectors.forEach(sec => {
+      const docsInSector = new Set(sec.unions.flatMap(u => u.docs));
+      const block = document.createElement("section");
+      block.className = "sector-block";
+      block.id = `sector-${sec.id}`;
+      block.innerHTML = `<h2 class="sector-title">${escapeHtml(sec.name)} <span class="sector-count">${sec.unions.length} ${sec.unions.length === 1 ? "union" : "unions"} · ${docsInSector.size} ${docsInSector.size === 1 ? "document" : "documents"}</span></h2>`;
+      const list = document.createElement("div");
+      list.className = "union-list";
+      sec.unions.forEach(u => {
+        const docs = u.docs.map(id => state.contractById[id]).filter(Boolean);
+        const head = docs.map(c => state.unitByContract[c.id]).find(x => x && x.headcount_verified);
+        const row = document.createElement("article");
+        row.className = "union-row";
+        row.innerHTML = `
+          <div class="union-head">
+            <h3 class="union-name">${escapeHtml(u.name)}</h3>
+            ${head ? `<p class="union-meta">About ${head.headcount.toLocaleString()} workers covered</p>` : ""}
+          </div>
+          <ul class="union-docs">
+            ${docs.map(c => {
+              const stt = contractStatus(c);
+              return `<li>
+                <a class="union-doc-link" href="#/contract/${encodeURIComponent(c.id)}">${escapeHtml(docShortLabel(c))}</a>
+                <span class="union-doc-meta"><span class="doc-kind">${escapeHtml(DOC_TYPE_SHORT[c.doc_type] || "Document")}</span> · <span class="doc-status status-${stt.key}">${escapeHtml(stt.text)}</span></span>
+                ${docBadges(c) ? `<span class="union-doc-badges">${docBadges(c)}</span>` : ""}
+                <button type="button" class="add-compare" data-id="${escapeHtml(c.id)}">${state.compareSet.has(c.id) ? "In compare" : "+ Compare"}</button>
+              </li>`;
+            }).join("")}
+          </ul>`;
+        list.appendChild(row);
+      });
+      block.appendChild(list);
+      root.appendChild(block);
+    });
+    root.querySelectorAll(".add-compare").forEach(b => b.addEventListener("click", () => addToCompare(b.dataset.id, b)));
+  }
+
+  function addToCompare(id, btn) {
+    if (state.compareSet.has(id)) { state.view = "compare"; $("#view-mode").value = "compare"; writeHash(); render(); window.scrollTo(0, $("#app").offsetTop); return; }
+    if (state.compareSet.size >= 4) { flash(btn, "Compare holds 4"); return; }
+    state.compareSet.add(id);
+    writeHash();
+    btn.textContent = "In compare";
+    flash(null, `${state.compareSet.size} of 4 picked for comparison.`, true);
+  }
+
+  // A small status line under the controls, with a link into Compare.
+  function flash(btn, msg, withLink) {
+    if (btn) { const old = btn.textContent; btn.textContent = msg; setTimeout(() => btn.textContent = old, 1500); return; }
+    let bar = $("#compare-bar");
+    if (!bar) {
+      bar = document.createElement("div");
+      bar.id = "compare-bar";
+      bar.setAttribute("role", "status");
+      document.body.appendChild(bar);
+    }
+    bar.innerHTML = `${escapeHtml(msg)} ${withLink ? `<button type="button">Open compare</button>` : ""}`;
+    bar.hidden = false;
+    const b = bar.querySelector("button");
+    if (b) b.addEventListener("click", () => { bar.hidden = true; state.view = "compare"; $("#view-mode").value = "compare"; writeHash(); render(); window.scrollTo(0, $("#app").offsetTop); });
+    clearTimeout(flash._t);
+    flash._t = setTimeout(() => { bar.hidden = true; }, 6000);
+  }
+
   function contractTile(contract) {
     const tile = document.createElement("a");
     tile.className = "contract-tile";
@@ -629,7 +798,7 @@
     const term = (contract.term_start && contract.term_end) ? `${contract.term_start}–${contract.term_end}` : "term n/a";
     const clauseCount = state.clauses.filter(cl => cl.contract_id === contract.id).length;
     const sector = unit?.sector ? (SECTOR_LABELS[unit.sector] || unit.sector) : "";
-    const headcountBadge = unit?.headcount
+    const headcountBadge = unit?.headcount_verified
       ? `<span class="contract-tile-headcount">${unit.headcount.toLocaleString()} covered</span>`
       : "";
     const qualityBadge = contract.ocr_quality === "poor"
@@ -666,7 +835,7 @@
     const contract = state.contractById[contractId];
     const unit = state.unitByContract[contractId];
     const term = (contract?.term_start && contract?.term_end) ? `${contract.term_start}–${contract.term_end}` : "";
-    const headcount = unit?.headcount ? ` · ~${unit.headcount.toLocaleString()} covered` : "";
+    const headcount = unit?.headcount_verified ? ` · ~${unit.headcount.toLocaleString()} covered` : "";
     const sector = unit?.sector ? `<span class="contract-group-sector">${SECTOR_LABELS[unit.sector] || unit.sector}${headcount}</span>` : "";
     const moreNote = items.length < totalInGroup
       ? `<span class="contract-group-more">Showing ${items.length} of ${totalInGroup} matches</span>`
@@ -762,148 +931,142 @@
   function renderCompare(root) {
     const header = document.createElement("div");
     header.className = "topic-pivot-header";
-    header.innerHTML = `<h2>Compare contracts side-by-side</h2><p>Pick 2-4 contracts and a topic to see their clauses on that topic next to each other.</p>`;
+    header.innerHTML = `<h2>Compare contracts</h2><p>Pick up to four documents, then a topic or a search, to line up what each one says. You can also add documents from the home page with "+ Compare."</p>`;
     root.appendChild(header);
+
     const ctrl = document.createElement("div");
-    ctrl.className = "controls";
+    ctrl.className = "compare-controls";
+    const picked = Array.from(state.compareSet).filter(id => state.contractById[id]);
+    const optgroups = state.unions.sectors.map(sec => `<optgroup label="${escapeHtml(sec.name)}">${
+      sec.unions.flatMap(u => u.docs).filter((id, i, arr) => arr.indexOf(id) === i && !state.compareSet.has(id) && state.contractById[id])
+        .map(id => `<option value="${escapeHtml(id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(state.contractById[id].label) : state.contractById[id].label)}</option>`).join("")
+    }</optgroup>`).join("");
     ctrl.innerHTML = `
-      <p>Selected: <strong id="cmp-list">${Array.from(state.compareSet).map(id => escapeHtml(state.contractById[id]?.label || id)).join(", ") || "(none)"}</strong></p>
-      <select id="cmp-add"><option value="">Add a contract…</option></select>
-      <button id="cmp-clear" type="button">Clear</button>
-    `;
+      <div class="compare-picked">
+        ${picked.map(id => `<span class="compare-chip">${escapeHtml(chipLabel(state.contractById[id]))} <button type="button" data-remove="${escapeHtml(id)}" aria-label="Remove">&times;</button></span>`).join("")}
+        ${picked.length < 4 ? `<select id="cmp-add" aria-label="Add a document"><option value="">Add a document…</option>${optgroups}</select>` : ""}
+        ${picked.length ? `<button type="button" id="cmp-clear" class="linklike">Clear all</button>` : ""}
+      </div>
+      <p class="compare-hint">${state.query ? `Showing clauses matching &ldquo;${escapeHtml(state.query)}&rdquo;${state.topic ? ` on ${escapeHtml(TOPIC_LABELS[state.topic] || state.topic)}` : ""}.` : state.topic ? `Showing clauses tagged ${escapeHtml(TOPIC_LABELS[state.topic] || state.topic)}. Change the topic above, or type in the search box.` : `Choose a topic above, or type in the search box, to line up clauses.`}</p>`;
     root.appendChild(ctrl);
     const sel = ctrl.querySelector("#cmp-add");
-    state.contracts.slice().sort((a,b)=>a.label.localeCompare(b.label)).forEach(c => {
-      if (state.compareSet.has(c.id)) return;
-      const o = document.createElement("option"); o.value = c.id; o.textContent = window.expandContractLabel ? window.expandContractLabel(c.label) : c.label;
-      sel.appendChild(o);
-    });
-    sel.addEventListener("change", () => {
+    if (sel) sel.addEventListener("change", () => {
       if (sel.value && state.compareSet.size < 4) state.compareSet.add(sel.value);
       writeHash(); render();
     });
-    ctrl.querySelector("#cmp-clear").addEventListener("click", () => { state.compareSet.clear(); writeHash(); render(); });
+    ctrl.querySelectorAll("[data-remove]").forEach(b => b.addEventListener("click", () => { state.compareSet.delete(b.dataset.remove); writeHash(); render(); }));
+    const clr = ctrl.querySelector("#cmp-clear");
+    if (clr) clr.addEventListener("click", () => { state.compareSet.clear(); writeHash(); render(); });
 
-    if (state.compareSet.size < 1) return;
+    if (!picked.length) { $("#result-count").textContent = "No documents picked yet"; return; }
+    if (!state.topic && !state.query) {
+      $("#result-count").textContent = `${picked.length} ${picked.length === 1 ? "document" : "documents"} picked`;
+      // Offer the topics these documents share, as a shortcut.
+      const counts = {};
+      picked.forEach(id => state.clauses.filter(c => c.contract_id === id).forEach(c => (c.topics || []).forEach(t => { counts[t] = counts[t] || new Set(); counts[t].add(id); })));
+      const shared = Object.keys(counts).filter(t => TOPIC_LABELS[t]).sort((x, y) => counts[y].size - counts[x].size || TOPIC_LABELS[x].localeCompare(TOPIC_LABELS[y]));
+      const box = document.createElement("div");
+      box.className = "compare-topic-picks";
+      box.innerHTML = `<p>Topics in these documents, most widely shared first:</p><p>${shared.map(t => `<a href="#" data-topic="${escapeHtml(t)}">${escapeHtml(TOPIC_LABELS[t])}</a> <span class="muted">(${counts[t].size} of ${picked.length})</span>`).join(" · ")}</p>`;
+      box.querySelectorAll("[data-topic]").forEach(a => a.addEventListener("click", ev => { ev.preventDefault(); state.topic = a.dataset.topic; $("#topic-filter").value = state.topic; writeHash(); render(); }));
+      root.appendChild(box);
+      return;
+    }
+
     const grid = document.createElement("div");
-    grid.className = `compare-grid cols-${Math.max(2, state.compareSet.size)}`;
-    Array.from(state.compareSet).forEach(cid => {
+    grid.className = `compare-grid cols-${Math.max(2, picked.length)}`;
+    let total = 0;
+    picked.forEach(cid => {
+      const c = state.contractById[cid];
+      let matches = state.clauses.filter(cl => cl.contract_id === cid && (!state.topic || (cl.topics || []).includes(state.topic)));
+      if (state.query) matches = searchHits(matches) || [];
+      total += matches.length;
       const col = document.createElement("div");
       col.className = "compare-col";
-      const c = state.contractById[cid];
-      col.innerHTML = `<h3>${escapeHtml(c?.label || cid)}</h3>`;
-      const matches = state.clauses.filter(cl => cl.contract_id === cid && (state.topic ? (cl.topics||[]).includes(state.topic) : true));
-      matches.slice(0, 6).forEach(cl => col.appendChild(clauseCard(cl, "", true)));
-      if (matches.length === 0) col.innerHTML += `<p style="color:var(--muted)">No clauses tagged ${escapeHtml(TOPIC_LABELS[state.topic] || state.topic || "any")}.</p>`;
+      col.innerHTML = `
+        <header class="compare-col-head">
+          <p class="compare-col-union">${escapeHtml(state.unionByContract[cid]?.union.name || "")}</p>
+          <h3><a href="#/contract/${encodeURIComponent(cid)}">${escapeHtml(docShortLabel(c))}</a></h3>
+          <p class="compare-col-meta">${escapeHtml(DOC_TYPE_SHORT[c.doc_type] || "Document")} · ${matches.length} ${matches.length === 1 ? "clause" : "clauses"}</p>
+        </header>`;
+      if (!matches.length) {
+        const note = document.createElement("p");
+        note.className = "compare-empty";
+        note.textContent = c.amends_predecessor
+          ? "Nothing on this in this document. It amends an older agreement that is not in this database, and that agreement may cover it."
+          : "Nothing on this in this document.";
+        col.appendChild(note);
+      }
+      matches.forEach(cl => col.appendChild(clauseCard(cl, state.query, true)));
       grid.appendChild(col);
     });
+    $("#result-count").textContent = `${total} ${total === 1 ? "clause" : "clauses"} across ${picked.length} ${picked.length === 1 ? "document" : "documents"}`;
     root.appendChild(grid);
   }
 
-  function renderContracts(root) {
-    const list = state.contracts.slice().sort((a,b)=>a.label.localeCompare(b.label));
-    $("#result-count").textContent = `${list.length} documents`;
-    const byType = new Map();
-    list.forEach(c => {
-      const t = c.doc_type || "moa";
-      if (!byType.has(t)) byType.set(t, []);
-      byType.get(t).push(c);
-    });
-    DOC_TYPE_ORDER.filter(t => byType.has(t)).forEach(t => {
-      const items = byType.get(t);
-      const head = document.createElement("div");
-      head.className = "doc-type-header doc-type-header-inline";
-      head.innerHTML = `
-        <h2 class="doc-type-title">${DOC_TYPE_LABELS[t]} <span class="doc-type-count">${items.length}</span></h2>
-        <p class="doc-type-blurb">${DOC_TYPE_BLURB[t]}</p>`;
-      root.appendChild(head);
-      items.forEach(c => {
-        const card = document.createElement("div");
-        card.className = "contract-card";
-        const clauseCount = state.clauses.filter(cl => cl.contract_id === c.id).length;
-        const term = (c.term_start && c.term_end) ? `${c.term_start}–${c.term_end}` : "term n/a";
-        card.innerHTML = `
-          <div>
-            <h3><a href="#/contract/${encodeURIComponent(c.id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label)}</a></h3>
-            <div class="term">${term} · <a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">source PDF</a>${c.amends_predecessor ? ' · <span class="contract-card-amends">amends a prior agreement</span>' : ""}</div>
-          </div>
-          <div class="stats">${clauseCount} clauses</div>
-        `;
-        root.appendChild(card);
-      });
+  function renderExpirations(root) {
+    const withStatus = state.contracts.map(c => ({ c, st: contractStatus(c) }));
+    const byEnd = (x, y) => (x.c.end_date || `${x.c.term_end || 9999}-12-31`).localeCompare(y.c.end_date || `${y.c.term_end || 9999}-12-31`) || x.c.label.localeCompare(y.c.label);
+    const groups = [
+      ["superseded", "Replaced by an unpublished contract", "A successor has been reached, but its text is not public. The document here is out of date."],
+      ["continued", "Expired, and continued as changed by a later agreement", "The later agreement changes some terms and keeps the rest of this one in force."],
+      ["expired", "Past the stated end date", "Under New York's Triborough Amendment, the terms stay in force until a successor is reached."],
+      ["expiring", "Ending within six months", ""],
+      ["current", "Running", ""],
+      ["unknown", "End date not stated", ""],
+    ];
+    const n = k => withStatus.filter(x => x.st.key === k).length;
+    $("#result-count").textContent = `${n("expired") + n("continued") + n("superseded")} of ${state.contracts.length} documents are past their stated end date`;
+    const intro = document.createElement("div");
+    intro.className = "topic-pivot-header";
+    intro.innerHTML = `<h2>Expirations</h2><p>Where each document stands today, using the exact term stated in the document. Hover over a date to see the wording it comes from.</p>`;
+    root.appendChild(intro);
+
+    groups.forEach(([key, title, blurb]) => {
+      const items = withStatus.filter(x => x.st.key === key).sort(byEnd);
+      if (!items.length) return;
+      const sec = document.createElement("section");
+      sec.className = `expiry-group expiry-${key}`;
+      sec.innerHTML = `<h3>${escapeHtml(title)} <span class="sector-count">${items.length}</span></h3>${blurb ? `<p class="expiry-blurb">${escapeHtml(blurb)}</p>` : ""}
+        <table class="expiry-table"><thead><tr><th>Document</th><th>Union</th><th>Term</th><th>Status</th></tr></thead><tbody>${
+        items.map(({ c, st }) => `<tr>
+          <td><a href="#/contract/${encodeURIComponent(c.id)}">${escapeHtml(docShortLabel(c))}</a></td>
+          <td>${escapeHtml(state.unionByContract[c.id]?.union.name || "")}</td>
+          <td${c.term_quote ? ` title="${escapeHtml(`p. ${c.term_page}: "${c.term_quote}"`)}"` : ""}>${escapeHtml(termText(c))}</td>
+          <td class="status-${st.key}">${escapeHtml(st.text)}</td>
+        </tr>`).join("")}</tbody></table>`;
+      root.appendChild(sec);
     });
   }
 
-  function renderExpirations(root) {
-    const cur = new Date().getFullYear();
-    const list = state.contracts.slice().filter(c => c.term_end).sort((a,b) => a.term_end - b.term_end);
-    const expired = list.filter(c => c.term_end < cur);
-    const expiring = list.filter(c => c.term_end === cur);
-    const current = list.filter(c => c.term_end > cur);
-    const wrap = document.createElement("div");
-    wrap.className = "expirations";
-    wrap.innerHTML = `
-      <h3>Contract expirations</h3>
-      <p>Under New York's Triborough Amendment, expired contracts remain in force until a successor is signed. Listing reflects stated term end dates.</p>
-      <ul>
-        <li><strong>${current.length}</strong> with stated term not yet expired</li>
-        <li><strong>${expiring.length}</strong> expiring this year (${cur})</li>
-        <li><strong>${expired.length}</strong> with stated term already expired (Triborough hold-over)</li>
-      </ul>
-    `;
-    root.appendChild(wrap);
-
-    // Visual timeline: one bar per contract, stated term start → end, with a
-    // "today" line. Sorted by end date so the next expirations rise to the top.
-    const withTerms = state.contracts.filter(c => c.term_start && c.term_end && c.term_end >= c.term_start);
-    if (withTerms.length) {
-      const minY = Math.min(...withTerms.map(c => c.term_start));
-      const maxY = Math.max(...withTerms.map(c => c.term_end)) + 1;
-      const span = maxY - minY;
-      const now = new Date();
-      const nowY = now.getFullYear() + (now.getMonth() + 0.5) / 12;
-      const tl = document.createElement("div");
-      tl.className = "term-timeline";
-      const axisTicks = [];
-      for (let y = minY; y <= maxY; y += (span > 14 ? 2 : 1)) {
-        axisTicks.push(`<span class="term-timeline-tick" style="left:${((y - minY) / span * 100).toFixed(2)}%">${y}</span>`);
-      }
-      const rows = withTerms.slice().sort((a,b) => (a.term_end - b.term_end) || (a.term_start - b.term_start) || a.label.localeCompare(b.label)).map(c => {
-        const left = ((c.term_start - minY) / span * 100).toFixed(2);
-        const width = Math.max((c.term_end + 1 - c.term_start) / span * 100, 0.8).toFixed(2);
-        const cls = c.term_end < cur ? "expired" : (c.term_end === cur ? "expiring" : "current");
-        const label = window.expandContractLabel ? window.expandContractLabel(c.label) : c.label;
-        return `
-          <a class="term-timeline-row" href="#/contract/${encodeURIComponent(c.id)}" title="${escapeHtml(label)} · ${c.term_start}–${c.term_end}">
-            <span class="term-timeline-label">${escapeHtml(label)}</span>
-            <span class="term-timeline-track"><span class="term-timeline-bar ${cls}" style="left:${left}%;width:${width}%"></span></span>
-          </a>`;
-      }).join("");
-      tl.innerHTML = `
-        <h3>Every contract's stated term</h3>
-        <p class="term-timeline-legend">
-          <span><span class="term-timeline-swatch current"></span> in stated term</span>
-          <span><span class="term-timeline-swatch expiring"></span> expires ${cur}</span>
-          <span><span class="term-timeline-swatch expired"></span> stated term expired (Triborough hold-over)</span>
-          <span><span class="term-timeline-swatch todayline"></span> today</span>
-        </p>
-        <div class="term-timeline-axis">${axisTicks.join("")}</div>
-        <div class="term-timeline-rows" style="--now-left:${((nowY - minY) / span * 100).toFixed(2)}">${rows}</div>
-      `;
-      root.appendChild(tl);
-    }
-    [["Expired (Triborough hold-over)", expired], ["Expiring this year", expiring], ["Currently in stated term", current]].forEach(([title, items]) => {
-      const sec = document.createElement("div");
-      sec.className = "expirations";
-      sec.innerHTML = `<h3>${title} — ${items.length}</h3>`;
-      items.forEach(c => {
-        const row = document.createElement("div");
-        row.style.padding = "4px 0";
-        row.innerHTML = `<a href="#/contract/${encodeURIComponent(c.id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label)}</a> <span style="color:var(--muted)">${c.term_start||"?"}–${c.term_end||"?"}</span>`;
-        sec.appendChild(row);
-      });
-      root.appendChild(sec);
-    });
+  // Wages and headcount for one contract, shown only where every number has
+  // been checked: wage steps against the contract text (scripts/verify_wages.py)
+  // and headcounts against a named primary source.
+  function factsCard(c, unit) {
+    const w = state.wagesByContract[c.id];
+    const head = unit && unit.headcount_verified ? unit : null;
+    if (!w && !head) return "";
+    const fmtEff = e => /^\d{4}-\d{2}-\d{2}$/.test(e) ? fmtDate(e) : e.replace(/^month-(\d+)$/, (_, n) => n === "1" ? "First day of the term" : `First day of month ${n}`);
+    const caveat = w && /Caveat:/.test(w.source_note || "") ? w.source_note.split("Caveat:")[1].trim() : "";
+    const bonuses = w ? (w.bonuses || []).filter(b => b.amount) : [];
+    return `
+      <section class="facts-card" aria-label="Wages and headcount">
+        ${head ? `<div class="facts-head">
+          <p class="facts-label">Workers covered</p>
+          <p class="facts-num">About ${head.headcount.toLocaleString()}</p>
+          <p class="facts-src">${escapeHtml(head.headcount_source.publisher)}, ${escapeHtml(head.headcount_source.date)}: &ldquo;${escapeHtml(head.headcount_source.quote)}&rdquo; <a href="${escapeHtml(head.headcount_source.url)}" target="_blank" rel="noopener">Source &#8599;</a></p>
+        </div>` : ""}
+        ${w ? `<div class="facts-wages">
+          <p class="facts-label">General wage increases in this document</p>
+          <table class="facts-table"><tbody>
+            ${w.increases.map(i => `<tr><td>${escapeHtml(fmtEff(i.effective))}</td><td>${i.pct.toFixed(2)}%</td></tr>`).join("")}
+            <tr class="facts-total"><td>Compounded over the term</td><td>${w.cumulative_pct.toFixed(2)}%</td></tr>
+          </tbody></table>
+          ${bonuses.length ? `<p class="facts-src">Also: ${bonuses.map(b => b.type === "ratification" ? `a $${b.amount.toLocaleString()} ratification bonus, pro-rated for employees who are not full time` : `$${b.amount.toLocaleString()} ${escapeHtml(b.type)} payment${/^\d{4}-/.test(b.effective) ? ` (${escapeHtml(fmtDate(b.effective))})` : ""}`).join("; ")}.</p>` : ""}
+          ${caveat ? `<p class="facts-caveat"><strong>Caveat:</strong> ${escapeHtml(caveat)}</p>` : ""}
+          <p class="facts-src">Every step checked against this document's text. <a href="wages.html">Compare raises across contracts</a>.</p>
+        </div>` : ""}
+      </section>`;
   }
 
   function renderContractDetail(cid) {
@@ -923,7 +1086,7 @@
     wrap.innerHTML = `
       <header class="doc-view-header">
         <p class="doc-view-back"><a href="#">← Back to all contracts</a></p>
-        ${unit?.sector ? `<p class="doc-view-kicker">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount ? " · ~" + unit.headcount.toLocaleString() + " covered" : ""}</p>` : ""}
+        ${unit?.sector ? `<p class="doc-view-kicker">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount_verified ? " · ~" + unit.headcount.toLocaleString() + " covered" : ""}</p>` : ""}
         <h2 class="doc-view-title">${escapeHtml(expandedLabel)}</h2>
         ${unit?.summary ? `<p class="doc-view-summary">${escapeHtml(unit.summary)}</p>` : ""}
         ${(state.missingByContract[cid] || []).map(g => `
@@ -943,9 +1106,11 @@
               </p>` : ""}
             ${c.amends_evidence ? `<p class="doc-view-amend-quote">Language in this document: &ldquo;${escapeHtml(c.amends_evidence)}&hellip;&rdquo;</p>` : ""}
           </aside>` : ""}
+        ${factsCard(c, unit)}
         <div class="doc-view-meta">
           <span><strong>Type</strong> ${DOC_TYPE_SHORT[c.doc_type] || "Document"}</span>
-          <span><strong>Term</strong> ${term}</span>
+          <span><strong>Term</strong> <span${c.term_quote ? ` title="${escapeHtml(`p. ${c.term_page}: "${c.term_quote}"`)}"` : ""}>${escapeHtml(termText(c))}</span></span>
+          <span><strong>Status</strong> <span class="status-${contractStatus(c).key}">${escapeHtml(contractStatus(c).text)}</span></span>
           <span><strong>Pages</strong> ${totalPages}${ocrPages.size ? ` (${ocrPages.size} OCR'd)` : ""}</span>
           <span><strong>Sections</strong> ${items.length}</span>
           <a href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener" class="doc-view-ai">Ask in Gemini Notebook &#8599;</a>
@@ -971,10 +1136,14 @@
 
     const toc = wrap.querySelector("#doc-toc");
     const content = wrap.querySelector("#doc-content");
+    let lastTocHeading = null;
     items.forEach((cl, idx) => {
       const anchor = `sec-${idx}`;
-      // TOC entry
+      // TOC entry. Continuation slices (a table that runs on, a stray
+      // fragment) and repeats of the previous entry stay out of the contents.
       const li = document.createElement("li");
+      const tocSkip = cl.heading_kind === "continued" || cl.heading === lastTocHeading;
+      if (tocSkip) li.hidden = true; else lastTocHeading = cl.heading;
       li.innerHTML = `<a href="#${anchor}">${escapeHtml(cl.heading || "Untitled")}</a>`;
       li.querySelector("a").addEventListener("click", (ev) => {
         // Scroll in place; changing the hash would make the router leave the contract.
@@ -1106,7 +1275,7 @@
     const unit = state.unitByContract[c.contract_id];
     const tip = unit ? `
       <div class="badge-tip" role="tooltip">
-        <p class="badge-tip-sector">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount ? ` · ~${unit.headcount.toLocaleString()} covered` : ""}</p>
+        <p class="badge-tip-sector">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount_verified ? ` · ~${unit.headcount.toLocaleString()} covered` : ""}</p>
         ${unit.union_full ? `<p class="badge-tip-union">${escapeHtml(unit.union_full)}</p>` : ""}
         <p class="badge-tip-summary">${escapeHtml(unit.summary)}</p>
         <p class="badge-tip-cta">Click to see all clauses · <a href="#view=units&sector=${encodeURIComponent(unit.sector)}">browse this sector</a></p>

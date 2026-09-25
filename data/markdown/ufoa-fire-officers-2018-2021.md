@@ -21,7 +21,7 @@ headcount_approx: 2400
 **Pages:** 69  
 **Clauses extracted:** 58
 
-**Workforce:** Represents FDNY lieutenants, captains, battalion chiefs, deputy chiefs, fire medical officers, and supervising fire marshals. Most recent published contract on OLR is the 2018-2021 Fire Officers Agreement; economic terms for the 2022-2027 cycle are set by the Uniformed Coalition Economic Agreement.
+**Workforce:** Represents FDNY lieutenants, captains, battalion chiefs, deputy chiefs, fire medical officers, and supervising fire marshals. The most recent UFOA agreement published by the Office of Labor Relations is the 2018-2021 Fire Officers Agreement. The UFOA signed the 2022-2027 Uniformed Officers Coalition Economic Agreement, which sets its raises for the round that began July 31, 2021; its successor unit agreement has not been published.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 
@@ -69,24 +69,24 @@ headcount_approx: 2400
 - [Article XXIX — QUARTERMASTER SYSTEM](#page-47)
 - [Article XXX — APPLICABLE LAWS](#page-47)
 - [ARTICLE XXX1 - SAV ING S CLAUSE](#page-47)
-- [ERIC EICHENHO](#page-48)
-- [OFFICE OF LABOR RELATIONS](#page-48)
+- [Signatures](#page-48)
+- [Letterhead](#page-48)
 - [OFFICIAL CONTRACT](#page-48)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-49)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-50)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-52)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-53)
-- [AGREED AND ACCEPTED N BEHALF OF THE UFOA](#page-55)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-56)
-- [ON BEHALF OF THE UFOA](#page-57)
+- [Signatures](#page-49)
+- [Signatures](#page-50)
+- [Signatures](#page-52)
+- [Signatures](#page-53)
+- [Signatures](#page-55)
+- [Signatures](#page-56)
+- [Signatures](#page-57)
 - [AGREED AND ACCEPT DON BEHALF OF THE UFOA](#page-59)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-60)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-62)
+- [Signatures](#page-60)
+- [Signatures](#page-62)
 - [Section 1.8 — and 1.10. In addition, EDE must not interfere or conflict with the regular departmental](#page-64)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-64)
-- [AGREED AND ACCEPTED ON BEHALF OF THE UFOA](#page-65)
-- [OFFICE OF LABOR RELATIONS](#page-66)
-- [RENEE CAMPION GEORGETTE GESTELY](#page-66)
+- [Signatures](#page-64)
+- [Signatures](#page-65)
+- [Letterhead](#page-66)
+- [Signatures](#page-66)
 
 ---
 

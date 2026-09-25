@@ -2,8 +2,8 @@
 contract_id: usca-unit-agreement-2022-2027
 label: "USCA Unit Agreement, 2022-2027"
 expanded_label: "Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027"
-term_start: 2022
-term_end: 2027
+term_start: 2023
+term_end: 2028
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/usca-moa-2022-2027.pdf"
 pages: 2
 ocr_pages: 0
@@ -14,7 +14,7 @@ sector: "uniformed-sanitation"
 
 # Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027
 
-**Term:** 2022–2027  
+**Term:** 2023–2028  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/usca-moa-2022-2027.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/usca-moa-2022-2027.pdf)  
 **Pages:** 2  
 **Clauses extracted:** 1

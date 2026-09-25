@@ -12,7 +12,8 @@
   "headcount_note": null,
   "summary": "ADWA Unit Agreement, 2023-2028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ale-executed-contract-2021-2027",
@@ -27,7 +28,8 @@
   "headcount_note": null,
   "summary": "ALE Executed Contract, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cca-unit-agreement-2022-2028",
@@ -42,7 +44,8 @@
   "headcount_note": null,
   "summary": "CCA Unit Agreement, 2022-2028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cea-unit-agreement-2022-2027",
@@ -57,7 +60,8 @@
   "headcount_note": null,
   "summary": "CEA Unit Agreement, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cir-executed-contract-2021-2027",
@@ -72,7 +76,8 @@
   "headcount_note": null,
   "summary": "CIR Executed Contract, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "coba-unit-agreement-2022-2027",
@@ -87,7 +92,8 @@
   "headcount_note": null,
   "summary": "COBA Unit Agreement, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "csa-moa-2023-2028-amended-appendix-a",
@@ -98,8 +104,8 @@
   "union_full": "Council of School Supervisors and Administrators (CSA), Local 1 AFSA, AFL-CIO",
   "local": "Local 1 AFSA",
   "employer": "NYC Department of Education",
-  "headcount": 6500,
-  "headcount_note": "~6,500 school-based supervisors per CSA public statements.",
+  "headcount": 6400,
+  "headcount_note": "About 6,400 principals, assistant principals, supervisors and education administrators covered by this agreement, per the NYC Mayor's Office (Oct. 2023).",
   "summary": "Represents NYC public school principals, assistant principals, education administrators, and supervisors. The supervisory counterpart to UFT.",
   "titles": [
    "Principal",
@@ -107,7 +113,14 @@
    "Supervisor",
    "Education Administrator"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "Oct. 2023",
+   "url": "https://www.nyc.gov/office-of-the-mayor/news/804-23/mayor-adams-tentative-contract-agreement-council-school-supervisors-and",
+   "quote": "This agreement will cover approximately 6,400 municipal employees"
+  }
  },
  {
   "contract_id": "csba-moa-2021-2026",
@@ -122,26 +135,34 @@
   "headcount_note": null,
   "summary": "CSBA MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cwa-1180-moa-2021-2026",
   "contract_label": "CWA 1180 MOA, 2021-2026",
   "term_start": 2021,
-  "term_end": 2026,
+  "term_end": 2027,
   "sector": "supervisory-clerical",
   "union_full": "Communications Workers of America, Local 1180, AFL-CIO",
   "local": "Local 1180",
   "employer": "City of New York (multiple agencies)",
-  "headcount": 8000,
-  "headcount_note": "~8,000 supervisory administrative titles per CWA Local 1180 public statements.",
+  "headcount": 8200,
+  "headcount_note": "About 8,200 employees covered by this agreement, per the NYC Mayor's Office (2023).",
   "summary": "Represents Administrative Managers, Principal Administrative Associates, and other supervisory clerical titles across mayoral agencies. In 2019 it settled a pay-discrimination case brought through the Equal Employment Opportunity Commission (EEOC) for $15 million in back pay.",
   "titles": [
    "Administrative Manager",
    "Principal Administrative Associate",
    "Administrative Staff Analyst"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "2023",
+   "url": "https://www.nyc.gov/office-of-the-mayor/news/681-23/mayor-adams-olr-commissioner-campion-contract-cwa-provide-fair-wage-increases-",
+   "quote": "representing approximately 8,200 employees"
+  }
  },
  {
   "contract_id": "cwa-l1181-moa-2021-2027",
@@ -156,7 +177,8 @@
   "headcount_note": null,
   "summary": "CWA L1181 MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cwa-l1182-moa-2021-2027",
@@ -171,7 +193,8 @@
   "headcount_note": null,
   "summary": "CWA L1182 MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "cwa-1183-moa-2021-2026",
@@ -186,7 +209,8 @@
   "headcount_note": null,
   "summary": "CWA 1183 MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027",
@@ -201,7 +225,8 @@
   "headcount_note": null,
   "summary": "DC37 L983 Traffic Enforcement Agent Level III and IV MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l983-urban-park-rangers-moa-2021-2027",
@@ -216,7 +241,8 @@
   "headcount_note": null,
   "summary": "DC37 L983 Urban Park Rangers MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-moa-2021-2026",
@@ -241,7 +267,14 @@
    "Accountant",
    "Computer Associate"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "Feb. 2023",
+   "url": "https://www.nyc.gov/mayors-office/news/2023/02/mayor-adams-dc-37-tentative-contract-agreement-providing-fair-wage-increases-and",
+   "quote": "This agreement will cover nearly 90,000 municipal employees"
+  }
  },
  {
   "contract_id": "dea-unit-agreement-2022-2027",
@@ -258,7 +291,14 @@
   "titles": [
    "Detective"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Council Finance Division, NYPD demographics report",
+   "date": "Oct. 1, 2025",
+   "url": "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/New-York-Police-Department-Demographics-Report-2.xlsx",
+   "quote": "Detective 1st grade 279, 2nd grade 714, 3rd grade 2,961, detective specialist 1,058 (total 5,012)"
+  }
  },
  {
   "contract_id": "dia-moa-2023-2028",
@@ -273,7 +313,8 @@
   "headcount_note": null,
   "summary": "DIA MOA, 2023-2028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "doctors-council-moa-2021-2026",
@@ -292,7 +333,14 @@
    "Senior Physician",
    "Dentist"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "Dec. 2024",
+   "url": "https://www.nyc.gov/mayors-office/news/2024/12/mayor-adams-tentative-agreement-doctors-council-seiu-deliver-raises-500",
+   "quote": "approximately 500 city employees"
+  }
  },
  {
   "contract_id": "fadba-moa-2021-2027",
@@ -307,7 +355,8 @@
   "headcount_note": null,
   "summary": "FADBA MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "highway-and-sewer-inspectors-moa-2022-2028",
@@ -322,7 +371,8 @@
   "headcount_note": null,
   "summary": "Highway and Sewer Inspectors MOA, 2022-2028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-moa-2022-2027",
@@ -344,7 +394,14 @@
    "Taxi and Limousine Inspector",
    "Stock Worker"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "June 26, 2023",
+   "url": "https://www.nyc.gov/mayors-office/news/2023/06/mayor-adams-olr-commissioner-campion-tentative-contract-agreement-teamsters-local",
+   "quote": "This agreement will cover over 9,000 municipal employees."
+  }
  },
  {
   "contract_id": "l3-electrical-inspectors-moa-2022-2027",
@@ -359,7 +416,8 @@
   "headcount_note": null,
   "summary": "L3 Electrical Inspectors MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l1199-moa-2022-2027",
@@ -379,7 +437,8 @@
    "Environmental Services Aide",
    "Pharmacy Technician"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": false
  },
  {
   "contract_id": "lba-10-5-2023-unit-bargaining-agreement",
@@ -394,7 +453,8 @@
   "headcount_note": null,
   "summary": "LBA Unit Bargaining Agreement, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "leeba-epo-moa-2017-2026",
@@ -409,7 +469,8 @@
   "headcount_note": null,
   "summary": "LEEBA EPO MOA, 2017-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-211-building-inspectors-moa-2021-2026",
@@ -424,13 +485,14 @@
   "headcount_note": null,
   "summary": "Local 211 Building Inspectors MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-237-parking-control-specialists-moa-2021-2026",
   "contract_label": "Local 237 - Parking Control Specialists MOA, 2021-2026",
   "term_start": 2021,
-  "term_end": 2026,
+  "term_end": 2027,
   "sector": "other",
   "union_full": null,
   "local": null,
@@ -439,7 +501,8 @@
   "headcount_note": null,
   "summary": "Local 237 - Parking Control Specialists MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-automotive-service-workers-moa-2021-2026",
@@ -454,7 +517,8 @@
   "headcount_note": null,
   "summary": "Local 246 Automotive Service Workers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-300-seiu-moa-2022-2027",
@@ -469,7 +533,8 @@
   "headcount_note": null,
   "summary": "Local 300, SEIU MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-306-audiovisual-aide-technicians-moa-2022-2027",
@@ -484,7 +549,8 @@
   "headcount_note": null,
   "summary": "Local 306 Audiovisual Aide Technicians MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-891-school-custodians",
@@ -499,7 +565,8 @@
   "headcount_note": null,
   "summary": "Local 891 School Custodians MOA, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "meba-moa-2010-2027",
@@ -514,13 +581,14 @@
   "headcount_note": null,
   "summary": "MEBA MOA, 2010-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "metal-work-mechanic-moa-2021-2026",
   "contract_label": "Metal Work Mechanic MOA, 2021-2026",
-  "term_start": 2021,
-  "term_end": 2026,
+  "term_start": 2020,
+  "term_end": 2025,
   "sector": "skilled-trades",
   "union_full": null,
   "local": null,
@@ -529,7 +597,8 @@
   "headcount_note": null,
   "summary": "Metal Work Mechanic MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "mmp-moa-2021-2027",
@@ -544,7 +613,8 @@
   "headcount_note": null,
   "summary": "MMP MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "osa-moa-2021-2027",
@@ -559,7 +629,8 @@
   "headcount_note": null,
   "summary": "OSA MOA, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "osa-public-advocate-executed-contract-2022-2026",
@@ -574,7 +645,8 @@
   "headcount_note": null,
   "summary": "OSA Public Advocate Executed Contract, 2022-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "osa-school-security-traffic-moa-2022-2027",
@@ -589,7 +661,8 @@
   "headcount_note": null,
   "summary": "OSA School Security/Traffic MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "pba-mou-2017-2025",
@@ -606,7 +679,14 @@
   "titles": [
    "Police Officer"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Council Finance Division, NYPD demographics report",
+   "date": "Oct. 1, 2025",
+   "url": "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/New-York-Police-Department-Demographics-Report-2.xlsx",
+   "quote": "POLICE OFFICER ... 22,084"
+  }
  },
  {
   "contract_id": "sba-unit-agreement-2021-2026",
@@ -623,7 +703,14 @@
   "titles": [
    "Sergeant"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "April 2025",
+   "url": "https://www.nyc.gov/mayors-office/news/2025/04/mayor-adams-olr-commissioner-campion-tentative-contract-agreement-sergeants",
+   "quote": "covering approximately 4,400 New York City Police Department (NYPD) sergeants"
+  }
  },
  {
   "contract_id": "soa-unit-agreement-2023-2028",
@@ -638,13 +725,14 @@
   "headcount_note": null,
   "summary": "SOA Unit Agreement, 2023-2028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "supervisor-of-mechanics-l621-executed-contract-2021-2026",
   "contract_label": "Supervisor of Mechanics L621 Executed Contract, 2021-2026",
-  "term_start": 2021,
-  "term_end": 2026,
+  "term_start": 2020,
+  "term_end": 2025,
   "sector": "skilled-trades",
   "union_full": null,
   "local": null,
@@ -653,7 +741,8 @@
   "headcount_note": null,
   "summary": "Supervisor of Mechanics L621 Executed Contract, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "uft-moa-2022-2027",
@@ -665,7 +754,7 @@
   "local": "Local 2",
   "employer": "NYC Department of Education / Board of Education",
   "headcount": 120000,
-  "headcount_note": "~120,000 covered employees including teachers, paraprofessionals, school secretaries, guidance counselors, etc., per UFT public statements and DOE budget testimony.",
+  "headcount_note": "About 120,000 municipal employees covered by this agreement, per the NYC Mayor's Office (June 2023).",
   "summary": "The largest single bargaining unit in NYC government. Covers DOE teachers, paraprofessionals, school secretaries, guidance counselors, social workers, psychologists, attendance teachers, lab specialists, and related school-based titles.",
   "titles": [
    "Teacher",
@@ -677,7 +766,14 @@
    "Educational Assistant",
    "Lab Specialist"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "June 2023",
+   "url": "https://www.nyc.gov/mayors-office/news/2023/06/mayor-adams-uft-tentative-contract-agreement-providing-substantial-wage-increases-to",
+   "quote": "approximately 120,000 municipal employees"
+  }
  },
  {
   "contract_id": "uniformed-coalition-economic-agreement-2022-2027",
@@ -692,7 +788,8 @@
   "headcount_note": "Coalition-level economic terms; underlying individual unit agreements set unit-specific headcounts.",
   "summary": "The economic-pattern agreement that sets wage increases and lump sums for 11 uniformed unions in police, fire, correction and sanitation. Each union's terms are then written into its own successor unit agreement; the UFA's and UFOA's have not been published.",
   "titles": [],
-  "curated": true
+  "curated": true,
+  "headcount_verified": false
  },
  {
   "contract_id": "upoa-moa-2020-2026",
@@ -707,7 +804,8 @@
   "headcount_note": null,
   "summary": "UPOA MOA, 2020-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "usa-executed-contract-2022-2028",
@@ -718,19 +816,26 @@
   "union_full": "Uniformed Sanitationmen's Association, Local 831 IBT",
   "local": "Local 831",
   "employer": "NYC Department of Sanitation",
-  "headcount": 7000,
-  "headcount_note": "~7,000 sanitation workers per DSNY headcount data and the NYC Mayor's Office (about 7,100).",
+  "headcount": 7100,
+  "headcount_note": "About 7,100 sanitation workers covered by this agreement, per the NYC Mayor's Office (Oct. 2023).",
   "summary": "Represents all uniformed sanitation workers below supervisor rank \u2014 the core of DSNY's collection, plowing, and street-cleaning workforce.",
   "titles": [
    "Sanitation Worker"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Mayor's Office",
+   "date": "Oct. 2023",
+   "url": "https://www.nyc.gov/mayors-office/news/2023/10/mayor-adams-tentative-agreement-sanitation-workers-setting-record-fastest",
+   "quote": "which would cover approximately 7,100 New York City sanitation workers"
+  }
  },
  {
   "contract_id": "usca-unit-agreement-2022-2027",
   "contract_label": "USCA Unit Agreement, 2022-2027",
-  "term_start": 2022,
-  "term_end": 2027,
+  "term_start": 2023,
+  "term_end": 2028,
   "sector": "uniformed-sanitation",
   "union_full": null,
   "local": null,
@@ -739,7 +844,8 @@
   "headcount_note": null,
   "summary": "USCA Unit Agreement, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "2001-2021-citywide-agreement",
@@ -754,7 +860,8 @@
   "headcount_note": null,
   "summary": "2001-2021 Citywide Agreement \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "blacksmith-moa-2021-2026",
@@ -769,7 +876,8 @@
   "headcount_note": null,
   "summary": "Blacksmith MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "boilermaker-moa-2021-2026",
@@ -784,7 +892,8 @@
   "headcount_note": null,
   "summary": "Boilermaker MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "carpenters-consent-determination-2021-2027",
@@ -799,7 +908,8 @@
   "headcount_note": null,
   "summary": "Carpenters Consent Determination, 2021-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l376-construction-laborers-moa-2021-2026",
@@ -814,7 +924,8 @@
   "headcount_note": null,
   "summary": "DC37 L376 Construction Laborers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l376-highway-repairers-moa-2021-2026",
@@ -829,7 +940,8 @@
   "headcount_note": null,
   "summary": "DC37 L376 Highway Repairers Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l924-laborers-consent-determination-2021-2026",
@@ -844,7 +956,8 @@
   "headcount_note": null,
   "summary": "DC37 L924 Laborers Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l983-high-pressure-plant-tenders-consent-determination-2022-2027",
@@ -859,7 +972,8 @@
   "headcount_note": null,
   "summary": "DC37 L983 High Pressure Plant Tenders Consent Determination, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1087-clock-repairer-moa-2021-2026",
@@ -874,7 +988,8 @@
   "headcount_note": null,
   "summary": "DC37 L1087 Clock Repairer MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1087-compositors-moa-2021-2026",
@@ -889,12 +1004,13 @@
   "headcount_note": null,
   "summary": "DC37 L1087 Compositors MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1087-locksmiths-consent-determination-2021-2026",
   "contract_label": "DC37 L1087 Locksmiths Consent Determination, 2021-2026",
-  "term_start": 2021,
+  "term_start": 2020,
   "term_end": 2026,
   "sector": "skilled-trades",
   "union_full": null,
@@ -904,7 +1020,8 @@
   "headcount_note": null,
   "summary": "DC37 L1087 Locksmiths Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1087-printing-press-operators-moa-2021-2026",
@@ -919,7 +1036,8 @@
   "headcount_note": null,
   "summary": "DC37 L1087 Printing Press Operators MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1087-radio-repair-mechanics-moa-2021-2026",
@@ -934,7 +1052,8 @@
   "headcount_note": null,
   "summary": "DC37 L1087 Radio Repair Mechanics MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc37-l1157-supervisor-highway-repairers-moa-2021-2026",
@@ -949,7 +1068,8 @@
   "headcount_note": null,
   "summary": "DC37 L1157 Supervisor Highway Repairers Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc-37-local-1320-sewage-treatment-workers-moa-2021-2026",
@@ -964,7 +1084,8 @@
   "headcount_note": null,
   "summary": "DC 37 Local 1320 Sewage Treatment Workers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc9-l806-bridge-painters-moa-2021-2026",
@@ -979,7 +1100,8 @@
   "headcount_note": null,
   "summary": "DC9 L806 Bridge Painters MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc9-l1969-glaziers-consent-determination-2021-2026",
@@ -994,7 +1116,8 @@
   "headcount_note": null,
   "summary": "DC9 L1969 Glaziers Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "dc9-l1969-painters-consent-determination-2021-2026",
@@ -1009,7 +1132,8 @@
   "headcount_note": null,
   "summary": "DC9 L1969 Painters Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-bricklayers-moa-2021-2026",
@@ -1024,7 +1148,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Bricklayers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-cement-masons-consent-determination-2020-2025",
@@ -1039,22 +1164,24 @@
   "headcount_note": null,
   "summary": "IBT L237 Cement Masons Consent Determination, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-237-horseshoers-fully-executed-moa-102323-2021-2026",
-  "contract_label": "Local 237 Horseshoers Fully Executed Moa 102323 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 237 Horseshoers MOA, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "sector": "other",
   "union_full": null,
   "local": null,
   "employer": null,
   "headcount": null,
   "headcount_note": null,
-  "summary": "Local 237 Horseshoers Fully Executed Moa 102323 2021 2026 \u2014 see contract for the full recognition clause defining covered titles.",
+  "summary": "Local 237 Horseshoers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-elevator-mechanics-consent-determination-2024-2029",
@@ -1069,7 +1196,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Elevator Mechanics Consent Determination, 2024-2029 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-maintenance-workers-consent-determination-2022-2027",
@@ -1084,7 +1212,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Maintenance Workers Consent Determination, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-masons-helpers-moa-2021-2026",
@@ -1099,7 +1228,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Mason\u2019s Helpers MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-plasterers-consent-determination-2020-2025",
@@ -1114,7 +1244,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Plasterers Consent Determination, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ibt-l237-roofers-moa-2020-2025",
@@ -1129,7 +1260,8 @@
   "headcount_note": null,
   "summary": "IBT L237 Roofers MOA, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025",
@@ -1144,7 +1276,8 @@
   "headcount_note": null,
   "summary": "Joint Cert L246 and L15 Motor Grader Operators Wage Indenture, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025",
@@ -1159,7 +1292,8 @@
   "headcount_note": null,
   "summary": "Joint Cert L246 and L15 Tractor Operators Wage Indenture, 2020-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l1-plumbers-consent-determination-2022-2027",
@@ -1174,7 +1308,8 @@
   "headcount_note": null,
   "summary": "L1 Plumbers Consent Determination, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l3-communication-electricians-moa-20232028",
@@ -1189,7 +1324,8 @@
   "headcount_note": null,
   "summary": "L3 Communication Electricians MOA, 2023\u20132028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l3-electricians-consent-determination-20232028",
@@ -1204,7 +1340,8 @@
   "headcount_note": null,
   "summary": "L3 Electricians Consent Determination, 2023\u20132028 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l3-stationary-engineer-electric-moa-20202025",
@@ -1219,7 +1356,8 @@
   "headcount_note": null,
   "summary": "L3 Stationary Engineer (Electric) MOA, 2020\u20132025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l3-supervisor-of-mechanics-consent-determination-2021-2026",
@@ -1234,7 +1372,8 @@
   "headcount_note": null,
   "summary": "L3 Supervisor of Mechanics Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "l638-steamfitters-consent-determination-2022-2027",
@@ -1249,37 +1388,40 @@
   "headcount_note": null,
   "summary": "L638 Steamfitters Consent Determination, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021",
-  "contract_label": "Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "sector": "skilled-trades",
   "union_full": null,
   "local": null,
   "employer": null,
   "headcount": null,
   "headcount_note": null,
-  "summary": "Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 \u2014 see contract for the full recognition clause defining covered titles.",
+  "summary": "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "crane-operator-2021-2026",
-  "contract_label": "Crane Operator 2021 2026",
-  "term_start": null,
-  "term_end": null,
+  "contract_label": "Local 14 Crane Operators Wage Indenture, 2021-2026",
+  "term_start": 2021,
+  "term_end": 2026,
   "sector": "skilled-trades",
   "union_full": null,
   "local": null,
   "employer": null,
   "headcount": null,
   "headcount_note": null,
-  "summary": "Crane Operator 2021 2026 \u2014 see contract for the full recognition clause defining covered titles.",
+  "summary": "Local 14 Crane Operators Wage Indenture, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-14-15-gasoline-roller-engineers-wage-indenture-2021-2026",
@@ -1294,7 +1436,8 @@
   "headcount_note": null,
   "summary": "Local 14/15 Gasoline Roller Engineers Wage Indenture, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-15-welders-moa-2021-2026",
@@ -1309,7 +1452,8 @@
   "headcount_note": null,
   "summary": "Local 15 Welders MOA, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-15-30-oilers-stationary-engineer-and-senior-stationary-engineer-consent-de",
@@ -1324,7 +1468,8 @@
   "headcount_note": null,
   "summary": "Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-40-bridge-repairer-consent-determination-2022-2025",
@@ -1339,7 +1484,8 @@
   "headcount_note": null,
   "summary": "Local 40 Bridge Repairer Consent Determination, 2022-2025 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-auto-mechanics-consent-determination-2021-2026",
@@ -1354,7 +1500,8 @@
   "headcount_note": null,
   "summary": "Local 246 Auto Mechanics Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-carriage-upholsterer-consent-determination-2021-2026",
@@ -1369,7 +1516,8 @@
   "headcount_note": null,
   "summary": "Local 246 Carriage Upholsterer Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-letterer-and-sign-painter-consent-determination-2021-2026",
@@ -1384,7 +1532,8 @@
   "headcount_note": null,
   "summary": "Local 246 Letterer and Sign Painter Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-rubber-tire-repairer-consent-determination-2021-2026",
@@ -1399,7 +1548,8 @@
   "headcount_note": null,
   "summary": "Local 246 Rubber Tire Repairer Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "local-246-sheet-metal-worker-consent-determination-2021-2026",
@@ -1414,7 +1564,8 @@
   "headcount_note": null,
   "summary": "Local 246 Sheet Metal Worker Consent Determination, 2021-2026 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ubcj-dockbuilders-moa-2022-2027",
@@ -1429,7 +1580,8 @@
   "headcount_note": null,
   "summary": "UBCJ Dockbuilders MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ubcj-riggers-moa-2022-2027",
@@ -1444,7 +1596,8 @@
   "headcount_note": null,
   "summary": "UBCJ Riggers MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ubcj-ship-carpenter-moa-2022-2027",
@@ -1459,7 +1612,8 @@
   "headcount_note": null,
   "summary": "UBCJ Ship Carpenter MOA, 2022-2027 \u2014 see contract for the full recognition clause defining covered titles.",
   "titles": [],
-  "curated": false
+  "curated": false,
+  "headcount_verified": false
  },
  {
   "contract_id": "ufa-moa-2017-2020",
@@ -1480,7 +1634,14 @@
    "Pilot",
    "Marine Engineer (FDNY)"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Council Finance Division, FDNY uniformed personnel report",
+   "date": "Oct. 2025",
+   "url": "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/Fire-Department-of-New-York-Uniformed-Personnel-Demographics-Report-1.pdf",
+   "quote": "FIREFIGHTER ... 8533"
+  }
  },
  {
   "contract_id": "ufoa-fire-officers-2018-2021",
@@ -1502,7 +1663,14 @@
    "Fire Medical Officer",
    "Supervising Fire Marshal"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYC Council Finance Division, FDNY uniformed personnel report",
+   "date": "Oct. 2025",
+   "url": "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/Fire-Department-of-New-York-Uniformed-Personnel-Demographics-Report-1.pdf",
+   "quote": "Lieutenant 1,373, captain 574, battalion chief 333, deputy chief 74 (2,354), plus supervising fire marshals and medical officers (2,406)"
+  }
  },
  {
   "contract_id": "nysna-staff-nurses-2019-2023",
@@ -1522,7 +1690,14 @@
    "Clinical Nurse Specialist",
    "Nurse Manager"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "NYSNA",
+   "date": "July 31, 2023",
+   "url": "https://www.nysna.org/press/2023/nyc-public-hospital-nurses-win-historic-contract-pay-parity-and-safe-staffing",
+   "quote": "Approximately 8,000 NYSNA nurses at NYC Health+Hospitals facilities and Mayoral agencies"
+  }
  },
  {
   "contract_id": "psc-cuny-moa-2023-2027",
@@ -1534,7 +1709,7 @@
   "local": "AFT Local 2334",
   "employer": "City University of New York (CUNY)",
   "headcount": 30000,
-  "headcount_note": "~30,000 faculty and professional staff at CUNY per PSC public statements.",
+  "headcount_note": "Over 30,000 full- and part-time faculty and professional staff, per CUNY's announcement of the agreement.",
   "summary": "Represents full-time and adjunct faculty, professional staff, and graduate-employee teaching assistants across the City University of New York. Bargains with CUNY; the agreements are published by CUNY rather than on the Office of Labor Relations Recent Agreements page. The 2023-2027 MOA modifies the underlying 2017-2023 PSC-CUNY agreement (also in this corpus).",
   "titles": [
    "Professor",
@@ -1546,7 +1721,14 @@
    "College Lab Technician",
    "Graduate Assistant"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "City University of New York",
+   "date": "2024",
+   "url": "https://www.cuny.edu/news/cuny-and-professional-staff-congress-announce-tentative-labor-agreement-covering-over-30000-cuny-employees/",
+   "quote": "Tentative Labor Agreement Covering Over 30,000 CUNY Employees"
+  }
  },
  {
   "contract_id": "psc-cuny-agreement-2017-2023",
@@ -1571,7 +1753,14 @@
    "Graduate Assistant"
   ],
   "curated": true,
-  "headcount_duplicate_of": "psc-cuny-moa-2023-2027"
+  "headcount_duplicate_of": "psc-cuny-moa-2023-2027",
+  "headcount_verified": true,
+  "headcount_source": {
+   "publisher": "City University of New York",
+   "date": "2024",
+   "url": "https://www.cuny.edu/news/cuny-and-professional-staff-congress-announce-tentative-labor-agreement-covering-over-30000-cuny-employees/",
+   "quote": "Tentative Labor Agreement Covering Over 30,000 CUNY Employees"
+  }
  },
  {
   "contract_id": "deputy-sheriffs-moa-2022-2027",
@@ -1588,6 +1777,7 @@
   "titles": [
    "Deputy Sheriff"
   ],
-  "curated": true
+  "curated": true,
+  "headcount_verified": false
  }
 ]

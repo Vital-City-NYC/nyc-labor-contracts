@@ -2,7 +2,7 @@
 contract_id: dc37-l1087-locksmiths-consent-determination-2021-2026
 label: "DC37 L1087 Locksmiths Consent Determination, 2021-2026"
 expanded_label: "District Council 37 of AFSCME (DC37) — L1087 Locksmiths Consent Determination, 2021-2026"
-term_start: 2021
+term_start: 2020
 term_end: 2026
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/locksmith-2020-12-29-2026-01-28.pdf"
 pages: 29
@@ -14,7 +14,7 @@ sector: "skilled-trades"
 
 # District Council 37 of AFSCME (DC37) — L1087 Locksmiths Consent Determination, 2021-2026
 
-**Term:** 2021–2026  
+**Term:** 2020–2026  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/locksmith-2020-12-29-2026-01-28.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/locksmith-2020-12-29-2026-01-28.pdf)  
 **Pages:** 29 (18 OCR-reconstructed)  
 **Clauses extracted:** 55
@@ -27,29 +27,29 @@ sector: "skilled-trades"
 
 ## Contents
 
-- [THE COMPTROLLER OF THE CITY OF NEW YORK](#page-1)
-- [NOTICE](#page-1)
-- [FILING](#page-1)
-- [HENRY GARRIDO](#page-2)
-- [BEFORE THE COMPTROLLER OF THE CITY OF NEW YORK](#page-3)
-- [CONSENT DETERMINATION](#page-3)
-- [I 2/29/2020-12/28/202I](#page-4)
+- [Caption](#page-1)
+- [Caption](#page-1)
+- [Caption](#page-1)
+- [Signatures](#page-2)
+- [Caption](#page-3)
+- [Caption](#page-3)
+- [Untitled section](#page-4)
 - [I 2/29/2022-I2/28/2023](#page-4)
 - [ANNUAL LEAVE](#page-4)
-- [Section 220 — oft he Labor Law (L. 1967, c, 502, I). However,](#page-6)
-- [RENEE CAMPION HENRY GARRIDO](#page-9)
-- [BRAD LANDER](#page-9)
+- [ANNUAL LEAVE (continued)](#page-6)
+- [Signatures](#page-9)
+- [Signatures](#page-9)
 - [GENERAL RELEASE AND WAIVER](#page-10)
-- [HENRY GARRIDO](#page-10)
-- [HENRY GARRIDO](#page-12)
-- [AGREED AND ACCEPTED BY](#page-13)
-- [HENRY GARRIDO](#page-13)
-- [IN THE EVENT OF ANY INCONSISTENCY BETWEEN APPENDIX A AND](#page-14)
+- [Signatures](#page-10)
+- [Signatures](#page-12)
+- [Signatures](#page-13)
+- [Signatures](#page-13)
+- [GENERAL RELEASE AND WAIVER (continued)](#page-14)
 - [APPENDIX A](#page-14)
 - [Section 1](#page-14)
 - [Section 2](#page-14)
-- [CATEGORY](#page-14)
-- [MONTHLY ACCRUAL](#page-14)
+- [Section 2 (continued)](#page-14)
+- [Section 2 (continued)](#page-14)
 - [Section 3](#page-14)
 - [Section 4](#page-14)
 - [Section 5](#page-15)
@@ -77,11 +77,11 @@ sector: "skilled-trades"
 - [Section 2](#page-21)
 - [Section 3](#page-21)
 - [Section 1](#page-22)
-- [OFFICE OF LABOR RELATIONS](#page-23)
-- [RENEE CAMPION](#page-26)
-- [CLAIRE LEVITT](#page-26)
-- [OFFICE OF LABOR RELATIONS](#page-26)
-- [GEORGETTE GESTELY](#page-26)
+- [Side letter](#page-23)
+- [Signatures](#page-26)
+- [Signatures](#page-26)
+- [Letterhead](#page-26)
+- [Signatures](#page-26)
 
 ---
 

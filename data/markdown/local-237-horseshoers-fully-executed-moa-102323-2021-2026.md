@@ -1,7 +1,9 @@
 ---
 contract_id: local-237-horseshoers-fully-executed-moa-102323-2021-2026
-label: "Local 237 Horseshoers Fully Executed Moa 102323 2021 2026"
-expanded_label: "Local 237 Horseshoers Fully Executed Moa 102323 2021 2026"
+label: "Local 237 Horseshoers MOA, 2021-2026"
+expanded_label: "Local 237 Horseshoers Memorandum of Agreement, 2021-2026"
+term_start: 2021
+term_end: 2026
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/local-237-horseshoers-fully-executed-moa-102323-2021-2026.pdf"
 pages: 3
 ocr_pages: 3
@@ -10,14 +12,14 @@ clauses: 3
 sector: "other"
 ---
 
-# Local 237 Horseshoers Fully Executed Moa 102323 2021 2026
+# Local 237 Horseshoers Memorandum of Agreement, 2021-2026
 
-**Term:** term n/a  
+**Term:** 2021–2026  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/local-237-horseshoers-fully-executed-moa-102323-2021-2026.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/local-237-horseshoers-fully-executed-moa-102323-2021-2026.pdf)  
 **Pages:** 3 (3 OCR-reconstructed)  
 **Clauses extracted:** 3
 
-**Workforce:** Local 237 Horseshoers Fully Executed Moa 102323 2021 2026 — see contract for the full recognition clause defining covered titles.
+**Workforce:** Local 237 Horseshoers MOA, 2021-2026 — see contract for the full recognition clause defining covered titles.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 

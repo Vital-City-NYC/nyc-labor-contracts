@@ -25,7 +25,7 @@ CURATED = {
         "employer": "NYC Department of Education / Board of Education",
         "sector": "education",
         "headcount": 120000,
-        "headcount_note": "~120,000 covered employees including teachers, paraprofessionals, school secretaries, guidance counselors, etc., per UFT public statements and DOE budget testimony.",
+        "headcount_note": "About 120,000 municipal employees covered by this agreement, per the NYC Mayor's Office (June 2023).",
         "summary": "The largest single bargaining unit in NYC government. Covers DOE teachers, paraprofessionals, school secretaries, guidance counselors, social workers, psychologists, attendance teachers, lab specialists, and related school-based titles.",
         "titles": ["Teacher", "Paraprofessional", "School Secretary", "Guidance Counselor", "Social Worker", "School Psychologist", "Educational Assistant", "Lab Specialist"],
     },
@@ -64,8 +64,8 @@ CURATED = {
         "local": "Local 831",
         "employer": "NYC Department of Sanitation",
         "sector": "uniformed-sanitation",
-        "headcount": 7000,
-        "headcount_note": "~7,000 sanitation workers per DSNY headcount data and the NYC Mayor's Office (about 7,100).",
+        "headcount": 7100,
+        "headcount_note": "About 7,100 sanitation workers covered by this agreement, per the NYC Mayor's Office (Oct. 2023).",
         "summary": "Represents all uniformed sanitation workers below supervisor rank — the core of DSNY's collection, plowing, and street-cleaning workforce.",
         "titles": ["Sanitation Worker"],
     },
@@ -74,8 +74,8 @@ CURATED = {
         "local": "Local 1 AFSA",
         "employer": "NYC Department of Education",
         "sector": "education-management",
-        "headcount": 6500,
-        "headcount_note": "~6,500 school-based supervisors per CSA public statements.",
+        "headcount": 6400,
+        "headcount_note": "About 6,400 principals, assistant principals, supervisors and education administrators covered by this agreement, per the NYC Mayor's Office (Oct. 2023).",
         "summary": "Represents NYC public school principals, assistant principals, education administrators, and supervisors. The supervisory counterpart to UFT.",
         "titles": ["Principal", "Assistant Principal", "Supervisor", "Education Administrator"],
     },
@@ -94,8 +94,8 @@ CURATED = {
         "local": "Local 1180",
         "employer": "City of New York (multiple agencies)",
         "sector": "supervisory-clerical",
-        "headcount": 8000,
-        "headcount_note": "~8,000 supervisory administrative titles per CWA Local 1180 public statements.",
+        "headcount": 8200,
+        "headcount_note": "About 8,200 employees covered by this agreement, per the NYC Mayor's Office (2023).",
         "summary": "Represents Administrative Managers, Principal Administrative Associates, and other supervisory clerical titles across mayoral agencies. In 2019 it settled a pay-discrimination case brought through the Equal Employment Opportunity Commission (EEOC) for $15 million in back pay.",
         "titles": ["Administrative Manager", "Principal Administrative Associate", "Administrative Staff Analyst"],
     },
@@ -165,7 +165,7 @@ CURATED = {
         "employer": "City University of New York (CUNY)",
         "sector": "education",
         "headcount": 30000,
-        "headcount_note": "~30,000 faculty and professional staff at CUNY per PSC public statements.",
+        "headcount_note": "Over 30,000 full- and part-time faculty and professional staff, per CUNY's announcement of the agreement.",
         "summary": "Represents full-time and adjunct faculty, professional staff, and graduate-employee teaching assistants across the City University of New York. Bargains with CUNY; the agreements are published by CUNY rather than on the Office of Labor Relations Recent Agreements page. The 2023-2027 MOA modifies the underlying 2017-2023 PSC-CUNY agreement (also in this corpus).",
         "titles": ["Professor", "Associate Professor", "Assistant Professor", "Lecturer", "Adjunct Faculty", "Higher Education Officer", "College Lab Technician", "Graduate Assistant"],
     },
@@ -263,6 +263,29 @@ def find_recognition_text(clauses, contract_id) -> str | None:
     return None
 
 
+
+# Headcounts checked against a primary source on 2026-09-25. Only these are
+# marked headcount_verified, which is what the site uses to show a headcount
+# on the home page and contract pages. Every quote below was read on the
+# source page itself.
+HEADCOUNT_SOURCES = {
+    "dc37-moa-2021-2026": ("NYC Mayor's Office", "Feb. 2023", "https://www.nyc.gov/mayors-office/news/2023/02/mayor-adams-dc-37-tentative-contract-agreement-providing-fair-wage-increases-and", "This agreement will cover nearly 90,000 municipal employees"),
+    "ibt-l237-moa-2022-2027": ("NYC Mayor's Office", "June 26, 2023", "https://www.nyc.gov/mayors-office/news/2023/06/mayor-adams-olr-commissioner-campion-tentative-contract-agreement-teamsters-local", "This agreement will cover over 9,000 municipal employees."),
+    "uft-moa-2022-2027": ("NYC Mayor's Office", "June 2023", "https://www.nyc.gov/mayors-office/news/2023/06/mayor-adams-uft-tentative-contract-agreement-providing-substantial-wage-increases-to", "approximately 120,000 municipal employees"),
+    "csa-moa-2023-2028-amended-appendix-a": ("NYC Mayor's Office", "Oct. 2023", "https://www.nyc.gov/office-of-the-mayor/news/804-23/mayor-adams-tentative-contract-agreement-council-school-supervisors-and", "This agreement will cover approximately 6,400 municipal employees"),
+    "cwa-1180-moa-2021-2026": ("NYC Mayor's Office", "2023", "https://www.nyc.gov/office-of-the-mayor/news/681-23/mayor-adams-olr-commissioner-campion-contract-cwa-provide-fair-wage-increases-", "representing approximately 8,200 employees"),
+    "doctors-council-moa-2021-2026": ("NYC Mayor's Office", "Dec. 2024", "https://www.nyc.gov/mayors-office/news/2024/12/mayor-adams-tentative-agreement-doctors-council-seiu-deliver-raises-500", "approximately 500 city employees"),
+    "sba-unit-agreement-2021-2026": ("NYC Mayor's Office", "April 2025", "https://www.nyc.gov/mayors-office/news/2025/04/mayor-adams-olr-commissioner-campion-tentative-contract-agreement-sergeants", "covering approximately 4,400 New York City Police Department (NYPD) sergeants"),
+    "usa-executed-contract-2022-2028": ("NYC Mayor's Office", "Oct. 2023", "https://www.nyc.gov/mayors-office/news/2023/10/mayor-adams-tentative-agreement-sanitation-workers-setting-record-fastest", "which would cover approximately 7,100 New York City sanitation workers"),
+    "pba-mou-2017-2025": ("NYC Council Finance Division, NYPD demographics report", "Oct. 1, 2025", "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/New-York-Police-Department-Demographics-Report-2.xlsx", "POLICE OFFICER ... 22,084"),
+    "dea-unit-agreement-2022-2027": ("NYC Council Finance Division, NYPD demographics report", "Oct. 1, 2025", "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/New-York-Police-Department-Demographics-Report-2.xlsx", "Detective 1st grade 279, 2nd grade 714, 3rd grade 2,961, detective specialist 1,058 (total 5,012)"),
+    "ufa-moa-2017-2020": ("NYC Council Finance Division, FDNY uniformed personnel report", "Oct. 2025", "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/Fire-Department-of-New-York-Uniformed-Personnel-Demographics-Report-1.pdf", "FIREFIGHTER ... 8533"),
+    "ufoa-fire-officers-2018-2021": ("NYC Council Finance Division, FDNY uniformed personnel report", "Oct. 2025", "https://council.nyc.gov/budget/wp-content/uploads/sites/54/2025/10/Fire-Department-of-New-York-Uniformed-Personnel-Demographics-Report-1.pdf", "Lieutenant 1,373, captain 574, battalion chief 333, deputy chief 74 (2,354), plus supervising fire marshals and medical officers (2,406)"),
+    "nysna-staff-nurses-2019-2023": ("NYSNA", "July 31, 2023", "https://www.nysna.org/press/2023/nyc-public-hospital-nurses-win-historic-contract-pay-parity-and-safe-staffing", "Approximately 8,000 NYSNA nurses at NYC Health+Hospitals facilities and Mayoral agencies"),
+    "psc-cuny-moa-2023-2027": ("City University of New York", "2024", "https://www.cuny.edu/news/cuny-and-professional-staff-congress-announce-tentative-labor-agreement-covering-over-30000-cuny-employees/", "Tentative Labor Agreement Covering Over 30,000 CUNY Employees"),
+    "psc-cuny-agreement-2017-2023": ("City University of New York", "2024", "https://www.cuny.edu/news/cuny-and-professional-staff-congress-announce-tentative-labor-agreement-covering-over-30000-cuny-employees/", "Tentative Labor Agreement Covering Over 30,000 CUNY Employees"),
+}
+
 def main():
     contracts = json.loads((DATA / "contracts.json").read_text())
     clauses = json.loads((DATA / "clauses.json").read_text())
@@ -288,6 +311,10 @@ def main():
         if cid in CURATED:
             entry.update(CURATED[cid])
             entry["curated"] = True
+        entry["headcount_verified"] = bool(entry.get("headcount")) and cid in HEADCOUNT_SOURCES
+        if entry["headcount_verified"]:
+            pub, date, url, quote = HEADCOUNT_SOURCES[cid]
+            entry["headcount_source"] = {"publisher": pub, "date": date, "url": url, "quote": quote}
         units.append(entry)
 
     (DATA / "units.json").write_text(json.dumps(units, indent=1))

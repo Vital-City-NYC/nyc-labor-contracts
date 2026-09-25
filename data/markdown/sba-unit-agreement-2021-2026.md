@@ -11,7 +11,7 @@ pages_with_tables: 0
 clauses: 1
 sector: "uniformed-police"
 union_full: "Sergeants Benevolent Association of the City of New York (SBA)"
-headcount_approx: 4500
+headcount_approx: 4400
 wage_verified: "pattern"
 wage_cumulative_pct: 18.77
 ---
@@ -23,7 +23,7 @@ wage_cumulative_pct: 18.77
 **Pages:** 2  
 **Clauses extracted:** 1
 
-**Workforce:** Represents all NYPD sergeants. Negotiates separately from PBA but typically pegs increases to PBA's pattern.
+**Workforce:** Represents all NYPD sergeants. In this round the SBA bargained as part of the Uniformed Officers Coalition.
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 

@@ -21,7 +21,7 @@ headcount_approx: 30000
 **Pages:** 62  
 **Clauses extracted:** 10
 
-**Workforce:** Represents full-time and adjunct faculty, professional staff, and graduate-employee teaching assistants across the City University of New York. Bargains directly with CUNY (a state-affiliated entity), not through NYC OLR. The 2023-2027 MOA modifies the underlying 2017-2023 PSC-CUNY agreement (also in this corpus).
+**Workforce:** Represents full-time and adjunct faculty, professional staff, and graduate-employee teaching assistants across the City University of New York. Bargains with CUNY; the agreements are published by CUNY rather than on the Office of Labor Relations Recent Agreements page. The 2023-2027 MOA modifies the underlying 2017-2023 PSC-CUNY agreement (also in this corpus).
 
 > This Markdown export is derived from the source PDF via `pdfplumber` text extraction with `ocrmac` (macOS Vision) OCR fallback for image-only pages. Tables were detected and rendered as pipe-delimited Markdown so column boundaries survive. Pages flagged `OCR` were reconstructed from page images and may contain minor character recognition errors — verify quotations against the source PDF before publishing.
 

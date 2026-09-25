@@ -23,7 +23,9 @@
       },
       "short_name": "NYSNA",
       "short_unit": "about 8,000 nurses",
-      "short": "The 2023 contract was settled but never published. Only the replaced 2019-2023 agreement is here."
+      "short": "The 2023 contract was settled but never published. Only the replaced 2019-2023 agreement is here.",
+      "status": "Replaced by a 2023 contract that has not been published",
+      "status_key": "superseded"
     },
     {
       "id": "ufa-unit",
@@ -47,7 +49,9 @@
       },
       "short_name": "UFA",
       "short_unit": "about 8,500 firefighters",
-      "short": "The successor unit agreements under the 2022-2027 coalition deal are unpublished. The 2017-2020 agreement and the coalition deal are here."
+      "short": "The successor unit agreements under the 2022-2027 coalition deal are unpublished. The 2017-2020 agreement and the coalition deal are here.",
+      "status": "Expired; continued, as changed by the 2022-2027 coalition agreement, until the unpublished successor unit agreements",
+      "status_key": "continued"
     },
     {
       "id": "ufoa-unit",
@@ -71,7 +75,9 @@
       },
       "short_name": "UFOA",
       "short_unit": "about 2,400 fire officers",
-      "short": "The successor unit agreement under the coalition deal is unpublished. The 2018-2021 agreement and the coalition deal are here."
+      "short": "The successor unit agreement under the coalition deal is unpublished. The 2018-2021 agreement and the coalition deal are here.",
+      "status": "Expired; continued, as changed by the 2022-2027 coalition agreement, until the unpublished successor unit agreement",
+      "status_key": "continued"
     }
   ]
 }

@@ -2,8 +2,8 @@
 contract_id: supervisor-of-mechanics-l621-executed-contract-2021-2026
 label: "Supervisor of Mechanics L621 Executed Contract, 2021-2026"
 expanded_label: "Supervisor of Mechanics L621 Executed Contract, 2021-2026"
-term_start: 2021
-term_end: 2026
+term_start: 2020
+term_end: 2025
 source_pdf: "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/L621-Supervisor-of-Mechanics-et-al-10-13-2020--11-18-2025.pdf"
 pages: 39
 ocr_pages: 0
@@ -14,7 +14,7 @@ sector: "skilled-trades"
 
 # Supervisor of Mechanics L621 Executed Contract, 2021-2026
 
-**Term:** 2021–2026  
+**Term:** 2020–2025  
 **Source PDF:** [https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/L621-Supervisor-of-Mechanics-et-al-10-13-2020--11-18-2025.pdf](https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/L621-Supervisor-of-Mechanics-et-al-10-13-2020--11-18-2025.pdf)  
 **Pages:** 39  
 **Clauses extracted:** 39
@@ -28,7 +28,7 @@ sector: "skilled-trades"
 ## Contents
 
 - [Supervisor of Mechanics L621 Executed Contract, 2021-2026](#page-1)
-- [OFFICE OF LABOR RELATIONS](#page-1)
+- [Letterhead](#page-1)
 - [Article I — UNION RECOGNITION AND UNIT DESIGNATION](#page-3)
 - [Article II — DUES CHECKOFF](#page-4)
 - [Article III — UNION ACTIVITY](#page-4)
@@ -58,14 +58,14 @@ sector: "skilled-trades"
 - [Article XVI — APPENDICES](#page-30)
 - [Article XVII — SAVINGS CLAUSE](#page-30)
 - [Article XVIII — CITYWIDE ISSUES](#page-30)
-- [CARL CHIARAMONTE](#page-31)
-- [ERICEICHENHTZ](#page-31)
+- [Signatures](#page-31)
+- [Signatures](#page-31)
 - [COU7RACT](#page-31)
-- [AGREED AND ACCEPTED ON BEHALF OF](#page-35)
-- [CARL CHIARAMONTE](#page-35)
+- [Signatures](#page-35)
+- [Signatures](#page-35)
 - [Article IV — and Article V of the contract. The one hundred and twenty-day ( 120) period for filing](#page-36)
-- [AGREED AND ACCEPTED ON BEHALF OF](#page-36)
-- [CARL CHIARAMONTE](#page-36)
+- [Signatures](#page-36)
+- [Signatures](#page-36)
 
 ---
 

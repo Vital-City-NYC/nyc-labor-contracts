@@ -11,7 +11,7 @@ pages_with_tables: 0
 clauses: 1
 sector: "uniformed-police"
 union_full: "NYC Detectives' Endowment Association"
-headcount_approx: 6000
+headcount_approx: 5000
 wage_verified: "pattern"
 wage_cumulative_pct: 18.77
 ---

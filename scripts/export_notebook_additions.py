@@ -162,36 +162,30 @@ def underlying(contracts):
 
 
 def corrections(contracts):
-    L = ["# Corrections — figures superseded in earlier companion documents\n", BANNER]
-    L.append(
-        "This file corrects specific facts in the companion documents already in this notebook "
-        "(companion-00 through companion-04). **Where this file and an earlier companion document "
-        "disagree, this file is correct.** The 100 contract texts themselves are unaffected and "
-        "remain accurate.\n")
+    units = json.loads((DATA / "units.json").read_text())
+    verified = [u for u in units if u.get("headcount_verified") and not u.get("headcount_duplicate_of")]
+    total = sum(u["headcount"] for u in verified)
+    L = ["# Headcounts and titles — cautions for answering questions\n", BANNER]
     L.append("## 1. Do not add the two PSC-CUNY headcounts together\n")
     L.append(
-        "The bargaining-units companion lists the PSC-CUNY Agreement 2017-2023 at ~30,000 members and "
-        "the PSC-CUNY Memorandum of Agreement 2023-2027 at ~30,000 members. **These are the same "
-        "~30,000 CUNY faculty and professional staff, not 60,000 people.** One document is the "
-        "underlying agreement and the other amends it. Any total covering employees across this corpus "
-        "should count them once. The corrected corpus-wide total is approximately **376,900 covered "
-        "employees across 15 bargaining units with a sourced headcount** — not 406,900.\n")
-    L.append("## 2. Two contract titles were malformed\n")
+        "The PSC-CUNY Agreement 2017-2023 and the PSC-CUNY Memorandum of Agreement 2023-2027 cover the "
+        "same roughly 30,000 CUNY faculty and professional staff, not 60,000 people. One document is the "
+        "underlying agreement and the other amends it. Count them once.\n")
+    L.append("## 2. Headcount coverage is thin\n")
     L.append(
-        "| Appears in earlier companion docs as | Correct title | Term |\n"
-        "|---|---|---|\n"
-        "| Lba 10 5 2023 Unit Bargaining Agreement | LBA Unit Bargaining Agreement (Lieutenants "
-        "Benevolent Association) | 2022-2027 |\n"
-        "| Local 891 School Custodians (no term shown) | Local 891 School Custodians MOA | 2020-2025 |\n\n"
-        "Both terms were recovered from the documents themselves: the LBA agreement states its term as "
-        "February 16, 2022 through April 15, 2027, and the Local 891 agreement states August 1, 2020 "
-        "through December 31, 2025.\n")
-    L.append("## 3. Headcount coverage is thinner than it may appear\n")
+        f"Only **{len(verified)} bargaining units have a headcount checked against a primary source** "
+        f"(the NYC Mayor's Office, the NYC Council Finance Division, NYSNA or CUNY). Together they cover "
+        f"about **{total:,} employees**. No reliable figure exists for the other units, so questions of the "
+        "form \"what share of city workers is covered?\" cannot be answered from this notebook. The 1199 "
+        "SEIU figure of about 2,500 comes from a 2014 announcement and is not current.\n")
+    L.append("## 3. Contract titles and terms\n")
     L.append(
-        "Only **15 of the 100 bargaining units have a sourced headcount**. Those figures come from "
-        "union statements and city documents, and they are the only basis for any claim about how many "
-        "workers this corpus covers. No reliable total exists for the remaining 85 units, so questions "
-        "of the form \"what share of city workers is covered?\" cannot be answered from this notebook.\n")
+        "Contract titles in this notebook follow the Office of Labor Relations, but several of its "
+        "listed years are wrong. The terms stated in the documents themselves are correct: CWA Local 1180 "
+        "runs to June 12, 2027; Local 237 Parking Control Specialists to May 10, 2027; the Metal Work "
+        "Mechanic agreement ended Nov. 2, 2025; the SEIU Local 621 Supervisor of Mechanics contract ended "
+        "Nov. 18, 2025 (July 5, 2026 for the deputy director title); the Sanitation Chiefs unit agreement "
+        "runs to Feb. 29, 2028; and the Locksmiths determination ran from Dec. 29, 2020 to Jan. 28, 2026.\n")
     L.append("## 4. The corpus covers city employers only\n")
     L.append(
         "Every document here involves the City of New York as employer (or CUNY, for PSC). Public "

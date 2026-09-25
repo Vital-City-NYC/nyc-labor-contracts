@@ -28,9 +28,9 @@ sector: "other"
 ## Contents
 
 - [OSA Public Advocate Executed Contract, 2022-2026](#page-1)
-- [HEADS OF CONCERNED CITY DEPARTMENTS AND AGENCIES](#page-1)
-- [CONTRACT](#page-1)
-- [NEW YORK CITY PUBLIC ADVOCATE STAFF AGREEMENT](#page-2)
+- [Cover memo from the Office of Labor Relations](#page-1)
+- [OSA Public Advocate Executed Contract, 2022-2026 (continued)](#page-1)
+- [OSA Public Advocate Executed Contract, 2022-2026 (continued)](#page-2)
 - [Article VI — PRODUCTIVITY AND PERFORMANCE.](#page-2)
 - [Article VIII — GRIEVANCE PROCEDURE..](#page-2)
 - [Article XV — APPENDICES ...](#page-2)
@@ -38,7 +38,7 @@ sector: "other"
 - [Article I — UNION RECOGNITION AND UNIT DESIGNATION](#page-3)
 - [Article II — DUES CHECK OFF](#page-3)
 - [Article III — SALARIES](#page-4)
-- [TITLES](#page-5)
+- [Article III — SALARIES (continued)](#page-5)
 - [Section 3 — Ratification Bonus](#page-6)
 - [Section 4 — Wage Increase](#page-6)
 - [Article IV — WELFARE FUND](#page-7)
@@ -53,12 +53,12 @@ sector: "other"
 - [Article XI — COMPENSATORY TIME](#page-13)
 - [Article XV — APPENDICES](#page-14)
 - [Article XVI — SAVINGS CLAUSE](#page-14)
-- [NEW YORK CITY PUBLIC](#page-14)
-- [ORGANIZATION OF STAFF](#page-14)
-- [RENEE CAMPION](#page-14)
-- [ROBERT CROGHAN](#page-14)
-- [ERIC EICHENHOL1](#page-14)
-- [CONTRACT](#page-14)
+- [Article XVI — SAVINGS CLAUSE (continued)](#page-14)
+- [Article XVI — SAVINGS CLAUSE (continued)](#page-14)
+- [Signatures](#page-14)
+- [Signatures](#page-14)
+- [Signatures](#page-14)
+- [Article XVI — SAVINGS CLAUSE (continued)](#page-14)
 
 ---
 

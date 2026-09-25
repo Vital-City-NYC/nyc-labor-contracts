@@ -15,21 +15,20 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Carpenters Consent Determination, 2021-2027](carpenters-consent-determination-2021-2027.md) — 2021–2027
 - [Civil Service Bar Association (CSBA) — Memorandum of Agreement, 2021-2026](csba-moa-2021-2026.md) — 2021–2026
 - [Committee of Interns and Residents (CIR) — Executed Contract, 2021-2027](cir-executed-contract-2021-2027.md) — 2021–2027
-- [Communications Workers of America (CWA) — 1180 Memorandum of Agreement, 2021-2026](cwa-1180-moa-2021-2026.md) — 2021–2026
+- [Communications Workers of America (CWA) — 1180 Memorandum of Agreement, 2021-2026](cwa-1180-moa-2021-2026.md) — 2021–2027
 - [Communications Workers of America (CWA) — 1183 Memorandum of Agreement, 2021-2026](cwa-1183-moa-2021-2026.md) — 2021–2026
 - [Communications Workers of America (CWA) — L1181 Memorandum of Agreement, 2021-2027](cwa-l1181-moa-2021-2027.md) — 2021–2027
 - [Communications Workers of America (CWA) — L1182 Memorandum of Agreement, 2021-2027](cwa-l1182-moa-2021-2027.md) — 2021–2027
 - [Correction Captains Association (CCA) — Unit Agreement, 2022-2028](cca-unit-agreement-2022-2028.md) — 2022–2028
 - [Correction Officers' Benevolent Association (COBA) — Unit Agreement, 2022-2027](coba-unit-agreement-2022-2027.md) — 2022–2027
 - [Council of School Supervisors and Administrators (CSA) — Memorandum of Agreement 2023-2028 amended Appendix A](csa-moa-2023-2028-amended-appendix-a.md) — 2023–2028
-- [Crane Operator 2021 2026](crane-operator-2021-2026.md) — term n/a
 - [DC 37 Local 1320 Sewage Treatment Workers Memorandum of Agreement, 2021-2026](dc-37-local-1320-sewage-treatment-workers-moa-2021-2026.md) — 2021–2026
 - [Deputy Sheriffs Memorandum of Agreement, 2022-2027](deputy-sheriffs-moa-2022-2027.md) — 2022–2027
 - [Detective Investigator Association (District Attorneys' offices) (DIA) — Memorandum of Agreement, 2023-2028](dia-moa-2023-2028.md) — 2023–2028
 - [Detectives' Endowment Association (DEA) — Unit Agreement, 2022-2027](dea-unit-agreement-2022-2027.md) — 2022–2027
 - [District Council 37 of AFSCME (DC37) — L1087 Clock Repairer Memorandum of Agreement, 2021-2026](dc37-l1087-clock-repairer-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L1087 Compositors Memorandum of Agreement, 2021-2026](dc37-l1087-compositors-moa-2021-2026.md) — 2021–2026
-- [District Council 37 of AFSCME (DC37) — L1087 Locksmiths Consent Determination, 2021-2026](dc37-l1087-locksmiths-consent-determination-2021-2026.md) — 2021–2026
+- [District Council 37 of AFSCME (DC37) — L1087 Locksmiths Consent Determination, 2021-2026](dc37-l1087-locksmiths-consent-determination-2021-2026.md) — 2020–2026
 - [District Council 37 of AFSCME (DC37) — L1087 Printing Press Operators Memorandum of Agreement, 2021-2026](dc37-l1087-printing-press-operators-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L1087 Radio Repair Mechanics Memorandum of Agreement, 2021-2026](dc37-l1087-radio-repair-mechanics-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L1157 Supervisor Highway Repairers Consent Determination, 2021-2026](dc37-l1157-supervisor-highway-repairers-moa-2021-2026.md) — 2021–2026
@@ -67,12 +66,14 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [L638 Steamfitters Consent Determination, 2022-2027](l638-steamfitters-consent-determination-2022-2027.md) — 2022–2027
 - [Law Enforcement Employees Benevolent Association (LEEBA) — EPO Memorandum of Agreement, 2017-2026](leeba-epo-moa-2017-2026.md) — 2017–2026
 - [Lieutenants Benevolent Association (LBA) — Unit Bargaining Agreement, 2022-2027](lba-10-5-2023-unit-bargaining-agreement.md) — 2022–2027
+- [Local 14 Crane Operators Wage Indenture, 2021-2026](crane-operator-2021-2026.md) — 2021–2026
 - [Local 14/15 Gasoline Roller Engineers Wage Indenture, 2021-2026](local-14-15-gasoline-roller-engineers-wage-indenture-2021-2026.md) — 2021–2026
 - [Local 15 Welders Memorandum of Agreement, 2021-2026](local-15-welders-moa-2021-2026.md) — 2021–2026
+- [Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) Memorandum of Agreement, 2021-2026](oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021.md) — 2021–2026
 - [Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer Consent Determination, 2021-2026](local-15-30-oilers-stationary-engineer-and-senior-stationary-engineer-consent-de.md) — 2021–2026
 - [Local 211 Building Inspectors Memorandum of Agreement, 2021-2026](local-211-building-inspectors-moa-2021-2026.md) — 2021–2026
-- [Local 237 - Parking Control Specialists Memorandum of Agreement, 2021-2026](local-237-parking-control-specialists-moa-2021-2026.md) — 2021–2026
-- [Local 237 Horseshoers Fully Executed Moa 102323 2021 2026](local-237-horseshoers-fully-executed-moa-102323-2021-2026.md) — term n/a
+- [Local 237 - Parking Control Specialists Memorandum of Agreement, 2021-2026](local-237-parking-control-specialists-moa-2021-2026.md) — 2021–2027
+- [Local 237 Horseshoers Memorandum of Agreement, 2021-2026](local-237-horseshoers-fully-executed-moa-102323-2021-2026.md) — 2021–2026
 - [Local 246 Auto Mechanics Consent Determination, 2021-2026](local-246-auto-mechanics-consent-determination-2021-2026.md) — 2021–2026
 - [Local 246 Automotive Service Workers Memorandum of Agreement, 2021-2026](local-246-automotive-service-workers-moa-2021-2026.md) — 2021–2026
 - [Local 246 Carriage Upholsterer Consent Determination, 2021-2026](local-246-carriage-upholsterer-consent-determination-2021-2026.md) — 2021–2026
@@ -84,9 +85,8 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Local 40 Bridge Repairer Consent Determination, 2022-2025](local-40-bridge-repairer-consent-determination-2022-2025.md) — 2022–2025
 - [Local 891 School Custodians Memorandum of Agreement, 2020-2025](local-891-school-custodians.md) — 2020–2025
 - [Marine Engineers' Beneficial Association (MEBA) — Memorandum of Agreement, 2010-2027](meba-moa-2010-2027.md) — 2010–2027
-- [Metal Work Mechanic Memorandum of Agreement, 2021-2026](metal-work-mechanic-moa-2021-2026.md) — 2021–2026
+- [Metal Work Mechanic Memorandum of Agreement, 2021-2026](metal-work-mechanic-moa-2021-2026.md) — 2020–2025
 - [New York State Nurses Association (NYSNA) — Staff Nurses, 2019-2023](nysna-staff-nurses-2019-2023.md) — 2019–2023
-- [Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026](oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021.md) — term n/a
 - [Organization of Staff Analysts (OSA) — Memorandum of Agreement, 2021-2027](osa-moa-2021-2027.md) — 2021–2027
 - [Organization of Staff Analysts (OSA) — Public Advocate Executed Contract, 2022-2026](osa-public-advocate-executed-contract-2022-2026.md) — 2022–2026
 - [Organization of Staff Analysts (OSA) — School Security/Traffic Memorandum of Agreement, 2022-2027](osa-school-security-traffic-moa-2022-2027.md) — 2022–2027
@@ -95,11 +95,11 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Patrolmen's Benevolent Association (PBA) — Memorandum of Understanding, 2017-2025](pba-mou-2017-2025.md) — 2017–2025
 - [Sanitation Officers Association (SOA) — Unit Agreement, 2023-2028](soa-unit-agreement-2023-2028.md) — 2023–2028
 - [Sergeants Benevolent Association (SBA) — Unit Agreement, 2021-2026](sba-unit-agreement-2021-2026.md) — 2021–2026
-- [Supervisor of Mechanics L621 Executed Contract, 2021-2026](supervisor-of-mechanics-l621-executed-contract-2021-2026.md) — 2021–2026
+- [Supervisor of Mechanics L621 Executed Contract, 2021-2026](supervisor-of-mechanics-l621-executed-contract-2021-2026.md) — 2020–2025
 - [Uniformed Coalition Economic Agreement, 2022-2027](uniformed-coalition-economic-agreement-2022-2027.md) — 2022–2027
 - [Uniformed Fire Officers Association (UFOA) — Fire Officers Agreement, 2018-2021](ufoa-fire-officers-2018-2021.md) — 2018–2021
 - [Uniformed Firefighters Association (UFA) — Memorandum of Agreement, 2017-2020](ufa-moa-2017-2020.md) — 2017–2020
-- [Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027](usca-unit-agreement-2022-2027.md) — 2022–2027
+- [Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027](usca-unit-agreement-2022-2027.md) — 2023–2028
 - [Uniformed Sanitationmen's Association (USA) — Executed Contract, 2022-2028](usa-executed-contract-2022-2028.md) — 2022–2028
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Dockbuilders Memorandum of Agreement, 2022-2027](ubcj-dockbuilders-moa-2022-2027.md) — 2022–2027
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Riggers Memorandum of Agreement, 2022-2027](ubcj-riggers-moa-2022-2027.md) — 2022–2027

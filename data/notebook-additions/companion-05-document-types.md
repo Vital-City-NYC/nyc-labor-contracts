@@ -49,13 +49,13 @@ Prevailing-wage determinations for skilled-trade titles under state Labor Law se
 - DC9 L1969 Glaziers Consent Determination, 2021-2026
 - Local 246 Carriage Upholsterer Consent Determination, 2021-2026
 - Joint Cert L246 and L15 Tractor Operators Wage Indenture, 2020-2025
-- Oilers Stationary Eng Steam Sr Stationary Engineer Steam Fully Executed Moa 2021 2026 — amends a prior agreement
+- Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer (Steam) MOA, 2021-2026 — amends a prior agreement
 - UBCJ Dockbuilders MOA, 2022-2027 — amends a prior agreement
 - L3 Stationary Engineer (Electric) MOA, 2020–2025 — amends a prior agreement
 - UBCJ Ship Carpenter MOA, 2022-2027 — amends a prior agreement
 - UBCJ Riggers MOA, 2022-2027 — amends a prior agreement
 - Joint Cert L246 and L15 Motor Grader Operators Wage Indenture, 2020-2025 — amends a prior agreement
-- Local 237 Horseshoers Fully Executed Moa 102323 2021 2026 — amends a prior agreement
+- Local 237 Horseshoers MOA, 2021-2026 — amends a prior agreement
 - DC37 L376 Construction Laborers MOA, 2021-2026 — amends a prior agreement
 - Boilermaker MOA, 2021-2026 — amends a prior agreement
 - Blacksmith MOA, 2021-2026 — amends a prior agreement
@@ -66,7 +66,7 @@ Prevailing-wage determinations for skilled-trade titles under state Labor Law se
 Amendments. Each changes specific economic terms — usually wages, welfare fund contributions and bonuses — and leaves the rest of a prior agreement in force. An amendment alone does not state everything that governs the workers it covers.
 
 - UFT MOA, 2022-2027 — amends a prior agreement
-- Crane Operator 2021 2026
+- Local 14 Crane Operators Wage Indenture, 2021-2026
 - CSA MOA 2023-2028 amended Appendix A — amends a prior agreement
 - MEBA MOA, 2010-2027 — amends a prior agreement
 - OSA Public Advocate Executed Contract, 2022-2026

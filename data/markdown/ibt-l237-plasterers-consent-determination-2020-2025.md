@@ -27,18 +27,18 @@ sector: "other"
 
 ## Contents
 
-- [THE COMPTROLLER OF THE CITY OF NEW YORK](#page-1)
-- [NOTICE](#page-1)
-- [FILING](#page-1)
-- [GREGORY FLOYD](#page-2)
-- [BEFORE THE COMPTROLLER OF THE CITY OF NEW YORK](#page-3)
-- [CONSENT DETERMINATION](#page-3)
-- [BRAD LANDER](#page-10)
+- [Caption](#page-1)
+- [Caption](#page-1)
+- [Caption](#page-1)
+- [Signatures](#page-2)
+- [Caption](#page-3)
+- [Caption](#page-3)
+- [Signatures](#page-10)
 - [RELEASE AND W AIYER](#page-11)
-- [AGREED AND ACCEPTED ON BEHALF](#page-13)
-- [AGREED AND ACCEPTED ON BEHALF](#page-14)
+- [Signatures](#page-13)
+- [Signatures](#page-14)
 - [APPENDIX A](#page-15)
-- [ANNUAL LEA](#page-15)
+- [APPENDIX A (continued)](#page-15)
 - [CATEGORY ANNUAL LEA ALLOWANCE MONTHLY ACCRUAL](#page-15)
 - [Section 6](#page-16)
 - [Section 6](#page-19)
@@ -47,10 +47,10 @@ sector: "other"
 - [Section 3](#page-21)
 - [Section 4](#page-21)
 - [Section 2](#page-22)
-- [OFFICE OF LABOR RELATIONS](#page-24)
-- [OFFICE OF LABOR RELATIONS](#page-27)
-- [RENEE CAMPION GEORGETTE GESTELY](#page-27)
-- [CLAIRE LEVITT](#page-27)
+- [Side letter](#page-24)
+- [Letterhead](#page-27)
+- [Signatures](#page-27)
+- [Signatures](#page-27)
 
 ---
 

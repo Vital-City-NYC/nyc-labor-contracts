@@ -28,11 +28,11 @@ sector: "skilled-trades"
 ## Contents
 
 - [L3 Stationary Engineer (Electric) MOA, 2020–2025](#page-1)
-- [FOR THE CITY OF NEW YORK](#page-3)
-- [RENEE CAMPN](#page-3)
-- [SEAN FITZPATRICK](#page-3)
-- [AGREED AND ACCEPTED ON BEHALF](#page-5)
-- [SEAN FITZPATRICK](#page-5)
+- [Signatures](#page-3)
+- [Signatures](#page-3)
+- [Signatures](#page-3)
+- [Signatures](#page-5)
+- [Signatures](#page-5)
 
 ---
 

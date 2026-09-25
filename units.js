@@ -166,7 +166,7 @@
   function card(u) {
     const div = document.createElement("div");
     div.className = "unit-card";
-    const headcount = u.headcount
+    const headcount = u.headcount && u.headcount_verified
       ? `<div class="unit-headcount"><span class="unit-headcount-num">${u.headcount.toLocaleString()}</span><span class="unit-headcount-label">covered employees${u.curated ? "" : " (estimate)"}</span></div>`
       : `<div class="unit-headcount unit-headcount-tbd"><span class="unit-headcount-num">—</span><span class="unit-headcount-label">headcount being sourced</span></div>`;
     const titles = (u.titles && u.titles.length)
