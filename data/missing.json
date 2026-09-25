@@ -1,0 +1,68 @@
+{
+  "checked": "2026-09-25",
+  "checked_note": "Checked against the Office of Labor Relations Recent Agreements, Past Agreements and Uniformed Contracts pages and a web search of union and city announcements.",
+  "unpublished": [
+    {
+      "id": "nysna-2023",
+      "union": "New York State Nurses Association (NYSNA)",
+      "unit": "About 8,000 registered nurses at NYC Health + Hospitals and mayoral agencies",
+      "missing": "The contract that replaced the 2019-2023 agreement. It was settled in July 2023 after mediation and impasse arbitration and runs about five and a half years from March 2023. Neither the Office of Labor Relations nor NYC Health + Hospitals has posted its text.",
+      "badge": "newer contract not published",
+      "have": [
+        "nysna-staff-nurses-2019-2023"
+      ],
+      "flag": [
+        "nysna-staff-nurses-2019-2023"
+      ],
+      "have_note": "This database has only the 2019-2023 agreement, which is no longer the current contract.",
+      "evidence": {
+        "publisher": "NYSNA",
+        "date": "July 31, 2023",
+        "url": "https://www.nysna.org/press/2023/nyc-public-hospital-nurses-win-historic-contract-pay-parity-and-safe-staffing",
+        "quote": "The five-and-a-half-year contract comes after a month of expedited mediation and then impasse arbitration."
+      }
+    },
+    {
+      "id": "ufa-unit",
+      "union": "Uniformed Firefighters Association (UFA)",
+      "unit": "About 8,500 firefighters plus fire marshals, wipers and marine pilots and engineers",
+      "missing": "The UFA's successor unit agreements. The 2022-2027 uniformed coalition agreement sets raises for the UFA and says its terms are to be written into successor unit agreements for three UFA units. The Office of Labor Relations has published unit agreements for 9 of the 11 coalition unions, but not the UFA's.",
+      "badge": "current unit agreement not published",
+      "have": [
+        "ufa-moa-2017-2020",
+        "uniformed-coalition-economic-agreement-2022-2027"
+      ],
+      "flag": [
+        "ufa-moa-2017-2020"
+      ],
+      "have_note": "This database has the UFA's 2017-2020 agreement, which the coalition deal continues except where it changes the terms, and the coalition agreement itself.",
+      "evidence": {
+        "publisher": "Uniformed Officers Coalition Economic Agreement, page 1",
+        "date": "June 13, 2023",
+        "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+        "quote": "July 31, 2020 (UFA-Firefighters/Fire Marshals); July 27, 2021 (UFA-Pilots/Marine Engineers) and July 31, 2020 (UFA-Wipers)"
+      }
+    },
+    {
+      "id": "ufoa-unit",
+      "union": "Uniformed Fire Officers Association (UFOA)",
+      "unit": "About 2,400 fire lieutenants, captains, battalion chiefs and other officers",
+      "missing": "The UFOA's successor unit agreement. The 2022-2027 uniformed coalition agreement covers the unit whose contract expired July 30, 2021, and says its terms are to be written into a successor unit agreement. The Office of Labor Relations has not published it.",
+      "badge": "current unit agreement not published",
+      "have": [
+        "ufoa-fire-officers-2018-2021",
+        "uniformed-coalition-economic-agreement-2022-2027"
+      ],
+      "flag": [
+        "ufoa-fire-officers-2018-2021"
+      ],
+      "have_note": "This database has the UFOA's 2018-2021 agreement, which the coalition deal continues except where it changes the terms, and the coalition agreement itself.",
+      "evidence": {
+        "publisher": "Uniformed Officers Coalition Economic Agreement, page 1",
+        "date": "June 13, 2023",
+        "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+        "quote": "agreements successor to existing unit agreements expiring on: July 30, 2021 (UFOA)"
+      }
+    }
+  ]
+}

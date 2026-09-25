@@ -60,18 +60,20 @@ def doc_about():
     return f"""# About this corpus — NYC municipal labor contracts
 
 {BANNER}
-This notebook contains the full text of {manifest['contracts']} collective bargaining agreements covering New York City municipal employees: every agreement published on the New York City Office of Labor Relations "Recent Agreements" page, plus major NYC public-sector contracts that bargain outside that office (Uniformed Firefighters Association, Uniformed Fire Officers Association, New York State Nurses Association at NYC Health + Hospitals and the Professional Staff Congress at the City University of New York).
+This notebook contains the full text of {manifest['contracts']} collective bargaining agreements covering New York City municipal employees: every agreement listed on the New York City Office of Labor Relations "Recent Agreements" page, plus five documents published elsewhere: agreements for the Uniformed Firefighters Association, the Uniformed Fire Officers Association and the New York State Nurses Association (from the office's download server) and two Professional Staff Congress agreements (from the City University of New York).
 
 ## How the text was produced
 
-Many of the source documents are scanned image PDFs with no embedded text. Each page was extracted with a text-layer reader where possible and with optical character recognition (macOS Vision, with Google Cloud Vision for the seven worst-quality documents) where not. Roughly 500 high-confidence OCR misreads have been hand-reviewed and corrected, and two agreements — the Committee of Interns and Residents contract and the PSC-CUNY 2023-2027 memorandum of agreement — are drawn from text-native copies published by the unions themselves, which eliminates OCR error in those documents entirely.
+Many of the source documents are scanned image PDFs with no embedded text. Each page was extracted with a text-layer reader where possible and with optical character recognition (macOS Vision, with Google Cloud Vision for the seven worst-quality documents) where not. Roughly 500 high-confidence OCR misreads have been hand-reviewed and corrected, and two agreements — the Committee of Interns and Residents contract and the PSC-CUNY 2023-2027 memorandum of agreement — are drawn from text-native copies published by the unions themselves, which removes nearly all OCR error from those documents.
 
 ## Cautions for answering questions
 
 - OCR text can still contain transcription mistakes, especially in signature blocks, addresses and dense wage tables. When a number matters, recommend verifying against the source PDF (each contract file links to it).
 - Contract terms in these documents are frequently retroactive: an agreement signed in 2024 may have a term that began in 2021.
 - Several uniformed unit agreements are short letters that incorporate the Uniformed Coalition Economic Agreement by reference — economic terms for those units live in that coalition document, not the unit letter.
-- The corpus reflects agreements published as of August 2026. The latest bargaining round may not be posted yet for some unions.
+- The corpus reflects agreements published as of August 2026, checked again Sept. 25, 2026.
+- Some current agreements are not in this notebook because they have never been published. The New York State Nurses Association 2019-2023 agreement here was replaced by a contract settled in July 2023 whose text is unpublished. The Uniformed Firefighters Association and Uniformed Fire Officers Association signed the 2022-2027 coalition agreement, but their successor unit agreements are unpublished. Do not describe the older documents as current for these unions.
+- 59 amendments keep an older underlying agreement in force that is not in this notebook, so provisions on grievances, discipline and seniority for those workers may not appear here at all.
 """
 
 

@@ -149,7 +149,7 @@
       units.sort((a, b) => (a.term_end || 9999) - (b.term_end || 9999) || a.contract_label.localeCompare(b.contract_label));
     }
 
-    $("#result-count").textContent = `${units.length} bargaining unit${units.length === 1 ? "" : "s"}` +
+    $("#result-count").textContent = `${units.length} document${units.length === 1 ? "" : "s"}` +
       (state.sector ? ` in ${SECTOR_LABELS[state.sector] || state.sector}` : "") +
       (state.query ? ` matching "${state.query}"` : "");
 

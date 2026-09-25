@@ -2,7 +2,7 @@
 
 > **Companion reference — not contract text.** This document was prepared as part of the NYC municipal labor contracts project to support search and question-answering. The contracts themselves are separate sources in this notebook; treat this file as project reference material.
 
-63 documents in this notebook amend a prior agreement without naming or linking it. Those prior agreements are public records, but they are published in other places and the amendments never point to them. Verified links for 15 of them are below. If a question cannot be answered from an amendment, the answer is likely in the document listed here — which is **not** in this notebook and would need to be consulted directly.
+63 documents in this notebook amend a prior agreement, and the city does not link that agreement from the amendment. Those prior agreements are public records published in other places. Verified links to an earlier full agreement exist for 15 documents and are below; 59 of the 63 amendments have no link. If a question cannot be answered from an amendment, the answer is likely in the document listed here — which is **not** in this notebook and would need to be consulted directly.
 
 ## Verified links
 
@@ -28,7 +28,7 @@
 
 The remaining amendments are mostly skilled-trade agreements whose predecessors have not been located. Four routes exist, in rough order of usefulness:
 
-1. **The Office of Labor Relations Uniformed Contracts page** — https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 full underlying agreements for the police, fire, sanitation and correction unions, indexed by collective bargaining unit (CBU) number. It is not linked from the Recent Agreements page.
+1. **The Office of Labor Relations Uniformed Contracts page** — https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 older agreements, memoranda and reopeners (mostly 2002-2012) for the police, fire, sanitation and correction unions, indexed by collective bargaining unit (CBU) number; they are the last full texts published, not necessarily the immediate predecessors. It is not linked from the Recent Agreements page.
 2. **Unlinked files on the city's own server**, under nyc.gov/assets/olr/downloads/pdf/collectivebargaining/. These resolve but appear on no index.
 3. **The unions themselves.** Many publish their full contracts; the United Federation of Teachers posts complete agreements for each job title.
 4. **Outside databases and records requests.** The Empire Center's SeeThroughNY hosts New York public-sector contracts, and executed agreements are obtainable under the state Freedom of Information Law.

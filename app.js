@@ -43,6 +43,8 @@
     clauses: [],
     units: [],
     unitByContract: {},
+    missing: { unpublished: [] },
+    missingByContract: {},
     index: null,
     view: "results",
     query: "",
@@ -66,7 +68,7 @@
   const DOC_TYPE_BLURB = {
     "full-agreement": "Self-contained collective bargaining agreements. These carry the complete article structure — recognition, grievance procedure, discipline, hours, leave — and can be read on their own.",
     "consent-determination": "Wage orders issued by the Comptroller under state Labor Law section 220 for skilled-trade titles, rather than bargained contracts. Most include a full Appendix A of time and leave benefits.",
-    "moa": "Amendments. Each one changes specific economic terms — usually wages, welfare fund contributions and bonuses — and expressly leaves the rest of an underlying agreement in force. Those underlying agreements are public records, but they are not linked from these documents or indexed on the Office of Labor Relations site; some sit unlinked on the city's own server, others are published by the unions or by outside databases. So an amendment on its own is not a complete statement of what governs the workers it covers.",
+    "moa": "Amendments. Each one changes specific economic terms — usually wages, welfare fund contributions and bonuses — and expressly leaves the rest of an underlying agreement in force. Those underlying agreements are public records, but the city does not link them from these documents, and most are not in this database; some sit unlinked on the city's own server, others are published by the unions or by outside databases. So an amendment on its own is not a complete statement of what governs the workers it covers.",
     "unit-agreement": "Short letters executed under the Uniformed Officers Coalition Economic Agreement. Wage increases come from that parent agreement; these add unit-specific items only.",
   };
   const DOC_TYPE_SHORT = {
@@ -113,6 +115,12 @@
       state.units = await loadJSON("data/units.json");
       state.unitByContract = Object.fromEntries(state.units.map(u => [u.contract_id, u]));
     } catch (e) { state.units = []; }
+    try {
+      state.missing = await loadJSON("data/missing.json");
+      (state.missing.unpublished || []).forEach(g => (g.flag || []).forEach(cid => {
+        (state.missingByContract[cid] = state.missingByContract[cid] || []).push(g);
+      }));
+    } catch (e) { state.missing = { unpublished: [] }; }
 
     // Build FlexSearch document index
     state.index = new FlexSearch.Document({
@@ -141,6 +149,7 @@
       const base = "https://vitalcity-nyc.github.io/nyc-labor-contracts/";
       const sync = () => { fullLink.href = base + location.hash; };
       window.addEventListener("hashchange", sync);
+      window.addEventListener("labor:hash", sync);
       sync();
     }
   }
@@ -199,13 +208,26 @@
     if (state.sectorFilter) params.set("sector", state.sectorFilter);
     const h = params.toString();
     history.replaceState(null, "", h ? "#" + h : "#");
+    window.dispatchEvent(new Event("labor:hash"));
   }
 
   function parseHashAndRender() {
+    if (/^#sec-\d+$/.test(location.hash) && document.getElementById(location.hash.slice(1))) return;
+    if (location.hash === "#missing") {
+      state.view = "results"; state.query = ""; state.topic = ""; state.contractFilter = "";
+      $("#q").value = ""; $("#topic-filter").value = ""; $("#contract-filter").value = ""; $("#view-mode").value = "results";
+      render();
+      const panel = document.getElementById("missing");
+      if (panel) panel.scrollIntoView({ block: "start" });
+      return;
+    }
     const params = new URLSearchParams(location.hash.replace(/^#/, ""));
     state.view = params.get("view") || "results";
     state.query = params.get("q") || "";
-    state.topic = params.get("topic") || "";
+    // Only accept topics we know; anything else in the URL is dropped so a
+    // crafted link can't inject markup into the topic headings.
+    const topicParam = params.get("topic") || "";
+    state.topic = Object.prototype.hasOwnProperty.call(TOPIC_LABELS, topicParam) ? topicParam : "";
     state.contractFilter = params.get("contract") || "";
     const cmp = params.get("compare");
     state.compareSet = new Set(cmp ? cmp.split(",").filter(Boolean) : []);
@@ -333,7 +355,7 @@
     const counted = state.units.filter(u => u.headcount && !u.headcount_duplicate_of).length;
     header.innerHTML = `
       <h2>Bargaining units — who's covered</h2>
-      <p>${state.units.length} bargaining units across NYC government. Headcounts shown for the ${counted} largest, totaling ~${totalCovered.toLocaleString()} covered employees, where a public source is available; smaller units' headcounts are still being sourced.</p>
+      <p>${state.units.length} documents across New York City government. Headcounts shown for ${counted} large units, totaling ~${totalCovered.toLocaleString()} covered employees, where a public source is available; smaller units' headcounts are still being sourced.</p>
     `;
     root.appendChild(header);
 
@@ -445,8 +467,9 @@
     const nAmend = state.contracts.filter(c => c.amends_predecessor).length;
     const intro = document.createElement("div");
     intro.className = "tiles-intro";
-    intro.innerHTML = `<p>Type in the search box above to search all ${state.contracts.length} documents at once, or click any document below to read its full text. These are grouped by what they actually are: ${nAmend} of the ${state.contracts.length} expressly continue an underlying agreement rather than replacing it, and those underlying agreements are not linked from these documents or indexed on the Office of Labor Relations site. <a href="methodology.html#doc-types">What that means for coverage</a>.</p>`;
+    intro.innerHTML = `<p>Type in the search box above to search all ${state.contracts.length} documents at once, or click any document below to read its full text. These are grouped by what they actually are: ${nAmend} of the ${state.contracts.length} expressly continue an underlying agreement rather than replacing it. <a href="methodology.html#doc-types">What that means for coverage</a>.</p>`;
     root.appendChild(intro);
+    root.appendChild(missingPanel());
 
     const byType = new Map();
     contracts.forEach(c => {
@@ -471,6 +494,44 @@
     });
   }
 
+  // Documents we know exist (or must exist) but that aren't in this database.
+  function missingPanel() {
+    const gaps = state.missing.unpublished || [];
+    const noUnderlying = state.contracts
+      .filter(c => c.amends_predecessor && !c.predecessor)
+      .sort((a, b) => a.label.localeCompare(b.label));
+    const label = c => escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label);
+    const panel = document.createElement("section");
+    panel.className = "missing-panel";
+    panel.id = "missing";
+    panel.innerHTML = `
+      <h2 class="missing-panel-title">Known missing documents</h2>
+      <p class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? "" : "s"} not published · ${noUnderlying.length} underlying agreements not in this database</p>
+      <div class="missing-panel-body">
+        <h3>Current agreements that have not been published</h3>
+        <ul class="missing-list">
+          ${gaps.map(g => `
+            <li>
+              <p class="missing-union"><strong>${escapeHtml(g.union)}</strong> · ${escapeHtml(g.unit)}</p>
+              <p><strong>Missing:</strong> ${escapeHtml(g.missing)}</p>
+              <p><strong>In this database instead:</strong> ${escapeHtml(g.have_note)} ${(g.have || []).map(cid => state.contractById[cid]
+                ? `<a href="#/contract/${encodeURIComponent(cid)}">${label(state.contractById[cid])}</a>` : "").filter(Boolean).join(" · ")}</p>
+              <p class="missing-evidence">Evidence: ${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: &ldquo;${escapeHtml(g.evidence.quote)}&rdquo; <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener">Source &#8599;</a></p>
+            </li>`).join("")}
+        </ul>
+        <h3>Underlying agreements not in this database</h3>
+        <p>These ${noUnderlying.length} documents change only some terms and expressly keep an older agreement in force for everything else. That older agreement, which governs subjects such as grievances, discipline and seniority, is not in this database, so a search here can miss provisions that still apply to these workers. The documents are public records; most can be requested from the Office of Labor Relations or the union.</p>
+        <details class="missing-underlying-wrap">
+          <summary>Show all ${noUnderlying.length}</summary>
+          <ul class="missing-underlying">
+            ${noUnderlying.map(c => `<li><a href="#/contract/${encodeURIComponent(c.id)}">${label(c)}</a></li>`).join("")}
+          </ul>
+        </details>
+        <p class="missing-checked">Last checked ${escapeHtml(state.missing.checked || "")}. ${escapeHtml(state.missing.checked_note || "")} <a href="methodology.html#gaps">More on coverage</a>.</p>
+      </div>`;
+    return panel;
+  }
+
   function contractTile(contract) {
     const tile = document.createElement("a");
     tile.className = "contract-tile";
@@ -487,9 +548,12 @@
       : contract.ocr_quality === "fair"
       ? `<span class="contract-tile-ocr fair" title="This contract had some OCR errors. Most have been corrected; verify quotes against the source PDF.">some OCR errors</span>`
       : "";
-    const amendBadge = contract.amends_predecessor
-      ? `<span class="contract-tile-amends" title="This document expressly leaves an underlying agreement in force and changes only the terms stated in it. That underlying agreement is a public record but is not linked here or indexed on the OLR site.">amends a prior agreement</span>`
-      : "";
+    const amendBadge = !contract.amends_predecessor ? ""
+      : contract.predecessor
+      ? `<span class="contract-tile-amends" title="This document expressly leaves an underlying agreement in force and changes only the terms stated in it.">amends a prior agreement</span>`
+      : `<span class="contract-tile-missing" title="This document expressly leaves an underlying agreement in force and changes only the terms stated in it. That underlying agreement is not in this database.">underlying agreement missing</span>`;
+    const gapBadges = (state.missingByContract[contract.id] || [])
+      .map(g => `<span class="contract-tile-missing" title="${escapeHtml(g.missing)}">${escapeHtml(g.badge)}</span>`).join("");
     tile.innerHTML = `
       <div class="contract-tile-kicker">${escapeHtml(sector)}${headcountBadge ? " · " + headcountBadge : ""}</div>
       <h3 class="contract-tile-name">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(contract.label) : contract.label)}</h3>
@@ -498,6 +562,7 @@
         <span class="contract-tile-clauses">${clauseCount} clause${clauseCount === 1 ? "" : "s"}</span>
         ${qualityBadge}
       </div>
+      ${gapBadges}
       ${amendBadge}
       ${contract.predecessor ? `<span class="contract-tile-haspred" title="${escapeHtml(contract.predecessor.label)} — published by ${escapeHtml(contract.predecessor.publisher)}">underlying agreement linked</span>` : ""}
     `;
@@ -523,6 +588,7 @@
         </a>
         <div class="contract-group-meta">
           ${sector}
+          ${(state.missingByContract[contractId] || []).map(g => `<span class="contract-tile-missing">${escapeHtml(g.badge)}</span>`).join("")}
           ${moreNote}
         </div>
       </header>
@@ -559,7 +625,7 @@
     const clauses = applyFilters(state.clauses.filter(c => (c.topics || []).includes(state.topic)));
     const header = document.createElement("div");
     header.className = "topic-pivot-header";
-    header.innerHTML = `<h2>${TOPIC_LABELS[state.topic] || state.topic}</h2><p>${clauses.length} clauses across ${new Set(clauses.map(c=>c.contract_id)).size} contracts. Click any clause heading to copy a permalink.</p>`;
+    header.innerHTML = `<h2>${escapeHtml(TOPIC_LABELS[state.topic] || state.topic)}</h2><p>${clauses.length} clauses across ${new Set(clauses.map(c=>c.contract_id)).size} contracts. Click any clause heading to copy a permalink.</p>`;
     root.appendChild(header);
     // Group by contract
     const byContract = {};
@@ -618,7 +684,7 @@
       col.innerHTML = `<h3>${escapeHtml(c?.label || cid)}</h3>`;
       const matches = state.clauses.filter(cl => cl.contract_id === cid && (state.topic ? (cl.topics||[]).includes(state.topic) : true));
       matches.slice(0, 6).forEach(cl => col.appendChild(clauseCard(cl, "", true)));
-      if (matches.length === 0) col.innerHTML += `<p style="color:var(--muted)">No clauses tagged ${state.topic || "any"}.</p>`;
+      if (matches.length === 0) col.innerHTML += `<p style="color:var(--muted)">No clauses tagged ${escapeHtml(TOPIC_LABELS[state.topic] || state.topic || "any")}.</p>`;
       grid.appendChild(col);
     });
     root.appendChild(grid);
@@ -750,9 +816,15 @@
         ${unit?.sector ? `<p class="doc-view-kicker">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount ? " · ~" + unit.headcount.toLocaleString() + " covered" : ""}</p>` : ""}
         <h2 class="doc-view-title">${escapeHtml(expandedLabel)}</h2>
         ${unit?.summary ? `<p class="doc-view-summary">${escapeHtml(unit.summary)}</p>` : ""}
+        ${(state.missingByContract[cid] || []).map(g => `
+          <aside class="doc-view-missing-note">
+            <p><strong>Known missing document: ${escapeHtml(g.badge)}.</strong> ${escapeHtml(g.missing)}</p>
+            <p>${escapeHtml(g.have_note)}</p>
+            <p class="doc-view-amend-quote">Evidence: ${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: &ldquo;${escapeHtml(g.evidence.quote)}&rdquo; <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener">Source &#8599;</a> · <a href="#missing">All known missing documents</a></p>
+          </aside>`).join("")}
         ${c.amends_predecessor ? `
           <aside class="doc-view-amend-note">
-            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.predecessor ? "" : `That underlying agreement is a public record but is not linked here or indexed on the Office of Labor Relations site. <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
+            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> It is a public record, but the city does not link it from this document. <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
             ${c.predecessor ? `
               <p class="doc-view-predecessor">
                 <strong>Read the underlying agreement:</strong>
@@ -794,6 +866,12 @@
       // TOC entry
       const li = document.createElement("li");
       li.innerHTML = `<a href="#${anchor}">${escapeHtml(cl.heading || "Untitled")}</a>`;
+      li.querySelector("a").addEventListener("click", (ev) => {
+        // Scroll in place; changing the hash would make the router leave the contract.
+        ev.preventDefault();
+        const target = document.getElementById(anchor);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
       toc.appendChild(li);
 
       // Section block

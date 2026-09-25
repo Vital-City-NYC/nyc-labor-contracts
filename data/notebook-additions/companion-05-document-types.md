@@ -22,7 +22,7 @@ Self-contained contracts with a full article structure. These can be read on the
 
 ### Consent determination — 36 documents (median 50,043 characters)
 
-Wage orders issued by the New York City Comptroller under state Labor Law section 220 for skilled-trade titles, not bargained contracts. Most carry a full Appendix A of time and leave benefits, so they are detailed on vacation, sick leave and holidays but nearly silent on grievance procedure.
+Prevailing-wage determinations for skilled-trade titles under state Labor Law section 220. Their terms are agreed between the Office of Labor Relations and the union to settle a wage complaint and issued as a determination rather than signed as a contract. Most carry a full Appendix A of time and leave benefits, so they are detailed on vacation, sick leave and holidays but nearly silent on grievance procedure.
 
 - Local 15/30 Oilers, Stationary Engineer and Senior Stationary Engineer Consent Determination, 2021-2026 — amends a prior agreement
 - L3 Electricians Consent Determination, 2023–2028 — amends a prior agreement
@@ -152,4 +152,4 @@ Share of documents in each category whose text addresses a given subject. This i
 | Training | 100% | 3% | 13% | 0% |
 | Union security | 89% | 0% | 4% | 0% |
 
-Two absences are worth stating plainly, because they shape what this notebook can answer: wage provisions appear in every document, but grievance and arbitration provisions appear in only about a quarter of them, and **no document in this corpus contains a management-rights clause**. Those provisions exist for these bargaining units; they live in documents that are not part of this notebook.
+Two absences are worth stating plainly, because they shape what this notebook can answer: wage provisions appear in every document, but grievance and arbitration provisions appear in only about a quarter of them. Those provisions exist for these bargaining units; for most of the rest they live in underlying agreements that are not part of this notebook. Management rights are a different case: in New York City they are set largely by statute (Administrative Code section 12-307(b)) rather than by contract.

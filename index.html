@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NYC municipal labor contracts — searchable database</title>
-<meta name="description" content="Full-text searchable database of all 100 collective bargaining agreements in force for New York City municipal employees, with topic tagging, wage pattern tracking and links to every source PDF.">
+<meta name="description" content="Full-text searchable database of 100 New York City municipal labor agreements, with a list of known missing documents, with topic tagging, wage pattern tracking and links to every source PDF.">
 <meta property="og:title" content="NYC municipal labor contracts — searchable database">
-<meta property="og:description" content="Search the full text of all 100 collective bargaining agreements in force for New York City municipal employees. Compare contracts, track wage patterns, cite any clause.">
+<meta property="og:description" content="Search the full text of 100 New York City municipal labor agreements. Compare contracts, track wage patterns, cite any clause.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vitalcity-nyc.github.io/nyc-labor-contracts/">
 <meta name="twitter:card" content="summary">
@@ -30,15 +30,15 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
   <div class="wrap">
     <p class="kicker">Public records / Labor</p>
     <h1>NYC municipal labor contracts</h1>
-    <p class="lede">Every collective bargaining agreement published by the New York City Office of Labor Relations, plus the major NYC public-sector contracts that bargain outside OLR — UFA, UFOA, NYSNA at NYC Health + Hospitals, and PSC at CUNY. Many of these contracts are published only as scanned image PDFs whose text isn't selectable; this site OCRs every page so the full text of every agreement is searchable, taggable by topic, and quotable with a stable link to the source clause. That OCR process also explains why some contracts contain transcription mistakes; roughly 500 have been hand-corrected, and the contracts with the most residual errors are marked <strong>some OCR errors</strong>. For a few agreements where a union publishes its own text-native copy of the same contract — including the Committee of Interns and Residents contract and the PSC-CUNY 2023-2027 memorandum of agreement — the full text is drawn from that cleaner source instead of OCR, which removes those transcription errors entirely. Every contract links directly to the source PDF for anyone who wants to read the document in its original form. <a href="methodology.html#gaps">Coverage details</a>.</p>
+    <p class="lede">Every agreement the New York City Office of Labor Relations (OLR) lists on its Recent Agreements page, plus five published elsewhere for the city's firefighters, fire officers, public hospital nurses and City University of New York (CUNY) faculty. Many are scanned image PDFs whose text isn't selectable, so this site extracts the text of every page, using optical character recognition (OCR) where needed, to make each agreement searchable, tagged by topic and quotable with a stable link to the source clause. Scanned text contains transcription mistakes: roughly 500 have been hand-corrected, and the documents with the most remaining errors are marked <strong>some OCR errors</strong>. For a few agreements, including the Committee of Interns and Residents contract and the Professional Staff Congress (PSC) 2023-2027 memorandum of agreement, the text comes instead from a cleaner copy the union publishes. Every document links to its source PDF. Some agreements in force have not been published at all: see <a href="#missing">known missing documents</a>. <a href="methodology.html#gaps">Coverage details</a>.</p>
     <nav class="page-nav">
       <a class="page-nav-cta" href="units.html">
         <span class="page-nav-cta-label">Bargaining units</span>
-        <span class="page-nav-cta-sub">100 units · who's covered</span>
+        <span class="page-nav-cta-sub">100 documents · who's covered</span>
       </a>
       <a class="page-nav-cta" href="wages.html">
         <span class="page-nav-cta-label">Wage pattern tracker</span>
-        <span class="page-nav-cta-sub">GWI percentages, side by side</span>
+        <span class="page-nav-cta-sub">Raises by contract, side by side</span>
       </a>
       <a class="page-nav-cta page-nav-cta-ai" href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener">
         <span class="page-nav-cta-label">Ask a question</span>
@@ -78,7 +78,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>Independent project. Not affiliated with the City of New York. Source PDFs hosted by NYC OLR. Code: <a href="https://github.com/vitalcity-nyc/nyc-labor-contracts">github.com/vitalcity-nyc/nyc-labor-contracts</a></p>
+    <p>Independent project. Not affiliated with the City of New York. Source PDFs hosted by the New York City Office of Labor Relations. Code: <a href="https://github.com/vitalcity-nyc/nyc-labor-contracts">github.com/vitalcity-nyc/nyc-labor-contracts</a></p>
     <p>Built with AI assistance. Text digitization can introduce errors; verify quotes against the linked source PDFs.</p>
     <p id="data-stamp"></p>
   </div>

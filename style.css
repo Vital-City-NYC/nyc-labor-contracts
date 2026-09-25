@@ -1009,3 +1009,50 @@ html.embed .controls { margin-top: 0; }
   color: var(--vc-cerulean); border: 1px solid var(--vc-cerulean);
   padding: 1px 6px;
 }
+
+/* ---------- Known missing documents ---------- */
+.missing-panel {
+  border: 1px solid var(--vc-magenta);
+  border-left: 6px solid var(--vc-magenta);
+  background: var(--vc-magenta-20);
+  padding: 16px 18px;
+  margin: 0 0 24px;
+}
+.missing-panel-title {
+  margin: 0; font-family: var(--vc-font-serif); font-weight: 400;
+  font-size: 1.35rem; line-height: 1.2;
+}
+.missing-panel-sub { margin: 4px 0 0; font-size: 0.85rem; font-weight: 700; color: #8a1d38; }
+.missing-panel-body { max-width: 80ch; }
+.missing-panel-body h3 {
+  margin: 18px 0 8px; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase;
+}
+.missing-panel-body p { margin: 0 0 6px; font-size: 0.92rem; line-height: 1.55; }
+.missing-list { list-style: none; margin: 0; padding: 0; }
+.missing-list li {
+  background: var(--vc-white); padding: 12px 14px; margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+.missing-union { font-size: 0.95rem !important; }
+.missing-evidence, .missing-checked { font-size: 0.82rem !important; color: var(--vc-charcoal); }
+.missing-panel a { color: var(--vc-text); }
+.missing-underlying-wrap summary { cursor: pointer; font-weight: 700; font-size: 0.9rem; margin: 4px 0 8px; }
+.missing-underlying { columns: 2 18rem; column-gap: 24px; margin: 0 0 12px; padding-left: 18px; font-size: 0.86rem; }
+.missing-underlying li { break-inside: avoid; margin-bottom: 3px; }
+.contract-tile-missing {
+  display: inline-block; margin-top: 8px; margin-right: 4px;
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  background: var(--vc-magenta-20); color: #8a1d38;
+  border: 1px solid var(--vc-magenta); padding: 2px 7px;
+}
+.contract-group-meta .contract-tile-missing { margin-top: 0; }
+.doc-view-missing-note {
+  margin: 14px 0 0; padding: 14px 16px;
+  background: var(--vc-magenta-20);
+  border-left: 4px solid var(--vc-magenta);
+  max-width: 78ch;
+}
+.doc-view-missing-note p { margin: 0 0 6px; font-size: 0.92rem; line-height: 1.55; }
+.doc-view-missing-note a { color: var(--vc-text); }

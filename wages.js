@@ -19,11 +19,13 @@
 
   function renderOverview() {
     const curated = state.wages.filter(w => w.curated && w.cumulative_pct);
-    const civilian = curated.filter(w => w.cumulative_pct < 18);
+    // The civilian pattern is the DC 37 schedule; later civilian deals such as
+    // CSA's end in 3.25/3.50 steps and would skew an average.
+    const dc37 = state.wages.find(w => w.contract_id === "dc37-moa-2021-2026");
     const uniformed = curated.filter(w => w.cumulative_pct >= 18 && w.cumulative_pct < 25);
     const pba = state.wages.find(w => w.contract_id === "pba-mou-2017-2025");
 
-    const civAvg = civilian.length ? (civilian.reduce((s, w) => s + w.cumulative_pct, 0) / civilian.length).toFixed(2) : "—";
+    const civAvg = dc37 && dc37.cumulative_pct ? dc37.cumulative_pct.toFixed(2) : "—";
     const uniAvg = uniformed.length ? (uniformed.reduce((s, w) => s + w.cumulative_pct, 0) / uniformed.length).toFixed(2) : "—";
 
     $("#overview").innerHTML = `
@@ -31,11 +33,11 @@
         <div class="wages-stat">
           <div class="wages-stat-num">${civAvg}<span class="wages-stat-unit">%</span></div>
           <div class="wages-stat-label">Civilian-pattern compounded GWI</div>
-          <div class="wages-stat-sub">5 steps of 3.00/3.00/3.00/3.00/3.25%, plus $3,000 ratification bonus.</div>
+          <div class="wages-stat-sub">Set by DC 37: 5 steps of 3.00/3.00/3.00/3.00/3.25%, plus a $3,000 ratification bonus. UFT and CSA got 3.25% and 3.50% in their last two steps (16.77%).</div>
         </div>
         <div class="wages-stat">
           <div class="wages-stat-num">${uniAvg}<span class="wages-stat-unit">%</span></div>
-          <div class="wages-stat-label">Uniformed Coalition compounded GWI</div>
+          <div class="wages-stat-label">Uniformed coalition compounded GWI</div>
           <div class="wages-stat-sub">5 steps of 3.25/3.25/3.50/3.50/4.00% at months 1, 13, 25, 37, 49 of each unit's successor agreement. No standard ratification bonus in the coalition agreement.</div>
         </div>
         <div class="wages-stat">

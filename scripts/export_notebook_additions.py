@@ -81,8 +81,9 @@ def doc_types(contracts, topics):
         if t == "full-agreement":
             L.append("Self-contained contracts with a full article structure. These can be read on their own.\n")
         elif t == "consent-determination":
-            L.append("Wage orders issued by the New York City Comptroller under state Labor Law section 220 "
-                     "for skilled-trade titles, not bargained contracts. Most carry a full Appendix A of time "
+            L.append("Prevailing-wage determinations for skilled-trade titles under state Labor Law section 220. "
+                     "Their terms are agreed between the Office of Labor Relations and the union to settle a wage "
+                     "complaint and issued as a determination rather than signed as a contract. Most carry a full Appendix A of time "
                      "and leave benefits, so they are detailed on vacation, sick leave and holidays but nearly "
                      "silent on grievance procedure.\n")
         elif t == "moa":
@@ -115,20 +116,23 @@ def doc_types(contracts, topics):
     L.append("")
     L.append("Two absences are worth stating plainly, because they shape what this notebook can answer: "
              "wage provisions appear in every document, but grievance and arbitration provisions appear in "
-             "only about a quarter of them, and **no document in this corpus contains a management-rights "
-             "clause**. Those provisions exist for these bargaining units; they live in documents that are "
-             "not part of this notebook.\n")
+             "only about a quarter of them. Those provisions exist for these bargaining units; for most of the "
+             "rest they live in underlying agreements that are not part of this notebook. Management rights "
+             "are a different case: in New York City they are set largely by statute (Administrative Code "
+             "section 12-307(b)) rather than by contract.\n")
     return "\n".join(L)
 
 
 def underlying(contracts):
     linked = [c for c in contracts if c.get("predecessor")]
     n_amend = sum(1 for c in contracts if c.get("amends_predecessor"))
+    n_amend_unlinked = sum(1 for c in contracts if c.get("amends_predecessor") and not c.get("predecessor"))
     L = [f"# Underlying agreements — where to find the contract an amendment modifies\n", BANNER]
     L.append(
-        f"{n_amend} documents in this notebook amend a prior agreement without naming or linking it. "
-        f"Those prior agreements are public records, but they are published in other places and the "
-        f"amendments never point to them. Verified links for {len(linked)} of them are below. If a "
+        f"{n_amend} documents in this notebook amend a prior agreement, and the city does not link that "
+        f"agreement from the amendment. Those prior agreements are public records published in other "
+        f"places. Verified links to an earlier full agreement exist for {len(linked)} documents and are "
+        f"below; {n_amend_unlinked} of the {n_amend} amendments have no link. If a "
         f"question cannot be answered from an amendment, the answer is likely in the document listed "
         f"here — which is **not** in this notebook and would need to be consulted directly.\n")
     L.append("## Verified links\n")
@@ -143,9 +147,10 @@ def underlying(contracts):
         "The remaining amendments are mostly skilled-trade agreements whose predecessors have not been "
         "located. Four routes exist, in rough order of usefulness:\n\n"
         "1. **The Office of Labor Relations Uniformed Contracts page** — "
-        "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 full underlying "
-        "agreements for the police, fire, sanitation and correction unions, indexed by collective "
-        "bargaining unit (CBU) number. It is not linked from the Recent Agreements page.\n"
+        "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 older agreements, "
+        "memoranda and reopeners (mostly 2002-2012) for the police, fire, sanitation and correction unions, "
+        "indexed by collective bargaining unit (CBU) number; they are the last full texts published, not "
+        "necessarily the immediate predecessors. It is not linked from the Recent Agreements page.\n"
         "2. **Unlinked files on the city's own server**, under "
         "nyc.gov/assets/olr/downloads/pdf/collectivebargaining/. These resolve but appear on no index.\n"
         "3. **The unions themselves.** Many publish their full contracts; the United Federation of "

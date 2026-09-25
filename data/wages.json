@@ -621,7 +621,7 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "1199 SEIU MOA: 'i. September 6, 2022 ... ii. April 10, 2023 ... v. April 10, 2026 ... 3.25% compounded.' First step anchors to the contract's effective start; subsequent steps anchor to April 10."
+  "source_note": "1199 SEIU MOA: 'i. September 6, 2022 ... ii. April 10, 2023 ... v. April 10, 2026 ... 3.25% compounded.' The term begins April 10, 2022, but the first increase is effective September 6, 2022; later steps anchor to April 10. Caveat: the MOA says the April 10, 2025 (3%) and April 10, 2026 (3.25%) increases 'will not be paid until the equity discussion are concluded.'"
  },
  {
   "contract_id": "lba-10-5-2023-unit-bargaining-agreement",
@@ -955,7 +955,7 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "PBA MOU p.1-2: 'August 1, 2017 ... 2.25% ... August 1, 2024 ... 4.00%.' Eight steps over an eight-year retroactive term, settled in 2023 after years of arbitration. No $3,000 ratification bonus in the PBA MOU itself; settlement included separate retroactive-pay provisions instead."
+  "source_note": "PBA MOU p.1-2: 'August 1, 2017 ... 2.25% ... August 1, 2024 ... 4.00%.' Eight steps over an eight-year retroactive term, settled in 2023. No $3,000 ratification bonus in the PBA MOU itself; settlement included separate retroactive-pay provisions instead."
  },
  {
   "contract_id": "sba-unit-agreement-2021-2026",
@@ -1060,7 +1060,7 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "appendix",
-  "source_note": "UFT MOA references Appendix A for all rates of pay; GWI percentages aren't enumerated in the MOA prose. The MOA explicitly schedules a $3,000 ratification bonus plus a recurring Annual Retention Payment that grows from $400 (May 2024) to $1,035 (May 2027). UFT's settled GWI structure tracks the civilian pattern (3/3/3/3/3.25, ~16.21% compounded over five steps); see Appendix A in the source PDF for the exact rates."
+  "source_note": "UFT MOA references Appendix A for all rates of pay; GWI percentages aren't enumerated in the MOA prose. The MOA explicitly schedules a $3,000 ratification bonus plus a recurring Annual Retention Payment that grows from $400 (May 2024) to $1,035 (May 2027). The NYC Mayor's Office announced UFT increases of 3.00% (Sept. 14, 2022), 3.00% (Jan. 18, 2024), 3.00% (Jan. 18, 2025), 3.25% (Sept. 14, 2025) and 3.50% (Sept. 14, 2026), which compound to 16.77%, the same as CSA; see Appendix A in the source PDF for the rates."
  },
  {
   "contract_id": "uniformed-coalition-economic-agreement-2022-2027",
@@ -1156,7 +1156,7 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "USA contract: 'December 28, 2022 ... 3.25% ... December 28, 2026 ... 4.00%.' Anchored UOCEA pattern. Contract specifies a separate annual lump-sum supplemental annuity contribution (~$570/year) instead of a one-time ratification bonus."
+  "source_note": "USA contract: 'December 28, 2022 ... 3.25% ... December 28, 2026 ... 4.00%.' Anchored UOCEA pattern. No ratification bonus. The contract separately schedules annual supplemental annuity contributions ($569.59 in December 2022, rising to $655.18 in December 2026) for sanitation workers who have reached 20-year service retirement."
  },
  {
   "contract_id": "usca-unit-agreement-2022-2027",
@@ -2075,6 +2075,6 @@
   "auto_lump_sums": [],
   "curated": true,
   "verified": "full",
-  "source_note": "Deputy Sheriffs MOA Section 2: 'January 1, 2022 3.25% ... January 1, 2026 4.00% compounded.' Calendar-anchored UOCEA uniformed pattern over a 62-month term (1/1/2022-2/28/2027). No ratification bonus; the MOA instead raises the uniform allowance by $475 (to $1,042) and the welfare fund contribution by $100, both effective January 1, 2026."
+  "source_note": "Deputy Sheriffs MOA Section 2: 'January 1, 2022 3.25% ... January 1, 2026 4.00% compounded.' Calendar-anchored UOCEA uniformed pattern over a 62-month term (1/1/2022-2/28/2027). No ratification bonus; the MOA instead raises the uniform allowance by $475 (to $1,042) and the welfare fund contribution by $100, both effective January 1, 2026. Caveat: for Deputy Sheriffs Level I, a new salary schedule takes effect January 1, 2025 and the MOA says the 3.5% increase in section 2(iv) does not apply on top of it, so the compounded total overstates Level I."
  }
 ]
