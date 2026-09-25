@@ -142,7 +142,7 @@
     // Focus the search box on the standalone page only — autofocus inside an
     // embed iframe would steal focus and scroll-jack the host article.
     if (!document.documentElement.classList.contains("embed")) {
-      $("#q").focus();
+      $("#q").focus({ preventScroll: true });
     } else {
       // Keep "Open full screen" pointing at the reader's current view.
       const fullLink = document.querySelector(".embed-topbar-link");
