@@ -133,7 +133,8 @@
       };
       let synMatches = new Set();
       for (const term in SYNONYMS) {
-        if (q.includes(term)) SYNONYMS[term].forEach(id => synMatches.add(id));
+        // Whole words only, so "president" doesn't hit "resident" or "scope" hit "cop".
+        if (new RegExp(`(^|[^a-z0-9])${term}($|[^a-z0-9])`).test(q)) SYNONYMS[term].forEach(id => synMatches.add(id));
       }
       units = units.filter(u => {
         if (synMatches.has(u.contract_id)) return true;

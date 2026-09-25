@@ -1,5 +1,5 @@
 /* NYC municipal labor contracts — frontend.
- * Loads contracts.json + clauses.json, builds a FlexSearch index,
+ * Loads contracts.json + clauses.json, searches them with an exact scan,
  * and renders five views: results, topic-pivot, compare, contracts, expirations.
  * Permalinks via URL hash so any clause can be cited directly.
  */
@@ -122,19 +122,9 @@
       }));
     } catch (e) { state.missing = { unpublished: [] }; }
 
-    // Build FlexSearch document index
-    state.index = new FlexSearch.Document({
-      document: {
-        id: "id",
-        index: [
-          { field: "text", tokenize: "forward" },
-          { field: "heading", tokenize: "forward" },
-        ],
-        store: false
-      },
-      cache: 100
-    });
-    state.clauses.forEach(c => state.index.add(c));
+    // Search is an exact scan over every clause (see compileQuery); keep a
+    // combined heading + text string per clause so each query scans once.
+    state.clauses.forEach(c => { c._hay = (c.heading || "") + "\n" + (c.text || ""); });
 
     populateFilters();
     bindEvents();
@@ -190,6 +180,12 @@
       writeHash(); render();
     });
     $("#random-btn").addEventListener("click", showRandomClause);
+    // Topic tags are spans; let Enter and Space activate them from the keyboard.
+    document.addEventListener("keydown", ev => {
+      if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList && ev.target.classList.contains("tag")) {
+        ev.preventDefault(); ev.target.click();
+      }
+    });
     window.addEventListener("hashchange", parseHashAndRender);
   }
 
@@ -240,11 +236,13 @@
     // Direct clause permalink: #/clause/<id>
     if (location.hash.startsWith("#/clause/")) {
       const id = decodeURIComponent(location.hash.slice("#/clause/".length));
+      $("#result-count").textContent = "";
       renderSingleClause(id);
       return;
     }
     if (location.hash.startsWith("#/contract/")) {
       const id = decodeURIComponent(location.hash.slice("#/contract/".length));
+      $("#result-count").textContent = "";
       renderContractDetail(id);
       return;
     }
@@ -271,66 +269,135 @@
     return { phrases, rest };
   }
 
-  // Union-acronym awareness: a search for "PBA" should also match clauses that
-  // spell out "Patrolmen's Benevolent Association" and vice versa. Returns the
-  // original query plus expanded/contracted variants to search in parallel.
-  function queryVariants(q) {
-    const variants = new Set([q]);
-    const map = window.LABOR_ACRONYMS || {};
-    // acronym -> full name (token-wise, case-insensitive)
-    Object.entries(map).forEach(([abbr, full]) => {
-      const rx = new RegExp(`(^|[^A-Za-z0-9])${abbr.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}($|[^A-Za-z0-9])`, "i");
-      if (rx.test(q)) variants.add(q.replace(rx, `$1${full}$2`));
-    });
-    // full name -> acronym (substring, case-insensitive)
-    const lower = q.toLowerCase();
-    Object.entries(map).forEach(([abbr, full]) => {
-      const fl = full.toLowerCase();
-      if (fl.length > 6 && lower.includes(fl)) {
-        variants.add(lower.replace(fl, abbr));
-      }
-    });
-    return [...variants];
+  /* ---------- Search ----------
+   * A query becomes a list of terms; a clause matches only if every term
+   * matches its heading or text. Each term is a set of alternative patterns
+   * (for example a union acronym and its full name). With about 2,200
+   * clauses a full scan takes a few milliseconds, so results are exact:
+   * no index, no cap.
+   *   "quoted phrase"  exact words in order, any whitespace between them
+   *   per-session      hyphen, space or nothing between the parts
+   *   $1,000  § 220    numbers and symbols match literally
+   *   DEA, tea, ale    words of 3 letters or fewer, and union acronyms, match
+   *                    whole words only (plus a plural s)
+   *   overtime         longer words match from the start of a word
+   */
+  const WORDCH = "A-Za-z0-9";
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const edgeL = s => /^[A-Za-z0-9]/.test(s) ? `(?<![${WORDCH}])` : "";
+  const edgeR = s => /[A-Za-z0-9]$/.test(s) ? `(?![${WORDCH}])` : "";
+
+  // Pattern for a literal run of text: whitespace-flexible, hyphens optional,
+  // apostrophes optional, bounded at word edges.
+  function literalSource(str) {
+    const words = str.trim().split(/\s+/).filter(Boolean);
+    const body = words.map(w => escRe(w)
+      .replace(/-/g, "[-\\s]?")
+      .replace(/['’]/g, "['’]?")).join("[\\s\u00a0]+");
+    return edgeL(str.trim()) + body + edgeR(str.trim());
   }
 
-  function searchHits() {
-    if (!state.query) return null;
-    const { phrases, rest } = parseQuery(state.query);
+  // Acronym families: every spelling of an acronym plus the union's full name
+  // (parentheticals dropped), keyed by lower-case spelling.
+  let acronymFamilies = null;
+  function getAcronymFamilies() {
+    if (acronymFamilies) return acronymFamilies;
+    const byFull = new Map();
+    Object.entries(window.LABOR_ACRONYMS || {}).forEach(([abbr, full]) => {
+      const name = full.replace(/\s*\([^)]*\)/g, "").trim();
+      if (!byFull.has(name)) byFull.set(name, new Set());
+      byFull.get(name).add(abbr);
+    });
+    acronymFamilies = [];
+    byFull.forEach((abbrs, name) => {
+      const sources = [...abbrs].map(literalSource).concat([literalSource(name)]);
+      acronymFamilies.push({ abbrs: [...abbrs], name, sources });
+    });
+    return acronymFamilies;
+  }
 
-    // Build the FlexSearch query: loose terms + every word from each phrase
-    // (FlexSearch ANDs the tokens regardless of order; we enforce adjacency below).
-    const flexQuery = [rest, ...phrases].filter(Boolean).join(" ");
-    let candidates;
-    if (flexQuery) {
-      const ids = new Set();
-      queryVariants(flexQuery).forEach((v, i) => {
-        // suggest:true only for the user's literal query; expanded variants
-        // must match ALL their tokens or short unions like "Association"
-        // would flood the results.
-        const results = state.index.search(v, { limit: 500, suggest: i === 0 });
-        results.forEach(r => r.result.forEach(id => ids.add(id)));
-      });
-      candidates = state.clauses.filter(c => ids.has(c.id));
-    } else {
-      candidates = state.clauses;
-    }
+  function compileQuery(q) {
+    if (!q || !q.trim()) return null;
+    const terms = [];
+    const add = (sources, weight = 1) => terms.push({
+      weight,
+      tests: sources.map(src => new RegExp(src, "i")),
+      counters: sources.map(src => new RegExp(src, "gi")),
+      sources,
+    });
+    const { phrases, rest } = parseQuery(q);
+    phrases.forEach(p => add([literalSource(p)], 2));
 
-    // Enforce phrase adjacency: every quoted phrase must appear verbatim
-    // (case-insensitive) in the clause text or heading.
-    if (phrases.length) {
-      const lowerPhrases = phrases.map(p => p.toLowerCase());
-      candidates = candidates.filter(c => {
-        const hay = ((c.text || "") + "\n" + (c.heading || "")).toLowerCase();
-        return lowerPhrases.every(p => hay.includes(p));
+    // Pull out union names and multi-part acronyms ("DC 37", "ADW/DW") before
+    // splitting on spaces, so each becomes one term matching every spelling.
+    let loose = rest;
+    const fams = getAcronymFamilies();
+    fams.forEach(f => {
+      [f.name, ...f.abbrs.filter(a => /[^A-Za-z0-9]/.test(a))].forEach(form => {
+        const rx = new RegExp(literalSource(form), "i");
+        if (rx.test(loose)) { loose = loose.replace(rx, " "); add(f.sources, 2); }
       });
-    }
-    return candidates;
+    });
+
+    // Join a bare $ or § to the number after it.
+    const tokens = [];
+    loose.split(/\s+/).filter(Boolean).forEach(t => {
+      const prev = tokens[tokens.length - 1];
+      if (prev && /^[$§¶]+$/.test(prev)) tokens[tokens.length - 1] = prev + (prev === "$" ? "" : " ") + t;
+      else tokens.push(t);
+    });
+    tokens.forEach(tok => {
+      const t = tok.replace(/^[.,;:!?"]+|[.,;:!?"]+$/g, "") || tok;
+      const fam = fams.find(f => f.abbrs.some(a => a.toLowerCase() === t.toLowerCase()));
+      if (fam) { add([literalSource(t).replace(/\(\?!\[[^\]]*\]\)$/, "(?:s)?$&"), ...fam.sources]); return; }
+      if (/[^A-Za-z'’-]/.test(t) || /-/.test(t)) { add([literalSource(t)]); return; }
+      const w = escRe(t).replace(/['’]/g, "['’]?");
+      if (t.length <= 3) add([`(?<![${WORDCH}])${w}(?:s|es)?(?![${WORDCH}])`]);
+      else add([`(?<![${WORDCH}])${w}`]);
+    });
+    if (!terms.length) return null;
+    const all = terms.flatMap(t => t.sources);
+    return { terms, hl: new RegExp(all.map(s => `(?:${s})`).join("|"), "gi") };
+  }
+
+  function clauseMatches(c, cq) {
+    return cq.terms.every(t => t.tests.some(rx => rx.test(c._hay)));
+  }
+
+  // Relevance: heading hits first, then how often each term appears,
+  // damped for very long clauses so a 100-page appendix doesn't win by bulk.
+  function clauseScore(c, cq) {
+    const len = (c.text || "").length;
+    let score = 0;
+    cq.terms.forEach(t => {
+      let n = 0, head = false;
+      t.counters.forEach((rx, i) => {
+        rx.lastIndex = 0;
+        n += ((c.text || "").match(rx) || []).length;
+        if (t.tests[i].test(c.heading || "")) head = true;
+      });
+      // A heading hit counts for less on near-empty fragments (signature
+      // blocks, letterheads) so they don't outrank real clauses.
+      score += t.weight * (Math.min(n, 12) / (1 + len / 12000) + (head ? 8 * Math.min(1, len / 400) : 0));
+    });
+    return score;
+  }
+
+  // Returns matching clauses, best first, or null when there's no query.
+  function searchHits(pool = state.clauses) {
+    const cq = compileQuery(state.query);
+    if (!cq) return null;
+    const hits = [];
+    pool.forEach(c => { if (clauseMatches(c, cq)) hits.push({ c, s: clauseScore(c, cq) }); });
+    hits.sort((a, b) => b.s - a.s);
+    return hits.map(h => { h.c._score = h.s; return h.c; });
   }
 
   /* ---------- Rendering ---------- */
   function render() {
     const root = $("#results");
     root.innerHTML = "";
+    $("#result-count").textContent = "";
     switch (state.view) {
       case "topic-pivot": return renderTopicPivot(root);
       case "compare":     return renderCompare(root);
@@ -421,38 +488,29 @@
     if (!state.query && !state.topic && !state.contractFilter) {
       return renderContractTiles(root);
     }
-    let clauses = searchHits();
-    if (!clauses) clauses = state.clauses.slice();
-    clauses = applyFilters(clauses);
+    let clauses = searchHits(applyFilters(state.clauses));
+    if (!clauses) clauses = applyFilters(state.clauses.slice());
     const contractCount = new Set(clauses.map(c => c.contract_id)).size;
     $("#result-count").textContent = state.query
-      ? `${clauses.length} clauses across ${contractCount} contracts matching "${state.query}"`
+      ? `${clauses.length} clause${clauses.length === 1 ? "" : "s"} across ${contractCount} contract${contractCount === 1 ? "" : "s"} matching "${state.query}"`
       : `${clauses.length} clauses${state.topic ? " on " + (TOPIC_LABELS[state.topic] || state.topic) : ""}${state.contractFilter ? " in " + (state.contractById[state.contractFilter]?.label || state.contractFilter) : ""}`;
     if (clauses.length === 0) {
       root.innerHTML = `<div class="clause"><p>No clauses match. Try a broader search, or use the topic pivot view to browse all clauses on a single topic across every contract.</p></div>`;
       return;
     }
 
-    // Group by contract, preserving original clause order within each group.
+    // Group by contract. With a query, clauses arrive best first, so each
+    // contract's position is set by its best clause; without one, keep
+    // document order. Every matching contract is shown, with its top clauses
+    // and a button for the rest.
     const groups = new Map();
     clauses.forEach(c => {
       if (!groups.has(c.contract_id)) groups.set(c.contract_id, []);
       groups.get(c.contract_id).push(c);
     });
-
-    let totalCards = 0;
+    const perGroup = state.query ? 3 : 5;
     for (const [cid, items] of groups.entries()) {
-      if (totalCards >= 200) break;
-      const remaining = 200 - totalCards;
-      const visible = items.slice(0, Math.min(items.length, remaining));
-      root.appendChild(contractGroup(cid, visible, items.length, state.query));
-      totalCards += visible.length;
-    }
-    if (clauses.length > 200) {
-      const more = document.createElement("div");
-      more.className = "clause";
-      more.innerHTML = `<p style="color:var(--vc-text-muted)">Showing first 200 clauses. Narrow your search or filter to see more.</p>`;
-      root.appendChild(more);
+      root.appendChild(contractGroup(cid, items, perGroup, state.query));
     }
   }
 
@@ -569,7 +627,9 @@
     return tile;
   }
 
-  function contractGroup(contractId, items, totalInGroup, query) {
+  function contractGroup(contractId, allItems, perGroup, query) {
+    const items = allItems.slice(0, perGroup);
+    const totalInGroup = allItems.length;
     const wrap = document.createElement("section");
     wrap.className = "contract-group";
     const contract = state.contractById[contractId];
@@ -596,6 +656,19 @@
     `;
     const slot = wrap.querySelector(".contract-group-clauses");
     items.forEach(c => slot.appendChild(clauseCard(c, query, true)));
+    if (totalInGroup > items.length) {
+      const more = document.createElement("button");
+      more.type = "button";
+      more.className = "contract-group-showall";
+      more.textContent = `Show all ${totalInGroup} matches in this contract`;
+      more.addEventListener("click", () => {
+        allItems.slice(items.length).forEach(c => slot.appendChild(clauseCard(c, query, true)));
+        more.remove();
+        const note = wrap.querySelector(".contract-group-more");
+        if (note) note.textContent = `${totalInGroup} matches`;
+      });
+      wrap.appendChild(more);
+    }
     return wrap;
   }
 
@@ -614,6 +687,9 @@
       Object.keys(TOPIC_LABELS).filter(t => counts[t]).sort((a,b) => counts[b]-counts[a]).forEach(t => {
         const tile = document.createElement("div");
         tile.className = "topic-tile";
+        tile.setAttribute("role", "button");
+        tile.tabIndex = 0;
+        tile.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); tile.click(); } });
         tile.innerHTML = `<div>${TOPIC_LABELS[t]}</div><div class="count">${counts[t]} clauses across ${countContractsWithTopic(t)} contracts</div>`;
         tile.addEventListener("click", () => { state.topic = t; $("#topic-filter").value = t; writeHash(); render(); });
         grid.appendChild(tile);
@@ -621,11 +697,14 @@
       root.appendChild(grid);
       return;
     }
-    // Topic selected: show all clauses for it
-    const clauses = applyFilters(state.clauses.filter(c => (c.topics || []).includes(state.topic)));
+    // Topic selected: show all clauses for it (narrowed by the search box, if used)
+    const onTopic = applyFilters(state.clauses.filter(c => (c.topics || []).includes(state.topic)));
+    const clauses = searchHits(onTopic) || onTopic;
+    const nContracts = new Set(clauses.map(c=>c.contract_id)).size;
+    $("#result-count").textContent = `${clauses.length} clauses on ${TOPIC_LABELS[state.topic] || state.topic} across ${nContracts} contracts${state.query ? ` matching "${state.query}"` : ""}`;
     const header = document.createElement("div");
     header.className = "topic-pivot-header";
-    header.innerHTML = `<h2>${escapeHtml(TOPIC_LABELS[state.topic] || state.topic)}</h2><p>${clauses.length} clauses across ${new Set(clauses.map(c=>c.contract_id)).size} contracts. Click any clause heading to copy a permalink.</p>`;
+    header.innerHTML = `<h2>${escapeHtml(TOPIC_LABELS[state.topic] || state.topic)}</h2><p>${clauses.length} clauses across ${nContracts} contracts${state.query ? ` matching &ldquo;${escapeHtml(state.query)}&rdquo;` : ""}. Click any clause heading to open it and copy its permalink.</p>`;
     root.appendChild(header);
     // Group by contract
     const byContract = {};
@@ -638,7 +717,7 @@
       const wrap = document.createElement("div");
       wrap.className = "clause";
       wrap.innerHTML = `<div class="clause-meta"><span class="contract">${escapeHtml(state.contractById[cid]?.label || cid)}</span><span>${items.length} clause${items.length===1?"":"s"}</span></div>`;
-      items.forEach(c => wrap.appendChild(clauseCard(c, "", true)));
+      items.forEach(c => wrap.appendChild(clauseCard(c, state.query, true)));
       root.appendChild(wrap);
     });
   }
@@ -845,7 +924,7 @@
       </header>
 
       <div class="doc-view-search">
-        <input type="search" id="doc-find" placeholder="Find in this contract — e.g. overtime, longevity, grievance" autocomplete="off">
+        <input type="search" id="doc-find" aria-label="Find in this contract" placeholder="Find in this contract — e.g. overtime, longevity, grievance" autocomplete="off">
         <span id="doc-find-count"></span>
       </div>
 
@@ -880,7 +959,7 @@
       sec.id = anchor;
       const pdfUrl = `${c.url}#page=${cl.page}`;
       const tags = (cl.topics || []).map(t =>
-        `<span class="tag" data-topic="${t}">${TOPIC_LABELS[t] || t}</span>`).join("");
+        `<span class="tag" role="button" tabindex="0" data-topic="${t}">${TOPIC_LABELS[t] || t}</span>`).join("");
       sec.innerHTML = `
         <div class="doc-section-meta">
           <span class="doc-section-page">Page ${cl.page}</span>
@@ -924,16 +1003,15 @@
     const tocItems = Array.from(toc.querySelectorAll("li"));
     findBox.addEventListener("input", debounce(() => {
       const q = findBox.value.trim();
-      const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+      const cq = compileQuery(q);
       let shown = 0;
       sections.forEach((sec, i) => {
         const cl = items[i];
-        const hay = ((cl.text || "") + "\n" + (cl.heading || "")).toLowerCase();
-        const hit = tokens.every(t => hay.includes(t));
+        const hit = !cq || clauseMatches(cl, cq);
         sec.style.display = hit ? "" : "none";
         if (tocItems[i]) tocItems[i].style.display = hit ? "" : "none";
         const body = sec.querySelector(".doc-section-body");
-        if (body) body.innerHTML = highlight(cl.text, hit ? q : "");
+        if (body) body.innerHTML = highlight(cl.text, hit ? cq : null);
         if (hit) shown++;
       });
       findCount.textContent = q ? `${shown} of ${sections.length} sections` : "";
@@ -993,7 +1071,7 @@
     const pdfUrl = contract ? `${contract.url}#page=${c.page}` : "#";
     const heading = c.heading || contractLabel;
     const tags = (c.topics || []).map(t =>
-      `<span class="tag" data-topic="${t}">${TOPIC_LABELS[t] || t}</span>`).join("");
+      `<span class="tag" role="button" tabindex="0" data-topic="${t}">${TOPIC_LABELS[t] || t}</span>`).join("");
     const unit = state.unitByContract[c.contract_id];
     const tip = unit ? `
       <div class="badge-tip" role="tooltip">
@@ -1017,9 +1095,9 @@
         ${c.ocr ? `<span class="ocr-flag" title="This page was reconstructed via optical character recognition; spelling may have minor errors">OCR</span>` : ""}
         <a class="pdf-link" href="${escapeHtml(pdfUrl)}" target="_blank" rel="noopener">View in source PDF →</a>
       </div>
-      <h3 class="clause-heading"><a href="#/clause/${encodeURIComponent(c.id)}">${escapeHtml(heading)}</a></h3>
+      <h3 class="clause-heading"><a href="#/clause/${encodeURIComponent(c.id)}">${highlight(heading, query)}</a></h3>
       <div class="tags">${tags}</div>
-      <div class="clause-body${expanded ? " expanded":""}">${highlight(c.text, query)}</div>
+      <div class="clause-body${expanded ? " expanded":""}">${expanded ? highlight(c.text, query) : snippet(c.text, query)}</div>
       <div class="clause-actions">
         <button class="expand-btn">${expanded ? "Show less" : "Show full clause"}</button>
         <button class="copy-link">Copy permalink</button>
@@ -1029,6 +1107,7 @@
     wrap.querySelector(".expand-btn").addEventListener("click", () => {
       const body = wrap.querySelector(".clause-body");
       body.classList.toggle("expanded");
+      body.innerHTML = body.classList.contains("expanded") ? highlight(c.text, query) : snippet(c.text, query);
       wrap.querySelector(".expand-btn").textContent = body.classList.contains("expanded") ? "Show less" : "Show full clause";
     });
     wrap.querySelector(".copy-link").addEventListener("click", () => {
@@ -1079,16 +1158,31 @@
     return String(s == null ? "" : s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;" })[ch]);
   }
   function highlight(text, q) {
-    const safe = escapeHtml(text || "");
-    if (!q) return safe;
-    const { phrases, rest } = parseQuery(q);
-    const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    // Quoted phrases must match verbatim (whitespace flexible inside the phrase).
-    const phraseTerms = phrases.map(p => p.split(/\s+/).map(escRe).join("\\s+"));
-    const looseTerms = rest.split(/\s+/).filter(t => t.length >= 2).map(escRe);
-    const terms = [...phraseTerms, ...looseTerms];
-    if (!terms.length) return safe;
-    return safe.replace(new RegExp(`(${terms.join("|")})`, "ig"), '<mark>$1</mark>');
+    const raw = text || "";
+    const cq = typeof q === "string" ? compileQuery(q) : q;
+    if (!cq) return escapeHtml(raw);
+    let out = "", last = 0, m;
+    cq.hl.lastIndex = 0;
+    while ((m = cq.hl.exec(raw)) !== null) {
+      if (m[0] === "") { cq.hl.lastIndex++; continue; }
+      out += escapeHtml(raw.slice(last, m.index)) + "<mark>" + escapeHtml(m[0]) + "</mark>";
+      last = m.index + m[0].length;
+    }
+    return out + escapeHtml(raw.slice(last));
+  }
+
+  // A window of the clause starting shortly before the first match, so the
+  // highlighted words are visible without expanding the card.
+  function snippet(text, q) {
+    const raw = text || "";
+    const cq = compileQuery(q);
+    if (!cq) return escapeHtml(raw);
+    cq.hl.lastIndex = 0;
+    const m = cq.hl.exec(raw);
+    if (!m || m.index < 160) return highlight(raw, cq);
+    let start = raw.lastIndexOf(" ", m.index - 120);
+    if (start < 0) start = 0;
+    return "&hellip;" + highlight(raw.slice(start + 1), cq);
   }
 
   init().catch(err => { console.error(err); $("#results").innerHTML = `<div class="clause"><p>Failed to load corpus: ${escapeHtml(err.message)}. The data files may not be built yet.</p></div>`; });

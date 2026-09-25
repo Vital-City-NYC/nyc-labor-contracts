@@ -1056,3 +1056,25 @@ html.embed .controls { margin-top: 0; }
 }
 .doc-view-missing-note p { margin: 0 0 6px; font-size: 0.92rem; line-height: 1.55; }
 .doc-view-missing-note a { color: var(--vc-text); }
+
+/* ---------- Search results: show the rest of a contract's matches ---------- */
+.contract-group-showall {
+  margin: 4px 0 18px; padding: 8px 14px;
+  border: 1px solid var(--vc-rule); border-radius: 0; background: var(--vc-bg);
+  font: 700 0.8rem/1 var(--vc-font-sans); letter-spacing: 0.04em; text-transform: uppercase;
+  cursor: pointer;
+}
+.contract-group-showall:hover { background: var(--vc-accent); }
+.topic-tile:focus-visible, .tag:focus-visible { outline: 3px solid var(--vc-accent); outline-offset: 2px; }
+
+/* ---------- Phone widths: nothing wider than the screen ---------- */
+@media (max-width: 720px) {
+  .filters { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .search-row { flex-wrap: wrap; }
+  .search-row input[type=search] { flex: 1 1 100%; min-width: 0; }
+  .search-row button { flex: 1 1 auto; padding: 12px 14px; }
+  #cmp-add { max-width: 100%; }
+  .compare-col, .compare-grid { min-width: 0; }
+}

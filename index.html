@@ -53,7 +53,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
 <main class="wrap" id="app">
   <section class="controls">
     <div class="search-row">
-      <input type="search" id="q" placeholder='Search — e.g. just cause, parental leave, or "exact phrase" in quotes' autocomplete="off">
+      <input type="search" id="q" aria-label="Search every contract" placeholder='Search — e.g. just cause, parental leave, or "exact phrase" in quotes' autocomplete="off">
       <button id="random-btn" type="button" title="Show me a random clause">🎲 Random clause</button>
     </div>
     <div class="filters">
@@ -68,7 +68,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
       </select></label>
     </div>
     <div class="meta-row">
-      <span id="result-count" class="result-count"></span>
+      <span id="result-count" class="result-count" aria-live="polite"></span>
       <span class="legend"><span class="dot dot-ocr"></span> OCR'd page (lower confidence) <button type="button" class="why-tip-trigger" aria-label="Why is OCR lower confidence?">why?<span class="why-tip" role="tooltip">Many contracts are published as scanned images — pixels, not text — so we run optical character recognition (OCR) to read them. macOS Vision OCR is roughly 95–98% accurate on clean modern documents, but it can confuse visually similar characters (I / l / 1, "rn" vs "m"), miss faded ink, and occasionally interleave text from adjacent table columns. Native text PDFs have actual character data baked in, so they're 100% accurate. The OCR badge means: verify against the source PDF before quoting. Click "View in source PDF" on any clause to compare.</span></button></span>
     </div>
   </section>
@@ -84,7 +84,6 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.43/dist/flexsearch.bundle.min.js"></script>
 <script src="acronyms.js"></script>
 <script src="app.js"></script>
 </body>
