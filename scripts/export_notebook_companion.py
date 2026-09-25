@@ -73,7 +73,7 @@ Many of the source documents are scanned image PDFs with no embedded text. Each 
 - Several uniformed unit agreements are short letters that incorporate the Uniformed Coalition Economic Agreement by reference — economic terms for those units live in that coalition document, not the unit letter.
 - The corpus reflects agreements published as of August 2026, checked again Sept. 25, 2026.
 - Some current agreements are not in this notebook because they have never been published. The New York State Nurses Association 2019-2023 agreement here was replaced by a contract settled in July 2023 whose text is unpublished. The Uniformed Firefighters Association and Uniformed Fire Officers Association signed the 2022-2027 coalition agreement, but their successor unit agreements are unpublished. Do not describe the older documents as current for these unions.
-- 59 amendments keep an older underlying agreement in force that is not in this notebook, so provisions on grievances, discipline and seniority for those workers may not appear here at all.
+- 63 amendments keep an older agreement in force that is not in this notebook, so provisions on grievances, discipline and seniority for those workers may not appear here at all. The companion file on underlying agreements lists the earlier agreement for 61 of them.
 """
 
 
