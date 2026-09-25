@@ -20,7 +20,10 @@
         "date": "July 31, 2023",
         "url": "https://www.nysna.org/press/2023/nyc-public-hospital-nurses-win-historic-contract-pay-parity-and-safe-staffing",
         "quote": "The five-and-a-half-year contract comes after a month of expedited mediation and then impasse arbitration."
-      }
+      },
+      "short_name": "NYSNA",
+      "short_unit": "about 8,000 nurses",
+      "short": "The 2023 contract was settled but never published. Only the replaced 2019-2023 agreement is here."
     },
     {
       "id": "ufa-unit",
@@ -41,7 +44,10 @@
         "date": "June 13, 2023",
         "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
         "quote": "July 31, 2020 (UFA-Firefighters/Fire Marshals); July 27, 2021 (UFA-Pilots/Marine Engineers) and July 31, 2020 (UFA-Wipers)"
-      }
+      },
+      "short_name": "UFA",
+      "short_unit": "about 8,500 firefighters",
+      "short": "The successor unit agreements under the 2022-2027 coalition deal are unpublished. The 2017-2020 agreement and the coalition deal are here."
     },
     {
       "id": "ufoa-unit",
@@ -62,7 +68,10 @@
         "date": "June 13, 2023",
         "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
         "quote": "agreements successor to existing unit agreements expiring on: July 30, 2021 (UFOA)"
-      }
+      },
+      "short_name": "UFOA",
+      "short_unit": "about 2,400 fire officers",
+      "short": "The successor unit agreement under the coalition deal is unpublished. The 2018-2021 agreement and the coalition deal are here."
     }
   ]
 }

@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://vitalcity-nyc.github.io/nyc-labor-contracts/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="https://use.typekit.net/qqk2vto.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20260925d">
 </head>
 <body>
 <script>
@@ -30,36 +30,35 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
   <div class="wrap">
     <p class="kicker">Public records / Labor</p>
     <h1>NYC municipal labor contracts</h1>
-    <p class="lede">Every agreement the New York City Office of Labor Relations (OLR) lists on its Recent Agreements page, plus five published elsewhere for the city's firefighters, fire officers, public hospital nurses and City University of New York (CUNY) faculty. Many are scanned image PDFs whose text isn't selectable, so this site extracts the text of every page, using optical character recognition (OCR) where needed, to make each agreement searchable, tagged by topic and quotable with a stable link to the source clause. Scanned text contains transcription mistakes: roughly 500 have been hand-corrected, and the documents with the most remaining errors are marked <strong>some OCR errors</strong>. For a few agreements, including the Committee of Interns and Residents contract and the Professional Staff Congress (PSC) 2023-2027 memorandum of agreement, the text comes instead from a cleaner copy the union publishes. Every document links to its source PDF. Some agreements in force have not been published at all: see <a href="#missing">known missing documents</a>. <a href="methodology.html#gaps">Coverage details</a>.</p>
-    <nav class="page-nav">
-      <a class="page-nav-cta" href="units.html">
-        <span class="page-nav-cta-label">Bargaining units</span>
-        <span class="page-nav-cta-sub">100 documents · who's covered</span>
-      </a>
-      <a class="page-nav-cta" href="wages.html">
-        <span class="page-nav-cta-label">Wage pattern tracker</span>
-        <span class="page-nav-cta-sub">Raises by contract, side by side</span>
-      </a>
-      <a class="page-nav-cta page-nav-cta-ai" href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener">
-        <span class="page-nav-cta-label">Ask a question</span>
-        <span class="page-nav-cta-sub">Natural-language Q&amp;A in Gemini Notebook</span>
-      </a>
-      <a class="page-nav-link" href="methodology.html">Methodology &amp; sources</a>
-      <a class="page-nav-link" href="data/nyc-labor-contracts-markdown.zip" download title="ZIP bundle of all 100 contracts as Markdown files">Download all as Markdown ↓</a>
+    <p class="lede">Search the full text of 100 New York City municipal labor agreements: every document on the Office of Labor Relations (OLR) Recent Agreements page, plus five published elsewhere. Every clause links to its source PDF. Many of the originals are scans, so some text contains transcription errors; check quotes against the PDF before publishing.</p>
+    <nav class="page-nav" aria-label="More from this project">
+      <a href="units.html">Bargaining units</a>
+      <a href="wages.html">Wage pattern tracker</a>
+      <a href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener">Ask questions in Gemini Notebook &#8599;</a>
+      <a href="methodology.html">Methodology and sources</a>
+      <a href="data/nyc-labor-contracts-markdown.zip" download title="ZIP bundle of all 100 contracts as Markdown files">Download all (Markdown)</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap" id="app">
   <section class="controls">
+    <nav class="view-tabs" aria-label="Views">
+      <button type="button" data-view="results">Search and browse</button>
+      <button type="button" data-view="topic-pivot">By topic</button>
+      <button type="button" data-view="compare">Compare</button>
+      <button type="button" data-view="contracts">Directory</button>
+      <button type="button" data-view="expirations">Expirations</button>
+    </nav>
     <div class="search-row">
       <input type="search" id="q" aria-label="Search every contract" placeholder='Search — e.g. just cause, parental leave, or "exact phrase" in quotes' autocomplete="off">
-      <button id="random-btn" type="button" title="Show me a random clause">🎲 Random clause</button>
+      <button id="random-btn" type="button" title="Show me a random clause">Random clause</button>
     </div>
+    <p class="search-examples" id="search-examples">Try <a href="#q=just+cause">just cause</a>, <a href="#q=parental+leave">parental leave</a>, <a href="#q=%22%243%2C000%22">"$3,000"</a>, <a href="#q=remote+work">remote work</a> or <a href="#q=overtime+cap">overtime cap</a>.</p>
     <div class="filters">
       <label>Topic <select id="topic-filter"><option value="">All topics</option></select></label>
       <label>Contract <select id="contract-filter"><option value="">All contracts</option></select></label>
-      <label>View <select id="view-mode">
+      <label class="view-select">View <select id="view-mode">
         <option value="results">Search results</option>
         <option value="topic-pivot">Topic pivot — clauses across all contracts</option>
         <option value="compare">Compare contracts side-by-side</option>
@@ -84,7 +83,7 @@ if (new URLSearchParams(location.search).get("embed") === "1") {
   </div>
 </footer>
 
-<script src="acronyms.js"></script>
-<script src="app.js"></script>
+<script src="acronyms.js?v=20260925d"></script>
+<script src="app.js?v=20260925d"></script>
 </body>
 </html>

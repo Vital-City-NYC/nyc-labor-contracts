@@ -98,7 +98,8 @@
 
   /* ---------- Loading ---------- */
   async function loadJSON(path) {
-    const r = await fetch(path);
+    // Revalidate each load so corrections show up right away (a 304 is cheap).
+    const r = await fetch(path, { cache: "no-cache" });
     if (!r.ok) throw new Error(`Failed to load ${path}: ${r.status}`);
     return r.json();
   }
@@ -180,6 +181,11 @@
       writeHash(); render();
     });
     $("#random-btn").addEventListener("click", showRandomClause);
+    document.querySelectorAll(".view-tabs button").forEach(b => b.addEventListener("click", () => {
+      state.view = b.dataset.view;
+      $("#view-mode").value = state.view;
+      writeHash(); render();
+    }));
     // Topic tags are spans; let Enter and Space activate them from the keyboard.
     document.addEventListener("keydown", ev => {
       if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList && ev.target.classList.contains("tag")) {
@@ -214,7 +220,7 @@
       $("#q").value = ""; $("#topic-filter").value = ""; $("#contract-filter").value = ""; $("#view-mode").value = "results";
       render();
       const panel = document.getElementById("missing");
-      if (panel) panel.scrollIntoView({ block: "start" });
+      if (panel) { panel.open = true; panel.scrollIntoView({ block: "start" }); }
       return;
     }
     const params = new URLSearchParams(location.hash.replace(/^#/, ""));
@@ -237,12 +243,14 @@
     if (location.hash.startsWith("#/clause/")) {
       const id = decodeURIComponent(location.hash.slice("#/clause/".length));
       $("#result-count").textContent = "";
+      syncChrome("");
       renderSingleClause(id);
       return;
     }
     if (location.hash.startsWith("#/contract/")) {
       const id = decodeURIComponent(location.hash.slice("#/contract/".length));
       $("#result-count").textContent = "";
+      syncChrome("");
       renderContractDetail(id);
       return;
     }
@@ -394,10 +402,22 @@
   }
 
   /* ---------- Rendering ---------- */
+  // Tab state and the example-search line follow the current view.
+  function syncChrome(view) {
+    document.querySelectorAll(".view-tabs button").forEach(b => {
+      const on = b.dataset.view === view;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-current", on ? "page" : "false");
+    });
+    const ex = $("#search-examples");
+    if (ex) ex.hidden = !(view === "results" && !state.query);
+  }
+
   function render() {
     const root = $("#results");
     root.innerHTML = "";
     $("#result-count").textContent = "";
+    syncChrome(state.view);
     switch (state.view) {
       case "topic-pivot": return renderTopicPivot(root);
       case "compare":     return renderCompare(root);
@@ -495,7 +515,15 @@
       ? `${clauses.length} clause${clauses.length === 1 ? "" : "s"} across ${contractCount} contract${contractCount === 1 ? "" : "s"} matching "${state.query}"`
       : `${clauses.length} clauses${state.topic ? " on " + (TOPIC_LABELS[state.topic] || state.topic) : ""}${state.contractFilter ? " in " + (state.contractById[state.contractFilter]?.label || state.contractFilter) : ""}`;
     if (clauses.length === 0) {
-      root.innerHTML = `<div class="clause"><p>No clauses match. Try a broader search, or use the topic pivot view to browse all clauses on a single topic across every contract.</p></div>`;
+      const words = (state.query || "").toLowerCase().split(/\W+/).filter(w => w.length > 3);
+      const topics = Object.keys(TOPIC_LABELS).filter(t =>
+        words.some(w => TOPIC_LABELS[t].toLowerCase().includes(w) || t.includes(w)));
+      const topicLinks = topics.map(t => `<a href="#view=topic-pivot&topic=${encodeURIComponent(t)}">${escapeHtml(TOPIC_LABELS[t])}</a>`).join(", ");
+      root.innerHTML = `<div class="empty-state">
+        <p><strong>No clauses contain ${state.contractFilter || state.topic ? "that search with the current filters" : "all of those words"}.</strong></p>
+        ${topicLinks ? `<p>The contracts may use different wording. Try the topic ${topics.length === 1 ? "tag" : "tags"} ${topicLinks}, which also ${topics.length === 1 ? "catches" : "catch"} related phrases.</p>` : ""}
+        <p>Other things to try: fewer words, removing quotation marks${state.contractFilter || state.topic ? ", clearing the topic or contract filter" : ""}, or the start of a word ("arbitrat" finds arbitrate, arbitration and arbitrator).</p>
+      </div>`;
       return;
     }
 
@@ -525,7 +553,7 @@
     const nAmend = state.contracts.filter(c => c.amends_predecessor).length;
     const intro = document.createElement("div");
     intro.className = "tiles-intro";
-    intro.innerHTML = `<p>Type in the search box above to search all ${state.contracts.length} documents at once, or click any document below to read its full text. These are grouped by what they actually are: ${nAmend} of the ${state.contracts.length} expressly continue an underlying agreement rather than replacing it. <a href="methodology.html#doc-types">What that means for coverage</a>.</p>`;
+    intro.innerHTML = `<p>Click any document to read it in full. They are grouped by what they are: ${nAmend} of the ${state.contracts.length} are amendments that keep an older agreement in force and change only some terms. <a href="methodology.html#doc-types">What that means for coverage</a>.</p>`;
     root.appendChild(intro);
     root.appendChild(missingPanel());
 
@@ -552,40 +580,43 @@
     });
   }
 
-  // Documents we know exist (or must exist) but that aren't in this database.
+  // Documents we know exist (or must exist) but that aren't in this database:
+  // a one-line strip that opens to the list.
   function missingPanel() {
     const gaps = state.missing.unpublished || [];
     const noUnderlying = state.contracts
       .filter(c => c.amends_predecessor && !c.predecessor)
       .sort((a, b) => a.label.localeCompare(b.label));
     const label = c => escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label);
-    const panel = document.createElement("section");
+    const names = gaps.map(g => g.short_name).filter(Boolean);
+    const panel = document.createElement("details");
     panel.className = "missing-panel";
     panel.id = "missing";
     panel.innerHTML = `
-      <h2 class="missing-panel-title">Known missing documents</h2>
-      <p class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? "" : "s"} not published · ${noUnderlying.length} underlying agreements not in this database</p>
+      <summary>
+        <span class="missing-panel-title">Known missing documents</span>
+        <span class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? " is" : "s are"} unpublished${names.length ? ` (${names.map(escapeHtml).join(", ")})` : ""}, and ${noUnderlying.length} amendments rely on an older agreement that isn't here.</span>
+        <span class="missing-panel-toggle" aria-hidden="true"></span>
+      </summary>
       <div class="missing-panel-body">
-        <h3>Current agreements that have not been published</h3>
         <ul class="missing-list">
           ${gaps.map(g => `
             <li>
-              <p class="missing-union"><strong>${escapeHtml(g.union)}</strong> · ${escapeHtml(g.unit)}</p>
-              <p><strong>Missing:</strong> ${escapeHtml(g.missing)}</p>
-              <p><strong>In this database instead:</strong> ${escapeHtml(g.have_note)} ${(g.have || []).map(cid => state.contractById[cid]
-                ? `<a href="#/contract/${encodeURIComponent(cid)}">${label(state.contractById[cid])}</a>` : "").filter(Boolean).join(" · ")}</p>
-              <p class="missing-evidence">Evidence: ${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: &ldquo;${escapeHtml(g.evidence.quote)}&rdquo; <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener">Source &#8599;</a></p>
+              <strong>${escapeHtml(g.union)}</strong>, ${escapeHtml(g.short_unit || "")}. ${escapeHtml(g.short || g.missing)}
+              ${(g.have || []).filter(cid => state.contractById[cid]).map(cid => `<a href="#/contract/${encodeURIComponent(cid)}">${label(state.contractById[cid])}</a>`).join(" · ")}
+              · <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener" title="${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: ${escapeHtml(g.evidence.quote)}">Evidence &#8599;</a>
             </li>`).join("")}
+          <li>
+            <strong>Underlying agreements.</strong> ${noUnderlying.length} amendments change only some terms and keep an older agreement in force for the rest, including grievances, discipline and seniority. That older agreement is not in this database, so a search here can miss provisions that still apply. These documents carry a pink "underlying agreement missing" tag.
+            <details class="missing-underlying-wrap">
+              <summary>List all ${noUnderlying.length}</summary>
+              <ul class="missing-underlying">
+                ${noUnderlying.map(c => `<li><a href="#/contract/${encodeURIComponent(c.id)}">${label(c)}</a></li>`).join("")}
+              </ul>
+            </details>
+          </li>
         </ul>
-        <h3>Underlying agreements not in this database</h3>
-        <p>These ${noUnderlying.length} documents change only some terms and expressly keep an older agreement in force for everything else. That older agreement, which governs subjects such as grievances, discipline and seniority, is not in this database, so a search here can miss provisions that still apply to these workers. The documents are public records; most can be requested from the Office of Labor Relations or the union.</p>
-        <details class="missing-underlying-wrap">
-          <summary>Show all ${noUnderlying.length}</summary>
-          <ul class="missing-underlying">
-            ${noUnderlying.map(c => `<li><a href="#/contract/${encodeURIComponent(c.id)}">${label(c)}</a></li>`).join("")}
-          </ul>
-        </details>
-        <p class="missing-checked">Last checked ${escapeHtml(state.missing.checked || "")}. ${escapeHtml(state.missing.checked_note || "")} <a href="methodology.html#gaps">More on coverage</a>.</p>
+        <p class="missing-checked">Last checked ${escapeHtml(state.missing.checked || "")}. <a href="methodology.html#gaps">How this list is kept</a>.</p>
       </div>`;
     return panel;
   }
@@ -917,7 +948,7 @@
           <span><strong>Term</strong> ${term}</span>
           <span><strong>Pages</strong> ${totalPages}${ocrPages.size ? ` (${ocrPages.size} OCR'd)` : ""}</span>
           <span><strong>Sections</strong> ${items.length}</span>
-          <a href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener" class="doc-view-ai">✨ Ask in Gemini Notebook →</a>
+          <a href="https://notebooklm.google.com/notebook/40fefbdb-63d4-4b68-b2c1-771a8b0a3c5e" target="_blank" rel="noopener" class="doc-view-ai">Ask in Gemini Notebook &#8599;</a>
           <a href="data/markdown/${encodeURIComponent(c.id)}.md" download class="doc-view-md">Download as Markdown ↓</a>
           <a href="${escapeHtml(c.url)}" target="_blank" rel="noopener" class="doc-view-pdf">View source PDF →</a>
         </div>
@@ -1027,7 +1058,7 @@
     back.className = "single-clause-nav";
     back.innerHTML = `
       <a href="#" data-action="clear">← Back to all clauses</a>
-      <button type="button" data-action="another">🎲 Show another random clause</button>
+      <button type="button" data-action="another">Show another random clause</button>
     `;
     back.querySelector('[data-action="clear"]').addEventListener("click", (e) => {
       e.preventDefault();

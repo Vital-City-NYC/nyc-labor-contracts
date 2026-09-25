@@ -50,7 +50,7 @@ a:hover { color: var(--vc-accent); text-decoration-thickness: 2px; }
 .site-header {
   background: var(--vc-bg-alt);
   border-bottom: 2px solid var(--vc-rule);
-  padding: 40px 0 28px;
+  padding: 30px 0 22px;
 }
 .site-header .kicker {
   font-family: var(--vc-font-sans);
@@ -84,43 +84,14 @@ a:hover { color: var(--vc-accent); text-decoration-thickness: 2px; }
 
 main { padding: 28px 0 80px; }
 
-/* ---------- Page-level nav CTA ---------- */
+/* ---------- Page-level nav: one row of links ---------- */
 .page-nav {
-  margin-top: 18px;
-  display: flex; flex-wrap: wrap; align-items: center; gap: 18px;
+  margin-top: 16px;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px;
+  font-size: 0.9rem; font-weight: 700;
 }
-.page-nav-cta {
-  display: inline-flex; flex-direction: column; gap: 2px;
-  background: var(--vc-black); color: var(--vc-white) !important;
-  padding: 12px 18px; text-decoration: none !important;
-  border: 1px solid var(--vc-black);
-}
-.page-nav-cta:hover { background: var(--vc-accent); border-color: var(--vc-accent); }
-.page-nav-cta:hover .page-nav-cta-sub { color: var(--vc-black); }
-
-/* AI Q&A CTA — magenta accent so it visually reads as a different category */
-.page-nav-cta-ai {
-  background: var(--vc-magenta);
-  color: var(--vc-white) !important;
-  border-color: var(--vc-magenta);
-}
-.page-nav-cta-ai .page-nav-cta-sub { color: var(--vc-white); opacity: 0.92; }
-.page-nav-cta-ai:hover { background: var(--vc-black); border-color: var(--vc-black); }
-.page-nav-cta-ai:hover .page-nav-cta-sub { color: var(--vc-magenta); opacity: 1; }
-.page-nav-cta-ai .page-nav-cta-label::before { content: "✨ "; }
-.page-nav-cta-label {
-  font-weight: 700; font-size: 0.92rem;
-  letter-spacing: 0.06em; text-transform: uppercase;
-}
-.page-nav-cta-sub {
-  font-size: 0.78rem; color: var(--vc-chartreuse);
-  letter-spacing: 0.04em;
-}
-.page-nav-link {
-  font-size: 0.92rem; color: var(--vc-text);
-  text-decoration: underline; text-underline-offset: 4px;
-}
-.page-nav-link:hover { color: var(--vc-accent); }
+.page-nav a { color: var(--vc-text); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.page-nav a:hover { color: var(--vc-accent); text-decoration-thickness: 2px; }
 
 /* ---------- Why tooltip ---------- */
 .why-tip-trigger {
@@ -201,13 +172,8 @@ main { padding: 28px 0 80px; }
 
 /* ---------- Contract tile grid (default no-search view) ---------- */
 .tiles-intro {
-  background: var(--vc-bg-alt);
-  border: 1px solid var(--vc-border);
-  border-left: 4px solid var(--vc-accent);
-  padding: 14px 18px;
-  margin-bottom: 18px;
-  font-size: 0.95rem;
-  color: var(--vc-text);
+  margin: 0 0 12px; max-width: 86ch;
+  font-size: 0.92rem; color: var(--vc-text-muted);
 }
 .tiles-intro p { margin: 0; }
 
@@ -829,7 +795,7 @@ mark { background: var(--vc-chartreuse); padding: 0 2px; color: var(--vc-black);
   margin: 0 0 18px;
 }
 .doc-view-search input {
-  flex: 1; max-width: 520px;
+  flex: 1; max-width: none; min-width: 0;
   font: inherit; font-size: 0.95rem;
   padding: 9px 12px;
   border: 2px solid var(--vc-rule);
@@ -1010,35 +976,39 @@ html.embed .controls { margin-top: 0; }
   padding: 1px 6px;
 }
 
-/* ---------- Known missing documents ---------- */
+/* ---------- Known missing documents: one-line strip that opens ---------- */
 .missing-panel {
-  border: 1px solid var(--vc-magenta);
-  border-left: 6px solid var(--vc-magenta);
+  border-left: 4px solid var(--vc-magenta);
   background: var(--vc-magenta-20);
-  padding: 16px 18px;
-  margin: 0 0 24px;
+  margin: 0 0 28px;
 }
+.missing-panel > summary {
+  list-style: none; cursor: pointer;
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;
+  padding: 10px 44px 10px 14px; position: relative;
+  font-size: 0.9rem; line-height: 1.45;
+}
+.missing-panel > summary::-webkit-details-marker { display: none; }
 .missing-panel-title {
-  margin: 0; font-family: var(--vc-font-serif); font-weight: 400;
-  font-size: 1.35rem; line-height: 1.2;
+  font-weight: 700; font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #8a1d38; white-space: nowrap;
 }
-.missing-panel-sub { margin: 4px 0 0; font-size: 0.85rem; font-weight: 700; color: #8a1d38; }
-.missing-panel-body { max-width: 80ch; }
-.missing-panel-body h3 {
-  margin: 18px 0 8px; font-size: 0.78rem; font-weight: 700;
-  letter-spacing: 0.07em; text-transform: uppercase;
+.missing-panel-sub { color: var(--vc-text); }
+.missing-panel-toggle {
+  position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+  font-size: 0.78rem; font-weight: 700; color: #8a1d38; text-decoration: underline; text-underline-offset: 3px;
 }
-.missing-panel-body p { margin: 0 0 6px; font-size: 0.92rem; line-height: 1.55; }
-.missing-list { list-style: none; margin: 0; padding: 0; }
-.missing-list li {
-  background: var(--vc-white); padding: 12px 14px; margin-bottom: 10px;
-  overflow-wrap: anywhere;
-}
-.missing-union { font-size: 0.95rem !important; }
-.missing-evidence, .missing-checked { font-size: 0.82rem !important; color: var(--vc-charcoal); }
+.missing-panel-toggle::before { content: "Details"; }
+.missing-panel[open] .missing-panel-toggle::before { content: "Hide"; }
+.missing-panel > summary:hover .missing-panel-toggle { color: var(--vc-black); }
+.missing-panel > summary:focus-visible { outline: 3px solid var(--vc-accent); outline-offset: -3px; }
+.missing-panel-body { padding: 0 14px 12px; max-width: 86ch; }
+.missing-list { margin: 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.55; }
+.missing-list > li { margin-bottom: 8px; }
 .missing-panel a { color: var(--vc-text); }
-.missing-underlying-wrap summary { cursor: pointer; font-weight: 700; font-size: 0.9rem; margin: 4px 0 8px; }
-.missing-underlying { columns: 2 18rem; column-gap: 24px; margin: 0 0 12px; padding-left: 18px; font-size: 0.86rem; }
+.missing-checked { margin: 4px 0 0; font-size: 0.8rem; color: var(--vc-charcoal); }
+.missing-underlying-wrap summary { cursor: pointer; font-weight: 700; font-size: 0.84rem; margin: 4px 0; }
+.missing-underlying { columns: 2 18rem; column-gap: 24px; margin: 4px 0 8px; padding-left: 18px; font-size: 0.84rem; }
 .missing-underlying li { break-inside: avoid; margin-bottom: 3px; }
 .contract-tile-missing {
   display: inline-block; margin-top: 8px; margin-right: 4px;
@@ -1077,4 +1047,51 @@ html.embed .controls { margin-top: 0; }
   .search-row button { flex: 1 1 auto; padding: 12px 14px; }
   #cmp-add { max-width: 100%; }
   .compare-col, .compare-grid { min-width: 0; }
+}
+
+/* ---------- View tabs ---------- */
+.view-tabs {
+  display: flex; flex-wrap: wrap; gap: 0 22px;
+  margin: -4px 0 16px; border-bottom: 1px solid var(--vc-border);
+}
+.view-tabs button {
+  background: none; border: 0; border-bottom: 3px solid transparent; border-radius: 0;
+  margin-bottom: -1px; padding: 6px 0 9px;
+  font: 700 0.86rem/1.2 var(--vc-font-sans); color: var(--vc-text-muted); cursor: pointer;
+}
+.view-tabs button:hover { color: var(--vc-text); }
+.view-tabs button.active { color: var(--vc-text); border-bottom-color: var(--vc-accent); }
+.view-tabs button:focus-visible { outline: 3px solid var(--vc-accent); outline-offset: 2px; }
+.filters .view-select { display: none; }
+.filters { grid-template-columns: repeat(2, 1fr); }
+.search-examples { margin: 10px 0 0; font-size: 0.86rem; color: var(--vc-text-muted); }
+.search-examples a { color: var(--vc-text); }
+
+/* ---------- Empty search ---------- */
+.empty-state {
+  border: 1px solid var(--vc-border); background: var(--vc-bg-alt);
+  padding: 16px 18px; max-width: 78ch; font-size: 0.95rem;
+}
+.empty-state p { margin: 0 0 8px; }
+.empty-state p:last-child { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .filters { grid-template-columns: 1fr; }
+  .view-tabs { gap: 0 16px; }
+}
+
+/* Random clause is a side door, not the main action: outline, not solid. */
+.search-row #random-btn { background: var(--vc-bg); color: var(--vc-text); }
+.search-row #random-btn:hover { background: var(--vc-accent); color: var(--vc-black); }
+
+@media (max-width: 520px) {
+  .site-header { padding: 22px 0 16px; }
+  .site-header .lede { font-size: 0.95rem; }
+  .page-nav { gap: 4px 16px; font-size: 0.84rem; margin-top: 12px; }
+  .view-tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .view-tabs::-webkit-scrollbar { display: none; }
+  .view-tabs button { white-space: nowrap; }
+  .search-row #random-btn { padding: 8px 12px; font-size: 0.8rem; flex: 0 0 auto; }
+  .missing-panel > summary { padding-right: 14px; padding-bottom: 28px; }
+  .missing-panel-toggle { top: auto; bottom: 8px; transform: none; left: 14px; right: auto; }
 }
