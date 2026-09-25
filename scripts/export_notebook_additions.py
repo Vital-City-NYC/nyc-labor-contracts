@@ -144,8 +144,11 @@ def underlying(contracts):
     L.append("")
     L.append("## Where the others are\n")
     L.append(
-        "The remaining amendments are mostly skilled-trade agreements whose predecessors have not been "
-        "located. Four routes exist, in rough order of usefulness:\n\n"
+        "For every remaining amendment, the Office of Labor Relations posts an earlier agreement on its "
+        "archive pages: https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page and "
+        "https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page (checked Sept. 25, 2026). Many "
+        "of those are themselves amendments of a still earlier full contract. None are in this notebook. "
+        "Other routes:\n\n"
         "1. **The Office of Labor Relations Uniformed Contracts page** — "
         "https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 older agreements, "
         "memoranda and reopeners (mostly 2002-2012) for the police, fire, sanitation and correction unions, "

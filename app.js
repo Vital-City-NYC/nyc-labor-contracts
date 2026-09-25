@@ -631,7 +631,7 @@
               · <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener" title="${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: ${escapeHtml(g.evidence.quote)}">Evidence &#8599;</a>
             </li>`).join("")}
           <li>
-            <strong>Underlying agreements.</strong> ${noUnderlying.length} amendments change only some terms and keep an older agreement in force for the rest, including grievances, discipline and seniority. That older agreement is not in this database, so a search here can miss provisions that still apply. These documents carry a pink "underlying agreement missing" tag.
+            <strong>Underlying agreements.</strong> ${noUnderlying.length} amendments change only some terms and keep an older agreement in force for the rest, including grievances, discipline and seniority. That older agreement is not in this database, so a search here can miss provisions that still apply. The Office of Labor Relations posts earlier agreements for all of these units on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages. These documents carry a pink "underlying agreement missing" tag.
             <details class="missing-underlying-wrap">
               <summary>List all ${noUnderlying.length}</summary>
               <ul class="missing-underlying">
@@ -1097,7 +1097,7 @@
           </aside>`).join("")}
         ${c.amends_predecessor ? `
           <aside class="doc-view-amend-note">
-            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> It is a public record, but the city does not link it from this document. <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
+            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> The city does not link it from this document, but it posts earlier agreements on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages. <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
             ${c.predecessor ? `
               <p class="doc-view-predecessor">
                 <strong>Read the underlying agreement:</strong>

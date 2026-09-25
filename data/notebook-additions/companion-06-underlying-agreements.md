@@ -26,7 +26,7 @@
 
 ## Where the others are
 
-The remaining amendments are mostly skilled-trade agreements whose predecessors have not been located. Four routes exist, in rough order of usefulness:
+For every remaining amendment, the Office of Labor Relations posts an earlier agreement on its archive pages: https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page and https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page (checked Sept. 25, 2026). Many of those are themselves amendments of a still earlier full contract. None are in this notebook. Other routes:
 
 1. **The Office of Labor Relations Uniformed Contracts page** — https://www.nyc.gov/site/olr/labor/labor-uniformed-contracts.page — carries 30 older agreements, memoranda and reopeners (mostly 2002-2012) for the police, fire, sanitation and correction unions, indexed by collective bargaining unit (CBU) number; they are the last full texts published, not necessarily the immediate predecessors. It is not linked from the Recent Agreements page.
 2. **Unlinked files on the city's own server**, under nyc.gov/assets/olr/downloads/pdf/collectivebargaining/. These resolve but appear on no index.
