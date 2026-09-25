@@ -1,0 +1,733 @@
+{
+ "checked": "2026-09-25",
+ "lineage": {
+  "csba-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/csba-2017-2021-final-agreement-fully-executed.pdf",
+     "title": "2017-2021 Attorneys Agreement (Local 237 IBT and its affiliate the Civil Service Bar Association)",
+     "term_start": "2017-08-18",
+     "term_end": "2021-04-17",
+     "term_text": "August 18, 2017 to April 17, 2021",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: AT IORNEYS TERM: AUGUST 18, 2017 TO APRIL 17, 2021",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target term 4/18/2021-10/17/2026; its clause 'The terms of the predecessor collective bargaining agreement, MOA, and related agreements shall be continued'. Nearest is itself a full executed contract (Article I Union Recognition ... Article VI Grievance Procedure, p2 TOC). Ends the day before target start."
+  },
+  "cwa-1180-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-2018-2021-cwa-1180-moa.pdf",
+     "title": "2018-2021 Memorandum of Agreement, Communications Workers of America, Local 1180 and the City of New York",
+     "term_start": "2018-05-06",
+     "term_end": "2021-12-12",
+     "term_text": "5/6/18 - 12/12/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2021 Memorandum of Agreement Communications Workers of America, Local 1180 and the City of New York 1. Term: 3 years, 7 months, and 7 days (43 months and 7 days) 5/6/18 - 12/12/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017/cwa_local_1180_executed_contract_10-6-2010-5-5-2018.pdf",
+     "title": "Principal Administrative Associates, et al. Agreement (executed contract, CWA Local 1180)",
+     "term_start": "2010-10-06",
+     "term_end": "2018-05-05",
+     "term_text": "October 6, 2010 to May 5, 2018",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: PRINCIPAL ADMINISTRATIVE ASSOCIATES TERM: OCTOBER 6, 20 IO TO MAY 5, 2018 ... Communication Workers of America, Local 1180",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 12/13/2021. MOA ends 12/12/2021; full contract ends 5/5/2018, day before MOA start. Full contract has Article I Union Recognition through Article XX (p2 TOC)."
+  },
+  "cwa-l1181-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-local-1181-moa-11-7-19-fully-executed-2017-2021.pdf",
+     "title": "2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1181 and the City of New York",
+     "term_start": "2017-06-06",
+     "term_end": "2021-11-10",
+     "term_text": "6/6/2017-11/10/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement Communications Workers of America, Local 1181 and the City of New York 1. Term: 4 years and 5 months, 5 days (53 months and 5 days} 6/6/2017-11/10/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
+     "title": "Traffic Enforcement Unit executed contract (2010-2017 LL 56 ATEA and TEA Agreement CWA, L. 1181 and 1182 and DC 37, L. 983; 2010-2018 LL 56 PCS Agreement IBT, L. 237)",
+     "term_start": "2010-03-16",
+     "term_end": "2017-06-05",
+     "term_text": "March 16, 2010 to June 5, 2017 for CWA, Local 1181",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: TRAFFIC ENFORCEMENT UNIT TERM: March 16, 20 IO to June 5, 2017 for CWA, Local 1181",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 11/11/2021; MOA ends the day before, and the multi-union Traffic Enforcement Unit contract's term for this local ends the day before the MOA starts. The contract (executed April 26, 2022, p3 preamble) is a full agreement: Article I Union Recognition (titles incl. Associate Traffic Enforcement Agent 71652, Traffic Enforcement Agent Level I and II 71651, Levels III and IV 7165A/7165B), Article XXV Work Shifts and Seniority etc. (p2-3). Earlier 2010-2017 MOAs for these titles were folded into that contract."
+  },
+  "cwa-l1182-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-local-1182-moa-11-7-19-fully-executed-2017-2021.pdf",
+     "title": "2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1182 and the City of New York",
+     "term_start": "2017-12-31",
+     "term_end": "2021-11-10",
+     "term_text": "12/31/2017-11/10/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement Communications Workers of America, Local 1182 and the City of New York 1. Term: 3 years end 10 months, 11 days (46 months and 11 days) 12/31/2017-11/10/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
+     "title": "Traffic Enforcement Unit executed contract (2010-2017 LL 56 ATEA and TEA Agreement CWA, L. 1181 and 1182 and DC 37, L. 983; 2010-2018 LL 56 PCS Agreement IBT, L. 237)",
+     "term_start": "2010-03-10",
+     "term_end": "2017-12-30",
+     "term_text": "March 10, 2010 to December 30, 2017 for CWA, Local 1182",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: TRAFFIC ENFORCEMENT UNIT TERM: ... March I 0, 20 IO to December 30, 2017 for CWA , Local 1182",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 11/11/2021; MOA ends the day before, and the multi-union Traffic Enforcement Unit contract's term for this local ends the day before the MOA starts. The contract (executed April 26, 2022, p3 preamble) is a full agreement: Article I Union Recognition (titles incl. Associate Traffic Enforcement Agent 71652, Traffic Enforcement Agent Level I and II 71651, Levels III and IV 7165A/7165B), Article XXV Work Shifts and Seniority etc. (p2-3). Earlier 2010-2017 MOAs for these titles were folded into that contract."
+  },
+  "cwa-1183-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-1183-mou-03-12-2019.pdf",
+     "title": "2017-2021 Memorandum of Agreement, Communication Workers of America, Local 1183 and the City of New York",
+     "term_start": "2017-06-19",
+     "term_end": "2021-01-18",
+     "term_text": "6/19/2017-1/18/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement Communication Workers of America, Local 1183 and the City of New York 1. Term: 3 years and 7 months (43 months) 6/19/2017-1/18/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/board-of-elections-2010-2017.pdf",
+     "title": "Board of Elections Agreement 2010-2017 (executed contract, CWA Local 1183)",
+     "term_start": "2010-06-19",
+     "term_end": "2017-06-18",
+     "term_text": "June 19, 2010 to June 18, 2017",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: BOARD OF ELECTIONS TERM: JUNE 19, 2010 TO JUNE 18, 2017 ... Communication Workers of America, Local 1183",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 1/19/2021, day after MOA ends; MOA starts day after the full contract ends. Contract has Article I Union Recognition, Article VII Grievance Procedure (p2 TOC). The 2010-2017 CWA 1183 MOA (cbu1183-local-cwa-2010-2017.pdf) is the MOA folded into that contract."
+  },
+  "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc37-traffic-enforcement-agent-lvl-%203-4-moa.pdf",
+     "title": "2017-2020 [sic] Memorandum of Agreement, District Council 37, Local 983 and the City of New York, Traffic Enforcement Agents, Levels 3 and 4",
+     "term_start": "2017-09-26",
+     "term_end": "2021-11-10",
+     "term_text": "9/26/2017-11/10/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2020 Memorandum of Agreement District Council 37, Local 983 and the City of New York Traffic Enforcement Agents, Levels 3 and 4 4 years, 1 month, and 16 days (49 months, 16 days) 9/26/2017-11 /1 0/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
+     "title": "Traffic Enforcement Unit executed contract (2010-2017 LL 56 ATEA and TEA Agreement CWA, L. 1181 and 1182 and DC 37, L. 983; 2010-2018 LL 56 PCS Agreement IBT, L. 237)",
+     "term_start": "2010-03-03",
+     "term_end": "2017-09-25",
+     "term_text": "March 3, 2010 to September 25, 2017 for DC 37, Local 983",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: TRAFFIC ENFORCEMENT UNIT TERM: ... March 3, 20 IO to September 25, 2017 for DC 37, Local 983",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 11/11/2021; MOA ends the day before, and the multi-union Traffic Enforcement Unit contract's term for this local ends the day before the MOA starts. The contract (executed April 26, 2022, p3 preamble) is a full agreement: Article I Union Recognition (titles incl. Associate Traffic Enforcement Agent 71652, Traffic Enforcement Agent Level I and II 71651, Levels III and IV 7165A/7165B), Article XXV Work Shifts and Seniority etc. (p2-3). Earlier 2010-2017 MOAs for these titles were folded into that contract."
+  },
+  "dc37-l983-urban-park-rangers-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/urban-park-ranger-moa-2017-2021.pdf",
+     "title": "2017-2021 Memorandum of Agreement, District Council 37, Local 983 Urban Park Rangers and the City of New York",
+     "term_start": "2017-09-26",
+     "term_end": "2021-10-25",
+     "term_text": "9/26/17 - 10/25/21",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement District Council 37, Local 983 Urban Park Rangers and the City of New York 1. Tenn: 4 years and 1 month (49 months) 9/26/17 - 10/25/21",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-dc37-l-983-urban-park-rangers-moa.pdf",
+     "title": "2010-2017 Memorandum of Agreement, District Council 37 and the City of New York, Urban Park Ranger Bargaining Unit",
+     "term_start": "2010-03-03",
+     "term_end": "2017-07-02",
+     "term_text": "3/3/10 - 7/2/17 (7 years and 4 months)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "an agreement successor to the 2008-2010 Blue Collar Agreement to cover the employees in the Urban Park Ranger bargaining unit ... 1. Term: 7 years and 4 months (88 months) 3/3/10 - 7/2/17",
+     "page": 1,
+     "method": "image",
+     "gap_note": "Ends 7/2/2017 but the 2017-2021 UPR MOA starts 9/26/2017; neither document explains the 7/3/2017-9/25/2017 interval (the DC 37 pattern MOAs run 'or N months from the date of termination of the applicable existing Successor Separate Unit Agreement', and the 2010-2017 Blue Collar contract ran to 9/25/2017, so the stated 7/2/17 end may simply not be the operative date)."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu131-132-blue-collar-080806-to-061808.pdf",
+     "title": "2008-2010 Blue Collar Agreement (executed contract, Blue Collar 'A' and 'B', District Council 37)",
+     "term_start": "2008-03-03",
+     "term_end": "2010-03-02",
+     "term_text": "March 3, 2008 - March 2, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: Blue Collar \"A\" and \"B\" TERM: MARCH 3, 2008 - MARCH 2, 2010 ... Associate Urban Park Ranger 60422 (Unit A title list, p3); Urban Park Ranger (Unit B list, p5)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "The 2010-2017 UPR MOA says the terms of the 2008-2010 Blue Collar Agreement applicable to Urban Park Ranger and Associate Urban Park Ranger 'shall be continued except as modified'; that contract lists both titles in Article I and has Article VI Grievance Procedure. The later 2010-2017 Blue Collar executed contract (3/3/2010-9/25/2017) does not list Urban Park Ranger titles (checked by text search), and no separate full UPR successor agreement is published. DC 37's citywide pattern MOAs (2010-2017, 2017-2021, 2021-2026) expressly exclude Urban Park Rangers."
+  },
+  "dc37-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc-37mou-2018.pdf",
+     "title": "2017-2021 Memorandum of Agreement, District Council 37 and the City of New York",
+     "term_start": "2017-09-26",
+     "term_end": "2021-05-25",
+     "term_text": "9/26/17-5/25/21 or 44 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement District Council 37 and the City of New York I. Tenn: 3 years and 8 months (44 months) 9/26/17-5/25/21",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu-dc37-nyc-moa-2010-2017.pdf",
+     "title": "2010-2017 Memorandum of Agreement, District Council 37 and the City of New York",
+     "term_start": "2010-03-03",
+     "term_end": "2017-07-02",
+     "term_text": "3/3/10 - 7/2/17 or 88 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2017 Memorandum of Agreement District Council 37 and the Citv of New York I. Term: 7 years and 4 months (88 months) 313110 - 7 /2/17",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Stated end 7/2/2017 vs next MOA start 9/26/2017; both terms float by unit ('or N months from the date of termination of the applicable existing Successor Separate Unit Agreement'), e.g. the 2010-2017 Blue Collar executed contract ran 3/3/2010-9/25/2017."
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Pattern (economic) MOA covering many DC 37 units; target term 5/26/21-11/6/26 'or 65 months and 12 days from the date of termination of the applicable existing Successor Separate Unit Agreement'. Its clause: 'The terms of the predecessor separate unit agreements shall be continued' (both 2021-2026 and 2017-2021 MOAs, p3 of the latter). There is no single complete predecessor: the operative non-economic terms live in dozens of separate unit agreements (example of one: Blue Collar 'A' and 'B' executed contract 3/3/2010-9/25/2017, https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017/Blue%20Collar%20Executed%20Contract%2003-03-2010%20-%2009-25-2017.pdf) plus the 2001-2021 Citywide Agreement (executed-citywide-agreement-2001-2021.pdf; the 2021-2026 MOA cites its Article XIV). Chain stopped at the 2010-2017 pattern MOA; the 2008-2010 DC 37 MEA (dc37-mea-2008-2010.pdf) exists but was not read. Excludes prevailing-rate groups, EMS, Fire Protection Inspectors, Urban Park Rangers, TEA III/IV."
+  },
+  "ibt-l237-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-237-executed-2018-2022-moa.pdf",
+     "title": "2018-2022 Memorandum of Agreement, Local 237, International Brotherhood of Teamsters and the City of New York",
+     "term_start": "2018-03-26",
+     "term_end": "2022-04-25",
+     "term_text": "3/26/18 - 4/25/22",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2022 Memorandum of Agreement Local 237, International Brotherhood of Teamsters and the Citv of New York 1. Term: 4 years, I month 3/26/18 - 4/25/22 ... Special Officers (non-LL 56) (CBU 047) Institutional Titles A (CBU 121) Institutional Titles B (CBU 108)",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu237-moa-2010-2018.pdf",
+     "title": "2010-2018 Memorandum of Agreement, Local 237 and the City of New York",
+     "term_start": "2010-09-26",
+     "term_end": "2018-03-25",
+     "term_text": "September 26, 2010 through March 25, 2018, or 90 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2018 Memorandum of Agreement Local 237 and the City of New York 1. Term: 7 years and 6 months (90 months) The term of the 2010-2018 Local 237 MOA (\"this MOA\") shall be from September 26, 2010 through March 25, 2018",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Target (4/26/22-10/25/27) covers 8 units: CBU 173, 067, 047, 121, 108, 142, 409, 407; continues 'the predecessor separate unit agreements'. The 2018-2022 MOA covers 047, 121, 108, 125, 142, 409, 407 and continues 'the predecessor collective bargaining agreement' (p3); CBU 173 and 067 had separate 2018-2022 MOAs with the same dates (executed-2018-2022-ll-56-special-officer-tlc-inspector-moa.pdf; executed-%202018-2022-ll-56-school-safety-agent-moa.pdf, per predecessors_verified). The 2010-2018 pattern MOA was incorporated into per-unit full contracts, which are the complete predecessors, verified by reading: Special Officers et al. executed contract 9/26/2010-3/25/2018 (special-officers-contract-2010-2018.pdf, p1 'EXECUTED CONTRACT: SPECIAL OFFICERS TERM: SEPTEMBER 26, 2010 TO MARCH 25, 2018'; Art. VI Grievance Procedure) for CBU 047; Institutional Titles executed contract (2010-2018-institutional-titles-executed-contract.pdf, p3 'September 26, 2010 to March 25, 2018 for Group \"A\" titles and ... September 28, 2010 to March 27, 2018 for Group \"B\" titles') for CBU 121/108; 2010-2018 Special Officers (Local Law 56) Agreement (2010-2018-special-officer-ll56-contract.pdf, p2 'September 26, 2010 through March 25, 2018') for CBU 173; 2010-2018 School Safety Agents Agreement (2010-2018-school-safety-agent-contract.pdf, p2 same dates) for CBU 067. No full 2010-2018 agreement found for CBU 142, 409 or 407. All four full contracts end 3/25/2018 (Group B 3/27/2018), contiguous with the 3/26/18 MOA start (Group B off by two days)."
+  },
+  "l3-electrical-inspectors-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-3-electrical-inspector-executed-moa-2018-2021.pdf",
+     "title": "2018-2021 Memorandum of Agreement, Inspectors (Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York",
+     "term_start": "2018-03-31",
+     "term_end": "2021-10-30",
+     "term_text": "3/31/18 - 10/30/21",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2021 Memorandum of Agreement Inspectors {Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York 1. Tenn: 3 years and 7 months (43 months) 3/31/18 - 10/30/21",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Ends 10/30/2021; the target starts 3/29/2022. No agreement for 10/31/2021-3/28/2022 is published and neither document explains the gap."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2018-Electrical%20Inspectors.pdf",
+     "title": "2010-2018 Electrical Inspectors Memorandum of Agreement (IBEW Local 3)",
+     "term_start": "2010-03-31",
+     "term_end": "2018-03-30",
+     "term_text": "March 31, 2010 through March 30, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2018 ELECTRICAL INSPECTORS MEMORANDUM OF AGREEMENT ... International Brotherhood of Electrical Workers, Local 3 ... I. The term of the Agreement shall be from March 31, 2010 through March 30, 2018.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu45-electrical-inspectors-033108-to-033010.pdf",
+     "title": "Electrical Inspectors et al. 2008-2010 Agreement (executed contract, CBU 45)",
+     "term_start": "2008-03-31",
+     "term_end": "2010-03-30",
+     "term_text": "March 31, 2008 to March 30, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: ELECTRICAL INSPECTORS TERM: MARCH 31, 2008 TO MARCH 30, 2010 ... Local Union No. 3, International Brotherhood of Electrical Workers",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "2018-2021 MOA continues 'the predecessor collective bargaining agreement, MOA, and related agreements' (p2). 2010-2018 MOA continues 'all of the same terms and conditions specified in the Separate Unit Agreement ... terminating on March 30, 2010' (p1). The 2008-2010 contract has Article I Union Recognition and Article VI Grievance Procedure (p2 TOC). Only gap: 10/31/2021-3/28/2022 before the target."
+  },
+  "local-211-building-inspectors-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-2017-2021-building-inspector-moa.pdf",
+     "title": "2017-2021 Memorandum of Agreement, Allied Building Inspectors, Local 211, IUOE and the City of New York",
+     "term_start": "2017-05-10",
+     "term_end": "2021-04-02",
+     "term_text": "5/10/17 - 4/2/21",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement Allied Building Inspectors, Local 211, IUOE and the City of New York 1. Term: 3 years, 10 months, and 24 days (46 months, 24 days) 5/10/17 - 4/2/21",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-building-construction-inspectors-executed-contract.pdf",
+     "title": "Building & Construction Inspectors Agreement (executed contract, Local 211 IUOE)",
+     "term_start": "2009-12-16",
+     "term_end": "2017-05-09",
+     "term_text": "December 16, 2009 to May 9, 2017",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: BUILDING & CONSTRUCTION INSPECTORS TERM: DECEMBER 16,2009TOMAY9,2017 ... Allied Building Inspectors, Local 211, [UOE",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 4/3/21, day after MOA ends; contract ends day before MOA starts. Contract has Article I Union Recognition, Article VI Grievance Procedure (p2 TOC)."
+  },
+  "local-237-parking-control-specialists-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/parking-control-specialist-moa-final-executed.pdf",
+     "title": "2017-2020 [sic] Memorandum of Agreement, City Employees Local 237, IBT and the City of New York, Parking Control Specialists",
+     "term_start": "2018-04-11",
+     "term_end": "2021-11-10",
+     "term_text": "4/11/2018-11/10/2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2020 Memorandum of Agreement City Employees Local 237, IBT and the City of New York Parking Control Specialists 1. Term: 3 years and 7 months (43 months) --- 4/11/2018-11/ 10/2021",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
+     "title": "Traffic Enforcement Unit executed contract (includes '2010-2018 LL 56 PCS Agreement IBT, L. 237')",
+     "term_start": "2010-09-26",
+     "term_end": "2018-04-10",
+     "term_text": "September 26, 2010 to April 10, 2018 insofar as it is applicable to employees represented by IBT Local 237",
+     "kind": "full",
+     "complete": true,
+     "evidence": "for the period September 26, 20 IO to April I0 , 20 8 insofnr m, it is applicable to employees represented by International Brotherhood ofTeamstcrs (£BT), Local 237. ... 41120 Parking Conlrol Spcciulist",
+     "page": 3,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target term 11/11/2021-5/10/2027, continues 'the predecessor separate unit agreement'. The 2018-2021 MOA (heading says 2017-2020) continues 'the predecessor separate unit agreement' (p2). The Traffic Enforcement Unit contract (signed April 26, 2022) covers Parking Control Specialist (41120) and Associate Parking Control Specialist (41122) for Local 237 from 9/26/2010 to 4/10/2018, the day before the MOA starts; its page footer reads '2010-2018 LL 56 PCS Agreement IBT, L. 237'. It is a full contract (Article I Union Recognition ... Article XXV Work Shifts and Seniority). The 2010-2018 PCS MOA (parking-control-specialist-moa-dated-2010-2017.pdf, 'September 26, 2010 through April 10, 2018', p1) is the MOA folded into it. Not previously identified as this unit's base."
+  },
+  "local-246-automotive-service-workers-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-2021.pdf",
+     "title": "Automotive Service Worker Agreement (executed contract, CBU 96, Local 246 SEIU)",
+     "term_start": "2017-12-07",
+     "term_end": "2021-07-06",
+     "term_text": "December 7, 2017 through July 6, 2021",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: AUTOMOTIVE SERVICE WORKER TERM: DECEMBER 7,2017 THROUGH JULY 6, 202 I",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 7/7/2021. Full contract: Article I Union Recognition, Article VI Grievance Procedure, Article X Transfers (p2 TOC)."
+  },
+  "local-300-seiu-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-300-moa-2018-2022.pdf",
+     "title": "2018-2022 Memorandum of Agreement, Local 300, SEIU and the City of New York",
+     "term_start": "2018-06-23",
+     "term_end": "2022-02-22",
+     "term_text": "June 23, 2018 to February 22, 2022",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "the successor agreement to the agreement terminating on June 22, 2018 (the \"2011-2018 Assistant Buyers Agreement') ... The term of the agreement shall be forty-four (44) months from June 23, 2018 to February 22, 2022.",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu300-2011-2018.pdf",
+     "title": "2011-2018 Memorandum of Agreement, Local 300, SEIU and the City of New York",
+     "term_start": "2011-02-23",
+     "term_end": "2018-06-22",
+     "term_text": "February 23, 2011 through June 22, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "the successor agreement to the agreement terminating on February 22, 2011 (the \"2009-2011 Assistant Buyers Agreement') ... 1. The term of the agreement shall be from February 23, 2011 through June 22, 2018.",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu97-assistant-buyers-et-al-%20022309-to-022211",
+     "title": "Assistant Buyer, et al. 2009-2011 Agreement (executed contract, CBU 97, Local 300 SEIU)",
+     "term_start": "2009-02-23",
+     "term_end": "2011-02-22",
+     "term_text": "February 23, 2009 to February 22, 2011",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: ASSISTANT BUYERS, et al. TERM: FEBRUARY 23, 2009 TO FEBRUARY 22, 2011 ... Local 300, SEIU",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 2/23/2022. The 2018-2022 MOA cites a '2011-2018 Assistant Buyers Agreement' (the full successor unit agreement incorporating the 2011-2018 MOA); that full agreement is not published, so the 2011-2018 MOA is the link. The 2009-2011 contract has Article I Union Recognition, Article VI Grievance Procedure (p2 TOC); its preamble (p3) prints 'February 24, 2011' vs cover 'February 22, 2011'. The OLR link for it has no .pdf extension but serves a PDF."
+  },
+  "local-306-audiovisual-aide-technicians-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-latse-local-306-moa.pdf",
+     "title": "2018-2022 Memorandum of Agreement, International Alliance of Theatrical Stage Employees, Local 306 and the City of New York",
+     "term_start": "2018-02-15",
+     "term_end": "2022-03-14",
+     "term_text": "2/15/18 - 3/14/22",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2022 Memorandum of Agreement International Alliance of Theatrical Stage Emplovees, Local 306 and the City of New York 1. Term: 4 years and 1 month (49 months) 2/15/18 - 3/14/22",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu306-iatse-2010-2018.pdf",
+     "title": "2010-2018 IATSE Memorandum of Agreement (Local 306)",
+     "term_start": "2010-10-15",
+     "term_end": "2018-02-14",
+     "term_text": "October 15, 2010 through February 14, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "the agreement successor to the one terminating on October 14, 2010 ... 1. The term of the Agreement shall be from October 15, 2010 through February 14, 2018.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu39-audio-visual-aide-technicians-101508-to-101410.pdf",
+     "title": "Audio-Visual Aide Technicians, et al. 2008-2010 Agreement (executed contract, CBU 39)",
+     "term_start": "2008-10-15",
+     "term_end": "2010-10-14",
+     "term_text": "October 15, 2008 to October 14, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: AUDIO VISUAL AIDE TECHNICIANS TERM: OCTOBER 15, 2008 TO OCTOBER 14, 2010 ... Motion Picture Machine Operators, Local 306, IATSE",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 3/15/22. All links contiguous. The 2018-2022 MOA continues 'the predecessor Collective Bargaining Agreement, MOA, and related agreements' (p2); the 2010-2018 MOA continues the Separate Unit Agreement terminating October 14, 2010 (p1). The 2008-2010 contract has Article I Union Recognition, Article VI Grievance Procedure (p2 TOC)."
+  },
+  "local-891-school-custodians": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/school-custodian-engineers-08122016-07312021.pdf",
+     "title": "School Custodian Engineers Collective Bargaining Agreement (executed contract, Local 891 IUOE)",
+     "term_start": "2016-08-12",
+     "term_end": "2020-07-31",
+     "term_text": "August 12, 2016 through July 31, 2020",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: SCHOOL CUSTODIAN ENGINEERS TERM: AUGUST 12, 2016 THROUGH JULY 31, 2020",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target term August 1, 2020 through December 31, 2025. File name says 07312021 but the cover memo says July 31, 2020. 149-page full contract (Articles I-XXXII). The 2017-2020 Custodian MOA (moa-custodians-2017-2020.pdf) ends the same day and is subsumed."
+  },
+  "meba-moa-2010-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu61-ferryboat-titles-licensed-110708-to-110610.pdf",
+     "title": "Ferryboat Titles (Licensed) 2008-2010 Agreement (executed contract, CBU 61, MEBA)",
+     "term_start": "2008-11-07",
+     "term_end": "2010-11-06",
+     "term_text": "November 7, 2008 to November 6, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: FERRYBOAT TITLES (LICENSED) TERM: NOVEMBER 7, 2008 TO NOVEMBER 6, 2010 ... District No. 1 - PCD/MEBA Licensed Division, AFL-CIO",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target covers 2010-2027 with no intervening agreement; the full contract ends the day before (November 7, 2010). Contract has Article I Union Recognition and Article XVI Grievance and Arbitration (p2-3 TOC)."
+  },
+  "metal-work-mechanic-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/metal-work-mechanic-moa-2010-2021.pdf",
+     "title": "2010-2021 [body: 2010-2020] Memorandum of Agreement, Local Lodge No. 5 and the City of New York, Metal Work Mechanics",
+     "term_start": "2010-03-03",
+     "term_end": "2020-10-02",
+     "term_text": "3/3/2010 - 10/2/2020",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2021 MEMORANDUM OF AGREEMENT LOCAL LODGE NO. 5 AND THE CITY OF NEW YORK METAL WORK MECHANICS ... the agreement successor to the one terminating on March 2, 2010 ... 1. Term: 3/3/2010 - 10/2/2020",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu181-metal-work-mechanics-030308-to-030210.pdf",
+     "title": "Local Lodge No. 5 2008-2010 Metal Work Mechanic Agreement (executed contract, CBU 181)",
+     "term_start": "2008-03-03",
+     "term_end": "2010-03-02",
+     "term_text": "March 3, 2008 to March 2, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: METAL WORK MECHANICS TERM: MARCH 3, 2008 TO MARCH 2, 2010 ... Local Lodge No. 5 International Brotherhood of Boilermakers",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target term October 3, 2020 - November 2, 2025 (label says 2021-2026). MOA (signed March 2022 after an impasse panel) ends the day before; contract ends the day before the MOA. Contract has Article I Union Recognition, Article V Grievance Procedure (p2 TOC)."
+  },
+  "mmp-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-marine-titles-moa.pdf",
+     "title": "2018-2021 Memorandum of Agreement, International Organization of Masters, Mates & Pilots and the City of New York (Marine Titles)",
+     "term_start": "2018-01-06",
+     "term_end": "2021-08-05",
+     "term_text": "1/6/18 - 8/5/21",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2021 Memorandum of Agreement International Organization of Masters, Mates & Pilots and the City of New York 1. Term: 3 years and 7 months (43 months) 1/6/18 - 8/5/21",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/marine-consolidated-titles-2010-2017.pdf",
+     "title": "2010-2018 Marine Titles Memorandum of Agreement (International Organization of Masters, Mates and Pilots Atlantic Maritime Group, ILA)",
+     "term_start": "2010-04-27",
+     "term_end": "2018-01-05",
+     "term_text": "April 27, 2010 through January 5, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2018 MARINE TITLES MEMORANDUM OF AGREEMENT ... International Organization of Masters, Mates and Pilots Atlantic Maritime Group, ILA, AFL-CIO ... 1. The term of the Agreement shall be from April 27, 2010 through January 5, 2018.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu111-marine-consolidated-titles-042708-to-042610.pdf",
+     "title": "Local 333 Marine (Consolidated) Titles 2008-2010 Agreement (executed contract, CBU 111)",
+     "term_start": "2008-04-27",
+     "term_end": "2010-04-26",
+     "term_text": "April 27, 2008 to April 26, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: MARINE (CONSOLIDATED TITLES) TERM: APRIL 27, 2008 TO APRIL 26, 2010 ... United Marine Division, Local 333, International Longshoreman's Association",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "NEW: the 2018-2021 MMP Marine Titles MOA is not on the scanned OLR listing pages but is on OLR's server (found by web search, read from page image); it ends 8/5/21, the day before the target starts 8/6/21, and continues 'the predecessor Collective Bargaining Agreement, MOA, and related agreements' (p2); its section 10 corrects contract references from 'Atlantic Maritime Group' to IOMMP. The 2010-2018 MOA succeeds the Separate Unit Agreement 'terminating on April 26, 2010' (p1), which is the CBU 111 contract. Union changed name between links (UMD Local 333 ILA in 2008-2010, IOMMP Atlantic Maritime Group ILA from 2010), but the unit is the same: CBU 111 Article I lists Deckhand, Marine Oiler (Ferry Operations), Marine Sounder, Marine Stoker etc. (p4), matching the target's title list. The target cites 'Article IV-A, Section 16 of the 2010-2017 Collective Bargaining Agreement', i.e. a full 2010-2018 successor agreement that is not published; the 2008-2010 contract (Article IV-A Wages and Benefits, Article VI Grievance Procedure, p2 TOC) is the latest complete one available."
+  },
+  "osa-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-moa-2017-2021.pdf",
+     "title": "2017-2021 Memorandum of Agreement (Organization of Staff Analysts)",
+     "term_start": "2017-08-25",
+     "term_end": "2021-09-05",
+     "term_text": "8/25/17 - 9/5/21",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement 1. Term: 8/25/17 - 9/5/21 (48 months, 12 days) ... the below listed titles shall be added to the OSA Education",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-OSA-NYC-MOA.pdf",
+     "title": "2010-2017 OSA Staff Analyst Memorandum of Agreement (Organization of Staff Analysts and the City of New York)",
+     "term_start": "2010-08-25",
+     "term_end": "2017-08-24",
+     "term_text": "August 25, 2010 to August 24, 2017",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2010-2017 OSA StaffA nalyst MOA and the agreement successor to the one terminating on August 24, 2010 ... 1. The term of the Agreement shall be August 25, 2010 to August 24, 2017.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu180-staff-analysts-et-al-082508-to-082410.pdf",
+     "title": "Staff Analysts, et al. Agreement, August 25, 2008 - August 24, 2010 (executed contract, CBU 180)",
+     "term_start": "2008-08-25",
+     "term_end": "2010-08-24",
+     "term_text": "August 25, 2008 to August 24, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: STAFF ANALYSTS, ET AL TERM: AUGUST 25, 2008 TO AUGUST 24, 2010 ... the Organization of Staff Analysts",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target starts 9/6/21. All links contiguous. The 2017-2021 MOA itself repeatedly cites 'the 2008-2010 Staff Analyst Agreement' (pp. 6-8) and continues 'the predecessor separate unit agreements' (p11). The 2008-2010 contract has Article I Union Recognition, Article VI Grievance Procedure, Article VII Transfers (p2 TOC)."
+  },
+  "osa-school-security-traffic-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-school-security-and-traffic-moa-2017-2022.pdf",
+     "title": "2017-2022 School Security/Traffic Memorandum of Agreement",
+     "term_start": "2018-05-12",
+     "term_end": "2022-06-11",
+     "term_text": "5/12/18 - 6/11/22 (49 months)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2022 School Security/Traffic Memorandum of Agreement 1. Term: 5/12/18 - 6/11/22 (49 months)",
+     "page": 1,
+     "method": "image"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-school-security-2008-2017.pdf",
+     "title": "2008-2017 OSA School Security/Traffic Memorandum of Agreement",
+     "term_start": "2008-12-13",
+     "term_end": "2018-05-11",
+     "term_text": "December 13, 2008 through May 11, 2018 (recital says through December 12, 2017; extended 4 months 29 days)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2008-2017 OSA School Security/Traffic MOA and the agreement successor to the one terminating on December 12, 2008 ... 1. The term of the Agreement shall be from December 13, 2008 through May 11, 2018.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu183-school-security-traffic-080102-to-121208.pdf",
+     "title": "School Security/Traffic Agreement, August 1, 2002 to December 12, 2008 (executed contract, CBU 183, Organization of Staff Analysts)",
+     "term_start": "2002-08-01",
+     "term_end": "2008-12-12",
+     "term_text": "August 1, 2002 to December 12, 2008",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: SCHOOL SECURITY/TRAFFIC TERM: AUGUST 1, 2002 TO DECEMBER 12, 2008 ... the Organization of Staff Analysts",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target (OSA, 6/12/22-12/11/27) continues 'the predecessor collective bargaining agreement, MOA, and related agreements'. The 2008-2017 MOA's term clause runs to May 11, 2018 ('The parties have agreed to extend the contract 4 months and 29 days', p2), so it meets the 5/12/18 start; the prior note in predecessors_verified giving 12/12/2017 reflects the recital, not the term clause. The 2002-2008 contract lists Administrative Traffic Enforcement Agent, Administrative School Security Manager, Associate Supervisor of School Security (Article I, p3) and has Article VI Grievance Procedure."
+  },
+  "blacksmith-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/blacksmith-mou-2010-2021.pdf",
+     "title": "2010-2021 Memorandum of Agreement, Local Lodge No. 5 and the City of New York (Blacksmith unit)",
+     "term_start": "2010-08-03",
+     "term_end": "2021-07-02",
+     "term_text": "8/3/2010 - 7/2/2021 (recital: consent determination covering August 3, 2010 through January 2, 2021)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "a consent determination successor to the one terminating on August 2,2010 to cover the employees in the Blacksmith collective bargaining unit ... 1. Term: 8/3/2010- 7/2/2021",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Target (7/3/2021-8/2/2026) continues 'the predecessor Consent Determination'. The consent determination incorporating the 2010-2021 MOA, and the one terminating August 2, 2010, are not published on the OLR pages scanned or found by web search. Chain stops. Internal inconsistency: term line 7/2/2021 vs recital January 2, 2021."
+  },
+  "boilermaker-moa-2021-2026": {
+   "chain": [],
+   "ends_with_complete": false,
+   "notes": "No verifiable predecessor. Target term January 3, 2021 - February 2, 2026; continues 'the predecessor Consent Determination'. OLR's 'Boilermaker 2010 - 2021' link (boilermaker-mou-2010-2021.pdf) serves a file byte-identical (md5 b5f8baaab764005d4e585d12e74af600) to blacksmith-mou-2010-2021.pdf, which covers 'the employees in the Blacksmith collective bargaining unit'. No Boilermaker consent determination is published."
+  },
+  "carpenters-consent-determination-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/carpenters-2008-2020.pdf",
+     "title": "Consent Determination, Carpenter (92005) and Supervisor Carpenter (92071), New York City District Council of Carpenters, UBCJA (filed September 23, 2022)",
+     "term_start": "2008-07-01",
+     "term_end": "2020-12-31",
+     "term_text": "rate periods 7/1/2008-6/30/2009 through 8/1/2020-12/31/2020",
+     "kind": "consent-determination",
+     "complete": true,
+     "evidence": "In the Matter of the Complaint on behalf of employees in the titles: CARPENTER (92005) SUPERVISOR CARPENTER (92071) ... CONSENT DETERMINATION ... New York City District Council of Carpenters, UBCJA",
+     "page": 3,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Rate table p4 starts '7/1/2008-6/3012009'; last period ends 12/31/2020, day before target start 1/1/2021. Complete: annexes Appendix A of leave and benefit provisions (pp. 27-35: annual leave, sick leave, miscellaneous provisions). The target is itself a consent determination that annexes Appendix A, so older terms matter mainly for history. The Carpenters MOA dated February 1, 2018 (carpenters-2008-2020-moa.pdf) is the MOA this determination implements."
+  },
+  "dc37-l376-construction-laborers-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/construction-laborers-groupc-laborers-2017-2021.pdf",
+     "title": "Consent Determination, Construction Laborers (90756) and Group C+ Laborers, Local 376, District Council 37 (filed February 6, 2020)",
+     "term_start": "2017-07-31",
+     "term_end": "2021-03-30",
+     "term_text": "July 31, 2017 through March 30, 2021",
+     "kind": "consent-determination",
+     "complete": true,
+     "evidence": "certified collective bargaining representative of employees in the titles, Construction Laborers and Group C+ Laborers ... for the period beginning July 31, 2017 through March 30, 2021",
+     "page": 14,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Target MOA (3/31/21-4/29/26) names 'the 2017-2021 Construction Laborer Consent Determination dated February 6, 2020' and continues 'the predecessor Consent Determination'. The determination annexes Appendix A (pp. 17-24: annual leave, sick leave, miscellaneous) so counts as complete. Ends the day before the target starts."
+  }
+ }
+}

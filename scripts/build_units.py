@@ -291,6 +291,8 @@ def main():
     clauses = json.loads((DATA / "clauses.json").read_text())
     units = []
     for c in contracts:
+        if c.get("era") == "earlier":
+            continue
         cid = c["id"]
         recog_text = find_recognition_text(clauses, cid)
         entry = {

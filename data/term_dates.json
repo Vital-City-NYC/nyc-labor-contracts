@@ -1035,6 +1035,915 @@
    "method": "text",
    "notes": "",
    "disagrees_with_label": false
+  },
+  "earlier-uniformed-coalition-economic-agreement-2018-2022": {
+   "start": "2020-02-01",
+   "end": "2023-01-31",
+   "quote": "agreements successor to existing unit agreements·e xpiring on: ... January 31, 2020 (ADW/DWA) ... The term of each Separate Unit Agreement shall be thirty-six (36) months from the expiration date of the Predecessor Separate Unit Agreements.",
+   "page": 1,
+   "method": "text",
+   "notes": "36 months from the predecessor unit agreement's expiration (January 31, 2020 (ADW/DWA)); dates computed from that rule",
+   "disagrees_with_label": false
+  },
+  "earlier-asst-deputy-wardens-deputy-wardens-07-01-2012-01-31-2020": {
+   "start": "2012-07-01",
+   "end": "2020-01-31",
+   "quote": "SUBJECT: EXECUTED CONTRACT: ASSISTA NT DEPUTY WARDE NS/DEPUTY WARDENS TERM: JULY 1, 2012 TO JANUARY 31, 2020 ... Assistant Deputy Wardens/Deputy Wardens Association (p.2 contents: ARTICLE XX - GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "July 1, 2012 to January 31, 2020",
+   "disagrees_with_label": false
+  },
+  "earlier-correction-captains-08-16-2019-11-29-2022": {
+   "start": "2019-08-16",
+   "end": "2022-11-29",
+   "quote": "SUBJECT: EXECUTED CONTRACT: CORRECTION CAPTAINS TERM: AUGUST 16, 2019 TO NOVEMBER 29, 2022 ... Correction Captains Association (p.2 contents: GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "August 16, 2019 to November 29, 2022",
+   "disagrees_with_label": false
+  },
+  "earlier-2012-2019policecaptains-executedcontract4-1-2012-4-30-2019": {
+   "start": "2012-04-01",
+   "end": "2019-04-30",
+   "quote": "SUBJECT: EXECUTED CONTRACT: CAPTAINS TERM: APRIL 1, 2012 TO APRIL 30, 2019 ... Captains' Endowment Association (p.2 contents: ARTICLE XVIII -GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "April 1, 2012 to April 30, 2019",
+   "disagrees_with_label": false
+  },
+  "earlier-coba-executed-contract-2019-2022": {
+   "start": "2019-03-01",
+   "end": "2022-02-28",
+   "quote": "SUBJECT: EXECUTED CONTRACT: CORRECTION OFFICERS TERM: MARCH 1, 2019 TO FEBRUARY 28, 2022 ... Correction Officer's Benevolent Association (p.2 contents: ARTICLE XXI -GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "March 1, 2019 to February 28, 2022",
+   "disagrees_with_label": false
+  },
+  "earlier-principal-csa-moa-2019-2023": {
+   "start": "2019-04-23",
+   "end": "2023-01-28",
+   "quote": "modifying the collective bargaining agreement between the Board and the Union that expired on April 22, 2019 ... The term of the successor agreement shall be from April 23, 2019 through January 28, 2023.",
+   "page": 1,
+   "method": "text",
+   "notes": "April 23, 2019 through January 28, 2023",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2019-csa-moa-1": {
+   "start": "2010-03-06",
+   "end": "2019-04-20",
+   "quote": "the Council of Supervisors and Administrators of the City of New York (the \"Union\" or \"CSA'') modifying certain collective bargaining agreements between the Board and the Union that expired on March 5, 2010 ... 1. TERM: 9 years 1 month 15 days, 3/6/10 --4/20/19",
+   "page": 1,
+   "method": "text",
+   "notes": "9 years 1 month 15 days, 3/6/10 --4/20/19",
+   "disagrees_with_label": false
+  },
+  "earlier-dea-moa-2019-2022": {
+   "start": "2019-04-01",
+   "end": "2022-05-31",
+   "quote": "including this DEA MOA and an agreement successor to the existing unit agreement expiring on March 31, 2019 ... The term shall be from April 1, 2019 through May 31, 2022. ... All terms of the Predecessor Unit Agreement shall be continued except as modified pursuant to this DEA MOA.",
+   "page": 1,
+   "method": "text",
+   "notes": "April 1, 2019 through May 31, 2022",
+   "disagrees_with_label": false
+  },
+  "earlier-detectives-04-01-2012-03-31-2019": {
+   "start": "2012-04-01",
+   "end": "2019-03-31",
+   "quote": "SUBJECT: EXECUTED CONTRACT: DETECTIVES TERM: APRIL I, 2012 TO MARCH 31, 2019 ... Detectives' Endowment Association (p.2 contents: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "April 1, 2012 to March 31, 2019",
+   "disagrees_with_label": false
+  },
+  "earlier-detective-investigators-06-19-2019-01-18-2023": {
+   "start": "2019-06-19",
+   "end": "2023-01-18",
+   "quote": "SUBJECT: EXECUTED CONTRACT: DETECTIVE INVESTIGATORS TERM: JUNE 19, 2019 TO JANUARY 18, 2023 ... Detective Investigator Association of the District Attorney's Offices, City of New York Inc. (p.2 contents: ARTICLE XVIII-GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "June 19, 2019 to January 18, 2023",
+   "disagrees_with_label": false
+  },
+  "earlier-doctors-council-nyc-moa-2017-2021": {
+   "start": "2017-09-28",
+   "end": "2021-06-27",
+   "quote": "2017-2021 Memorandum of Agreement Doctors Council, the City of New York (\"City\") and NYC Health + Hospitals (\"NYC H+H\") 1. Tenn: 9/28/2017 - 6/27/2021 (45 months)",
+   "page": 1,
+   "method": "text",
+   "notes": "9/28/2017 - 6/27/2021 (45 months)",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2017-doctors-council-moa": {
+   "start": "2010-03-28",
+   "end": "2017-09-27",
+   "quote": "the successor agreement to the agreement tenninating on March 27, 2010 ... to continue all of the terms and conditions specified in the 2008-2010 Doctors Council SEIU Agreement ... The term oft his Agreement shal I be from March 28, 2010 through September 27, 2017.",
+   "page": 1,
+   "method": "text",
+   "notes": "March 28, 2010 through September 27, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-fire-alarm-dispatchers-2018-2021": {
+   "start": "2018-01-01",
+   "end": "2021-07-31",
+   "quote": "SUBJECT: EXECUTED CONTRACT: FIRE ALARM DISPATCHERS TERM: JANUARY 1, 2018 TO JULY 31, 2021 ... Fire Alarm Dispatcher's Benevolent Association (p.2 contents: ARTICLE XVII-GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "January 1, 2018 to July 31, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-highway-and-sewer-inspectors-moa-2018-2022": {
+   "start": "2018-06-18",
+   "end": "2022-09-08",
+   "quote": "2018-2022 Highways and Sewers Inspector Memorandum of Agreement Law Enforcement Employees Benevolent Association and City of New York June 18, 2018 through September 8, 2022 (50 months and 22 days) ... (p.3) Implementation of this agreement is contingent on final execution of the 2010-2018 Highway and Sewer Inspector Collective Bargaining Agreement.",
+   "page": 1,
+   "method": "text",
+   "notes": "June 18, 2018 through September 8, 2022 (50 months and 22 days)",
+   "disagrees_with_label": false
+  },
+  "earlier-inspectors-highways-sewers-executed-contract-2010-2018": {
+   "start": "2010-10-15",
+   "end": "2018-06-17",
+   "quote": "EXECUTED CONTRACT: INSPECTORS (HIGHWAYS & SEWERS), ET AL TERM: OCTOBER 15, 2010 TO JUNE 17, 2018 ... Law Enforcement Employees Benevolent Association (p.2 contents: ARTICLE VI - GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "image",
+   "notes": "October 15, 2010 to June 17, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-1199-nyc-hhc-2018-2022-moa": {
+   "start": "2018-09-10",
+   "end": "2022-04-09",
+   "quote": "2018-2022 Memorandum of Agreement 1199SEIU, the City of New York (\"City\") and NYC Health + Hospitals (\"NYC H+H\") 1. Term: 9/10/18 – 4/9/22 (43 months) ... (p.2) Licensed Practical Nurse, Microbiologists and Pharmacists/Dieticians unit agreements",
+   "page": 1,
+   "method": "text",
+   "notes": "9/10/18 - 4/9/22 (43 months)",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu1199-nyc-hhc": {
+   "start": "2009-08-05",
+   "end": "2018-08-04",
+   "quote": "The Pharmacists and Dietitians, the Microbiologists, and the Licensed Practical Nurses unit agreements that expired August 4, 2009 shall be replaced by successor agreements that shall continue all their terms and conditions ... from August 5, 2009 through August 4, 2018.",
+   "page": 1,
+   "method": "text",
+   "notes": "August 5, 2009 through August 4, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-20112019uniformsuperiorcoalition": {
+   "start": "2011-11-01",
+   "end": "2018-10-31",
+   "quote": "agreements successor to existing unit agreements expiring on: ... October 31, 2011 (LBA) ... The term of each Separate Unit Agreement shall eighty-four (84) months from the expiration date of the Predecessor 'Separate Unit Agreements. ... The cost-related terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this USOCEA.",
+   "page": 1,
+   "method": "text",
+   "notes": "84 months from the predecessor unit agreement's expiration (October 31, 2011 (LBA)); dates computed from that rule",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu59-police-lieutenants-benevolent-association-110109-to-103111": {
+   "start": "2009-11-01",
+   "end": "2011-10-31",
+   "quote": "EXECUTED CONTRACT: LIEUTENANTS NOVEMBER 1, 2009 TO OCTOBER 31, 2011 ... Lieutenants Benevolent Association (p.2 contents: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "image",
+   "notes": "November 1, 2009 to October 31, 2011",
+   "disagrees_with_label": false
+  },
+  "earlier-environmental-police-officers-2010-2017": {
+   "start": "2010-04-01",
+   "end": "2017-09-30",
+   "quote": "APRIL 1, 2010 TO SEPTEMBER 30, 2017 Attached for your information and guidance is a copy of the executed contract entered into by the Commissioner of Labor Relations on behalf of the City of New York and the Law Enforcement Employees Benevolent Association (p.2: 2010-2017 Environmental Police Officer Agreement; ARTICLE XIX -GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "April 1, 2010 to September 30, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-pba-nyc-moa-2012-2017": {
+   "start": "2012-08-01",
+   "end": "2017-07-31",
+   "quote": "an agreement successor to the Agreement between the Employer and the Union that expired on July 31, 2012 ... The tern, of the successor collective bargaining agreement shall cover the period from August l, 2012 through July 31, 2017. ... The terms of the predecessor separate unit agreement. including side letters, shall be continued",
+   "page": 1,
+   "method": "text",
+   "notes": "August 1, 2012 through July 31, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2012-pba-nyc-impasse-award": {
+   "start": "2010-08-01",
+   "end": "2012-07-31",
+   "quote": "The term of this Award is from August 1, 2010 through July 31, 2012. (p.2: signatories to a four year Collective Bargaining Agreement which expired on July 31, 2010)",
+   "page": 95,
+   "method": "text",
+   "notes": "August 1, 2010 through July 31, 2012",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu79-police-patrolmens-benevolent-association-080106-to-073110": {
+   "start": "2006-08-01",
+   "end": "2010-07-31",
+   "quote": "EXECUTED CONTRACT: POLICE OFFICERS ... AUGUST 1, 2006 TO JULY 31, 2010 ... Patrolmen's Benevolent Association (p.25: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "image",
+   "notes": "August 1, 2006 to July 31, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-sba-moa-2018-2021": {
+   "start": "2018-08-30",
+   "end": "2021-12-09",
+   "quote": "including this SBA MOA and an agreement successor to the existing unit agreement expiring on August 29, 2018 ... The term shall be from August 30, 2018 through December 9, 2021.",
+   "page": 1,
+   "method": "text",
+   "notes": "August 30, 2018 through December 9, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-20112018-sba-moa": {
+   "start": "2011-08-30",
+   "end": "2018-08-29",
+   "quote": "agreements successor to the existing unit agreement expiring on August 29, 2011 ... The term of the Successor Unit Agreement shall be August 30, 2011 through August 29, 2018, eighty-four (84) months from the expiration date of the Predecessor Unit Agreement.",
+   "page": 1,
+   "method": "text",
+   "notes": "August 30, 2011 through August 29, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu91-police-sergeants-benevolent-association-060105-to-082911": {
+   "start": "2005-06-01",
+   "end": "2011-08-29",
+   "quote": "SUBJECT: EXECUTED CONTRACT: SERGEANTS TERM: JUNE 1, 2005 TO AUGUST 29, 2011 ... Sergeants Benevolent Association (p.2 contents: ARTICLE XX - GRIEVANCE AND ARBITRATION PROCEDURE)",
+   "page": 1,
+   "method": "image",
+   "notes": "June 1, 2005 to August 29, 2011",
+   "disagrees_with_label": false
+  },
+  "earlier-sanitation-officers-07-02-2019-06-24-2023": {
+   "start": "2019-07-02",
+   "end": "2023-06-24",
+   "quote": "SUBJECT: EXECUTED CONTRACT: SANITATION OFFICERS TERM: July 2, 2019 to June 24, 2023 ... Sanitation Officers Association, Local 444 Service Employees International Union AFL-CIO (p.2 contents: ARTICLE X -GRIEVANCES)",
+   "page": 1,
+   "method": "text",
+   "notes": "July 2, 2019 to June 24, 2023",
+   "disagrees_with_label": false
+  },
+  "earlier-uft-moa-2018-2019": {
+   "start": "2019-02-14",
+   "end": "2022-09-13",
+   "quote": "modifying certain collective bargaining agreements between the Board and the Union that expire on February 13, 2019 ... The terms of the successor agreements shall be from February 14, 2019 through September 13, 2022.",
+   "page": 1,
+   "method": "text",
+   "notes": "February 14, 2019 through September 13, 2022",
+   "disagrees_with_label": false
+  },
+  "earlier-uft-paid-parental-leave-agreement-2018": {
+   "start": null,
+   "end": null,
+   "quote": "This amount is to be funded by extending the 2009-2018 collective bargaining agreements by an additional 2 months and 13 days ... United Federation of Teachers (''UFT'')",
+   "page": 1,
+   "method": "text",
+   "notes": "Extends 'the 2009-2018 collective bargaining agreements by an additional 2 months and 13 days'",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu-uft-moa-042914": {
+   "start": "2009-11-01",
+   "end": "2018-10-31",
+   "quote": "1. Term - 9 years 11/1/09 - 10/31/18 ... (p.2) The UFT and the City /DOE agree",
+   "page": 1,
+   "method": "text",
+   "notes": "9 years 11/1/09 - 10/31/18",
+   "disagrees_with_label": false
+  },
+  "earlier-moa-2017-2020-upoa": {
+   "start": "2017-04-28",
+   "end": "2020-11-27",
+   "quote": "2017-2020 Memorandum of Agreement United Probation Officers Association and the City of New York 1. Term: 3 ye~s and 7 months (4 3 months) 4/28/2017-11/27/ 2020",
+   "page": 1,
+   "method": "text",
+   "notes": "4/28/2017-11/27/2020 (43 months)",
+   "disagrees_with_label": false
+  },
+  "earlier-upoa-executed-contract-2009-2017": {
+   "start": "2009-12-28",
+   "end": "2017-04-27",
+   "quote": "SUBJECT: EXECUTED CONTRACT: PROBATION OFFICERS TERM: DECEMBER 28, 2009 TO APRIL 27, 2017 ... United Probation Officer's Association (p.2 contents: ARTICLE VI-GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "December 28, 2009 to April 27, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu100-sanitation-chiefs-re-opner-101007-to-100911": {
+   "start": "2007-10-10",
+   "end": "2011-10-09",
+   "quote": "SUBJECT: EXECUTED CONTRACT: SANITATION CHIEFS (RE-OPENER) TERM: OCTOBER 10, 2007 TO OCTOBER 9, 2011 ... Uniformed Sanitation Chiefs Association (p.2 contents: ARTICLE XI - GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "image",
+   "notes": "October 10, 2007 to October 9, 2011",
+   "disagrees_with_label": false
+  },
+  "earlier-firefighters-executed-contract-2010-2017": {
+   "start": "2010-08-01",
+   "end": "2017-07-31",
+   "quote": "SUBJECT: EXECUTED CONTRACT: FIREFIGHTERS TERM: AUGUST 1,2010TOJULY31,2017 ... Uniformed Firefighters Association (p.5: the unit consisting ofall Firefighters and Fire Marshals (Uniformed); p.2 contents: ARTICLE XVIII -GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "August 1, 2010 through July 31, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-deputy-sheriffs-2018-2021": {
+   "start": "2018-05-01",
+   "end": "2021-12-31",
+   "quote": "ACT: DEPUTY SHERIFFS TERM: MAY t, 20 t 8 TO DECEMBER 3 t, 2021 ... NYC Deputy Sheriffs Association (p.2 contents: ARTICLE XV-GRIEVANCE PROCEDURE)",
+   "page": 1,
+   "method": "text",
+   "notes": "May 1, 2018 to December 31, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-csba-2017-2021-final-agreement-fully-executed": {
+   "start": "2017-08-18",
+   "end": "2021-04-17",
+   "quote": "EXECUTED CONTRACT: AT IORNEYS TERM: AUGUST 18, 2017 TO APRIL 17, 2021",
+   "page": 1,
+   "method": "text",
+   "notes": "August 18, 2017 to April 17, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-2018-2021-cwa-1180-moa": {
+   "start": "2018-05-06",
+   "end": "2021-12-12",
+   "quote": "2018-2021 Memorandum of Agreement Communications Workers of America, Local 1180 and the City of New York 1. Term: 3 years, 7 months, and 7 days (43 months and 7 days) 5/6/18 - 12/12/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "5/6/18 - 12/12/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-cwa-local-1180-executed-contract-10-6-2010-5-5-2018": {
+   "start": "2010-10-06",
+   "end": "2018-05-05",
+   "quote": "EXECUTED CONTRACT: PRINCIPAL ADMINISTRATIVE ASSOCIATES TERM: OCTOBER 6, 20 IO TO MAY 5, 2018 ... Communication Workers of America, Local 1180",
+   "page": 1,
+   "method": "text",
+   "notes": "October 6, 2010 to May 5, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cwa-local-1181-moa-11-7-19-fully-executed-2017-2021": {
+   "start": "2017-06-06",
+   "end": "2021-11-10",
+   "quote": "2017-2021 Memorandum of Agreement Communications Workers of America, Local 1181 and the City of New York 1. Term: 4 years and 5 months, 5 days (53 months and 5 days} 6/6/2017-11/10/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "6/6/2017-11/10/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-traffic-enforcement-agent-2010-2017": {
+   "start": "2010-03-16",
+   "end": "2017-06-05",
+   "quote": "EXECUTED CONTRACT: TRAFFIC ENFORCEMENT UNIT TERM: March 16, 20 IO to June 5, 2017 for CWA, Local 1181",
+   "page": 1,
+   "method": "text",
+   "notes": "March 16, 2010 to June 5, 2017 for CWA, Local 1181",
+   "disagrees_with_label": false
+  },
+  "earlier-cwa-local-1182-moa-11-7-19-fully-executed-2017-2021": {
+   "start": "2017-12-31",
+   "end": "2021-11-10",
+   "quote": "2017-2021 Memorandum of Agreement Communications Workers of America, Local 1182 and the City of New York 1. Term: 3 years end 10 months, 11 days (46 months and 11 days) 12/31/2017-11/10/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "12/31/2017-11/10/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-cwa-1183-mou-03-12-2019": {
+   "start": "2017-06-19",
+   "end": "2021-01-18",
+   "quote": "2017-2021 Memorandum of Agreement Communication Workers of America, Local 1183 and the City of New York 1. Term: 3 years and 7 months (43 months) 6/19/2017-1/18/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "6/19/2017-1/18/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-board-of-elections-2010-2017": {
+   "start": "2010-06-19",
+   "end": "2017-06-18",
+   "quote": "EXECUTED CONTRACT: BOARD OF ELECTIONS TERM: JUNE 19, 2010 TO JUNE 18, 2017 ... Communication Workers of America, Local 1183",
+   "page": 1,
+   "method": "text",
+   "notes": "June 19, 2010 to June 18, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-dc37-traffic-enforcement-agent-lvl-3-4-moa": {
+   "start": "2017-09-26",
+   "end": "2021-11-10",
+   "quote": "2017-2020 Memorandum of Agreement District Council 37, Local 983 and the City of New York Traffic Enforcement Agents, Levels 3 and 4 4 years, 1 month, and 16 days (49 months, 16 days) 9/26/2017-11 /1 0/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "9/26/2017-11/10/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-urban-park-ranger-moa-2017-2021": {
+   "start": "2017-09-26",
+   "end": "2021-10-25",
+   "quote": "2017-2021 Memorandum of Agreement District Council 37, Local 983 Urban Park Rangers and the City of New York 1. Tenn: 4 years and 1 month (49 months) 9/26/17 - 10/25/21",
+   "page": 1,
+   "method": "text",
+   "notes": "9/26/17 - 10/25/21",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2017-dc37-l-983-urban-park-rangers-moa": {
+   "start": "2010-03-03",
+   "end": "2017-07-02",
+   "quote": "an agreement successor to the 2008-2010 Blue Collar Agreement to cover the employees in the Urban Park Ranger bargaining unit ... 1. Term: 7 years and 4 months (88 months) 3/3/10 - 7/2/17",
+   "page": 1,
+   "method": "image",
+   "notes": "3/3/10 - 7/2/17 (7 years and 4 months)",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu131-132-blue-collar-080806-to-061808": {
+   "start": "2008-03-03",
+   "end": "2010-03-02",
+   "quote": "EXECUTED CONTRACT: Blue Collar \"A\" and \"B\" TERM: MARCH 3, 2008 - MARCH 2, 2010 ... Associate Urban Park Ranger 60422 (Unit A title list, p3); Urban Park Ranger (Unit B list, p5)",
+   "page": 1,
+   "method": "image",
+   "notes": "March 3, 2008 - March 2, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-dc-37mou-2018": {
+   "start": "2017-09-26",
+   "end": "2021-05-25",
+   "quote": "2017-2021 Memorandum of Agreement District Council 37 and the City of New York I. Tenn: 3 years and 8 months (44 months) 9/26/17-5/25/21",
+   "page": 1,
+   "method": "text",
+   "notes": "9/26/17-5/25/21 or 44 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu-dc37-nyc-moa-2010-2017": {
+   "start": "2010-03-03",
+   "end": "2017-07-02",
+   "quote": "2010-2017 Memorandum of Agreement District Council 37 and the Citv of New York I. Term: 7 years and 4 months (88 months) 313110 - 7 /2/17",
+   "page": 1,
+   "method": "text",
+   "notes": "3/3/10 - 7/2/17 or 88 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+   "disagrees_with_label": false
+  },
+  "earlier-local-237-executed-2018-2022-moa": {
+   "start": "2018-03-26",
+   "end": "2022-04-25",
+   "quote": "2018-2022 Memorandum of Agreement Local 237, International Brotherhood of Teamsters and the Citv of New York 1. Term: 4 years, I month 3/26/18 - 4/25/22 ... Special Officers (non-LL 56) (CBU 047) Institutional Titles A (CBU 121) Institutional Titles B (CBU 108)",
+   "page": 1,
+   "method": "text",
+   "notes": "3/26/18 - 4/25/22",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu237-moa-2010-2018": {
+   "start": "2010-09-26",
+   "end": "2018-03-25",
+   "quote": "2010-2018 Memorandum of Agreement Local 237 and the City of New York 1. Term: 7 years and 6 months (90 months) The term of the 2010-2018 Local 237 MOA (\"this MOA\") shall be from September 26, 2010 through March 25, 2018",
+   "page": 1,
+   "method": "text",
+   "notes": "September 26, 2010 through March 25, 2018, or 90 months from the date of termination of the applicable existing Successor Separate Unit Agreement",
+   "disagrees_with_label": false
+  },
+  "earlier-local-3-electrical-inspector-executed-moa-2018-2021": {
+   "start": "2018-03-31",
+   "end": "2021-10-30",
+   "quote": "2018-2021 Memorandum of Agreement Inspectors {Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York 1. Tenn: 3 years and 7 months (43 months) 3/31/18 - 10/30/21",
+   "page": 1,
+   "method": "text",
+   "notes": "3/31/18 - 10/30/21",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2018-electrical-inspectors": {
+   "start": "2010-03-31",
+   "end": "2018-03-30",
+   "quote": "2010-2018 ELECTRICAL INSPECTORS MEMORANDUM OF AGREEMENT ... International Brotherhood of Electrical Workers, Local 3 ... I. The term of the Agreement shall be from March 31, 2010 through March 30, 2018.",
+   "page": 1,
+   "method": "text",
+   "notes": "March 31, 2010 through March 30, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu45-electrical-inspectors-033108-to-033010": {
+   "start": "2008-03-31",
+   "end": "2010-03-30",
+   "quote": "EXECUTED CONTRACT: ELECTRICAL INSPECTORS TERM: MARCH 31, 2008 TO MARCH 30, 2010 ... Local Union No. 3, International Brotherhood of Electrical Workers",
+   "page": 1,
+   "method": "image",
+   "notes": "March 31, 2008 to March 30, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-2017-2021-building-inspector-moa": {
+   "start": "2017-05-10",
+   "end": "2021-04-02",
+   "quote": "2017-2021 Memorandum of Agreement Allied Building Inspectors, Local 211, IUOE and the City of New York 1. Term: 3 years, 10 months, and 24 days (46 months, 24 days) 5/10/17 - 4/2/21",
+   "page": 1,
+   "method": "image",
+   "notes": "5/10/17 - 4/2/21",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2017-building-construction-inspectors-executed-contract": {
+   "start": "2009-12-16",
+   "end": "2017-05-09",
+   "quote": "EXECUTED CONTRACT: BUILDING & CONSTRUCTION INSPECTORS TERM: DECEMBER 16,2009TOMAY9,2017 ... Allied Building Inspectors, Local 211, [UOE",
+   "page": 1,
+   "method": "text",
+   "notes": "December 16, 2009 to May 9, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-parking-control-specialist-moa-final-executed": {
+   "start": "2018-04-11",
+   "end": "2021-11-10",
+   "quote": "2017-2020 Memorandum of Agreement City Employees Local 237, IBT and the City of New York Parking Control Specialists 1. Term: 3 years and 7 months (43 months) --- 4/11/2018-11/ 10/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "4/11/2018-11/10/2021",
+   "disagrees_with_label": false
+  },
+  "earlier-automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-20": {
+   "start": "2017-12-07",
+   "end": "2021-07-06",
+   "quote": "EXECUTED CONTRACT: AUTOMOTIVE SERVICE WORKER TERM: DECEMBER 7,2017 THROUGH JULY 6, 202 I",
+   "page": 1,
+   "method": "text",
+   "notes": "December 7, 2017 through July 6, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-local-300-moa-2018-2022": {
+   "start": "2018-06-23",
+   "end": "2022-02-22",
+   "quote": "the successor agreement to the agreement terminating on June 22, 2018 (the \"2011-2018 Assistant Buyers Agreement') ... The term of the agreement shall be forty-four (44) months from June 23, 2018 to February 22, 2022.",
+   "page": 1,
+   "method": "image",
+   "notes": "June 23, 2018 to February 22, 2022",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu300-2011-2018": {
+   "start": "2011-02-23",
+   "end": "2018-06-22",
+   "quote": "the successor agreement to the agreement terminating on February 22, 2011 (the \"2009-2011 Assistant Buyers Agreement') ... 1. The term of the agreement shall be from February 23, 2011 through June 22, 2018.",
+   "page": 1,
+   "method": "image",
+   "notes": "February 23, 2011 through June 22, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu97-assistant-buyers-et-al-022309-to-022211": {
+   "start": "2009-02-23",
+   "end": "2011-02-22",
+   "quote": "EXECUTED CONTRACT: ASSISTANT BUYERS, et al. TERM: FEBRUARY 23, 2009 TO FEBRUARY 22, 2011 ... Local 300, SEIU",
+   "page": 1,
+   "method": "image",
+   "notes": "February 23, 2009 to February 22, 2011",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-latse-local-306-moa": {
+   "start": "2018-02-15",
+   "end": "2022-03-14",
+   "quote": "2018-2022 Memorandum of Agreement International Alliance of Theatrical Stage Emplovees, Local 306 and the City of New York 1. Term: 4 years and 1 month (49 months) 2/15/18 - 3/14/22",
+   "page": 1,
+   "method": "image",
+   "notes": "2/15/18 - 3/14/22",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu306-iatse-2010-2018": {
+   "start": "2010-10-15",
+   "end": "2018-02-14",
+   "quote": "the agreement successor to the one terminating on October 14, 2010 ... 1. The term of the Agreement shall be from October 15, 2010 through February 14, 2018.",
+   "page": 1,
+   "method": "text",
+   "notes": "October 15, 2010 through February 14, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu39-audio-visual-aide-technicians-101508-to-101410": {
+   "start": "2008-10-15",
+   "end": "2010-10-14",
+   "quote": "EXECUTED CONTRACT: AUDIO VISUAL AIDE TECHNICIANS TERM: OCTOBER 15, 2008 TO OCTOBER 14, 2010 ... Motion Picture Machine Operators, Local 306, IATSE",
+   "page": 1,
+   "method": "image",
+   "notes": "October 15, 2008 to October 14, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-school-custodian-engineers-08122016-07312021": {
+   "start": "2016-08-12",
+   "end": "2020-07-31",
+   "quote": "EXECUTED CONTRACT: SCHOOL CUSTODIAN ENGINEERS TERM: AUGUST 12, 2016 THROUGH JULY 31, 2020",
+   "page": 1,
+   "method": "text",
+   "notes": "August 12, 2016 through July 31, 2020",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu61-ferryboat-titles-licensed-110708-to-110610": {
+   "start": "2008-11-07",
+   "end": "2010-11-06",
+   "quote": "EXECUTED CONTRACT: FERRYBOAT TITLES (LICENSED) TERM: NOVEMBER 7, 2008 TO NOVEMBER 6, 2010 ... District No. 1 - PCD/MEBA Licensed Division, AFL-CIO",
+   "page": 1,
+   "method": "image",
+   "notes": "November 7, 2008 to November 6, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-metal-work-mechanic-moa-2010-2021": {
+   "start": "2010-03-03",
+   "end": "2020-10-02",
+   "quote": "2010-2021 MEMORANDUM OF AGREEMENT LOCAL LODGE NO. 5 AND THE CITY OF NEW YORK METAL WORK MECHANICS ... the agreement successor to the one terminating on March 2, 2010 ... 1. Term: 3/3/2010 - 10/2/2020",
+   "page": 1,
+   "method": "image",
+   "notes": "3/3/2010 - 10/2/2020",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu181-metal-work-mechanics-030308-to-030210": {
+   "start": "2008-03-03",
+   "end": "2010-03-02",
+   "quote": "EXECUTED CONTRACT: METAL WORK MECHANICS TERM: MARCH 3, 2008 TO MARCH 2, 2010 ... Local Lodge No. 5 International Brotherhood of Boilermakers",
+   "page": 1,
+   "method": "image",
+   "notes": "March 3, 2008 to March 2, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-marine-titles-moa": {
+   "start": "2018-01-06",
+   "end": "2021-08-05",
+   "quote": "2018-2021 Memorandum of Agreement International Organization of Masters, Mates & Pilots and the City of New York 1. Term: 3 years and 7 months (43 months) 1/6/18 - 8/5/21",
+   "page": 1,
+   "method": "image",
+   "notes": "1/6/18 - 8/5/21",
+   "disagrees_with_label": false
+  },
+  "earlier-marine-consolidated-titles-2010-2017": {
+   "start": "2010-04-27",
+   "end": "2018-01-05",
+   "quote": "2010-2018 MARINE TITLES MEMORANDUM OF AGREEMENT ... International Organization of Masters, Mates and Pilots Atlantic Maritime Group, ILA, AFL-CIO ... 1. The term of the Agreement shall be from April 27, 2010 through January 5, 2018.",
+   "page": 1,
+   "method": "text",
+   "notes": "April 27, 2010 through January 5, 2018",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu111-marine-consolidated-titles-042708-to-042610": {
+   "start": "2008-04-27",
+   "end": "2010-04-26",
+   "quote": "EXECUTED CONTRACT: MARINE (CONSOLIDATED TITLES) TERM: APRIL 27, 2008 TO APRIL 26, 2010 ... United Marine Division, Local 333, International Longshoreman's Association",
+   "page": 1,
+   "method": "image",
+   "notes": "April 27, 2008 to April 26, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-osa-moa-2017-2021": {
+   "start": "2017-08-25",
+   "end": "2021-09-05",
+   "quote": "2017-2021 Memorandum of Agreement 1. Term: 8/25/17 - 9/5/21 (48 months, 12 days) ... the below listed titles shall be added to the OSA Education",
+   "page": 1,
+   "method": "image",
+   "notes": "8/25/17 - 9/5/21",
+   "disagrees_with_label": false
+  },
+  "earlier-2010-2017-osa-nyc-moa": {
+   "start": "2010-08-25",
+   "end": "2017-08-24",
+   "quote": "2010-2017 OSA StaffA nalyst MOA and the agreement successor to the one terminating on August 24, 2010 ... 1. The term of the Agreement shall be August 25, 2010 to August 24, 2017.",
+   "page": 1,
+   "method": "text",
+   "notes": "August 25, 2010 to August 24, 2017",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu180-staff-analysts-et-al-082508-to-082410": {
+   "start": "2008-08-25",
+   "end": "2010-08-24",
+   "quote": "EXECUTED CONTRACT: STAFF ANALYSTS, ET AL TERM: AUGUST 25, 2008 TO AUGUST 24, 2010 ... the Organization of Staff Analysts",
+   "page": 1,
+   "method": "image",
+   "notes": "August 25, 2008 to August 24, 2010",
+   "disagrees_with_label": false
+  },
+  "earlier-osa-school-security-and-traffic-moa-2017-2022": {
+   "start": "2018-05-12",
+   "end": "2022-06-11",
+   "quote": "2017-2022 School Security/Traffic Memorandum of Agreement 1. Term: 5/12/18 - 6/11/22 (49 months)",
+   "page": 1,
+   "method": "image",
+   "notes": "5/12/18 - 6/11/22 (49 months)",
+   "disagrees_with_label": false
+  },
+  "earlier-osa-school-security-2008-2017": {
+   "start": "2008-12-13",
+   "end": "2018-05-11",
+   "quote": "2008-2017 OSA School Security/Traffic MOA and the agreement successor to the one terminating on December 12, 2008 ... 1. The term of the Agreement shall be from December 13, 2008 through May 11, 2018.",
+   "page": 1,
+   "method": "text",
+   "notes": "December 13, 2008 through May 11, 2018 (recital says through December 12, 2017; extended 4 months 29 days)",
+   "disagrees_with_label": false
+  },
+  "earlier-cbu183-school-security-traffic-080102-to-121208": {
+   "start": "2002-08-01",
+   "end": "2008-12-12",
+   "quote": "EXECUTED CONTRACT: SCHOOL SECURITY/TRAFFIC TERM: AUGUST 1, 2002 TO DECEMBER 12, 2008 ... the Organization of Staff Analysts",
+   "page": 1,
+   "method": "image",
+   "notes": "August 1, 2002 to December 12, 2008",
+   "disagrees_with_label": false
+  },
+  "earlier-blacksmith-mou-2010-2021": {
+   "start": "2010-08-03",
+   "end": "2021-07-02",
+   "quote": "a consent determination successor to the one terminating on August 2,2010 to cover the employees in the Blacksmith collective bargaining unit ... 1. Term: 8/3/2010- 7/2/2021",
+   "page": 1,
+   "method": "text",
+   "notes": "8/3/2010 - 7/2/2021 (recital: consent determination covering August 3, 2010 through January 2, 2021)",
+   "disagrees_with_label": false
+  },
+  "earlier-construction-laborers-groupc-laborers-2017-2021": {
+   "start": "2017-07-31",
+   "end": "2021-03-30",
+   "quote": "certified collective bargaining representative of employees in the titles, Construction Laborers and Group C+ Laborers ... for the period beginning July 31, 2017 through March 30, 2021",
+   "page": 14,
+   "method": "text",
+   "notes": "July 31, 2017 through March 30, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-clock-repairers-2017-2021": {
+   "start": "2017-12-26",
+   "end": "2021-08-25",
+   "quote": "CLOCK REPAIRER PERIOD 12/26/2017 - 12/25/2018 12/26/2018 - 01/25/2020 01/26/2020 - 08/25/2021",
+   "page": 4,
+   "method": "image",
+   "notes": "12/26/2017 - 08/25/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-clock-repairer-2010-2017": {
+   "start": "2010-06-02",
+   "end": "2017-10-02",
+   "quote": "CLOCK REPAIRER PERIOD HOURLY RATE 6/2/2010-12/2/2011 $26.56 ... 6/3/2017-10/2/2017 $29.48",
+   "page": 4,
+   "method": "text",
+   "notes": "6/2/2010 - 10/2/2017 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-compositor-2017-2021": {
+   "start": "2017-12-26",
+   "end": "2021-08-25",
+   "quote": "COMPOSITOR (JOB) PERIOD 12/26/17-12/25/18 12/26/18-1/25/20 1/26/20-8/25/21",
+   "page": 3,
+   "method": "image",
+   "notes": "12/26/17 - 8/25/21 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-compositor-2010-2017": {
+   "start": "2010-06-03",
+   "end": "2017-10-02",
+   "quote": "COMPOSITOR (JOB PERIOD RATE 6/3/2010-12/2/2011 $48.36 ... 6/3/2017-10/2/2017 $53.66",
+   "page": 4,
+   "method": "text",
+   "notes": "6/3/2010 - 10/2/2017 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-dc37-printing-press-operator-2017-2021": {
+   "start": "2017-12-26",
+   "end": "2021-08-25",
+   "quote": "PERIOD 12/26/17-12/25/18 12/26/18-1/25/20 1/26/20-8/25/21 2 PRINTING PRESS OPERATOR",
+   "page": 4,
+   "method": "image",
+   "notes": "12/26/17 - 8/25/21 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-dc37-radio-repair-mechanic-2017-2021": {
+   "start": "2017-12-27",
+   "end": "2021-08-26",
+   "quote": "PERIOD HOURLY RATE AND HOLIDAY RA TE 12/27/17 - 12/26/18 49.93 74.90 12/27/18-6/13/19 51.05 76.58 6/14/19 - 8/26/21 52.71 79.07",
+   "page": 3,
+   "method": "text",
+   "notes": "12/27/17 - 8/26/21 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-sewage-treatment-worker-and-sstw-2018-2021": {
+   "start": "2018-01-23",
+   "end": "2021-09-22",
+   "quote": "SEWAGE TREATMENT WORKER Period Hourh Rate Saturday Rate Sunday Rate Holiday Rate 1/23/2018-1/22/2019 $42.60 ... 2/23/2020-9/22/2021 $44.98",
+   "page": 4,
+   "method": "text",
+   "notes": "1/23/2018 - 9/22/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-bridge-painters-2018-2021": {
+   "start": "2018-04-13",
+   "end": "2021-11-12",
+   "quote": "Period 4/13/2018 to 4/12/2019 4/13/2019 to 5/12/2020 5/13/2020 to 11/12/2021 BRIDGE PAINTER",
+   "page": 4,
+   "method": "image",
+   "notes": "4/13/2018 - 11/12/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-bricklayer-2017-2021": {
+   "start": "2017-06-09",
+   "end": "2021-01-08",
+   "quote": "PERIOD BRICKLAYER SUPERVISOR BRICKLAYER HOURLY RATE HOURLY RATE 6/9/2017 to 6/8/2018 $51.55 $57.33 6/9/2018 to 7/8/2019 $52.71 $58.62 7/9/2019 to 1/8/2021 $54.42 $60.53",
+   "page": 4,
+   "method": "text",
+   "notes": "6/9/2017 - 1/8/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-det-horseshoer-2017-2021": {
+   "start": "2017-12-13",
+   "end": "2021-07-12",
+   "quote": "HORSESHOER PERIOD HOURLY RATE OVERTIME RATE 12/13/2017 to 12/12/2018 $31.51 $47.27 12/13/2018 to 1/12/2020 $32.22 $48.33 1/13/2020 to 7/12/2021 $33.27 $49.91",
+   "page": 4,
+   "method": "text",
+   "notes": "12/13/2017 - 7/12/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-masons-helper-2017-2021": {
+   "start": "2017-12-13",
+   "end": "2021-07-12",
+   "quote": "MASON'S HELPER PERIOD 12/13/2017-12/12/2018 12/13/2018-1/12/2020 1/13/2020-7/12/2021",
+   "page": 4,
+   "method": "image",
+   "notes": "12/13/2017 - 7/12/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-roofers-2017-2020": {
+   "start": "2017-03-18",
+   "end": "2020-10-17",
+   "quote": "SUPERVISOR ROOFER PERIOD 3/18/2017-3/17/2018 3/18/2018-4/17/2019 4/18/2019-10/17/2020",
+   "page": 4,
+   "method": "image",
+   "notes": "3/18/2017 - 10/17/2020 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-2016-2020-motor-grader-operator-executed-agr": {
+   "start": "2016-06-03",
+   "end": "2020-01-02",
+   "quote": "Motor Grader Operator ... 6/3/2016 to 6/2/2017 $113,722 $456.71 $57.09 ... 7/3/2018 to 1/2/2020 $120,060 $482.17 $60.27",
+   "page": 2,
+   "method": "text",
+   "notes": "6/3/2016 - 1/2/2020 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-communication-electrician-moa-2019-2023": {
+   "start": "2019-06-17",
+   "end": "2023-01-16",
+   "quote": "2019-2023 Memorandum of Agreement Communications Electrician Local 3, International Brotherhood of Electrical Workers and the City of New York 1. Term: 3 years and 7 months (43 months) 6/17/19-1/16/23",
+   "page": 1,
+   "method": "text",
+   "notes": "6/17/19 - 1/16/23",
+   "disagrees_with_label": false
+  },
+  "earlier-communication-electrician-2010-2019": {
+   "start": "2010-05-14",
+   "end": "2019-06-16",
+   "quote": "COMMUNICATION ELECTRICIAN PERIOD 5/14/2010 - 11/13/2013 ... 11/14/2018 - 6/16/2019",
+   "page": 4,
+   "method": "image",
+   "notes": "5/14/2010 - 6/16/2019 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-executed-stationary-engineer-electric-2016-2020-moa": {
+   "start": "2016-09-01",
+   "end": "2020-03-31",
+   "quote": "2016-2020 Memorandum of Agreement Engineer Stationary Engineer (Electric} & Senior Stationary <Electric) Local 3, International Brotherhood of Electrical Worken and the City of New York 1. Tu!m: 3 years and 7 months (43 months) 9/1/16 -3/31/20",
+   "page": 1,
+   "method": "text",
+   "notes": "9/1/16 - 3/31/20",
+   "disagrees_with_label": false
+  },
+  "earlier-stationary-engineer-electric-2007-2016": {
+   "start": "2007-10-08",
+   "end": "2016-08-31",
+   "quote": "STATIONARY ENGiNEER (ELECTRIC) ... 10/8/2007- 10/7/2008 $45.62 $68.43 $91.24 ... 9/1/2015- 8/31/2016 $58.40 $87.60 $116.80",
+   "page": 4,
+   "method": "text",
+   "notes": "10/8/2007 - 8/31/2016 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-senior-stationary-engineer-electric-2007-2016": {
+   "start": "2007-10-08",
+   "end": "2016-08-31",
+   "quote": "SENIOR STATIONARY ENGINEER (ELECTRIC) ... PERIOD (OUTSIDE NYC) 10/8/2007-10/7/2008 $50.39 $45.67 ... 8/31/2016 $64.56 $64.56",
+   "page": 4,
+   "method": "text",
+   "notes": "10/8/2007 - 8/31/2016 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-oiler-stationary-engineer-and-senior-stationary-engineer-2017-2021": {
+   "start": "2017-07-01",
+   "end": "2021-02-28",
+   "quote": "Wages Period 7/1/2017 - 6/30/2018 7/1/2018 - 7/31/2019 8/1/2019 - 2/28/2021",
+   "page": 4,
+   "method": "image",
+   "notes": "7/1/2017 - 2/28/2021 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-welder-l15-2017-2021": {
+   "start": "2017-07-01",
+   "end": "2021-01-31",
+   "quote": "2017-2021 Local 15 Welders Memorandum of Agreement I. Tenn July I, 2017 - January 31, 2021 3 years and 7 months (43months)",
+   "page": 1,
+   "method": "text",
+   "notes": "July 1, 2017 - January 31, 2021",
+   "disagrees_with_label": false
+  },
+  "earlier-welder-2009-2017": {
+   "start": "2009-06-03",
+   "end": "2017-06-30",
+   "quote": "WELDER & WELDER (ELECTRIC) -- Hourly Saturday, Sunday PERIOD Rate and Holiday Rate 6/3/2009 to 6/30/20 13 $50.48 $75.72 ... 7/1/2016 to 6/29/2017 $61.95 $92.93 6/30/2017 $63.68 $95.52",
+   "page": 4,
+   "method": "text",
+   "notes": "6/3/2009 - 6/30/2017 (rate periods)",
+   "disagrees_with_label": false
+  },
+  "earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018": {
+   "start": "2008-07-01",
+   "end": "2020-12-31",
+   "quote": "Intend by this MOA to set forth their agreement on all economic matters for Ship Carpenters and Supervisor Ship Carpenters, Dockbullders and Supervisor Oockbullders, and Riggers for the period July 1, 2008 through December 31, 2020",
+   "page": 1,
+   "method": "text",
+   "notes": "July 1, 2008 through December 31, 2020 (\"the 2008-2020 Period\")",
+   "disagrees_with_label": false
   }
  }
 }

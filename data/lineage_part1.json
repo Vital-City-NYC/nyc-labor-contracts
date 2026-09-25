@@ -1,0 +1,772 @@
+{
+ "checked": "2026-09-25",
+ "lineage": {
+  "adwa-unit-agreement-2023-2028": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2023-06-01",
+     "term_end": "2028-07-31",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (May 31, 2023 (ADW/DWA)); the unit letter sets the unit term at June 1, 2023 through July 31, 2028",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... May 31, 2023 (ADW/DWA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+     "title": "\"2018 - 2022\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2020-02-01",
+     "term_end": "2023-01-31",
+     "term_text": "36 months from the predecessor unit agreement's expiration (January 31, 2020 (ADW/DWA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements·e xpiring on: ... January 31, 2020 (ADW/DWA) ... The term of each Separate Unit Agreement shall be thirty-six (36) months from the expiration date of the Predecessor Separate Unit Agreements.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Computed end (Jan. 31, 2023) is four months before the May 31, 2023 expiration the 2022-2027 UOCEA gives for ADW/DWA. No published document shows the extension (the 2018-2022 UOCEA's Section 5 allows unit-bargaining term extensions). The ADW/DWA unit agreement for this round is not published on OLR; only this coalition agreement is."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/asst-deputy-wardens-deputy-wardens-07-01-2012%20-%2001-31-2020.pdf",
+     "title": "Assistant Deputy Wardens/Deputy Wardens 2012-2020 (executed contract)",
+     "term_start": "2012-07-01",
+     "term_end": "2020-01-31",
+     "term_text": "July 1, 2012 to January 31, 2020",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: ASSISTA NT DEPUTY WARDE NS/DEPUTY WARDENS TERM: JULY 1, 2012 TO JANUARY 31, 2020 ... Assistant Deputy Wardens/Deputy Wardens Association (p.2 contents: ARTICLE XX - GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends at the 2012-2020 ADWA executed contract (full article structure, including grievance and arbitration). The 2018-2022 UOCEA names ADW/DWA's predecessor as expiring January 31, 2020, matching that contract's end. The 2008-2012 CBU 11 contract in contracts.json 'predecessor' is older and superseded."
+  },
+  "cca-unit-agreement-2022-2028": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2022-11-30",
+     "term_end": "2028-01-29",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (November 29, 2022 (CCA)); the unit letter sets the unit term at November 30, 2022 through January 29, 2028",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... November 29, 2022 (CCA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2017-2021/correction_captains_08-16-2019-11-29-2022.pdf",
+     "title": "Correction Captains 2019 - 2022 Agreement (executed contract)",
+     "term_start": "2019-08-16",
+     "term_end": "2022-11-29",
+     "term_text": "August 16, 2019 to November 29, 2022",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: CORRECTION CAPTAINS TERM: AUGUST 16, 2019 TO NOVEMBER 29, 2022 ... Correction Captains Association (p.2 contents: GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Contract ends the day before the unit letter's term starts. It already incorporates the 2018-2022 UOCEA round (that UOCEA lists CCA's predecessor as expiring August 15, 2019). The 2007-2012 CBU 25 contract in contracts.json 'predecessor' is superseded."
+  },
+  "cea-unit-agreement-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2022-08-01",
+     "term_end": "2027-09-30",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (July 31, 2022 (CEA)); the unit letter sets the unit term at August 1, 2022 through September 30, 2027",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... July 31, 2022 (CEA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+     "title": "\"2018 - 2022\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2019-05-01",
+     "term_end": "2022-04-30",
+     "term_text": "36 months from the predecessor unit agreement's expiration (April 30, 2019 (CEA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements·e xpiring on: ... April 30, 2019 (CEA) ... The term of each Separate Unit Agreement shall be thirty-six (36) months from the expiration date of the Predecessor Separate Unit Agreements.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Computed end (April 30, 2022) is three months before the July 31, 2022 CEA expiration the 2022-2027 UOCEA gives. No published CEA unit agreement or letter shows the extension; the CEA's own 2019-2022 unit agreement is not on OLR."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2012-2019policecaptains-executedcontract4-1-2012-4-30-2019.pdf",
+     "title": "Captains' Endowment Association 2012-2019 Agreement (executed contract)",
+     "term_start": "2012-04-01",
+     "term_end": "2019-04-30",
+     "term_text": "April 1, 2012 to April 30, 2019",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: CAPTAINS TERM: APRIL 1, 2012 TO APRIL 30, 2019 ... Captains' Endowment Association (p.2 contents: ARTICLE XVIII -GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends at the 2012-2019 CEA executed contract. Its April 30, 2019 end matches the 2018-2022 UOCEA's CEA expiration. The 2003-2012 CBU 17 contract in contracts.json 'predecessor' is superseded."
+  },
+  "coba-unit-agreement-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2022-03-01",
+     "term_end": "2027-04-30",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (February 28, 2022 (COBA)); the unit letter sets the unit term at March 1, 2022 through April 30, 2027",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... February 28, 2022 (COBA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/coba-executed-contract-2019-2022.pdf",
+     "title": "Correction Officers 2019-2022 Agreement (executed contract)",
+     "term_start": "2019-03-01",
+     "term_end": "2022-02-28",
+     "term_text": "March 1, 2019 to February 28, 2022",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: CORRECTION OFFICERS TERM: MARCH 1, 2019 TO FEBRUARY 28, 2022 ... Correction Officer's Benevolent Association (p.2 contents: ARTICLE XXI -GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Contract ends the day before the unit letter's term. It already incorporates the 2018-2022 UOCEA round (COBA predecessor 'February 28, 2019'). The 2009-2011 CBU 27 contract in contracts.json 'predecessor' is superseded."
+  },
+  "csa-moa-2023-2028-amended-appendix-a": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/principal-csa-moa-2019-2023.pdf",
+     "title": "Memorandum of Agreement, Council of School Supervisors and Administrators of the City of New York and the Board of Education of the City School District of the City of New York (2019-2023)",
+     "term_start": "2019-04-23",
+     "term_end": "2023-01-28",
+     "term_text": "April 23, 2019 through January 28, 2023",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "modifying the collective bargaining agreement between the Board and the Union that expired on April 22, 2019 ... The term of the successor agreement shall be from April 23, 2019 through January 28, 2023.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2019-csa-moa-1.pdf",
+     "title": "Memorandum of Agreement, Board of Education of the City School District of the City of New York and the Council of Supervisors and Administrators of the City of New York (December 5, 2014) [CSA MOA 1, 2010-2019]",
+     "term_start": "2010-03-06",
+     "term_end": "2019-04-20",
+     "term_text": "9 years 1 month 15 days, 3/6/10 --4/20/19",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "the Council of Supervisors and Administrators of the City of New York (the \"Union\" or \"CSA'') modifying certain collective bargaining agreements between the Board and the Union that expired on March 5, 2010 ... 1. TERM: 9 years 1 month 15 days, 3/6/10 --4/20/19",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Ends 4/20/2019, but the 2019-2023 MOA says the predecessor expired April 22, 2019. The two-day difference is unexplained in published documents."
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Stops because the 2010-2019 MOA modifies the '2003-2010 Supervisors' Agreement' (cited on p.2), which is not published on OLR or among the candidates."
+  },
+  "dea-unit-agreement-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2022-06-01",
+     "term_end": "2027-05-31",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (May 31, 2022 (DEA)); the unit letter sets the unit term at not changed by the DEA letter (60 months: June 1, 2022 through May 31, 2027)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... May 31, 2022 (DEA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dea-moa-2019-2022.pdf",
+     "title": "2019-2022 Detectives' Endowment Association Memorandum of Agreement",
+     "term_start": "2019-04-01",
+     "term_end": "2022-05-31",
+     "term_text": "April 1, 2019 through May 31, 2022",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "including this DEA MOA and an agreement successor to the existing unit agreement expiring on March 31, 2019 ... The term shall be from April 1, 2019 through May 31, 2022. ... All terms of the Predecessor Unit Agreement shall be continued except as modified pursuant to this DEA MOA.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/detectives-04-01-2012-03-31-2019.pdf",
+     "title": "Detectives' Endowment Association 2012-2019 Agreement (executed contract)",
+     "term_start": "2012-04-01",
+     "term_end": "2019-03-31",
+     "term_text": "April 1, 2012 to March 31, 2019",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: DETECTIVES TERM: APRIL I, 2012 TO MARCH 31, 2019 ... Detectives' Endowment Association (p.2 contents: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "No gaps. The DEA letter itself cites the 'parties' 2019-2022 Memorandum of Agreement'. The 2008-2012 CBU 29 MOU in contracts.json 'predecessor' is superseded."
+  },
+  "dia-moa-2023-2028": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/detective-investigators-06-19-2019-01-18-2023.pdf",
+     "title": "Detective Investigators 2019-2023 Agreement (executed contract)",
+     "term_start": "2019-06-19",
+     "term_end": "2023-01-18",
+     "term_text": "June 19, 2019 to January 18, 2023",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: DETECTIVE INVESTIGATORS TERM: JUNE 19, 2019 TO JANUARY 18, 2023 ... Detective Investigator Association of the District Attorney's Offices, City of New York Inc. (p.2 contents: ARTICLE XVIII-GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends the day before the 2023-2028 MOA starts (1/19/2023). The 2019-2023 DIA MOA covers the same term and is folded into this executed contract."
+  },
+  "doctors-council-moa-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/doctors-council-nyc-moa-2017-2021.pdf",
+     "title": "2017-2021 Memorandum of Agreement, Doctors Council, the City of New York and NYC Health + Hospitals",
+     "term_start": "2017-09-28",
+     "term_end": "2021-06-27",
+     "term_text": "9/28/2017 - 6/27/2021 (45 months)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2021 Memorandum of Agreement Doctors Council, the City of New York (\"City\") and NYC Health + Hospitals (\"NYC H+H\") 1. Tenn: 9/28/2017 - 6/27/2021 (45 months)",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-doctors-council-moa.pdf",
+     "title": "2010-2017 Memorandum of Agreement (\"MOA\") between Doctors Council SEIU, the City of New York and the NYC Health and Hospitals Corporation",
+     "term_start": "2010-03-28",
+     "term_end": "2017-09-27",
+     "term_text": "March 28, 2010 through September 27, 2017",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "the successor agreement to the agreement tenninating on March 27, 2010 ... to continue all of the terms and conditions specified in the 2008-2010 Doctors Council SEIU Agreement ... The term oft his Agreement shal I be from March 28, 2010 through September 27, 2017.",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "No gaps. Stops because the 2008-2010 Doctors Council SEIU Agreement, which holds the full terms, is not published on OLR or among the candidates."
+  },
+  "fadba-moa-2021-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/fire-alarm-dispatchers-2018-2021.pdf",
+     "title": "Fire Alarm Dispatchers 2018-2021 Agreement (executed contract)",
+     "term_start": "2018-01-01",
+     "term_end": "2021-07-31",
+     "term_text": "January 1, 2018 to July 31, 2021",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: FIRE ALARM DISPATCHERS TERM: JANUARY 1, 2018 TO JULY 31, 2021 ... Fire Alarm Dispatcher's Benevolent Association (p.2 contents: ARTICLE XVII-GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends the day before the MOA starts (8/1/21)."
+  },
+  "highway-and-sewer-inspectors-moa-2022-2028": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/highway-and-sewer-inspectors-moa-2018-2022.pdf",
+     "title": "2018-2022 Highways and Sewers Inspector Memorandum of Agreement, Law Enforcement Employees Benevolent Association and City of New York",
+     "term_start": "2018-06-18",
+     "term_end": "2022-09-08",
+     "term_text": "June 18, 2018 through September 8, 2022 (50 months and 22 days)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2022 Highways and Sewers Inspector Memorandum of Agreement Law Enforcement Employees Benevolent Association and City of New York June 18, 2018 through September 8, 2022 (50 months and 22 days) ... (p.3) Implementation of this agreement is contingent on final execution of the 2010-2018 Highway and Sewer Inspector Collective Bargaining Agreement.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/inspectors-highways-sewers-executed-contract-2010-2018.pdf",
+     "title": "Inspectors (Highways & Sewers), et al. 2010-2018 Agreement (executed contract)",
+     "term_start": "2010-10-15",
+     "term_end": "2018-06-17",
+     "term_text": "October 15, 2010 to June 17, 2018",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: INSPECTORS (HIGHWAYS & SEWERS), ET AL TERM: OCTOBER 15, 2010 TO JUNE 17, 2018 ... Law Enforcement Employees Benevolent Association (p.2 contents: ARTICLE VI - GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "No gaps. Each document ends the day before the next begins (the 2022-2028 MOA starts 9/9/22)."
+  },
+  "l1199-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/1199-nyc-hhc-2018-2022-moa.pdf",
+     "title": "2018-2022 Memorandum of Agreement, 1199SEIU, the City of New York and NYC Health + Hospitals",
+     "term_start": "2018-09-10",
+     "term_end": "2022-04-09",
+     "term_text": "9/10/18 - 4/9/22 (43 months)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2018-2022 Memorandum of Agreement 1199SEIU, the City of New York (\"City\") and NYC Health + Hospitals (\"NYC H+H\") 1. Term: 9/10/18 – 4/9/22 (43 months) ... (p.2) Licensed Practical Nurse, Microbiologists and Pharmacists/Dieticians unit agreements",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu1199-nyc-hhc.pdf",
+     "title": "1199SEIU United Healthcare Workers East Memorandum of Agreement (June 19, 2014)",
+     "term_start": "2009-08-05",
+     "term_end": "2018-08-04",
+     "term_text": "August 5, 2009 through August 4, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "The Pharmacists and Dietitians, the Microbiologists, and the Licensed Practical Nurses unit agreements that expired August 4, 2009 shall be replaced by successor agreements that shall continue all their terms and conditions ... from August 5, 2009 through August 4, 2018.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Ends Aug. 4, 2018; the 2018-2022 MOA starts Sept. 10, 2018, leaving a gap of about five weeks that no published document explains."
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Same three units (LPN, Microbiologists, Pharmacists/Dietitians) at each step. Stops because the three unit agreements that expired August 4, 2009 are not published on OLR or among the candidates."
+  },
+  "lba-10-5-2023-unit-bargaining-agreement": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2022-02-16",
+     "term_end": "2027-04-15",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (February 15, 2022 (LBA)); the unit letter sets the unit term at February 16, 2022 through April 15, 2027",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... February 15, 2022 (LBA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+     "title": "\"2018 - 2022\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2018-11-01",
+     "term_end": "2021-10-31",
+     "term_text": "36 months from the predecessor unit agreement's expiration (October 31, 2018 (LBA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements·e xpiring on: ... October 31, 2018 (LBA) ... The term of each Separate Unit Agreement shall be thirty-six (36) months from the expiration date of the Predecessor Separate Unit Agreements.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Computed end (Oct. 31, 2021) is about 3.5 months before the Feb. 15, 2022 LBA expiration the 2022-2027 UOCEA gives. No published LBA unit agreement or letter shows the extension."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/20112019uniformsuperiorcoalition.pdf",
+     "title": "\"2011 - 2019\" Uniform Superior Officers Coalition Economic Agreement (\"USOCEA\")",
+     "term_start": "2011-11-01",
+     "term_end": "2018-10-31",
+     "term_text": "84 months from the predecessor unit agreement's expiration (October 31, 2011 (LBA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... October 31, 2011 (LBA) ... The term of each Separate Unit Agreement shall eighty-four (84) months from the expiration date of the Predecessor 'Separate Unit Agreements. ... The cost-related terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this USOCEA.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "No gap: 84 months from Oct. 31, 2011 ends Oct. 31, 2018, the LBA expiration the 2018-2022 UOCEA cites. This coalition agreement carries only 'cost-related terms'; the LBA's separate 2011-2018 unit agreement is not published on OLR."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu59-police-lieutenants-benevolent-association-110109-to-103111.pdf",
+     "title": "Lieutenants' Benevolent Association 2009-2011 Agreement (executed contract)",
+     "term_start": "2009-11-01",
+     "term_end": "2011-10-31",
+     "term_text": "November 1, 2009 to October 31, 2011",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: LIEUTENANTS NOVEMBER 1, 2009 TO OCTOBER 31, 2011 ... Lieutenants Benevolent Association (p.2 contents: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Longest uniformed chain. The latest full LBA contract published is 2009-2011; the two rounds since are covered on OLR only by coalition economic agreements. One unexplained 3.5-month extension (Oct. 31, 2021 to Feb. 15, 2022)."
+  },
+  "leeba-epo-moa-2017-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/environmental-police-officers-2010-2017.pdf",
+     "title": "2010-2017 Environmental Police Officer Agreement (executed contract)",
+     "term_start": "2010-04-01",
+     "term_end": "2017-09-30",
+     "term_text": "April 1, 2010 to September 30, 2017",
+     "kind": "full",
+     "complete": true,
+     "evidence": "APRIL 1, 2010 TO SEPTEMBER 30, 2017 Attached for your information and guidance is a copy of the executed contract entered into by the Commissioner of Labor Relations on behalf of the City of New York and the Law Enforcement Employees Benevolent Association (p.2: 2010-2017 Environmental Police Officer Agreement; ARTICLE XIX -GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends the day before the MOA starts (10/1/17)."
+  },
+  "pba-mou-2017-2025": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/pba-nyc-moa-2012-2017.pdf",
+     "title": "2012-2017 Memorandum of Understanding Between The City of New York and The Patrolmen's Benevolent Association",
+     "term_start": "2012-08-01",
+     "term_end": "2017-07-31",
+     "term_text": "August 1, 2012 through July 31, 2017",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "an agreement successor to the Agreement between the Employer and the Union that expired on July 31, 2012 ... The tern, of the successor collective bargaining agreement shall cover the period from August l, 2012 through July 31, 2017. ... The terms of the predecessor separate unit agreement. including side letters, shall be continued",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2012-PBA-NYC-Impasse-Award.pdf",
+     "title": "Interest Arbitration Opinion and Award, The City of New York and The Patrolmen's Benevolent Association of the City of New York, Inc. (PERB Case No. IA-2014-009; M2014-027), dated November 13, 2015",
+     "term_start": "2010-08-01",
+     "term_end": "2012-07-31",
+     "term_text": "August 1, 2010 through July 31, 2012",
+     "kind": "award",
+     "complete": false,
+     "evidence": "The term of this Award is from August 1, 2010 through July 31, 2012. (p.2: signatories to a four year Collective Bargaining Agreement which expired on July 31, 2010)",
+     "page": 95,
+     "method": "text",
+     "gap_note": "The award amends specific provisions (wages, parking, home confinement, recoupment, vacation) of 'the full-text collective bargaining agreement' and leaves the rest in place."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu79-police-patrolmens-benevolent-association-080106-to-073110.pdf",
+     "title": "Patrolmen's Benevolent Association 2006 - 2010 Agreement (executed contract)",
+     "term_start": "2006-08-01",
+     "term_end": "2010-07-31",
+     "term_text": "August 1, 2006 to July 31, 2010",
+     "kind": "full",
+     "complete": true,
+     "evidence": "EXECUTED CONTRACT: POLICE OFFICERS ... AUGUST 1, 2006 TO JULY 31, 2010 ... Patrolmen's Benevolent Association (p.25: ARTICLE XXI - GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "No gaps. The 2006-2010 agreement says it 'modifies the 2002-2004 collective bargaining agreement based upon the May 19, 2008 arbitration award', but it is itself a full text of 30 articles, including grievance and arbitration (Article XXI), so the chain stops there. This matches contracts.json 'predecessor', which skipped the two intervening links."
+  },
+  "sba-unit-agreement-2021-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2021-12-10",
+     "term_end": "2026-12-09",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (December 9, 2021 (SBA)); the unit letter sets the unit term at not changed by the SBA letter (60 months: December 10, 2021 through December 9, 2026)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... December 9, 2021 (SBA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sba-moa-2018-2021.pdf",
+     "title": "2018-2021 Sergeants Benevolent Association Memorandum of Agreement (\"SBA MOA\")",
+     "term_start": "2018-08-30",
+     "term_end": "2021-12-09",
+     "term_text": "August 30, 2018 through December 9, 2021",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "including this SBA MOA and an agreement successor to the existing unit agreement expiring on August 29, 2018 ... The term shall be from August 30, 2018 through December 9, 2021.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/20112018-sba-moa.pdf",
+     "title": "\"2011 -2018\" Sergeants Benevolent Association Memorandum of Agreement (\"SBA MOA\")",
+     "term_start": "2011-08-30",
+     "term_end": "2018-08-29",
+     "term_text": "August 30, 2011 through August 29, 2018",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to the existing unit agreement expiring on August 29, 2011 ... The term of the Successor Unit Agreement shall be August 30, 2011 through August 29, 2018, eighty-four (84) months from the expiration date of the Predecessor Unit Agreement.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu91-police-sergeants-benevolent-association%20-060105-to-082911.pdf",
+     "title": "Sergeants' Benevolent Association June 1, 2005 - August 29, 2011 Agreement (executed contract)",
+     "term_start": "2005-06-01",
+     "term_end": "2011-08-29",
+     "term_text": "June 1, 2005 to August 29, 2011",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: SERGEANTS TERM: JUNE 1, 2005 TO AUGUST 29, 2011 ... Sergeants Benevolent Association (p.2 contents: ARTICLE XX - GRIEVANCE AND ARBITRATION PROCEDURE)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "No gaps. The SBA letter says 'All prior agreements of the parties, including the \"stop and pause\" amendment ... set forth in section 6.b of the 2018-2021 MOA, remain in effect'."
+  },
+  "soa-unit-agreement-2023-2028": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2023-06-25",
+     "term_end": "2028-08-24",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (June 24, 2023 (SOA)); the unit letter sets the unit term at June 25, 2023 through August 24, 2028",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... June 24, 2023 (SOA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sanitation-officers-07-02-2019-06-24-2023.pdf",
+     "title": "Sanitation Officers 2019- 2023 (executed contract)",
+     "term_start": "2019-07-02",
+     "term_end": "2023-06-24",
+     "term_text": "July 2, 2019 to June 24, 2023",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: SANITATION OFFICERS TERM: July 2, 2019 to June 24, 2023 ... Sanitation Officers Association, Local 444 Service Employees International Union AFL-CIO (p.2 contents: ARTICLE X -GRIEVANCES)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Contract ends the day before the unit letter's term. The 2007-2012 CBU 99 contract in contracts.json 'predecessor' is superseded."
+  },
+  "uft-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uft-moa-2018-2019.pdf",
+     "title": "Memorandum of Agreement, Board of Education of the City School District of the City of New York and the United Federation of Teachers, Local 2, AFT, AFL-CIO (October 11, 2018)",
+     "term_start": "2019-02-14",
+     "term_end": "2022-09-13",
+     "term_text": "February 14, 2019 through September 13, 2022",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "modifying certain collective bargaining agreements between the Board and the Union that expire on February 13, 2019 ... The terms of the successor agreements shall be from February 14, 2019 through September 13, 2022.",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uft-paid-parental-leave-agreement-2018.pdf",
+     "title": "Parental Leave (UFT-DOE/City agreement, June 2018)",
+     "term_start": null,
+     "term_end": null,
+     "term_text": "Extends 'the 2009-2018 collective bargaining agreements by an additional 2 months and 13 days'",
+     "kind": "other",
+     "complete": false,
+     "evidence": "This amount is to be funded by extending the 2009-2018 collective bargaining agreements by an additional 2 months and 13 days ... United Federation of Teachers (''UFT'')",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Amends the term of the 2009-2018 agreements rather than starting a new one. Its parental leave program remains in force."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu-uft-moa-042914.pdf",
+     "title": "UFT - NYC Memorandum of Agreement, 2009-2018 (three-page term sheet dated 4/29/14)",
+     "term_start": "2009-11-01",
+     "term_end": "2018-10-31",
+     "term_text": "9 years 11/1/09 - 10/31/18",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "1. Term - 9 years 11/1/09 - 10/31/18 ... (p.2) The UFT and the City /DOE agree",
+     "page": 1,
+     "method": "text",
+     "gap_note": "10/31/18 plus the PPL extension (2 months 13 days) gives about Jan. 13, 2019, not the Feb. 13, 2019 expiration the 2019-2022 MOA cites. The one-month difference is unexplained in published documents; this three-page sheet looks like a term summary, not the final executed MOA."
+    }
+   ],
+   "ends_with_complete": false,
+   "notes": "Stops because no complete UFT contract is published on OLR. The full DOE-UFT contracts (teachers, paraprofessionals, etc.) are on uft.org (contracts.json 'predecessor'), but that page returned a Cloudflare challenge and was not read. The MOA covers about 50 titles; this chain follows the DOE-UFT agreements as a group, not one unit."
+  },
+  "uniformed-coalition-economic-agreement-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+     "title": "\"2018 - 2022\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": null,
+     "term_end": null,
+     "term_text": "36 months from each predecessor unit agreement's expiration (unit agreements expiring March 19, 2018 through January 31, 2020)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements·e xpiring on: March 19, 2018 (UFOA); October 31, 2018 (LBA); December 31, 2018 (USCA); February 28, 2019 (COBA); April 30, 2019 (CEA); August 15, 2019 (CCA); July 1, 2019 (SOA); and January 31, 2020 (ADW/DWA)",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Previous coalition agreement. It covers 7 of the 13 units in the 2022-2027 UOCEA (LBA, USCA, COBA, CEA, CCA, SOA, ADW/DWA); UPOA, SBA, DEA and the three UFA units were not parties. Unit end dates computed from it do not all meet the 2022-2027 predecessor dates (CEA, LBA, ADW/DWA and USCA fall short by 3 to 12 months; COBA, CCA and SOA were superseded by unit contracts ending on the listed dates)."
+    }
+   ],
+   "ends_with_complete": false,
+   "per_unit": {
+    "UPOA (predecessor exp. July 30, 2021)": "see upoa-moa-2020-2026 (UPOA's own MOA gives 11/28/2020-6/12/2026, which conflicts with the UOCEA date)",
+    "LBA (Feb. 15, 2022)": "see lba-10-5-2023-unit-bargaining-agreement: ends at the LBA 2009-2011 executed contract",
+    "USCA (Dec. 31, 2022)": "see usca-unit-agreement-2022-2027: ends at the USCA 2007-2011 executed contract",
+    "COBA (Feb. 28, 2022)": "see coba-unit-agreement-2022-2027: COBA 2019-2022 executed contract",
+    "CEA (July 31, 2022)": "see cea-unit-agreement-2022-2027: ends at the CEA 2012-2019 executed contract",
+    "CCA (Nov. 29, 2022)": "see cca-unit-agreement-2022-2028: CCA 2019-2022 executed contract",
+    "SOA (June 24, 2023)": "see soa-unit-agreement-2023-2028: Sanitation Officers 2019-2023 executed contract",
+    "ADW/DWA (May 31, 2023)": "see adwa-unit-agreement-2023-2028: ends at the ADWA 2012-2020 executed contract",
+    "SBA (Dec. 9, 2021)": "see sba-unit-agreement-2021-2026: ends at the SBA 2005-2011 executed contract",
+    "DEA (May 31, 2022)": "see dea-unit-agreement-2022-2027: ends at the Detectives 2012-2019 executed contract",
+    "UFA Firefighters/Fire Marshals (July 31, 2020)": "see ufa-moa-2017-2020: UFA 2017-2020 MOA, then the Firefighters 2010-2017 executed contract",
+    "UFA Pilots/Marine Engineers (July 27, 2021) and Wipers (July 31, 2020)": "UFA 2017-2020 MOA; nearest full contracts not verified (see ufa-moa-2017-2020 notes)"
+   },
+   "notes": "A multi-unit economic agreement. It carries forward 'All terms of the Predecessor Separate Unit Agreements', which are 13 different documents, so no single chain applies. The per-unit chains are under the unit ids listed in per_unit. The only single predecessor document is the 2018-2022 UOCEA, which is itself an economic agreement, not a complete contract."
+  },
+  "upoa-moa-2020-2026": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/moa-2017-2020-upoa.pdf",
+     "title": "2017-2020 Memorandum of Agreement, United Probation Officers Association and the City of New York",
+     "term_start": "2017-04-28",
+     "term_end": "2020-11-27",
+     "term_text": "4/28/2017-11/27/2020 (43 months)",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "2017-2020 Memorandum of Agreement United Probation Officers Association and the City of New York 1. Term: 3 ye~s and 7 months (4 3 months) 4/28/2017-11/27/ 2020",
+     "page": 1,
+     "method": "text"
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/upoa-executed-contract-2009-2017.pdf",
+     "title": "2009-2017 Probation Officers Agreement (executed contract)",
+     "term_start": "2009-12-28",
+     "term_end": "2017-04-27",
+     "term_text": "December 28, 2009 to April 27, 2017",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: PROBATION OFFICERS TERM: DECEMBER 28, 2009 TO APRIL 27, 2017 ... United Probation Officer's Association (p.2 contents: ARTICLE VI-GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "No gaps (the MOA starts 11/28/2020). Open question: the 2022-2027 UOCEA lists a UPOA unit agreement 'expiring on July 30, 2021', which conflicts with this MOA's 11/28/2020 start. Not resolved from published documents."
+  },
+  "usa-executed-contract-2022-2028": {
+   "chain": [],
+   "ends_with_complete": true,
+   "self_complete": true,
+   "notes": "The current document is itself a complete executed contract (Sanitation Workers, Dec. 28, 2022 to Feb. 27, 2028: Articles I-XVI, including Article X Grievances), so no earlier agreement is needed. For reference, the nearest predecessor is the Sanitation Workers executed contract, Jan. 20, 2019 to Dec. 27, 2022 (https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sanitation-workers-01-20-2019%20-12-27-2022.pdf; p.1 'TERM: JANUARY 20, 2019 TO DECEMBER 27, 2022'), which ends the day before. The 2007-2011 CBU 49 contract in contracts.json 'predecessor' is superseded."
+  },
+  "usca-unit-agreement-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2021-2026/uniformed-coalition-economic-agreement-executed-2022-2027.pdf",
+     "title": "\"2022- 2027\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2023-01-01",
+     "term_end": "2028-02-29",
+     "term_text": "Sixty months from the predecessor unit agreement's expiration (December 31, 2022 (USCA)); the unit letter sets the unit term at January 1, 2023 through February 29, 2028",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... December 31, 2022 (USCA) ... The term of each Separate Unit Agreement shall be sixty (60) months from the expiration date of the Predecessor Separate Unit Agreements. ... All terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this UOCEA",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Parent coalition agreement, not an earlier one: the current unit letter amends this UOCEA under its Section 4 (Unit Bargaining) and shares its term. Listed first because the letter only works together with it."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+     "title": "\"2018 - 2022\" Uniformed Officers Coalition Economic Agreement (\"UOCEA\")",
+     "term_start": "2019-01-01",
+     "term_end": "2021-12-31",
+     "term_text": "36 months from the predecessor unit agreement's expiration (December 31, 2018 (USCA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements·e xpiring on: ... December 31, 2018 (USCA) ... The term of each Separate Unit Agreement shall be thirty-six (36) months from the expiration date of the Predecessor Separate Unit Agreements.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Computed end (Dec. 31, 2021) is a full year before the Dec. 31, 2022 USCA expiration the 2022-2027 UOCEA gives. No published USCA unit agreement or letter shows the extension."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/20112019uniformsuperiorcoalition.pdf",
+     "title": "\"2011 - 2019\" Uniform Superior Officers Coalition Economic Agreement (\"USOCEA\")",
+     "term_start": "2011-10-10",
+     "term_end": "2018-10-09",
+     "term_text": "84 months from the predecessor unit agreement's expiration (October 9, 2011 (USCA)); dates computed from that rule",
+     "kind": "moa",
+     "complete": false,
+     "evidence": "agreements successor to existing unit agreements expiring on: ... October 9, 2011 (USCA) ... The term of each Separate Unit Agreement shall eighty-four (84) months from the expiration date of the Predecessor 'Separate Unit Agreements. ... The cost-related terms of the Predecessor Separate Unit Agreements shall be continued except as modified pursuant to this USOCEA.",
+     "page": 1,
+     "method": "text",
+     "gap_note": "Computed end (Oct. 9, 2018) is 12 weeks before the Dec. 31, 2018 USCA expiration the 2018-2022 UOCEA cites; no published document shows the extension. Carries only cost-related terms; the USCA's 2011-2018 unit agreement is not published."
+    },
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu100-sanitation-chiefs-re-opner-101007-to-100911.pdf",
+     "title": "Uniformed Sanitation Chiefs Association 2007 - 2011 (executed contract, re-opener)",
+     "term_start": "2007-10-10",
+     "term_end": "2011-10-09",
+     "term_text": "October 10, 2007 to October 9, 2011",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: SANITATION CHIEFS (RE-OPENER) TERM: OCTOBER 10, 2007 TO OCTOBER 9, 2011 ... Uniformed Sanitation Chiefs Association (p.2 contents: ARTICLE XI - GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "image"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Each link names the USCA and each earlier term ends before the next starts, but two extensions (about 12 weeks in 2018 and a full year in 2022) are not documented anywhere published. Treat links 2 and 3 as the published record, not a guaranteed complete one. Despite 're-opener' in its title, the 2007-2011 document is a full executed agreement with recognition, grievance and other articles."
+  },
+  "ufa-moa-2017-2020": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/firefighters-executed-contract-2010-2017.pdf",
+     "title": "Firefighters 2010-2017 Agreement (executed contract)",
+     "term_start": "2010-08-01",
+     "term_end": "2017-07-31",
+     "term_text": "August 1, 2010 through July 31, 2017",
+     "kind": "full",
+     "complete": true,
+     "evidence": "SUBJECT: EXECUTED CONTRACT: FIREFIGHTERS TERM: AUGUST 1,2010TOJULY31,2017 ... Uniformed Firefighters Association (p.5: the unit consisting ofall Firefighters and Fire Marshals (Uniformed); p.2 contents: ARTICLE XVIII -GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Covers the Firefighter/Fire Marshal unit, the MOA's main unit: the contract ends July 31, 2017, the day before the MOA starts. The MOA also modifies separate Wiper and Pilot/Marine Engineer agreements ('expired on July 31, 2017 and July 27, 2018'). Those were not chained: no Wiper or Pilot agreement for 2010-2018 is published apart from the UFA 2010-2017 MOA (read: covers 'Wiper (F), Pilot, and Marine Engineer', term 8/1/2010-7/31/2017 and 8/8/2011-7/27/2018). The older CBU 41 Wipers (2008-2010) and CBU 068 Pilots (2007-2011) contracts on OLR were not read. The CBU 41 2008-2010 contract in contracts.json 'predecessor' is superseded."
+  },
+  "ufoa-fire-officers-2018-2021": {
+   "chain": [],
+   "ends_with_complete": true,
+   "self_complete": true,
+   "notes": "The current document is itself a complete executed contract (Fire Officers 2018-2021 Agreement, March 20, 2018 to July 30, 2021, with Article XVIII Grievance Procedure). For reference, the nearest predecessor is the UFOA Fire Officers executed contract, March 20, 2011 to March 19, 2018 (https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/ufoa-fire-officers-executed-contract-2011-2018.pdf; p.1 'TERM: MARCH 20, 2011 TO MARCH 19, 2018'), which ends the day before. No UFOA successor agreement is published. The 2007-2011 CBU 43 contract in contracts.json 'predecessor' is superseded."
+  },
+  "deputy-sheriffs-moa-2022-2027": {
+   "chain": [
+    {
+     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/deputy-sheriffs-2018-2021.pdf",
+     "title": "Deputy Sheriffs Association 2018-2021 Agreement (executed contract)",
+     "term_start": "2018-05-01",
+     "term_end": "2021-12-31",
+     "term_text": "May 1, 2018 to December 31, 2021",
+     "kind": "full",
+     "complete": true,
+     "evidence": "ACT: DEPUTY SHERIFFS TERM: MAY t, 20 t 8 TO DECEMBER 3 t, 2021 ... NYC Deputy Sheriffs Association (p.2 contents: ARTICLE XV-GRIEVANCE PROCEDURE)",
+     "page": 1,
+     "method": "text"
+    }
+   ],
+   "ends_with_complete": true,
+   "notes": "Ends the day before the MOA starts (1/1/2022)."
+  }
+ }
+}

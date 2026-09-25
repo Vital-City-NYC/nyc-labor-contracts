@@ -109,6 +109,9 @@ def export_contract(c: dict, clauses: list, units_by_id: dict, wages_by_id: dict
     if c.get("term_end"):
         out.append(f"term_end: {c['term_end']}")
     out.append(f'source_pdf: "{c["url"]}"')
+    if c.get("era") == "earlier":
+        out.append('era: "earlier"  # older agreement, may be superseded in part by later documents')
+        out.append(f"later_documents: {json.dumps(c.get('later_ids', []))}")
     out.append(f"pages: {total_pages}")
     out.append(f"ocr_pages: {ocr_pages}")
     out.append(f"pages_with_tables: {table_pages}")
@@ -128,6 +131,11 @@ def export_contract(c: dict, clauses: list, units_by_id: dict, wages_by_id: dict
 
     # Title block
     out.append(f"# {expanded}")
+    if c.get("era") == "earlier":
+        out.append("")
+        out.append("> **Earlier agreement, may be superseded.** Later documents keep parts of it in force and change "
+                   "others; where they conflict, the later document governs. Check them before relying on any clause: "
+                   + ", ".join(c.get("later_ids", [])) + ".")
     out.append("")
     out.append(f"**Term:** {term}  ")
     out.append(f"**Source PDF:** [{c['url']}]({c['url']})  ")

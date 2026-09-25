@@ -24,7 +24,9 @@ def main():
         ocr_pages += sum(1 for p in pages if p.get("ocr"))
     manifest = {
         "generated": datetime.now().isoformat(timespec="seconds"),
-        "contracts": len(contracts),
+        # "contracts" counts current documents; earlier agreements are separate.
+        "contracts": sum(1 for c in contracts if c.get("era") != "earlier"),
+        "earlier_documents": sum(1 for c in contracts if c.get("era") == "earlier"),
         "clauses": len(clauses),
         "pages": total_pages,
         "ocr_pages": ocr_pages,

@@ -51,8 +51,8 @@ def realness(text, vocab):
     return (sum(w in vocab for w in ws) / len(ws)) if ws else 0.0
 
 
-def main():
-    spec = json.loads((DATA / "added_documents.json").read_text())["documents"]
+def main(spec_name: str = "added_documents.json"):
+    spec = json.loads((DATA / spec_name).read_text())["documents"]
     contracts = json.loads((DATA / "contracts.json").read_text())
     clauses = json.loads((DATA / "clauses.json").read_text())
     have = {c["id"] for c in contracts}
@@ -87,6 +87,10 @@ def main():
         m = re.search(r"(\d{4})\D+(\d{4})\s*$", d["label"])
         if m:
             contract["term_start"], contract["term_end"] = int(m.group(1)), int(m.group(2))
+        # Earlier agreements carry their place in a unit's chain.
+        for k in ("era", "later_ids", "complete", "publisher", "gap_note", "term_start", "term_end"):
+            if d.get(k) is not None:
+                contract[k] = d[k]
 
         cls = segment.segment_contract(contract)
         for cl in cls:
@@ -113,4 +117,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else "added_documents.json")

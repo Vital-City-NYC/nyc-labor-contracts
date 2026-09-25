@@ -57,6 +57,7 @@ def ocr_pages(cid):
 
 def doc_about():
     manifest = load("manifest.json")
+    n_earlier = manifest.get("earlier_documents", 0)
     return f"""# About this corpus — NYC municipal labor contracts
 
 {BANNER}
@@ -73,7 +74,7 @@ Many of the source documents are scanned image PDFs with no embedded text. Each 
 - Several uniformed unit agreements are short letters that incorporate the Uniformed Coalition Economic Agreement by reference — economic terms for those units live in that coalition document, not the unit letter.
 - The corpus reflects agreements published as of August 2026, checked again Sept. 25, 2026.
 - Some current agreements are not in this notebook because they have never been published. The New York State Nurses Association 2019-2023 agreement here was replaced by a contract settled in July 2023 whose text is unpublished. The Uniformed Firefighters Association and Uniformed Fire Officers Association signed the 2022-2027 coalition agreement, but their successor unit agreements are unpublished. Do not describe the older documents as current for these unions.
-- 63 amendments keep an older agreement in force that is not in this notebook, so provisions on grievances, discipline and seniority for those workers may not appear here at all. The companion file on underlying agreements lists the earlier agreement for 61 of them.
+- Most current documents are amendments that keep an older agreement in force for everything they don't change. This notebook also holds {n_earlier} of those older documents, each titled "EARLIER AGREEMENT, MAY BE SUPERSEDED." A clause from one of them may have been changed by a later document. Never present it as current without checking the later documents named at the top of that source, and say that it comes from an earlier agreement.
 """
 
 
@@ -85,11 +86,24 @@ def doc_index(contracts):
         "| Contract | Term | OCR pages | Source PDF |",
         "|---|---|---|---|",
     ]
-    for c in sorted(contracts, key=lambda x: x["label"].lower()):
+    current = [c for c in contracts if c.get("era") != "earlier"]
+    earlier = [c for c in contracts if c.get("era") == "earlier"]
+    for c in sorted(current, key=lambda x: x["label"].lower()):
         o, t = ocr_pages(c["id"])
         ocr = f"{o}/{t}" if t else "n/a"
         term = f"{c.get('term_start', '?')}–{c.get('term_end', '?')}"
         lines.append(f"| {c['label']} | {term} | {ocr} | {c['url']} |")
+    if earlier:
+        lines.append("")
+        lines.append("## Earlier agreements, may be superseded\n")
+        lines.append("Older documents that current amendments keep partly in force. Later documents change some of their terms.\n")
+        lines.append("| Earlier agreement | Term | Changed by | Source PDF |")
+        lines.append("|---|---|---|---|")
+        by_id = {c["id"]: c for c in contracts}
+        for c in sorted(earlier, key=lambda x: x["label"].lower()):
+            term = f"{c.get('term_start', '?')}–{c.get('term_end', '?')}"
+            later = "; ".join(by_id[i]["label"] for i in c.get("later_ids", []) if i in by_id)
+            lines.append(f"| {c['label']} | {term} | {later} | {c['url']} |")
     lines.append("")
     lines.append("Expiration caveat: 'term end' is the stated contract expiration year. Under New York's Triborough doctrine an expired agreement's terms generally remain in force until a successor is reached.")
     return "\n".join(lines) + "\n"

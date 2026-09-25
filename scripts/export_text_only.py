@@ -31,7 +31,16 @@ def main():
         body = raw.replace("\f", "\n\n")
         body = re.sub(r"\n{3,}", "\n\n", body).strip()
         title = expand_label(c["label"])
-        md = f"# {title}\n\n{body}\n"
+        if c.get("era") == "earlier":
+            # Older document still partly in force: say so before any text.
+            by_id = {x["id"]: x for x in contracts}
+            later = "; ".join(expand_label(by_id[i]["label"]) for i in c.get("later_ids", []) if i in by_id)
+            md = (f"# EARLIER AGREEMENT, MAY BE SUPERSEDED: {title}\n\n"
+                  "> This is an older agreement. Later documents keep parts of it in force and change others; "
+                  "where they conflict, the later document governs. Do not present a clause from it as current "
+                  f"without checking the later documents{': ' + later if later else ''}.\n\n{body}\n")
+        else:
+            md = f"# {title}\n\n{body}\n"
         (OUT_DIR / f"{cid}.md").write_text(md)
         written.append(cid)
     with zipfile.ZipFile(ZIP, "w", zipfile.ZIP_DEFLATED) as z:

@@ -1,16 +1,68 @@
 # NYC municipal labor contracts — Markdown export
 
-_115 contracts. Each `<id>.md` file contains the full searchable text, segmented into clauses with page numbers, with tables preserved as pipe-delimited Markdown._
+_216 contracts. Each `<id>.md` file contains the full searchable text, segmented into clauses with page numbers, with tables preserved as pipe-delimited Markdown._
 
 Source: NYC Office of Labor Relations Recent Agreements page. Many contracts were OCR-reconstructed from image-only PDFs; per-page OCR flags are preserved in the YAML frontmatter and inline meta lines.
 
 ## Contracts
 
+- [1199SEIU United Healthcare Workers East Memorandum of Agreement (June 19, 2014)](earlier-cbu1199-nyc-hhc.md) — 2009–2018
 - [2001-2021 Citywide Agreement](2001-2021-citywide-agreement.md) — 2001–2021
+- [2008-2010 Blue Collar Agreement (executed contract, Blue Collar 'A' and 'B', District Council 37)](earlier-cbu131-132-blue-collar-080806-to-061808.md) — 2008–2010
+- [2008-2017 OSA School Security/Traffic Memorandum of Agreement](earlier-osa-school-security-2008-2017.md) — 2008–2018
+- [2009-2017 Probation Officers Agreement (executed contract)](earlier-upoa-executed-contract-2009-2017.md) — 2009–2017
+- [2010-2017 Environmental Police Officer Agreement (executed contract)](earlier-environmental-police-officers-2010-2017.md) — 2010–2017
+- [2010-2017 Memorandum of Agreement between Doctors Council SEIU, the City of New York and the NYC Health and Hospitals Corporation](earlier-2010-2017-doctors-council-moa.md) — 2010–2017
+- [2010-2017 Memorandum of Agreement, District Council 37 and the City of New York](earlier-cbu-dc37-nyc-moa-2010-2017.md) — 2010–2017
+- [2010-2017 Memorandum of Agreement, District Council 37 and the City of New York, Urban Park Ranger Bargaining Unit](earlier-2010-2017-dc37-l-983-urban-park-rangers-moa.md) — 2010–2017
+- [2010-2017 OSA Staff Analyst Memorandum of Agreement (Organization of Staff Analysts and the City of New York)](earlier-2010-2017-osa-nyc-moa.md) — 2010–2017
+- [2010-2018 Electrical Inspectors Memorandum of Agreement (IBEW Local 3)](earlier-2010-2018-electrical-inspectors.md) — 2010–2018
+- [2010-2018 IATSE Memorandum of Agreement (Local 306)](earlier-cbu306-iatse-2010-2018.md) — 2010–2018
+- [2010-2018 Marine Titles Memorandum of Agreement (International Organization of Masters, Mates and Pilots Atlantic Maritime Group, ILA)](earlier-marine-consolidated-titles-2010-2017.md) — 2010–2018
+- [2010-2018 Memorandum of Agreement, Local 237 and the City of New York](earlier-cbu237-moa-2010-2018.md) — 2010–2018
+- [2010-2021 Memorandum of Agreement, Local Lodge No. 5 and the City of New York (Blacksmith unit)](earlier-blacksmith-mou-2010-2021.md) — 2010–2021
+- [2010-2021 [body: 2010-2020] Memorandum of Agreement, Local Lodge No. 5 and the City of New York, Metal Work Mechanics](earlier-metal-work-mechanic-moa-2010-2021.md) — 2010–2020
+- [2011-2018 Memorandum of Agreement, Local 300, SEIU and the City of New York](earlier-cbu300-2011-2018.md) — 2011–2018
+- [2011-2018 Sergeants Benevolent Association Memorandum of Agreement](earlier-20112018-sba-moa.md) — 2011–2018
+- [2011-2019 Uniform Superior Officers Coalition Economic Agreement](earlier-20112019uniformsuperiorcoalition.md) — 2011–2018
+- [2012-2017 Memorandum of Understanding Between The City of New York and The Patrolmen's Benevolent Association](earlier-pba-nyc-moa-2012-2017.md) — 2012–2017
+- [2016-2020 Memorandum of Agreement, Stationary Engineer (Electric) & Senior Stationary Engineer (Electric), Local 3, International Brotherhood of Electrical Workers and the City of New York](earlier-executed-stationary-engineer-electric-2016-2020-moa.md) — 2016–2020
+- [2017-2020 Memorandum of Agreement, United Probation Officers Association and the City of New York](earlier-moa-2017-2020-upoa.md) — 2017–2020
+- [2017-2020 [sic] Memorandum of Agreement, City Employees Local 237, IBT and the City of New York, Parking Control Specialists](earlier-parking-control-specialist-moa-final-executed.md) — 2018–2021
+- [2017-2020 [sic] Memorandum of Agreement, District Council 37, Local 983 and the City of New York, Traffic Enforcement Agents, Levels 3 and 4](earlier-dc37-traffic-enforcement-agent-lvl-3-4-moa.md) — 2017–2021
+- [2017-2021 Attorneys Agreement (Local 237 IBT and its affiliate the Civil Service Bar Association)](earlier-csba-2017-2021-final-agreement-fully-executed.md) — 2017–2021
+- [2017-2021 Local 15 Welders Memorandum of Agreement](earlier-welder-l15-2017-2021.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement (Organization of Staff Analysts)](earlier-osa-moa-2017-2021.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, Allied Building Inspectors, Local 211, IUOE and the City of New York](earlier-executed-2017-2021-building-inspector-moa.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, Communication Workers of America, Local 1183 and the City of New York](earlier-cwa-1183-mou-03-12-2019.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1181 and the City of New York](earlier-cwa-local-1181-moa-11-7-19-fully-executed-2017-2021.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1182 and the City of New York](earlier-cwa-local-1182-moa-11-7-19-fully-executed-2017-2021.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, District Council 37 and the City of New York](earlier-dc-37mou-2018.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, District Council 37, Local 983 Urban Park Rangers and the City of New York](earlier-urban-park-ranger-moa-2017-2021.md) — 2017–2021
+- [2017-2021 Memorandum of Agreement, Doctors Council, the City of New York and NYC Health + Hospitals](earlier-doctors-council-nyc-moa-2017-2021.md) — 2017–2021
+- [2017-2022 School Security/Traffic Memorandum of Agreement](earlier-osa-school-security-and-traffic-moa-2017-2022.md) — 2018–2022
+- [2018-2021 Memorandum of Agreement, Communications Workers of America, Local 1180 and the City of New York](earlier-executed-2018-2021-cwa-1180-moa.md) — 2018–2021
+- [2018-2021 Memorandum of Agreement, Inspectors (Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York](earlier-local-3-electrical-inspector-executed-moa-2018-2021.md) — 2018–2021
+- [2018-2021 Memorandum of Agreement, International Organization of Masters, Mates & Pilots and the City of New York (Marine Titles)](earlier-executed-marine-titles-moa.md) — 2018–2021
+- [2018-2021 Sergeants Benevolent Association Memorandum of Agreement](earlier-sba-moa-2018-2021.md) — 2018–2021
+- [2018-2022 Highways and Sewers Inspector Memorandum of Agreement, Law Enforcement Employees Benevolent Association and City of New York](earlier-highway-and-sewer-inspectors-moa-2018-2022.md) — 2018–2022
+- [2018-2022 Memorandum of Agreement, 1199SEIU, the City of New York and NYC Health + Hospitals](earlier-1199-nyc-hhc-2018-2022-moa.md) — 2018–2022
+- [2018-2022 Memorandum of Agreement, International Alliance of Theatrical Stage Employees, Local 306 and the City of New York](earlier-executed-latse-local-306-moa.md) — 2018–2022
+- [2018-2022 Memorandum of Agreement, Local 237, International Brotherhood of Teamsters and the City of New York](earlier-local-237-executed-2018-2022-moa.md) — 2018–2022
+- [2018-2022 Memorandum of Agreement, Local 300, SEIU and the City of New York](earlier-local-300-moa-2018-2022.md) — 2018–2022
+- [2018-2022 Uniformed Officers Coalition Economic Agreement](earlier-uniformed-coalition-economic-agreement-2018-2022.md) — 2020–2023
+- [2019-2022 Detectives' Endowment Association Memorandum of Agreement](earlier-dea-moa-2019-2022.md) — 2019–2022
+- [2019-2023 Memorandum of Agreement, Communications Electrician, Local 3, International Brotherhood of Electrical Workers and the City of New York](earlier-executed-communication-electrician-moa-2019-2023.md) — 2019–2023
+- [Assistant Buyer, et al. 2009-2011 Agreement (executed contract, CBU 97, Local 300 SEIU)](earlier-cbu97-assistant-buyers-et-al-022309-to-022211.md) — 2009–2011
 - [Assistant Deputy Wardens Association (ADWA) — Unit Agreement, 2023-2028](adwa-unit-agreement-2023-2028.md) — 2023–2028
+- [Assistant Deputy Wardens/Deputy Wardens 2012-2020 (executed contract)](earlier-asst-deputy-wardens-deputy-wardens-07-01-2012-01-31-2020.md) — 2012–2020
 - [Association of Legislative Employees (ALE) — Executed Contract, 2021-2027](ale-executed-contract-2021-2027.md) — 2021–2027
+- [Audio-Visual Aide Technicians, et al. 2008-2010 Agreement (executed contract, CBU 39)](earlier-cbu39-audio-visual-aide-technicians-101508-to-101410.md) — 2008–2010
+- [Automotive Service Worker Agreement (executed contract, CBU 96, Local 246 SEIU)](earlier-automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-20.md) — 2017–2021
 - [Blacksmith Memorandum of Agreement, 2021-2026](blacksmith-moa-2021-2026.md) — 2021–2026
+- [Board of Elections Agreement 2010-2017 (executed contract, CWA Local 1183)](earlier-board-of-elections-2010-2017.md) — 2010–2017
 - [Boilermaker Memorandum of Agreement, 2021-2026](boilermaker-moa-2021-2026.md) — 2021–2026
+- [Building & Construction Inspectors Agreement (executed contract, Local 211 IUOE)](earlier-2010-2017-building-construction-inspectors-executed-contract.md) — 2009–2017
 - [CUNY Blue Collar (IBT Local 237) Memorandum of Agreement, 2021-2027](cuny-blue-collar-ibt-local-237-moa-2021-2027.md) — 2021–2027
 - [CUNY Blue Collar Agreement, 2021-2027](cuny-blue-collar-agreement-2021-2027.md) — 2021–2027
 - [CUNY Blue and White Collar Memorandum of Agreement, 2021-2027](cuny-blue-and-white-collar-moa-2021-2027.md) — 2021–2027
@@ -22,6 +74,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [CUNY Theatre Agreement, 2023-2028](cuny-theatre-agreement-2023-2028.md) — 2023–2028
 - [CUNY White Collar Agreement, 2021-2027](cuny-white-collar-agreement-2021-2027.md) — 2021–2027
 - [Captains' Endowment Association (NYPD) (CEA) — Unit Agreement, 2022-2027](cea-unit-agreement-2022-2027.md) — 2022–2027
+- [Captains' Endowment Association 2012-2019 Agreement (executed contract)](earlier-2012-2019policecaptains-executedcontract4-1-2012-4-30-2019.md) — 2012–2019
 - [Carpenters Consent Determination, 2021-2027](carpenters-consent-determination-2021-2027.md) — 2021–2027
 - [Carpenters and Supervisor Carpenter Memorandum of Agreement, 2022-2027](carpenters-moa-2022-2027.md) — 2022–2027
 - [Civil Service Bar Association (CSBA) — Memorandum of Agreement, 2021-2026](csba-moa-2021-2026.md) — 2021–2026
@@ -30,13 +83,36 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Communications Workers of America (CWA) — 1183 Memorandum of Agreement, 2021-2026](cwa-1183-moa-2021-2026.md) — 2021–2026
 - [Communications Workers of America (CWA) — L1181 Memorandum of Agreement, 2021-2027](cwa-l1181-moa-2021-2027.md) — 2021–2027
 - [Communications Workers of America (CWA) — L1182 Memorandum of Agreement, 2021-2027](cwa-l1182-moa-2021-2027.md) — 2021–2027
+- [Consent Determination, Bricklayer (92205) and Supervisor Bricklayer (92271), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)](earlier-bricklayer-2017-2021.md) — 2017–2021
+- [Consent Determination, Bridge Painter (91805) and Supervisor Bridge Painter (91871), District Council 9, Local Union 806, Structural Steel and Bridge Painters of Greater New York (filed July 27, 2022)](earlier-bridge-painters-2018-2021.md) — 2018–2021
+- [Consent Determination, Clock Repairer (90707) and Supervisor Clock Repairer (90800), District Council 37, AFSCME, AFL-CIO](earlier-clock-repairer-2010-2017.md) — 2010–2017
+- [Consent Determination, Clock Repairer (90707) and Supervisor Clock Repairer (90800), District Council 37, AFSCME, AFL-CIO (filed July 21, 2022)](earlier-clock-repairers-2017-2021.md) — 2017–2021
+- [Consent Determination, Communication Electrician (91762), Supervisor Communication Electrician (91763), Communication Electrician's Helper (91761) and Senior Supervisor Communication Electrician (91764), Local #3, I.B.E.W.](earlier-communication-electrician-2010-2019.md) — 2010–2019
+- [Consent Determination, Compositor (JOB) (92110), District Council 37, AFSCME, AFL-CIO](earlier-compositor-2010-2017.md) — 2010–2017
+- [Consent Determination, Compositor (JOB) (92110), District Council 37, AFSCME, AFL-CIO (filed July 21, 2022)](earlier-compositor-2017-2021.md) — 2017–2021
+- [Consent Determination, Construction Laborers (90756) and Group C+ Laborers, Local 376, District Council 37 (filed February 6, 2020)](earlier-construction-laborers-groupc-laborers-2017-2021.md) — 2017–2021
+- [Consent Determination, Horseshoer (92320), City Employees Union, Local 237, International Brotherhood of Teamsters (filed May 29, 2019)](earlier-det-horseshoer-2017-2021.md) — 2017–2021
+- [Consent Determination, Mason's Helper (92225), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)](earlier-masons-helper-2017-2021.md) — 2017–2021
+- [Consent Determination, Oiler (91628), Plant Maintainer/Oiler (91649), Stationary Engineer (Steam) (91644) and Senior Stationary Engineer (Steam) (91638), Local #30, I.U.O.E. and Local #15, I.U.O.E. (filed May 21, 2020)](earlier-oiler-stationary-engineer-and-senior-stationary-engineer-2017-2021.md) — 2017–2021
+- [Consent Determination, Printing Press Operator (92123), District Council 37, AFSCME, AFL-CIO (filed May 11, 2020)](earlier-dc37-printing-press-operator-2017-2021.md) — 2017–2021
+- [Consent Determination, Radio Repair Mechanic (90733), District Council 37, AFSCME, AFL-CIO](earlier-dc37-radio-repair-mechanic-2017-2021.md) — 2017–2021
+- [Consent Determination, Roofer (90735) and Supervisor Roofer (90775), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)](earlier-roofers-2017-2020.md) — 2017–2020
+- [Consent Determination, Senior Stationary Engineer (Electric) (91639) and Senior Stationary Engineer (Electric) (Outside NYC) (91639), Local Union No. 3, International Brotherhood of Electrical Workers](earlier-senior-stationary-engineer-electric-2007-2016.md) — 2007–2016
+- [Consent Determination, Sewage Treatment Worker (90739) and Senior Sewage Treatment Worker (90767), Local 1320 of District Council 37, AFSCME, AFL-CIO (filed May 20, 2019)](earlier-sewage-treatment-worker-and-sstw-2018-2021.md) — 2018–2021
+- [Consent Determination, Stationary Engineer (Electric) (91645), International Brotherhood of Electrical Workers, Local 3 (filed August 10, 2017)](earlier-stationary-engineer-electric-2007-2016.md) — 2007–2016
+- [Consent Determination, Welder (92355) and Welder (Electric) (92356), New York City Local #15, I.U.O.E., AFL-CIO](earlier-welder-2009-2017.md) — 2009–2017
+- [Correction Captains 2019-2022 Agreement (executed contract)](earlier-correction-captains-08-16-2019-11-29-2022.md) — 2019–2022
 - [Correction Captains Association (CCA) — Unit Agreement, 2022-2028](cca-unit-agreement-2022-2028.md) — 2022–2028
+- [Correction Officers 2019-2022 Agreement (executed contract)](earlier-coba-executed-contract-2019-2022.md) — 2019–2022
 - [Correction Officers' Benevolent Association (COBA) — Unit Agreement, 2022-2027](coba-unit-agreement-2022-2027.md) — 2022–2027
 - [Council of School Supervisors and Administrators (CSA) — Memorandum of Agreement 2023-2028 amended Appendix A](csa-moa-2023-2028-amended-appendix-a.md) — 2023–2028
 - [DC 37 Local 1320 Sewage Treatment Workers Memorandum of Agreement, 2021-2026](dc-37-local-1320-sewage-treatment-workers-moa-2021-2026.md) — 2021–2026
+- [Deputy Sheriffs Association 2018-2021 Agreement (executed contract)](earlier-deputy-sheriffs-2018-2021.md) — 2018–2021
 - [Deputy Sheriffs Memorandum of Agreement, 2022-2027](deputy-sheriffs-moa-2022-2027.md) — 2022–2027
 - [Detective Investigator Association (District Attorneys' offices) (DIA) — Memorandum of Agreement, 2023-2028](dia-moa-2023-2028.md) — 2023–2028
+- [Detective Investigators 2019-2023 Agreement (executed contract)](earlier-detective-investigators-06-19-2019-01-18-2023.md) — 2019–2023
 - [Detectives' Endowment Association (DEA) — Unit Agreement, 2022-2027](dea-unit-agreement-2022-2027.md) — 2022–2027
+- [Detectives' Endowment Association 2012-2019 Agreement (executed contract)](earlier-detectives-04-01-2012-03-31-2019.md) — 2012–2019
 - [District Council 37 of AFSCME (DC37) — L1087 Clock Repairer Memorandum of Agreement, 2021-2026](dc37-l1087-clock-repairer-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L1087 Compositors Memorandum of Agreement, 2021-2026](dc37-l1087-compositors-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L1087 Locksmiths Consent Determination, 2021-2026](dc37-l1087-locksmiths-consent-determination-2021-2026.md) — 2020–2026
@@ -55,13 +131,20 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [District Council 9 of the Painters (DC9) — L1969 Painters Consent Determination, 2021-2026](dc9-l1969-painters-consent-determination-2021-2026.md) — 2021–2026
 - [District Council 9 of the Painters (DC9) — L806 Bridge Painters Memorandum of Agreement, 2021-2026](dc9-l806-bridge-painters-moa-2021-2026.md) — 2021–2026
 - [Doctors Council Memorandum of Agreement, 2021-2026](doctors-council-moa-2021-2026.md) — 2021–2026
+- [Electrical Inspectors et al. 2008-2010 Agreement (executed contract, CBU 45)](earlier-cbu45-electrical-inspectors-033108-to-033010.md) — 2008–2010
+- [Ferryboat Titles (Licensed) 2008-2010 Agreement (executed contract, CBU 61, MEBA)](earlier-cbu61-ferryboat-titles-licensed-110708-to-110610.md) — 2008–2010
+- [Fire Alarm Dispatchers 2018-2021 Agreement (executed contract)](earlier-fire-alarm-dispatchers-2018-2021.md) — 2018–2021
 - [Fire Alarm Dispatchers Benevolent Association (FADBA) — Memorandum of Agreement, 2021-2027](fadba-moa-2021-2027.md) — 2021–2027
+- [Firefighters 2010-2017 Agreement (executed contract)](earlier-firefighters-executed-contract-2010-2017.md) — 2010–2017
 - [Highway and Sewer Inspectors Memorandum of Agreement, 2022-2028](highway-and-sewer-inspectors-moa-2022-2028.md) — 2022–2028
 - [IBEW Local 3 (L3) — Communication Electricians Memorandum of Agreement, 2023–2028](l3-communication-electricians-moa-20232028.md) — 2023–2028
 - [IBEW Local 3 (L3) — Electrical Inspectors Memorandum of Agreement, 2022-2027](l3-electrical-inspectors-moa-2022-2027.md) — 2022–2027
 - [IBEW Local 3 (L3) — Electricians Consent Determination, 2023–2028](l3-electricians-consent-determination-20232028.md) — 2023–2028
 - [IBEW Local 3 (L3) — Stationary Engineer (Electric) Memorandum of Agreement, 2020–2025](l3-stationary-engineer-electric-moa-20202025.md) — 2020–2025
 - [IBEW Local 3 (L3) — Supervisor of Mechanics Consent Determination, 2021-2026](l3-supervisor-of-mechanics-consent-determination-2021-2026.md) — 2021–2026
+- [Indenture between The City of New York and Local 15 I.U.O.E. and Local 246 SEIU jointly, on behalf of Motor Grader Operators](earlier-2016-2020-motor-grader-operator-executed-agr.md) — 2016–2020
+- [Inspectors (Highways & Sewers), et al. 2010-2018 Agreement (executed contract)](earlier-inspectors-highways-sewers-executed-contract-2010-2018.md) — 2010–2018
+- [Interest Arbitration Opinion and Award, The City of New York and The Patrolmen's Benevolent Association of the City of New York, Inc. (PERB Case No. IA-2014-009; M2014-027), dated November 13, 2015](earlier-2010-2012-pba-nyc-impasse-award.md) — 2010–2012
 - [International Brotherhood of Teamsters (IBT) — L237 Bricklayers Memorandum of Agreement, 2021-2026](ibt-l237-bricklayers-moa-2021-2026.md) — 2021–2026
 - [International Brotherhood of Teamsters (IBT) — L237 Cement Masons Consent Determination, 2020-2025](ibt-l237-cement-masons-consent-determination-2020-2025.md) — 2020–2025
 - [International Brotherhood of Teamsters (IBT) — L237 Elevator Mechanics Consent Determination, 2024-2029](ibt-l237-elevator-mechanics-consent-determination-2024-2029.md) — 2024–2029
@@ -79,6 +162,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [L638 Steamfitters Consent Determination, 2022-2027](l638-steamfitters-consent-determination-2022-2027.md) — 2022–2027
 - [Law Enforcement Employees Benevolent Association (LEEBA) — EPO Memorandum of Agreement, 2017-2026](leeba-epo-moa-2017-2026.md) — 2017–2026
 - [Lieutenants Benevolent Association (LBA) — Unit Bargaining Agreement, 2022-2027](lba-10-5-2023-unit-bargaining-agreement.md) — 2022–2027
+- [Lieutenants' Benevolent Association 2009-2011 Agreement (executed contract)](earlier-cbu59-police-lieutenants-benevolent-association-110109-to-103111.md) — 2009–2011
 - [Local 14 Crane Operators Wage Indenture, 2021-2026](crane-operator-2021-2026.md) — 2021–2026
 - [Local 14/15 Gasoline Roller Engineers Wage Indenture, 2021-2026](local-14-15-gasoline-roller-engineers-wage-indenture-2021-2026.md) — 2021–2026
 - [Local 15 Welders Memorandum of Agreement, 2021-2026](local-15-welders-moa-2021-2026.md) — 2021–2026
@@ -96,9 +180,14 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Local 246 Sheet Metal Worker Memorandum of Agreement, 2021-2026](local-246-sheet-metal-worker-moa-2021-2026.md) — 2021–2026
 - [Local 300, SEIU Memorandum of Agreement, 2022-2027](local-300-seiu-moa-2022-2027.md) — 2022–2027
 - [Local 306 Audiovisual Aide Technicians Memorandum of Agreement, 2022-2027](local-306-audiovisual-aide-technicians-moa-2022-2027.md) — 2022–2027
+- [Local 333 Marine (Consolidated) Titles 2008-2010 Agreement (executed contract, CBU 111)](earlier-cbu111-marine-consolidated-titles-042708-to-042610.md) — 2008–2010
 - [Local 40 Bridge Repairer Consent Determination, 2022-2025](local-40-bridge-repairer-consent-determination-2022-2025.md) — 2022–2025
 - [Local 891 School Custodians Memorandum of Agreement, 2020-2025](local-891-school-custodians.md) — 2020–2025
+- [Local Lodge No. 5 2008-2010 Metal Work Mechanic Agreement (executed contract, CBU 181)](earlier-cbu181-metal-work-mechanics-030308-to-030210.md) — 2008–2010
 - [Marine Engineers' Beneficial Association (MEBA) — Memorandum of Agreement, 2010-2027](meba-moa-2010-2027.md) — 2010–2027
+- [Memorandum of Agreement, Board of Education of the City School District of the City of New York and the Council of Supervisors and Administrators of the City of New York (December 5, 2014) [CSA Memorandum of Agreement 1, 2010-2019]](earlier-2010-2019-csa-moa-1.md) — 2010–2019
+- [Memorandum of Agreement, Board of Education of the City School District of the City of New York and the United Federation of Teachers, Local 2, AFT, AFL-CIO (October 11, 2018)](earlier-uft-moa-2018-2019.md) — 2019–2022
+- [Memorandum of Agreement, Council of School Supervisors and Administrators of the City of New York and the Board of Education of the City School District of the City of New York (2019-2023)](earlier-principal-csa-moa-2019-2023.md) — 2019–2023
 - [Metal Work Mechanic Memorandum of Agreement, 2021-2026](metal-work-mechanic-moa-2021-2026.md) — 2020–2025
 - [New York State Nurses Association (NYSNA) — Staff Nurses, 2019-2023](nysna-staff-nurses-2019-2023.md) — 2019–2023
 - [Organization of Staff Analysts (OSA) — Memorandum of Agreement, 2021-2027](osa-moa-2021-2027.md) — 2021–2027
@@ -106,18 +195,30 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Organization of Staff Analysts (OSA) — School Security/Traffic Memorandum of Agreement, 2022-2027](osa-school-security-traffic-moa-2022-2027.md) — 2022–2027
 - [PSC-CUNY Agreement, 2017-2023](psc-cuny-agreement-2017-2023.md) — 2017–2023
 - [PSC-CUNY Memorandum of Agreement, 2023-2027](psc-cuny-moa-2023-2027.md) — 2023–2027
+- [Parental Leave (UFT-DOE/City agreement, June 2018)](earlier-uft-paid-parental-leave-agreement-2018.md) — term n/a
 - [Patrolmen's Benevolent Association (PBA) — Memorandum of Understanding, 2017-2025](pba-mou-2017-2025.md) — 2017–2025
+- [Patrolmen's Benevolent Association 2006-2010 Agreement (executed contract)](earlier-cbu79-police-patrolmens-benevolent-association-080106-to-073110.md) — 2006–2010
+- [Principal Administrative Associates, et al. Agreement (executed contract, CWA Local 1180)](earlier-cwa-local-1180-executed-contract-10-6-2010-5-5-2018.md) — 2010–2018
+- [Sanitation Officers 2019- 2023 (executed contract)](earlier-sanitation-officers-07-02-2019-06-24-2023.md) — 2019–2023
 - [Sanitation Officers Association (SOA) — Unit Agreement, 2023-2028](soa-unit-agreement-2023-2028.md) — 2023–2028
+- [School Custodian Engineers Collective Bargaining Agreement (executed contract, Local 891 IUOE)](earlier-school-custodian-engineers-08122016-07312021.md) — 2016–2020
+- [School Security/Traffic Agreement, August 1, 2002 to December 12, 2008 (executed contract, CBU 183, Organization of Staff Analysts)](earlier-cbu183-school-security-traffic-080102-to-121208.md) — 2002–2008
 - [Sergeants Benevolent Association (SBA) — Unit Agreement, 2021-2026](sba-unit-agreement-2021-2026.md) — 2021–2026
+- [Sergeants' Benevolent Association June 1, 2005 - August 29, 2011 Agreement (executed contract)](earlier-cbu91-police-sergeants-benevolent-association-060105-to-082911.md) — 2005–2011
+- [Ship Carpenters, Supervisor Ship Carpenters, Dockbuilders, Supervisor Dockbuilders, and Riggers Memorandum of Agreement February 1, 2018](earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018.md) — 2008–2020
+- [Staff Analysts, et al. Agreement, August 25, 2008 - August 24, 2010 (executed contract, CBU 180)](earlier-cbu180-staff-analysts-et-al-082508-to-082410.md) — 2008–2010
 - [Supervisor of Mechanics L621 Executed Contract, 2021-2026](supervisor-of-mechanics-l621-executed-contract-2021-2026.md) — 2020–2025
+- [Traffic Enforcement Unit executed contract (2010-2017 LL 56 ATEA and TEA Agreement CWA, L. 1181 and 1182 and DC 37, L. 983; 2010-2018 LL 56 PCS Agreement IBT, L. 237)](earlier-traffic-enforcement-agent-2010-2017.md) — 2010–2017
 - [Uniformed Coalition Economic Agreement, 2022-2027](uniformed-coalition-economic-agreement-2022-2027.md) — 2022–2027
 - [Uniformed Fire Officers Association (UFOA) — Fire Officers Agreement, 2018-2021](ufoa-fire-officers-2018-2021.md) — 2018–2021
 - [Uniformed Firefighters Association (UFA) — Memorandum of Agreement, 2017-2020](ufa-moa-2017-2020.md) — 2017–2020
 - [Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027](usca-unit-agreement-2022-2027.md) — 2023–2028
+- [Uniformed Sanitation Chiefs Association 2007-2011 (executed contract, re-opener)](earlier-cbu100-sanitation-chiefs-re-opner-101007-to-100911.md) — 2007–2011
 - [Uniformed Sanitationmen's Association (USA) — Executed Contract, 2022-2028](usa-executed-contract-2022-2028.md) — 2022–2028
 - [Uniformed Sanitationmen's Association (USA) — Sanitation Worker Memorandum of Economic Agreement, 2022-2028](usa-sanitation-worker-economic-agreement-2022-2028.md) — 2022–2028
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Dockbuilders Memorandum of Agreement, 2022-2027](ubcj-dockbuilders-moa-2022-2027.md) — 2022–2027
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Riggers Memorandum of Agreement, 2022-2027](ubcj-riggers-moa-2022-2027.md) — 2022–2027
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Ship Carpenter Memorandum of Agreement, 2022-2027](ubcj-ship-carpenter-moa-2022-2027.md) — 2022–2027
+- [United Federation of Teachers (UFT) — - NYC Memorandum of Agreement, 2009-2018 (three-page term sheet dated 4/29/14)](earlier-cbu-uft-moa-042914.md) — 2009–2018
 - [United Federation of Teachers (UFT) — Memorandum of Agreement, 2022-2027](uft-moa-2022-2027.md) — 2022–2027
 - [United Probation Officers Association (UPOA) — Memorandum of Agreement, 2020-2026](upoa-moa-2020-2026.md) — 2020–2026

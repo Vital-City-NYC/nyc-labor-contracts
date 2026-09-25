@@ -246,6 +246,8 @@ def main():
     contracts = json.loads((DATA / "contracts.json").read_text())
     out = []
     for c in contracts:
+        if c.get("era") == "earlier":
+            continue
         cid = c["id"]
         text_path = TXT_DIR / f"{cid}.txt"
         text = text_path.read_text() if text_path.exists() else ""

@@ -16,7 +16,12 @@
    "label": "Assistant deputy wardens underlying agreement, 2008-2012 (CBU 11)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-uniformed-coalition-economic-agreement-2018-2022",
+   "earlier-asst-deputy-wardens-deputy-wardens-07-01-2012-01-31-2020"
+  ]
  },
  {
   "id": "ale-executed-contract-2021-2027",
@@ -49,7 +54,11 @@
    "label": "Correction captains underlying agreement, 2007-2012 (CBU 25)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-correction-captains-08-16-2019-11-29-2022"
+  ]
  },
  {
   "id": "cea-unit-agreement-2022-2027",
@@ -68,7 +77,12 @@
    "label": "CEA underlying unit agreement, 2003-2012 (CBU 17)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-uniformed-coalition-economic-agreement-2018-2022",
+   "earlier-2012-2019policecaptains-executedcontract4-1-2012-4-30-2019"
+  ]
  },
  {
   "id": "cir-executed-contract-2021-2027",
@@ -101,7 +115,11 @@
    "label": "Correction officers underlying agreement, 2009-2011 (CBU 27)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-coba-executed-contract-2019-2022"
+  ]
  },
  {
   "id": "csa-moa-2023-2028-amended-appendix-a",
@@ -125,7 +143,11 @@
    "term": "April 23, 2019 through January 28, 2023",
    "evidence": "The term of the successor agreement shall be from April 23, 2019 through January 28, 2023.",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-principal-csa-moa-2019-2023",
+   "earlier-2010-2019-csa-moa-1"
+  ]
  },
  {
   "id": "csba-moa-2021-2026",
@@ -149,7 +171,10 @@
    "term": "August 18, 2017 to April 17, 2021",
    "evidence": "EXECUTED CONTRACT: AT IORNEYS TERM: AUGUST 18, 2017 TO APRIL 17, 2021 ... Local 237, International Brotherhood ofT eamsters, and its affiliate, the Civil Service Bar Association",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-csba-2017-2021-final-agreement-fully-executed"
+  ]
  },
  {
   "id": "cwa-1180-moa-2021-2026",
@@ -178,7 +203,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017/cwa_local_1180_executed_contract_10-6-2010-5-5-2018.pdf",
     "label": "Principal Administrative Associates, et al. Agreement (CWA Local 1180)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-executed-2018-2021-cwa-1180-moa",
+   "earlier-cwa-local-1180-executed-contract-10-6-2010-5-5-2018"
+  ]
  },
  {
   "id": "cwa-l1181-moa-2021-2027",
@@ -206,7 +235,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
     "label": "Traffic Enforcement Unit Agreement 2010-2017 (executed contract)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-cwa-local-1181-moa-11-7-19-fully-executed-2017-2021",
+   "earlier-traffic-enforcement-agent-2010-2017"
+  ]
  },
  {
   "id": "cwa-l1182-moa-2021-2027",
@@ -234,7 +267,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
     "label": "Traffic Enforcement Unit Agreement 2010-2017 (executed contract)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-cwa-local-1182-moa-11-7-19-fully-executed-2017-2021",
+   "earlier-traffic-enforcement-agent-2010-2017"
+  ]
  },
  {
   "id": "cwa-1183-moa-2021-2026",
@@ -262,7 +299,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/board-of-elections-2010-2017.pdf",
     "label": "Board of Elections Agreement 2010-2017"
    }
-  }
+  },
+  "lineage": [
+   "earlier-cwa-1183-mou-03-12-2019",
+   "earlier-board-of-elections-2010-2017"
+  ]
  },
  {
   "id": "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027",
@@ -290,7 +331,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
     "label": "Traffic Enforcement Unit Agreement 2010-2017 (executed contract)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-dc37-traffic-enforcement-agent-lvl-3-4-moa",
+   "earlier-traffic-enforcement-agent-2010-2017"
+  ]
  },
  {
   "id": "dc37-l983-urban-park-rangers-moa-2021-2027",
@@ -314,7 +359,12 @@
    "term": "9/26/17 - 10/25/21",
    "evidence": "2017-2021 Memorandum of Agreement District Council 37, Local 983 Urban Park Rangers and the City of New York 1. Tenn: 4 years and 1 month (49 months) 9/26/17 - 10/25/21",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-urban-park-ranger-moa-2017-2021",
+   "earlier-2010-2017-dc37-l-983-urban-park-rangers-moa",
+   "earlier-cbu131-132-blue-collar-080806-to-061808"
+  ]
  },
  {
   "id": "dc37-moa-2021-2026",
@@ -333,7 +383,11 @@
    "label": "2001-2021 Citywide Agreement, the underlying citywide contract",
    "publisher": "District Council 37",
    "verified": true
-  }
+  },
+  "lineage": [
+   "earlier-dc-37mou-2018",
+   "earlier-cbu-dc37-nyc-moa-2010-2017"
+  ]
  },
  {
   "id": "dea-unit-agreement-2022-2027",
@@ -353,7 +407,12 @@
    "label": "DEA underlying memorandum of understanding, 2008-2012 (CBU 29)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-dea-moa-2019-2022",
+   "earlier-detectives-04-01-2012-03-31-2019"
+  ]
  },
  {
   "id": "dia-moa-2023-2028",
@@ -377,7 +436,10 @@
    "term": "June 19, 2019 to January 18, 2023",
    "evidence": "EXECUTED CONTRACT: DETECTIVE INVESTIGATORS TERM: JUNE 19, 2019 TO JANUARY 18, 2023 ... Detective Investigator Association of the District Attorney's Offices",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-detective-investigators-06-19-2019-01-18-2023"
+  ]
  },
  {
   "id": "doctors-council-moa-2021-2026",
@@ -401,7 +463,11 @@
    "term": "9/28/2017 - 6/27/2021",
    "evidence": "2017-2021 Memorandum of Agreement Doctors Council, the City of New York (\"City\") and NYC Health + Hospitals (\"NYC H+H\") 1. Tenn: 9/28/2017 - 6/27/2021 (45 months)",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-doctors-council-nyc-moa-2017-2021",
+   "earlier-2010-2017-doctors-council-moa"
+  ]
  },
  {
   "id": "fadba-moa-2021-2027",
@@ -425,7 +491,10 @@
    "term": "January 1, 2018 to July 31, 2021",
    "evidence": "EXECUTED CONTRACT: FIRE ALARM DISPATCHERS TERM: JANUARY 1, 2018 TO JULY 31, 2021 ... Fire Alarm Dispatcher's Benevolent Association",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-fire-alarm-dispatchers-2018-2021"
+  ]
  },
  {
   "id": "highway-and-sewer-inspectors-moa-2022-2028",
@@ -453,7 +522,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/inspectors-highways-sewers-executed-contract-2010-2018.pdf",
     "label": "Inspectors (Highways & Sewers), et al. Agreement (executed contract)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-highway-and-sewer-inspectors-moa-2018-2022",
+   "earlier-inspectors-highways-sewers-executed-contract-2010-2018"
+  ]
  },
  {
   "id": "ibt-l237-moa-2022-2027",
@@ -478,7 +551,11 @@
    "evidence": "2018-2022 Memorandum of Agreement Local 237, International Brotherhood of Teamsters and the Citv of New York 1. Term: 4 years, I month 3/26/18 - 4/25/22 ... Special Officers (non-LL 56) (CBU 047) Institutional Titles A (CBU 121) Institutional Titles B (CBU 108)",
    "page": 1,
    "note": "It covers six of this agreement's eight units; the other two had separate 2018-2022 memoranda with the same dates."
-  }
+  },
+  "lineage": [
+   "earlier-local-237-executed-2018-2022-moa",
+   "earlier-cbu237-moa-2010-2018"
+  ]
  },
  {
   "id": "l3-electrical-inspectors-moa-2022-2027",
@@ -503,7 +580,12 @@
    "evidence": "2018-2021 Memorandum of Agreement Inspectors {Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York 1. Tenn: 3 years and 7 months (43 months) 3/31/18 - 10/30/21",
    "page": 1,
    "note": "It ends Oct. 30, 2021; this document's term begins March 29, 2022. No agreement for the months between is published."
-  }
+  },
+  "lineage": [
+   "earlier-local-3-electrical-inspector-executed-moa-2018-2021",
+   "earlier-2010-2018-electrical-inspectors",
+   "earlier-cbu45-electrical-inspectors-033108-to-033010"
+  ]
  },
  {
   "id": "l1199-moa-2022-2027",
@@ -528,7 +610,11 @@
    "term": "9/10/18 - 4/9/22",
    "evidence": "2018-2022 Memorandum of Agreement 1199SEIU, the City of New York (“City”) and NYC Health + Hospitals (“NYC H+H”) 1. Term: 9/10/18 – 4/9/22 (43 months)",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-1199-nyc-hhc-2018-2022-moa",
+   "earlier-cbu1199-nyc-hhc"
+  ]
  },
  {
   "id": "lba-10-5-2023-unit-bargaining-agreement",
@@ -547,7 +633,13 @@
    "label": "LBA underlying unit agreement, 2009-2011 (CBU 59)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-uniformed-coalition-economic-agreement-2018-2022",
+   "earlier-20112019uniformsuperiorcoalition",
+   "earlier-cbu59-police-lieutenants-benevolent-association-110109-to-103111"
+  ]
  },
  {
   "id": "leeba-epo-moa-2017-2026",
@@ -571,7 +663,10 @@
    "term": "April 1, 2010 to September 30, 2017",
    "evidence": "APRIL 1, 2010 TO SEPTEMBER 30, 2017 Attached for your information and guidance is a copy of the executed contract entered into by the Commissioner of Labor Relations on behalf of the City of New York and the Law Enforcement Employees Benevolent Association",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-environmental-police-officers-2010-2017"
+  ]
  },
  {
   "id": "local-211-building-inspectors-moa-2021-2026",
@@ -599,7 +694,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-building-construction-inspectors-executed-contract.pdf",
     "label": "Building & Construction Inspectors Agreement (executed contract)"
    }
-  }
+  },
+  "lineage": [
+   "earlier-executed-2017-2021-building-inspector-moa",
+   "earlier-2010-2017-building-construction-inspectors-executed-contract"
+  ]
  },
  {
   "id": "local-237-parking-control-specialists-moa-2021-2026",
@@ -623,7 +722,11 @@
    "term": "4/11/2018-11/10/2021",
    "evidence": "2017-2020 Memorandum of Agreement City Employees Local 237, IBT and the City of New York Parking Control Specialists 1. Term: 3 years and 7 months (43 months) --- 4/11/2018-11/ 10/2021",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-parking-control-specialist-moa-final-executed",
+   "earlier-traffic-enforcement-agent-2010-2017"
+  ]
  },
  {
   "id": "local-246-automotive-service-workers-moa-2021-2026",
@@ -647,7 +750,10 @@
    "term": "December 7, 2017 through July 6, 2021",
    "evidence": "EXECUTED CONTRACT: AUTOMOTIVE SERVICE WORKER TERM: DECEMBER 7,2017 THROUGH JULY 6, 202 I ... Local 246, SEI U",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-20"
+  ]
  },
  {
   "id": "local-300-seiu-moa-2022-2027",
@@ -672,7 +778,12 @@
    "term": "June 23, 2018 to February 22, 2022",
    "evidence": "2018-2022 Memorandum of Agreement Local 300, SEIU and the City of New York ... The term of the agreement shall be forty-four (44) months from June 23, 2018 to February 22, 2022.",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-local-300-moa-2018-2022",
+   "earlier-cbu300-2011-2018",
+   "earlier-cbu97-assistant-buyers-et-al-022309-to-022211"
+  ]
  },
  {
   "id": "local-306-audiovisual-aide-technicians-moa-2022-2027",
@@ -696,7 +807,12 @@
    "term": "2/15/18 - 3/14/22",
    "evidence": "2018-2022 Memorandum of Agreement International Alliance of Theatrical Stage Emplovees, Local 306 and the City of New York 1. Term: 4 years and 1 month (49 months) 2/15/18 - 3/14/22",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-executed-latse-local-306-moa",
+   "earlier-cbu306-iatse-2010-2018",
+   "earlier-cbu39-audio-visual-aide-technicians-101508-to-101410"
+  ]
  },
  {
   "id": "local-891-school-custodians",
@@ -720,7 +836,10 @@
    "term": "August 12, 2016 through July 31, 2020",
    "evidence": "EXECUTED CONTRACT: SCHOOL CUSTODIAN ENGINEERS TERM: AUGUST 12, 2016 THROUGH JULY 31, 2020 ... Board of Education on behalf of the City of New York and Local 891, 1.U.O.E.",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-school-custodian-engineers-08122016-07312021"
+  ]
  },
  {
   "id": "meba-moa-2010-2027",
@@ -744,7 +863,10 @@
    "term": "November 7, 2008 to November 6, 2010",
    "evidence": "EXECUTED CONTRACT: FERRYBOAT TITLES (LICENSED) TERM: NOVEMBER 7, 2008 TO NOVEMBER 6, 2010 ... District No. 1 - PCD/MEBA Licensed Division, AFL-CIO",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-cbu61-ferryboat-titles-licensed-110708-to-110610"
+  ]
  },
  {
   "id": "metal-work-mechanic-moa-2021-2026",
@@ -772,7 +894,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu181-metal-work-mechanics-030308-to-030210.pdf",
     "label": "Local Lodge No. 5 2008-2010 Metal Work Mechanic Agreement"
    }
-  }
+  },
+  "lineage": [
+   "earlier-metal-work-mechanic-moa-2010-2021",
+   "earlier-cbu181-metal-work-mechanics-030308-to-030210"
+  ]
  },
  {
   "id": "mmp-moa-2021-2027",
@@ -786,7 +912,11 @@
   "amends_predecessor": true,
   "amends_evidence": "terms of the predecessor collective bargaining agreement and related agreements shall be continued",
   "chars": 17218,
-  "base_note": "The only earlier agreement the city posts for this unit is the 2010-2018 Marine Titles memorandum, which ended Jan. 5, 2018. The agreement between that one and this one is not posted."
+  "lineage": [
+   "earlier-executed-marine-titles-moa",
+   "earlier-marine-consolidated-titles-2010-2017",
+   "earlier-cbu111-marine-consolidated-titles-042708-to-042610"
+  ]
  },
  {
   "id": "osa-moa-2021-2027",
@@ -811,7 +941,12 @@
    "term": "8/25/17 - 9/5/21",
    "evidence": "2017-2021 Memorandum of Agreement 1. Term: 8/25/17 - 9/5/21 (48 months, 12 days) ... the below listed titles shall be added to the OSA Education",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-osa-moa-2017-2021",
+   "earlier-2010-2017-osa-nyc-moa",
+   "earlier-cbu180-staff-analysts-et-al-082508-to-082410"
+  ]
  },
  {
   "id": "osa-public-advocate-executed-contract-2022-2026",
@@ -848,7 +983,12 @@
    "term": "5/12/18 - 6/11/22",
    "evidence": "2017-2022 School Security/Traffic Memorandum of Agreement 1. Term: 5/12/18 - 6/11/22 (49 months)",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-osa-school-security-and-traffic-moa-2017-2022",
+   "earlier-osa-school-security-2008-2017",
+   "earlier-cbu183-school-security-traffic-080102-to-121208"
+  ]
  },
  {
   "id": "pba-mou-2017-2025",
@@ -867,7 +1007,12 @@
    "label": "PBA underlying unit agreement, 2006-2010 (CBU 79)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "earlier-pba-nyc-moa-2012-2017",
+   "earlier-2010-2012-pba-nyc-impasse-award",
+   "earlier-cbu79-police-patrolmens-benevolent-association-080106-to-073110"
+  ]
  },
  {
   "id": "sba-unit-agreement-2021-2026",
@@ -886,7 +1031,13 @@
    "label": "SBA underlying unit agreement, 2005-2011 (CBU 91)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-sba-moa-2018-2021",
+   "earlier-20112018-sba-moa",
+   "earlier-cbu91-police-sergeants-benevolent-association-060105-to-082911"
+  ]
  },
  {
   "id": "soa-unit-agreement-2023-2028",
@@ -905,7 +1056,11 @@
    "label": "Sanitation officers underlying agreement, 2007-2012 (CBU 99)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-sanitation-officers-07-02-2019-06-24-2023"
+  ]
  },
  {
   "id": "supervisor-of-mechanics-l621-executed-contract-2021-2026",
@@ -937,7 +1092,12 @@
    "label": "Full UFT-DOE contracts by title (teachers, paraprofessionals, secretaries, counselors, nurses and therapists, psychologists and social workers)",
    "publisher": "United Federation of Teachers",
    "verified": true
-  }
+  },
+  "lineage": [
+   "earlier-uft-moa-2018-2019",
+   "earlier-uft-paid-parental-leave-agreement-2018",
+   "earlier-cbu-uft-moa-042914"
+  ]
  },
  {
   "id": "uniformed-coalition-economic-agreement-2022-2027",
@@ -963,7 +1123,10 @@
    "evidence": "agreements successor to existing unit agreements·e xpiring on: March 19, 2018 (UFOA); October 31, 2018 (LBA); December 31, 2018 (USCA); February 28, 2019 (COBA); April 30, 2019 (CEA); August 15, 2019 (CCA); July 1, 2019 (SOA); and January 31, 2020 (ADW/DWA)",
    "page": 1,
    "note": "It covers only some of the unions in the 2022-2027 agreement; each union's own earlier unit agreement is the real predecessor."
-  }
+  },
+  "lineage": [
+   "earlier-uniformed-coalition-economic-agreement-2018-2022"
+  ]
  },
  {
   "id": "upoa-moa-2020-2026",
@@ -991,7 +1154,11 @@
     "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/upoa-executed-contract-2009-2017.pdf",
     "label": "2009-2017 Probation Officers Agreement"
    }
-  }
+  },
+  "lineage": [
+   "earlier-moa-2017-2020-upoa",
+   "earlier-upoa-executed-contract-2009-2017"
+  ]
  },
  {
   "id": "usa-executed-contract-2022-2028",
@@ -1030,7 +1197,13 @@
    "label": "Sanitation chiefs underlying agreement, 2007-2011 (CBU 100)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "earlier-uniformed-coalition-economic-agreement-2018-2022",
+   "earlier-20112019uniformsuperiorcoalition",
+   "earlier-cbu100-sanitation-chiefs-re-opner-101007-to-100911"
+  ]
  },
  {
   "id": "2001-2021-citywide-agreement",
@@ -1067,7 +1240,10 @@
    "term": "8/3/2010 - 7/2/2021",
    "evidence": "including this 20/0-2021 MOA and a consent determination successor to the one terminating on August 2,2010 to cover the employees in the Blacksmith collective bargaining unit ... 1. Term: 8/3/2010- 7/2/2021",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-blacksmith-mou-2010-2021"
+  ]
  },
  {
   "id": "boilermaker-moa-2021-2026",
@@ -1129,7 +1305,10 @@
    "term": "7/31/2017 - 3/30/2021 (rate periods)",
    "evidence": "CONSTRUCTION LABORER AND GROUP \"C+\" LABORERS ... 7/31/2017 - 7/30/2018 $41.82 ... 8/31/2019 - 3/30/2021 $44.04",
    "page": 6
-  }
+  },
+  "lineage": [
+   "earlier-construction-laborers-groupc-laborers-2017-2021"
+  ]
  },
  {
   "id": "dc37-l376-highway-repairers-moa-2021-2026",
@@ -1193,7 +1372,11 @@
    "term": "12/26/2017 - 08/25/2021 (rate periods)",
    "evidence": "CLOCK REPAIRER PERIOD 12/26/2017 - 12/25/2018 12/26/2018 - 01/25/2020 01/26/2020 - 08/25/2021",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-clock-repairers-2017-2021",
+   "earlier-clock-repairer-2010-2017"
+  ]
  },
  {
   "id": "dc37-l1087-compositors-moa-2021-2026",
@@ -1217,7 +1400,11 @@
    "term": "12/26/17 - 8/25/21 (rate periods)",
    "evidence": "COMPOSITOR (JOB) PERIOD 12/26/17-12/25/18 12/26/18-1/25/20 1/26/20-8/25/21",
    "page": 3
-  }
+  },
+  "lineage": [
+   "earlier-compositor-2017-2021",
+   "earlier-compositor-2010-2017"
+  ]
  },
  {
   "id": "dc37-l1087-locksmiths-consent-determination-2021-2026",
@@ -1254,7 +1441,10 @@
    "term": "12/26/17 - 8/25/21 (rate periods)",
    "evidence": "PERIOD 12/26/17-12/25/18 12/26/18-1/25/20 1/26/20-8/25/21 ... PRINTING PRESS OPERATOR",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-dc37-printing-press-operator-2017-2021"
+  ]
  },
  {
   "id": "dc37-l1087-radio-repair-mechanics-moa-2021-2026",
@@ -1278,7 +1468,10 @@
    "term": "12/27/17 - 8/26/21 (rate periods)",
    "evidence": "PERIOD HOURLY RATE AND HOLIDAY RA TE 12/27/17 - 12/26/18 49.93 74.90 12/27/18-6/13/19 51.05 76.58 6/14/19 - 8/26/21 52.71 79.07",
    "page": 3
-  }
+  },
+  "lineage": [
+   "earlier-dc37-radio-repair-mechanic-2017-2021"
+  ]
  },
  {
   "id": "dc37-l1157-supervisor-highway-repairers-moa-2021-2026",
@@ -1316,7 +1509,10 @@
    "term": "1/23/2018 - 9/22/2021 (rate periods)",
    "evidence": "1/23/2018-1/22/2019 $42.60 ... 1/23/2019-2/22/2020 $43.56 ... 2/23/2020-9/22/2021 $44.98",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-sewage-treatment-worker-and-sstw-2018-2021"
+  ]
  },
  {
   "id": "dc9-l806-bridge-painters-moa-2021-2026",
@@ -1340,7 +1536,10 @@
    "term": "4/13/2018 - 11/12/2021 (rate periods)",
    "evidence": "4/13/2018 to 4/12/2019 4/13/2019 to 5/12/2020 5/13/2020 to 11/12/2021",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-bridge-painters-2018-2021"
+  ]
  },
  {
   "id": "dc9-l1969-glaziers-consent-determination-2021-2026",
@@ -1401,7 +1600,10 @@
    "term": "6/9/2017 - 1/8/2021 (rate periods)",
    "evidence": "6/9/2017 to 6/8/2018 $51.55 $57.33 6/9/2018 to 7/8/2019 $52.71 $58.62 7/9/2019 to 1/8/2021 $54.42 $60.53",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-bricklayer-2017-2021"
+  ]
  },
  {
   "id": "ibt-l237-cement-masons-consent-determination-2020-2025",
@@ -1439,7 +1641,10 @@
    "term": "12/13/2017 - 7/12/2021 (rate periods)",
    "evidence": "12/13/2017 to 12/12/2018 $31.51 $47.27 12/13/2018 to 1/12/2020 $32.22 $48.33 1/13/2020 to 7/12/2021 $33.27 $49.91",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-det-horseshoer-2017-2021"
+  ]
  },
  {
   "id": "ibt-l237-elevator-mechanics-consent-determination-2024-2029",
@@ -1490,7 +1695,10 @@
    "term": "12/13/2017 - 7/12/2021 (rate periods)",
    "evidence": "12/13/2017-12/12/2018 12/13/2018-1/12/2020 1/13/2020-7/12/2021",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-masons-helper-2017-2021"
+  ]
  },
  {
   "id": "ibt-l237-plasterers-consent-determination-2020-2025",
@@ -1527,7 +1735,10 @@
    "term": "3/18/2017 - 10/17/2020 (rate periods)",
    "evidence": "3/18/2017-3/17/2018 3/18/2018-4/17/2019 4/18/2019-10/17/2020",
    "page": 3
-  }
+  },
+  "lineage": [
+   "earlier-roofers-2017-2020"
+  ]
  },
  {
   "id": "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025",
@@ -1552,7 +1763,10 @@
    "term": "6/3/2016 - 1/2/2020",
    "evidence": "Local 151.U.O.E. and Local 246 SEilJ jointly, public employee organization on behalf of MOTOR GRADER OPERAT ORS ... 6/3/2016 to 6/2/2017 $113,722 ... 7/3/2018 to 1/2/2020 $120,060",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-2016-2020-motor-grader-operator-executed-agr"
+  ]
  },
  {
   "id": "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025",
@@ -1614,7 +1828,11 @@
    "term": "6/17/19 - 1/16/23",
    "evidence": "2019-2023 Memorandum of Agreement Communications Electrician Local 3, International Brotherhood of Electrical Workers and the City of New York 1. Term: 3 years and 7 months (43 months) 6/17/19-1/16/23",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-executed-communication-electrician-moa-2019-2023",
+   "earlier-communication-electrician-2010-2019"
+  ]
  },
  {
   "id": "l3-electricians-consent-determination-20232028",
@@ -1663,7 +1881,12 @@
    "term": "9/1/16 - 3/31/20",
    "evidence": "2016-2020 Memorandum of Agreement Engineer Stationary Engineer (Electric} & Senior Stationary <Electric) Local 3, International Brotherhood of Electrical Worken and the City of New York 1. Tu!m: 3 years and 7 months (43 months) 9/1/16 -3/31/20",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-executed-stationary-engineer-electric-2016-2020-moa",
+   "earlier-stationary-engineer-electric-2007-2016",
+   "earlier-senior-stationary-engineer-electric-2007-2016"
+  ]
  },
  {
   "id": "l3-supervisor-of-mechanics-consent-determination-2021-2026",
@@ -1736,7 +1959,10 @@
    "term": "7/1/2017 - 2/28/2021 (rate periods)",
    "evidence": "7/1/2017 - 6/30/2018 7/1/2018 - 7/31/2019 8/1/2019 - 2/28/2021",
    "page": 4
-  }
+  },
+  "lineage": [
+   "earlier-oiler-stationary-engineer-and-senior-stationary-engineer-2017-2021"
+  ]
  },
  {
   "id": "crane-operator-2021-2026",
@@ -1787,7 +2013,11 @@
    "term": "July 1, 2017 - January 31, 2021",
    "evidence": "2017-2021 Local 15 Welders Memorandum of Agreement I. Tenn July I, 2017 - January 31, 2021 3 years and 7 months (43months)",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-welder-l15-2017-2021",
+   "earlier-welder-2009-2017"
+  ]
  },
  {
   "id": "local-15-30-oilers-stationary-engineer-and-senior-stationary-engineer-consent-de",
@@ -1925,7 +2155,10 @@
    "evidence": "New York City District Council of Carpenters, UBOA (\"the Union\") in the tftles Ship Carpenter and Supervisor Carpenter, Dockbuilder and Supervisor Dockbuilder, and Rigger ... for the period July 1, 2008 through December 31, 2020 (\"the 2008-2020 Period\")",
    "page": 1,
    "note": "It runs through Dec. 31, 2020; this document's term begins Feb. 1, 2022. No agreement for the time between is published."
-  }
+  },
+  "lineage": [
+   "earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018"
+  ]
  },
  {
   "id": "ubcj-riggers-moa-2022-2027",
@@ -1950,7 +2183,10 @@
    "evidence": "New York City District Council of Carpenters, UBOA (\"the Union\") in the tftles Ship Carpenter and Supervisor Carpenter, Dockbuilder and Supervisor Dockbuilder, and Rigger ... for the period July 1, 2008 through December 31, 2020 (\"the 2008-2020 Period\")",
    "page": 1,
    "note": "It runs through Dec. 31, 2020; this document's term begins Feb. 1, 2022. No agreement for the time between is published."
-  }
+  },
+  "lineage": [
+   "earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018"
+  ]
  },
  {
   "id": "ubcj-ship-carpenter-moa-2022-2027",
@@ -1975,7 +2211,10 @@
    "evidence": "New York City District Council of Carpenters, UBOA (\"the Union\") in the tftles Ship Carpenter and Supervisor Carpenter, Dockbuilder and Supervisor Dockbuilder, and Rigger ... for the period July 1, 2008 through December 31, 2020 (\"the 2008-2020 Period\")",
    "page": 1,
    "note": "It runs through Dec. 31, 2020; this document's term begins Feb. 1, 2022. No agreement for the time between is published."
-  }
+  },
+  "lineage": [
+   "earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018"
+  ]
  },
  {
   "id": "ufa-moa-2017-2020",
@@ -1995,7 +2234,10 @@
    "label": "Uniformed firefighters underlying agreement, 2008-2010 (CBU 41)",
    "publisher": "NYC Office of Labor Relations",
    "verified": true
-  }
+  },
+  "lineage": [
+   "earlier-firefighters-executed-contract-2010-2017"
+  ]
  },
  {
   "id": "ufoa-fire-officers-2018-2021",
@@ -2085,7 +2327,10 @@
    "term": "May 1, 2018 to December 31, 2021",
    "evidence": "EXECUTED CONTRACT: DEPUTY SHERIFFS TERM: MAY t, 20 t 8 TO DECEMBER 3 t, 2021 ... NYC Deputy Sheriffs Association",
    "page": 1
-  }
+  },
+  "lineage": [
+   "earlier-deputy-sheriffs-2018-2021"
+  ]
  },
  {
   "id": "cuny-blue-collar-agreement-2021-2027",
@@ -2321,5 +2566,1947 @@
    "id": "usa-executed-contract-2022-2028",
    "note": "The full 2022-2028 executed contract for sanitation workers is in this database."
   }
+ },
+ {
+  "id": "earlier-20112019uniformsuperiorcoalition",
+  "label": "2011-2019 Uniform Superior Officers Coalition Economic Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/20112019uniformsuperiorcoalition.pdf",
+  "term_start": 2011,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "lba-10-5-2023-unit-bargaining-agreement",
+   "usca-unit-agreement-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "No gap: 84 months from Oct. 31, 2011 ends Oct. 31, 2018, the LBA expiration the 2018-2022 UOCEA cites. This coalition agreement carries only 'cost-related terms'; the LBA's separate 2011-2018 unit agreement is not published on OLR.",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the Predecessor Separate Unit Agreements shall be continued",
+  "chars": 13438
+ },
+ {
+  "id": "earlier-20112018-sba-moa",
+  "label": "2011-2018 Sergeants Benevolent Association Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/20112018-sba-moa.pdf",
+  "term_start": 2011,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "sba-unit-agreement-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the Predecessor Unit Agreement shall be continued",
+  "chars": 16380
+ },
+ {
+  "id": "earlier-uniformed-coalition-economic-agreement-2018-2022",
+  "label": "2018-2022 Uniformed Officers Coalition Economic Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uniformed-coalition-economic-agreement-2018-2022.pdf",
+  "term_start": 2020,
+  "term_end": 2023,
+  "era": "earlier",
+  "later_ids": [
+   "adwa-unit-agreement-2023-2028",
+   "cea-unit-agreement-2022-2027",
+   "lba-10-5-2023-unit-bargaining-agreement",
+   "uniformed-coalition-economic-agreement-2022-2027",
+   "usca-unit-agreement-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Computed end (Jan. 31, 2023) is four months before the May 31, 2023 expiration the 2022-2027 UOCEA gives for ADW/DWA. No published document shows the extension (the 2018-2022 UOCEA's Section 5 allows unit-bargaining term extensions). The ADW/DWA unit agreement for this round is not published on OLR; only this coalition agreement is.",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the Predecessor Separate Unit Agreements shall be continued",
+  "chars": 6384
+ },
+ {
+  "id": "earlier-cbu1199-nyc-hhc",
+  "label": "1199SEIU United Healthcare Workers East Memorandum of Agreement (June 19, 2014)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu1199-nyc-hhc.pdf",
+  "term_start": 2009,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "l1199-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends Aug. 4, 2018; the 2018-2022 MOA starts Sept. 10, 2018, leaving a gap of about five weeks that no published document explains.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 12953
+ },
+ {
+  "id": "earlier-cbu131-132-blue-collar-080806-to-061808",
+  "label": "2008-2010 Blue Collar Agreement (executed contract, Blue Collar 'A' and 'B', District Council 37)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu131-132-blue-collar-080806-to-061808.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l983-urban-park-rangers-moa-2021-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 83330
+ },
+ {
+  "id": "earlier-osa-school-security-2008-2017",
+  "label": "2008-2017 OSA School Security/Traffic Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-school-security-2008-2017.pdf",
+  "term_start": 2008,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "osa-school-security-traffic-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 20935
+ },
+ {
+  "id": "earlier-upoa-executed-contract-2009-2017",
+  "label": "2009-2017 Probation Officers Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/upoa-executed-contract-2009-2017.pdf",
+  "term_start": 2009,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "upoa-moa-2020-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 71300
+ },
+ {
+  "id": "earlier-environmental-police-officers-2010-2017",
+  "label": "2010-2017 Environmental Police Officer Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/environmental-police-officers-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "leeba-epo-moa-2017-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 104282
+ },
+ {
+  "id": "earlier-2010-2017-doctors-council-moa",
+  "label": "2010-2017 Memorandum of Agreement between Doctors Council SEIU, the City of New York and the NYC Health and Hospitals Corporation",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-doctors-council-moa.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "doctors-council-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 29456
+ },
+ {
+  "id": "earlier-cbu-dc37-nyc-moa-2010-2017",
+  "label": "2010-2017 Memorandum of Agreement, District Council 37 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu-dc37-nyc-moa-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Stated end 7/2/2017 vs next MOA start 9/26/2017; both terms float by unit ('or N months from the date of termination of the applicable existing Successor Separate Unit Agreement'), e.g. the 2010-2017 Blue Collar executed contract ran 3/3/2010-9/25/2017.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 10424
+ },
+ {
+  "id": "earlier-2010-2017-dc37-l-983-urban-park-rangers-moa",
+  "label": "2010-2017 Memorandum of Agreement, District Council 37 and the City of New York, Urban Park Ranger Bargaining Unit",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-dc37-l-983-urban-park-rangers-moa.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l983-urban-park-rangers-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends 7/2/2017 but the 2017-2021 UPR MOA starts 9/26/2017; neither document explains the 7/3/2017-9/25/2017 interval (the DC 37 pattern MOAs run 'or N months from the date of termination of the applicable existing Successor Separate Unit Agreement', and the 2010-2017 Blue Collar contract ran to 9/25/2017, so the stated 7/2/17 end may simply not be the operative date).",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "shall be continued except as modified",
+  "chars": 18738
+ },
+ {
+  "id": "earlier-2010-2017-osa-nyc-moa",
+  "label": "2010-2017 OSA Staff Analyst Memorandum of Agreement (Organization of Staff Analysts and the City of New York)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-OSA-NYC-MOA.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "osa-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 28561
+ },
+ {
+  "id": "earlier-2010-2018-electrical-inspectors",
+  "label": "2010-2018 Electrical Inspectors Memorandum of Agreement (IBEW Local 3)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2018-Electrical%20Inspectors.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "l3-electrical-inspectors-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 7651
+ },
+ {
+  "id": "earlier-cbu306-iatse-2010-2018",
+  "label": "2010-2018 IATSE Memorandum of Agreement (Local 306)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu306-iatse-2010-2018.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "local-306-audiovisual-aide-technicians-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 8423
+ },
+ {
+  "id": "earlier-marine-consolidated-titles-2010-2017",
+  "label": "2010-2018 Marine Titles Memorandum of Agreement (International Organization of Masters, Mates and Pilots Atlantic Maritime Group, ILA)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/marine-consolidated-titles-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "mmp-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 7519
+ },
+ {
+  "id": "earlier-cbu237-moa-2010-2018",
+  "label": "2010-2018 Memorandum of Agreement, Local 237 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu237-moa-2010-2018.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "ibt-l237-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 29536
+ },
+ {
+  "id": "earlier-blacksmith-mou-2010-2021",
+  "label": "2010-2021 Memorandum of Agreement, Local Lodge No. 5 and the City of New York (Blacksmith unit)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/blacksmith-mou-2010-2021.pdf",
+  "term_start": 2010,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "blacksmith-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 4004
+ },
+ {
+  "id": "earlier-metal-work-mechanic-moa-2010-2021",
+  "label": "2010-2021 [body: 2010-2020] Memorandum of Agreement, Local Lodge No. 5 and the City of New York, Metal Work Mechanics",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/metal-work-mechanic-moa-2010-2021.pdf",
+  "term_start": 2010,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "metal-work-mechanic-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 3597
+ },
+ {
+  "id": "earlier-cbu300-2011-2018",
+  "label": "2011-2018 Memorandum of Agreement, Local 300, SEIU and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu300-2011-2018.pdf",
+  "term_start": 2011,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "local-300-seiu-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 13947
+ },
+ {
+  "id": "earlier-pba-nyc-moa-2012-2017",
+  "label": "2012-2017 Memorandum of Understanding Between The City of New York and The Patrolmen's Benevolent Association",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/pba-nyc-moa-2012-2017.pdf",
+  "term_start": 2012,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "pba-mou-2017-2025"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 20028
+ },
+ {
+  "id": "earlier-executed-stationary-engineer-electric-2016-2020-moa",
+  "label": "2016-2020 Memorandum of Agreement, Stationary Engineer (Electric) & Senior Stationary Engineer (Electric), Local 3, International Brotherhood of Electrical Workers and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-stationary-engineer-electric-%202016-2020-MOA.pdf",
+  "term_start": 2016,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "l3-stationary-engineer-electric-moa-20202025"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor consent determinations and related agreements shall be continued",
+  "chars": 5551
+ },
+ {
+  "id": "earlier-moa-2017-2020-upoa",
+  "label": "2017-2020 Memorandum of Agreement, United Probation Officers Association and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/moa-2017-2020-upoa.pdf",
+  "term_start": 2017,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "upoa-moa-2020-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 2895
+ },
+ {
+  "id": "earlier-parking-control-specialist-moa-final-executed",
+  "label": "2017-2020 [sic] Memorandum of Agreement, City Employees Local 237, IBT and the City of New York, Parking Control Specialists",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/parking-control-specialist-moa-final-executed.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "local-237-parking-control-specialists-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 3044
+ },
+ {
+  "id": "earlier-dc37-traffic-enforcement-agent-lvl-3-4-moa",
+  "label": "2017-2020 [sic] Memorandum of Agreement, District Council 37, Local 983 and the City of New York, Traffic Enforcement Agents, Levels 3 and 4",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc37-traffic-enforcement-agent-lvl-%203-4-moa.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 3782
+ },
+ {
+  "id": "earlier-csba-2017-2021-final-agreement-fully-executed",
+  "label": "2017-2021 Attorneys Agreement (Local 237 IBT and its affiliate the Civil Service Bar Association)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/csba-2017-2021-final-agreement-fully-executed.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "csba-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 107559
+ },
+ {
+  "id": "earlier-welder-l15-2017-2021",
+  "label": "2017-2021 Local 15 Welders Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/welder-l15-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "local-15-welders-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor Consent Determination shall be continued",
+  "chars": 16527
+ },
+ {
+  "id": "earlier-osa-moa-2017-2021",
+  "label": "2017-2021 Memorandum of Agreement (Organization of Staff Analysts)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-moa-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "osa-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "Except as modified by this",
+  "chars": 42969
+ },
+ {
+  "id": "earlier-executed-2017-2021-building-inspector-moa",
+  "label": "2017-2021 Memorandum of Agreement, Allied Building Inspectors, Local 211, IUOE and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-2017-2021-building-inspector-moa.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "local-211-building-inspectors-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor collective bargaining agreement, MOA, and related agreements shall be continued",
+  "chars": 3238
+ },
+ {
+  "id": "earlier-cwa-1183-mou-03-12-2019",
+  "label": "2017-2021 Memorandum of Agreement, Communication Workers of America, Local 1183 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-1183-mou-03-12-2019.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-1183-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 29980
+ },
+ {
+  "id": "earlier-cwa-local-1181-moa-11-7-19-fully-executed-2017-2021",
+  "label": "2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1181 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-local-1181-moa-11-7-19-fully-executed-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-l1181-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 3621
+ },
+ {
+  "id": "earlier-cwa-local-1182-moa-11-7-19-fully-executed-2017-2021",
+  "label": "2017-2021 Memorandum of Agreement, Communications Workers of America, Local 1182 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cwa-local-1182-moa-11-7-19-fully-executed-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-l1182-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 4270
+ },
+ {
+  "id": "earlier-dc-37mou-2018",
+  "label": "2017-2021 Memorandum of Agreement, District Council 37 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc-37mou-2018.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreements shall be continued",
+  "chars": 15909
+ },
+ {
+  "id": "earlier-urban-park-ranger-moa-2017-2021",
+  "label": "2017-2021 Memorandum of Agreement, District Council 37, Local 983 Urban Park Rangers and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/urban-park-ranger-moa-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l983-urban-park-rangers-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor Collective Bargaining Agreement, Memorandum of Agreement, and related agreements shall be continued",
+  "chars": 2936
+ },
+ {
+  "id": "earlier-doctors-council-nyc-moa-2017-2021",
+  "label": "2017-2021 Memorandum of Agreement, Doctors Council, the City of New York and NYC Health + Hospitals",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/doctors-council-nyc-moa-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "doctors-council-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 18259
+ },
+ {
+  "id": "earlier-osa-school-security-and-traffic-moa-2017-2022",
+  "label": "2017-2022 School Security/Traffic Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/osa-school-security-and-traffic-moa-2017-2022.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "osa-school-security-traffic-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreements shall be continued",
+  "chars": 3863
+ },
+ {
+  "id": "earlier-executed-2018-2021-cwa-1180-moa",
+  "label": "2018-2021 Memorandum of Agreement, Communications Workers of America, Local 1180 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-2018-2021-cwa-1180-moa.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-1180-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "shall be continued except as modified",
+  "chars": 9014
+ },
+ {
+  "id": "earlier-local-3-electrical-inspector-executed-moa-2018-2021",
+  "label": "2018-2021 Memorandum of Agreement, Inspectors (Electrical) Local 3, International Brotherhood of Electrical Workers and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-3-electrical-inspector-executed-moa-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "l3-electrical-inspectors-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends 10/30/2021; the target starts 3/29/2022. No agreement for 10/31/2021-3/28/2022 is published and neither document explains the gap.",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor collective bargaining agreement, MOA, and related agreements shall be continued",
+  "chars": 2564
+ },
+ {
+  "id": "earlier-executed-marine-titles-moa",
+  "label": "2018-2021 Memorandum of Agreement, International Organization of Masters, Mates & Pilots and the City of New York (Marine Titles)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-marine-titles-moa.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "mmp-moa-2021-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor Collective Bargaining Agreement, MOA, and related agreements shall be continued",
+  "chars": 3099
+ },
+ {
+  "id": "earlier-sba-moa-2018-2021",
+  "label": "2018-2021 Sergeants Benevolent Association Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sba-moa-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "sba-unit-agreement-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the Predecessor Unit Agreement shall be continued",
+  "chars": 22476
+ },
+ {
+  "id": "earlier-highway-and-sewer-inspectors-moa-2018-2022",
+  "label": "2018-2022 Highways and Sewers Inspector Memorandum of Agreement, Law Enforcement Employees Benevolent Association and City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/highway-and-sewer-inspectors-moa-2018-2022.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "highway-and-sewer-inspectors-moa-2022-2028"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor collective bargaining agreement, MOA, and related agreements shall be continued",
+  "chars": 4870
+ },
+ {
+  "id": "earlier-1199-nyc-hhc-2018-2022-moa",
+  "label": "2018-2022 Memorandum of Agreement, 1199SEIU, the City of New York and NYC Health + Hospitals",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/1199-nyc-hhc-2018-2022-moa.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "l1199-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreements shall be continued",
+  "chars": 18943
+ },
+ {
+  "id": "earlier-executed-latse-local-306-moa",
+  "label": "2018-2022 Memorandum of Agreement, International Alliance of Theatrical Stage Employees, Local 306 and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-latse-local-306-moa.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "local-306-audiovisual-aide-technicians-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor Collective Bargaining Agreement, MOA, and related agreements shall be continued",
+  "chars": 3107
+ },
+ {
+  "id": "earlier-local-237-executed-2018-2022-moa",
+  "label": "2018-2022 Memorandum of Agreement, Local 237, International Brotherhood of Teamsters and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-237-executed-2018-2022-moa.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "ibt-l237-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor collective bargaining agreement and related agreements shall be continued",
+  "chars": 5038
+ },
+ {
+  "id": "earlier-local-300-moa-2018-2022",
+  "label": "2018-2022 Memorandum of Agreement, Local 300, SEIU and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/local-300-moa-2018-2022.pdf",
+  "term_start": 2018,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "local-300-seiu-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor separate unit agreement shall be continued",
+  "chars": 6637
+ },
+ {
+  "id": "earlier-dea-moa-2019-2022",
+  "label": "2019-2022 Detectives' Endowment Association Memorandum of Agreement",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dea-moa-2019-2022.pdf",
+  "term_start": 2019,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "dea-unit-agreement-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the Predecessor Unit Agreement shall be continued",
+  "chars": 26359
+ },
+ {
+  "id": "earlier-executed-communication-electrician-moa-2019-2023",
+  "label": "2019-2023 Memorandum of Agreement, Communications Electrician, Local 3, International Brotherhood of Electrical Workers and the City of New York",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/executed-communication-electrician-moa-2019-2023.pdf",
+  "term_start": 2019,
+  "term_end": 2023,
+  "era": "earlier",
+  "later_ids": [
+   "l3-communication-electricians-moa-20232028"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": true,
+  "amends_evidence": "terms of the predecessor Consent Determination and related agreements shall be continued",
+  "chars": 3100
+ },
+ {
+  "id": "earlier-cbu97-assistant-buyers-et-al-022309-to-022211",
+  "label": "Assistant Buyer, et al. 2009-2011 Agreement (executed contract, CBU 97, Local 300 SEIU)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu97-assistant-buyers-et-al-%20022309-to-022211",
+  "term_start": 2009,
+  "term_end": 2011,
+  "era": "earlier",
+  "later_ids": [
+   "local-300-seiu-moa-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 59896
+ },
+ {
+  "id": "earlier-asst-deputy-wardens-deputy-wardens-07-01-2012-01-31-2020",
+  "label": "Assistant Deputy Wardens/Deputy Wardens 2012-2020 (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/asst-deputy-wardens-deputy-wardens-07-01-2012%20-%2001-31-2020.pdf",
+  "term_start": 2012,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "adwa-unit-agreement-2023-2028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 83403
+ },
+ {
+  "id": "earlier-cbu39-audio-visual-aide-technicians-101508-to-101410",
+  "label": "Audio-Visual Aide Technicians, et al. 2008-2010 Agreement (executed contract, CBU 39)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu39-audio-visual-aide-technicians-101508-to-101410.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "local-306-audiovisual-aide-technicians-moa-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 53957
+ },
+ {
+  "id": "earlier-automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-20",
+  "label": "Automotive Service Worker Agreement (executed contract, CBU 96, Local 246 SEIU)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/automotive-service-worker-cbu-96-executed-contract-12-07-2017-07-06-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "local-246-automotive-service-workers-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 79786
+ },
+ {
+  "id": "earlier-board-of-elections-2010-2017",
+  "label": "Board of Elections Agreement 2010-2017 (executed contract, CWA Local 1183)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/board-of-elections-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-1183-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 121318
+ },
+ {
+  "id": "earlier-2010-2017-building-construction-inspectors-executed-contract",
+  "label": "Building & Construction Inspectors Agreement (executed contract, Local 211 IUOE)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017-building-construction-inspectors-executed-contract.pdf",
+  "term_start": 2009,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "local-211-building-inspectors-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 93113
+ },
+ {
+  "id": "earlier-2012-2019policecaptains-executedcontract4-1-2012-4-30-2019",
+  "label": "Captains' Endowment Association 2012-2019 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2012-2019policecaptains-executedcontract4-1-2012-4-30-2019.pdf",
+  "term_start": 2012,
+  "term_end": 2019,
+  "era": "earlier",
+  "later_ids": [
+   "cea-unit-agreement-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 77986
+ },
+ {
+  "id": "earlier-bricklayer-2017-2021",
+  "label": "Consent Determination, Bricklayer (92205) and Supervisor Bricklayer (92271), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/bricklayer-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "ibt-l237-bricklayers-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 45978
+ },
+ {
+  "id": "earlier-bridge-painters-2018-2021",
+  "label": "Consent Determination, Bridge Painter (91805) and Supervisor Bridge Painter (91871), District Council 9, Local Union 806, Structural Steel and Bridge Painters of Greater New York (filed July 27, 2022)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/bridge-painters-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc9-l806-bridge-painters-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": true,
+  "amends_evidence": "Except as modified by this",
+  "chars": 49748
+ },
+ {
+  "id": "earlier-clock-repairer-2010-2017",
+  "label": "Consent Determination, Clock Repairer (90707) and Supervisor Clock Repairer (90800), District Council 37, AFSCME, AFL-CIO",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/Clock-Repairer-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-clock-repairer-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends October 2, 2017; the 2017-2021 consent determination starts December 26, 2017. No published document covers October 3 - December 25, 2017.",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 32235
+ },
+ {
+  "id": "earlier-clock-repairers-2017-2021",
+  "label": "Consent Determination, Clock Repairer (90707) and Supervisor Clock Repairer (90800), District Council 37, AFSCME, AFL-CIO (filed July 21, 2022)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/clock-repairers-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-clock-repairer-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 14654
+ },
+ {
+  "id": "earlier-communication-electrician-2010-2019",
+  "label": "Consent Determination, Communication Electrician (91762), Supervisor Communication Electrician (91763), Communication Electrician's Helper (91761) and Senior Supervisor Communication Electrician (91764), Local #3, I.B.E.W.",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/communication-electrician-2010-2019.pdf",
+  "term_start": 2010,
+  "term_end": 2019,
+  "era": "earlier",
+  "later_ids": [
+   "l3-communication-electricians-moa-20232028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 38932
+ },
+ {
+  "id": "earlier-compositor-2010-2017",
+  "label": "Consent Determination, Compositor (JOB) (92110), District Council 37, AFSCME, AFL-CIO",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/Compositor-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-compositors-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends October 2, 2017; the 2017-2021 consent determination starts December 26, 2017. No published document covers October 3 - December 25, 2017.",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 36936
+ },
+ {
+  "id": "earlier-compositor-2017-2021",
+  "label": "Consent Determination, Compositor (JOB) (92110), District Council 37, AFSCME, AFL-CIO (filed July 21, 2022)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/compositor-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-compositors-moa-2021-2026"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 14627
+ },
+ {
+  "id": "earlier-construction-laborers-groupc-laborers-2017-2021",
+  "label": "Consent Determination, Construction Laborers (90756) and Group C+ Laborers, Local 376, District Council 37 (filed February 6, 2020)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/construction-laborers-groupc-laborers-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l376-construction-laborers-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 51007
+ },
+ {
+  "id": "earlier-det-horseshoer-2017-2021",
+  "label": "Consent Determination, Horseshoer (92320), City Employees Union, Local 237, International Brotherhood of Teamsters (filed May 29, 2019)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/det-horseshoer-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "local-237-horseshoers-fully-executed-moa-102323-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 47903
+ },
+ {
+  "id": "earlier-masons-helper-2017-2021",
+  "label": "Consent Determination, Mason's Helper (92225), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/masons-helper-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "ibt-l237-masons-helpers-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 45659
+ },
+ {
+  "id": "earlier-oiler-stationary-engineer-and-senior-stationary-engineer-2017-2021",
+  "label": "Consent Determination, Oiler (91628), Plant Maintainer/Oiler (91649), Stationary Engineer (Steam) (91644) and Senior Stationary Engineer (Steam) (91638), Local #30, I.U.O.E. and Local #15, I.U.O.E. (filed May 21, 2020)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/oiler-stationary-engineer-and-senior-stationary-engineer-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "oilers-stationary-eng-steam-sr-stationary-engineer-steam-fully-executed-moa-2021"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": true,
+  "amends_evidence": "Except as modified by this",
+  "chars": 56825
+ },
+ {
+  "id": "earlier-dc37-printing-press-operator-2017-2021",
+  "label": "Consent Determination, Printing Press Operator (92123), District Council 37, AFSCME, AFL-CIO (filed May 11, 2020)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc37-printing-press-operator-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-printing-press-operators-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 46711
+ },
+ {
+  "id": "earlier-dc37-radio-repair-mechanic-2017-2021",
+  "label": "Consent Determination, Radio Repair Mechanic (90733), District Council 37, AFSCME, AFL-CIO",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/dc37-radio-repair-mechanic-2017-2021.pdf",
+  "term_start": 2017,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc37-l1087-radio-repair-mechanics-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 45273
+ },
+ {
+  "id": "earlier-roofers-2017-2020",
+  "label": "Consent Determination, Roofer (90735) and Supervisor Roofer (90775), City Employees Union, Local 237, International Brotherhood of Teamsters (filed December 28, 2021)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/roofers-2017-2020.pdf",
+  "term_start": 2017,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "ibt-l237-roofers-moa-2020-2025"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 49063
+ },
+ {
+  "id": "earlier-senior-stationary-engineer-electric-2007-2016",
+  "label": "Consent Determination, Senior Stationary Engineer (Electric) (91639) and Senior Stationary Engineer (Electric) (Outside NYC) (91639), Local Union No. 3, International Brotherhood of Electrical Workers",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/senior-stationary-engineer-electric-2007-2016.pdf",
+  "term_start": 2007,
+  "term_end": 2016,
+  "era": "earlier",
+  "later_ids": [
+   "l3-stationary-engineer-electric-moa-20202025"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": true,
+  "amends_evidence": "Except as modified by this",
+  "chars": 42987
+ },
+ {
+  "id": "earlier-sewage-treatment-worker-and-sstw-2018-2021",
+  "label": "Consent Determination, Sewage Treatment Worker (90739) and Senior Sewage Treatment Worker (90767), Local 1320 of District Council 37, AFSCME, AFL-CIO (filed May 20, 2019)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sewage-treatment-worker-and-sstw-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "dc-37-local-1320-sewage-treatment-workers-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 59170
+ },
+ {
+  "id": "earlier-stationary-engineer-electric-2007-2016",
+  "label": "Consent Determination, Stationary Engineer (Electric) (91645), International Brotherhood of Electrical Workers, Local 3 (filed August 10, 2017)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/stationary-engineer-electric-2007-2016.pdf",
+  "term_start": 2007,
+  "term_end": 2016,
+  "era": "earlier",
+  "later_ids": [
+   "l3-stationary-engineer-electric-moa-20202025"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": true,
+  "amends_evidence": "Except as modified by this",
+  "chars": 42681
+ },
+ {
+  "id": "earlier-welder-2009-2017",
+  "label": "Consent Determination, Welder (92355) and Welder (Electric) (92356), New York City Local #15, I.U.O.E., AFL-CIO",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/welder-2009-2017.pdf",
+  "term_start": 2009,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "local-15-welders-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 33472
+ },
+ {
+  "id": "earlier-correction-captains-08-16-2019-11-29-2022",
+  "label": "Correction Captains 2019-2022 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2017-2021/correction_captains_08-16-2019-11-29-2022.pdf",
+  "term_start": 2019,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "cca-unit-agreement-2022-2028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 75825
+ },
+ {
+  "id": "earlier-coba-executed-contract-2019-2022",
+  "label": "Correction Officers 2019-2022 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/coba-executed-contract-2019-2022.pdf",
+  "term_start": 2019,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "coba-unit-agreement-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 78311
+ },
+ {
+  "id": "earlier-deputy-sheriffs-2018-2021",
+  "label": "Deputy Sheriffs Association 2018-2021 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/deputy-sheriffs-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "deputy-sheriffs-moa-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 129950
+ },
+ {
+  "id": "earlier-detective-investigators-06-19-2019-01-18-2023",
+  "label": "Detective Investigators 2019-2023 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/detective-investigators-06-19-2019-01-18-2023.pdf",
+  "term_start": 2019,
+  "term_end": 2023,
+  "era": "earlier",
+  "later_ids": [
+   "dia-moa-2023-2028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 119451
+ },
+ {
+  "id": "earlier-detectives-04-01-2012-03-31-2019",
+  "label": "Detectives' Endowment Association 2012-2019 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/detectives-04-01-2012-03-31-2019.pdf",
+  "term_start": 2012,
+  "term_end": 2019,
+  "era": "earlier",
+  "later_ids": [
+   "dea-unit-agreement-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 91433
+ },
+ {
+  "id": "earlier-cbu45-electrical-inspectors-033108-to-033010",
+  "label": "Electrical Inspectors et al. 2008-2010 Agreement (executed contract, CBU 45)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu45-electrical-inspectors-033108-to-033010.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "l3-electrical-inspectors-moa-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 48695
+ },
+ {
+  "id": "earlier-cbu61-ferryboat-titles-licensed-110708-to-110610",
+  "label": "Ferryboat Titles (Licensed) 2008-2010 Agreement (executed contract, CBU 61, MEBA)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu61-ferryboat-titles-licensed-110708-to-110610.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "meba-moa-2010-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 70899
+ },
+ {
+  "id": "earlier-fire-alarm-dispatchers-2018-2021",
+  "label": "Fire Alarm Dispatchers 2018-2021 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/fire-alarm-dispatchers-2018-2021.pdf",
+  "term_start": 2018,
+  "term_end": 2021,
+  "era": "earlier",
+  "later_ids": [
+   "fadba-moa-2021-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 131865
+ },
+ {
+  "id": "earlier-firefighters-executed-contract-2010-2017",
+  "label": "Firefighters 2010-2017 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/firefighters-executed-contract-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "ufa-moa-2017-2020"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 139353
+ },
+ {
+  "id": "earlier-2016-2020-motor-grader-operator-executed-agr",
+  "label": "Indenture between The City of New York and Local 15 I.U.O.E. and Local 246 SEIU jointly, on behalf of Motor Grader Operators",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2016-2020-motor-grader-operator-executed-agr.pdf",
+  "term_start": 2016,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 51978
+ },
+ {
+  "id": "earlier-inspectors-highways-sewers-executed-contract-2010-2018",
+  "label": "Inspectors (Highways & Sewers), et al. 2010-2018 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/inspectors-highways-sewers-executed-contract-2010-2018.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "highway-and-sewer-inspectors-moa-2022-2028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 58097
+ },
+ {
+  "id": "earlier-2010-2012-pba-nyc-impasse-award",
+  "label": "Interest Arbitration Opinion and Award, The City of New York and The Patrolmen's Benevolent Association of the City of New York, Inc. (PERB Case No. IA-2014-009; M2014-027), dated November 13, 2015",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2012-PBA-NYC-Impasse-Award.pdf",
+  "term_start": 2010,
+  "term_end": 2012,
+  "era": "earlier",
+  "later_ids": [
+   "pba-mou-2017-2025"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "The award amends specific provisions (wages, parking, home confinement, recoupment, vacation) of 'the full-text collective bargaining agreement' and leaves the rest in place.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 117499
+ },
+ {
+  "id": "earlier-cbu59-police-lieutenants-benevolent-association-110109-to-103111",
+  "label": "Lieutenants' Benevolent Association 2009-2011 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu59-police-lieutenants-benevolent-association-110109-to-103111.pdf",
+  "term_start": 2009,
+  "term_end": 2011,
+  "era": "earlier",
+  "later_ids": [
+   "lba-10-5-2023-unit-bargaining-agreement"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 76246
+ },
+ {
+  "id": "earlier-cbu111-marine-consolidated-titles-042708-to-042610",
+  "label": "Local 333 Marine (Consolidated) Titles 2008-2010 Agreement (executed contract, CBU 111)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu111-marine-consolidated-titles-042708-to-042610.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "mmp-moa-2021-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 107640
+ },
+ {
+  "id": "earlier-cbu181-metal-work-mechanics-030308-to-030210",
+  "label": "Local Lodge No. 5 2008-2010 Metal Work Mechanic Agreement (executed contract, CBU 181)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu181-metal-work-mechanics-030308-to-030210.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "metal-work-mechanic-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 32879
+ },
+ {
+  "id": "earlier-2010-2019-csa-moa-1",
+  "label": "Memorandum of Agreement, Board of Education of the City School District of the City of New York and the Council of Supervisors and Administrators of the City of New York (December 5, 2014) [CSA MOA 1, 2010-2019]",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2019-csa-moa-1.pdf",
+  "term_start": 2010,
+  "term_end": 2019,
+  "era": "earlier",
+  "later_ids": [
+   "csa-moa-2023-2028-amended-appendix-a"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends 4/20/2019, but the 2019-2023 MOA says the predecessor expired April 22, 2019. The two-day difference is unexplained in published documents.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 64500
+ },
+ {
+  "id": "earlier-uft-moa-2018-2019",
+  "label": "Memorandum of Agreement, Board of Education of the City School District of the City of New York and the United Federation of Teachers, Local 2, AFT, AFL-CIO (October 11, 2018)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uft-moa-2018-2019.pdf",
+  "term_start": 2019,
+  "term_end": 2022,
+  "era": "earlier",
+  "later_ids": [
+   "uft-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 171367
+ },
+ {
+  "id": "earlier-principal-csa-moa-2019-2023",
+  "label": "Memorandum of Agreement, Council of School Supervisors and Administrators of the City of New York and the Board of Education of the City School District of the City of New York (2019-2023)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/principal-csa-moa-2019-2023.pdf",
+  "term_start": 2019,
+  "term_end": 2023,
+  "era": "earlier",
+  "later_ids": [
+   "csa-moa-2023-2028-amended-appendix-a"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 41715
+ },
+ {
+  "id": "earlier-uft-paid-parental-leave-agreement-2018",
+  "label": "Parental Leave (UFT-DOE/City agreement, June 2018)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/uft-paid-parental-leave-agreement-2018.pdf",
+  "term_start": null,
+  "term_end": null,
+  "era": "earlier",
+  "later_ids": [
+   "uft-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Amends the term of the 2009-2018 agreements rather than starting a new one. Its parental leave program remains in force.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 32048
+ },
+ {
+  "id": "earlier-cbu79-police-patrolmens-benevolent-association-080106-to-073110",
+  "label": "Patrolmen's Benevolent Association 2006-2010 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu79-police-patrolmens-benevolent-association-080106-to-073110.pdf",
+  "term_start": 2006,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "pba-mou-2017-2025"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 78168
+ },
+ {
+  "id": "earlier-cwa-local-1180-executed-contract-10-6-2010-5-5-2018",
+  "label": "Principal Administrative Associates, et al. Agreement (executed contract, CWA Local 1180)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/2010-2017/cwa_local_1180_executed_contract_10-6-2010-5-5-2018.pdf",
+  "term_start": 2010,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-1180-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 139264
+ },
+ {
+  "id": "earlier-sanitation-officers-07-02-2019-06-24-2023",
+  "label": "Sanitation Officers 2019- 2023 (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/sanitation-officers-07-02-2019-06-24-2023.pdf",
+  "term_start": 2019,
+  "term_end": 2023,
+  "era": "earlier",
+  "later_ids": [
+   "soa-unit-agreement-2023-2028"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": true,
+  "amends_evidence": "except as modified by this",
+  "chars": 116287
+ },
+ {
+  "id": "earlier-school-custodian-engineers-08122016-07312021",
+  "label": "School Custodian Engineers Collective Bargaining Agreement (executed contract, Local 891 IUOE)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/school-custodian-engineers-08122016-07312021.pdf",
+  "term_start": 2016,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "local-891-school-custodians"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 238394
+ },
+ {
+  "id": "earlier-cbu183-school-security-traffic-080102-to-121208",
+  "label": "School Security/Traffic Agreement, August 1, 2002 to December 12, 2008 (executed contract, CBU 183, Organization of Staff Analysts)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu183-school-security-traffic-080102-to-121208.pdf",
+  "term_start": 2002,
+  "term_end": 2008,
+  "era": "earlier",
+  "later_ids": [
+   "osa-school-security-traffic-moa-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 54364
+ },
+ {
+  "id": "earlier-cbu91-police-sergeants-benevolent-association-060105-to-082911",
+  "label": "Sergeants' Benevolent Association June 1, 2005 - August 29, 2011 Agreement (executed contract)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu91-police-sergeants-benevolent-association%20-060105-to-082911.pdf",
+  "term_start": 2005,
+  "term_end": 2011,
+  "era": "earlier",
+  "later_ids": [
+   "sba-unit-agreement-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 89710
+ },
+ {
+  "id": "earlier-ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018",
+  "label": "Ship Carpenters, Supervisor Ship Carpenters, Dockbuilders, Supervisor Dockbuilders, and Riggers Memorandum of Agreement February 1, 2018",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/ship-carpenters-supervisor-ship-carpenters-dockbuilders-moa-feb-2018.pdf",
+  "term_start": 2008,
+  "term_end": 2020,
+  "era": "earlier",
+  "later_ids": [
+   "ubcj-dockbuilders-moa-2022-2027",
+   "ubcj-riggers-moa-2022-2027",
+   "ubcj-ship-carpenter-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "Ends December 31, 2020; the 2022-2027 MOA starts February 1, 2022. No published document covers January 1, 2021 - January 31, 2022.",
+  "doc_type": "consent-determination",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 11441
+ },
+ {
+  "id": "earlier-cbu180-staff-analysts-et-al-082508-to-082410",
+  "label": "Staff Analysts, et al. Agreement, August 25, 2008 - August 24, 2010 (executed contract, CBU 180)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu180-staff-analysts-et-al-082508-to-082410.pdf",
+  "term_start": 2008,
+  "term_end": 2010,
+  "era": "earlier",
+  "later_ids": [
+   "osa-moa-2021-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 77950
+ },
+ {
+  "id": "earlier-traffic-enforcement-agent-2010-2017",
+  "label": "Traffic Enforcement Unit executed contract (2010-2017 LL 56 ATEA and TEA Agreement CWA, L. 1181 and 1182 and DC 37, L. 983; 2010-2018 LL 56 PCS Agreement IBT, L. 237)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/traffic-enforcement-agent-2010-2017.pdf",
+  "term_start": 2010,
+  "term_end": 2017,
+  "era": "earlier",
+  "later_ids": [
+   "cwa-l1181-moa-2021-2027",
+   "cwa-l1182-moa-2021-2027",
+   "dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027",
+   "local-237-parking-control-specialists-moa-2021-2026"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 204434
+ },
+ {
+  "id": "earlier-cbu-uft-moa-042914",
+  "label": "UFT - NYC Memorandum of Agreement, 2009-2018 (three-page term sheet dated 4/29/14)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu-uft-moa-042914.pdf",
+  "term_start": 2009,
+  "term_end": 2018,
+  "era": "earlier",
+  "later_ids": [
+   "uft-moa-2022-2027"
+  ],
+  "complete": false,
+  "publisher": "NYC Office of Labor Relations",
+  "gap_note": "10/31/18 plus the PPL extension (2 months 13 days) gives about Jan. 13, 2019, not the Feb. 13, 2019 expiration the 2019-2022 MOA cites. The one-month difference is unexplained in published documents; this three-page sheet looks like a term summary, not the final executed MOA.",
+  "doc_type": "moa",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 4774
+ },
+ {
+  "id": "earlier-cbu100-sanitation-chiefs-re-opner-101007-to-100911",
+  "label": "Uniformed Sanitation Chiefs Association 2007-2011 (executed contract, re-opener)",
+  "section": "Earlier agreement published by the Office of Labor Relations",
+  "source": "olr-archive",
+  "url": "https://www.nyc.gov/assets/olr/downloads/pdf/collectivebargaining/cbu100-sanitation-chiefs-re-opner-101007-to-100911.pdf",
+  "term_start": 2007,
+  "term_end": 2011,
+  "era": "earlier",
+  "later_ids": [
+   "usca-unit-agreement-2022-2027"
+  ],
+  "complete": true,
+  "publisher": "NYC Office of Labor Relations",
+  "doc_type": "full-agreement",
+  "amends_predecessor": false,
+  "amends_evidence": null,
+  "chars": 41030
  }
 ]

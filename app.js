@@ -47,6 +47,7 @@
     missingByContract: {},
     unions: { sectors: [], continued_by: {} },
     unionByContract: {},
+    includeEarlier: true,
     wagesByContract: {},
     index: null,
     view: "results",
@@ -110,11 +111,17 @@
   async function init() {
     let manifest = {};
     try { manifest = await loadJSON("data/manifest.json"); } catch (_) {}
-    if (manifest.generated) $("#data-stamp").textContent = `Corpus generated ${manifest.generated}. ${manifest.contracts || ""} contracts, ${manifest.clauses || ""} clauses, ${manifest.ocr_pages || ""} OCR'd pages.`;
+    if (manifest.generated) $("#data-stamp").textContent = `Corpus generated ${manifest.generated}. ${manifest.contracts || ""} current documents${manifest.earlier_documents ? ` and ${manifest.earlier_documents} earlier agreements` : ""}, ${manifest.clauses || ""} clauses, ${manifest.ocr_pages || ""} OCR'd pages.`;
 
-    state.contracts = await loadJSON("data/contracts.json");
-    state.contractById = Object.fromEntries(state.contracts.map(c => [c.id, c]));
-    state.clauses = await loadJSON("data/clauses.json");
+    // Earlier agreements (era "earlier") are older documents still partly in
+    // force. They are searchable but kept apart from the current documents and
+    // flagged wherever they appear.
+    state.allContracts = await loadJSON("data/contracts.json");
+    state.contractById = Object.fromEntries(state.allContracts.map(c => [c.id, c]));
+    state.contracts = state.allContracts.filter(c => c.era !== "earlier");
+    state.earlierDocs = state.allContracts.filter(c => c.era === "earlier");
+    state.allClauses = await loadJSON("data/clauses.json");
+    state.clauses = state.allClauses;
     try {
       state.units = await loadJSON("data/units.json");
       state.unitByContract = Object.fromEntries(state.units.map(u => [u.contract_id, u]));
@@ -146,7 +153,8 @@
 
     // Search is an exact scan over every clause (see compileQuery); keep a
     // combined heading + text string per clause so each query scans once.
-    state.clauses.forEach(c => { c._hay = (c.heading || "") + "\n" + (c.heading_raw || "") + "\n" + (c.text || ""); });
+    state.allClauses.forEach(c => { c._hay = (c.heading || "") + "\n" + (c.heading_raw || "") + "\n" + (c.text || ""); });
+    setIncludeEarlier(state.includeEarlier);
 
     populateFilters();
     bindEvents();
@@ -176,11 +184,22 @@
       tf.appendChild(o);
     });
     const cf = $("#contract-filter");
-    state.contracts.slice().sort((a,b) => a.label.localeCompare(b.label)).forEach(c => {
+    const addOpts = (parent, list) => list.slice().sort((a,b) => a.label.localeCompare(b.label)).forEach(c => {
       const o = document.createElement("option");
       o.value = c.id; o.textContent = window.expandContractLabel ? window.expandContractLabel(c.label) : c.label;
-      cf.appendChild(o);
+      parent.appendChild(o);
     });
+    addOpts(cf, state.contracts);
+    if (state.earlierDocs.length) {
+      const g = document.createElement("optgroup");
+      g.label = "Earlier agreements (may be superseded in part)";
+      addOpts(g, state.earlierDocs);
+      cf.appendChild(g);
+    }
+    const n = document.getElementById("earlier-count");
+    if (n) n.textContent = state.earlierDocs.length;
+    const wrap = document.getElementById("earlier-toggle-wrap");
+    if (wrap) wrap.hidden = !state.earlierDocs.length;
   }
 
   /* ---------- Events ---------- */
@@ -202,6 +221,8 @@
       writeHash(); render();
     });
     $("#random-btn").addEventListener("click", showRandomClause);
+    const et = document.getElementById("earlier-toggle");
+    if (et) et.addEventListener("change", () => { setIncludeEarlier(et.checked); writeHash(); render(); });
     document.querySelectorAll(".view-tabs button").forEach(b => b.addEventListener("click", () => {
       state.view = b.dataset.view;
       $("#view-mode").value = state.view;
@@ -214,6 +235,16 @@
       }
     });
     window.addEventListener("hashchange", parseHashAndRender);
+  }
+
+  function isEarlier(c) { return !!c && c.era === "earlier"; }
+  function isEarlierId(id) { return isEarlier(state.contractById[id]); }
+  // Which clauses the views work from: all of them, or current documents only.
+  function setIncludeEarlier(on) {
+    state.includeEarlier = on;
+    state.clauses = on ? state.allClauses : state.allClauses.filter(c => !isEarlierId(c.contract_id));
+    const box = document.getElementById("earlier-toggle");
+    if (box) box.checked = on;
   }
 
   function debounce(fn, ms) {
@@ -229,6 +260,7 @@
     if (state.contractFilter) params.set("contract", state.contractFilter);
     if (state.compareSet.size) params.set("compare", Array.from(state.compareSet).join(","));
     if (state.sectorFilter) params.set("sector", state.sectorFilter);
+    if (!state.includeEarlier) params.set("earlier", "0");
     const h = params.toString();
     history.replaceState(null, "", h ? "#" + h : "#");
     window.dispatchEvent(new Event("labor:hash"));
@@ -255,6 +287,7 @@
     const cmp = params.get("compare");
     state.compareSet = new Set(cmp ? cmp.split(",").filter(Boolean) : []);
     state.sectorFilter = params.get("sector") || "";
+    setIncludeEarlier(params.get("earlier") !== "0");
     $("#q").value = state.query;
     $("#topic-filter").value = state.topic;
     $("#contract-filter").value = state.contractFilter;
@@ -409,7 +442,8 @@
       // blocks, letterheads) so they don't outrank real clauses.
       score += t.weight * (Math.min(n, 12) / (1 + len / 12000) + (head ? 8 * Math.min(1, len / 400) : 0));
     });
-    return score;
+    // An earlier agreement's clause ranks below a current one with the same match.
+    return isEarlierId(c.contract_id) ? score * 0.6 : score;
   }
 
   // Returns matching clauses, best first, or null when there's no query.
@@ -533,7 +567,7 @@
     if (!clauses) clauses = applyFilters(state.clauses.slice());
     const contractCount = new Set(clauses.map(c => c.contract_id)).size;
     $("#result-count").textContent = state.query
-      ? `${clauses.length} clause${clauses.length === 1 ? "" : "s"} across ${contractCount} contract${contractCount === 1 ? "" : "s"} matching "${state.query}"`
+      ? `${clauses.length} clause${clauses.length === 1 ? "" : "s"} across ${contractCount} contract${contractCount === 1 ? "" : "s"} matching "${state.query}"${(() => { const k = clauses.filter(c => isEarlierId(c.contract_id)).length; return k ? ` · ${k} from earlier agreements, flagged` : ""; })()}`
       : `${clauses.length} clauses${state.topic ? " on " + (TOPIC_LABELS[state.topic] || state.topic) : ""}${state.contractFilter ? " in " + (state.contractById[state.contractFilter]?.label || state.contractFilter) : ""}`;
     if (clauses.length === 0) {
       const words = (state.query || "").toLowerCase().split(/\W+/).filter(w => w.length > 3);
@@ -602,6 +636,19 @@
       items.forEach(c => grid.appendChild(contractTile(c)));
       root.appendChild(sec);
     });
+    if (!withIntro && state.includeEarlier && state.earlierDocs.length) {
+      const sec = document.createElement("section");
+      sec.className = "doc-type-group is-earlier";
+      sec.innerHTML = `
+        <header class="doc-type-header">
+          <h2 class="doc-type-title">Earlier agreements <span class="doc-type-count">${state.earlierDocs.length}</span></h2>
+          <p class="doc-type-blurb">Older documents that current amendments keep partly in force. Later documents change some of their terms; each is flagged wherever it appears.</p>
+        </header>
+        <div class="contract-tile-grid"></div>`;
+      const grid = sec.querySelector(".contract-tile-grid");
+      state.earlierDocs.slice().sort((a, b) => a.label.localeCompare(b.label)).forEach(c => grid.appendChild(contractTile(c)));
+      root.appendChild(sec);
+    }
   }
 
   // Documents we know exist (or must exist) but that aren't in this database:
@@ -612,6 +659,7 @@
       .filter(lacksBase)
       .sort((a, b) => a.label.localeCompare(b.label));
     const nLinked = state.contracts.filter(linkedOnly).length;
+    const nChain = state.contracts.filter(c => c.amends_predecessor && !c.companion && hasChain(c)).length;
     const nOutside = noUnderlying.length + nLinked;
     const label = c => escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label);
     const names = gaps.map(g => g.short_name).filter(Boolean);
@@ -621,7 +669,7 @@
     panel.innerHTML = `
       <summary>
         <span class="missing-panel-title">Known missing documents</span>
-        <span class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? " is" : "s are"} unpublished${names.length ? ` (${names.map(escapeHtml).join(", ")})` : ""}, and ${nOutside} amendments rely on an older agreement that isn't in this database.</span>
+        <span class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? " is" : "s are"} unpublished${names.length ? ` (${names.map(escapeHtml).join(", ")})` : ""}, and ${nOutside} amendments rely on an older agreement that isn't in this database${nChain ? ` (for ${nChain} more, the older agreements are now here, flagged as earlier)` : ""}.</span>
         <span class="missing-panel-toggle" aria-hidden="true"></span>
       </summary>
       <div class="missing-panel-body">
@@ -701,9 +749,10 @@
   }
 
   // An amendment whose base terms are nowhere in this database or linked.
-  function lacksBase(c) { return c.amends_predecessor && !c.predecessor && !c.companion; }
+  function hasChain(c) { return (c.lineage || []).some(id => isEarlierId(id)); }
+  function lacksBase(c) { return c.amends_predecessor && !c.predecessor && !c.companion && !hasChain(c); }
   // An amendment linked to an earlier published agreement that is not in the database.
-  function linkedOnly(c) { return c.amends_predecessor && c.predecessor && !c.companion; }
+  function linkedOnly(c) { return c.amends_predecessor && c.predecessor && !c.companion && !hasChain(c); }
 
   function docBadges(c) {
     const gaps = (state.missingByContract[c.id] || [])
@@ -763,7 +812,14 @@
                 <button type="button" class="add-compare" data-id="${escapeHtml(c.id)}">${state.compareSet.has(c.id) ? "In compare" : "+ Compare"}</button>
               </li>`;
             }).join("")}
-          </ul>`;
+          </ul>
+          ${(() => {
+            const ids = new Set(u.docs);
+            const earlier = state.earlierDocs.filter(e => (e.later_ids || []).some(id => ids.has(id)))
+              .sort((a, b) => (b.end_date || "").localeCompare(a.end_date || ""));
+            return earlier.length ? `<details class="union-earlier"><summary>Earlier agreements still partly in force (${earlier.length})</summary><ul>${
+              earlier.map(e => `<li><a href="#/contract/${encodeURIComponent(e.id)}">${escapeHtml(e.label)}</a> <span class="union-doc-meta">${escapeHtml(termText(e))}${e.complete ? " · complete contract" : ""}</span></li>`).join("")}</ul></details>` : "";
+          })()}`;
         list.appendChild(row);
       });
       block.appendChild(list);
@@ -799,6 +855,27 @@
     flash._t = setTimeout(() => { bar.hidden = true; }, 6000);
   }
 
+  /* ---------- Earlier agreements: flags ---------- */
+  // Later documents in the database that continue (and change) an earlier agreement.
+  function laterDocs(c) {
+    return (c.later_ids || []).map(id => state.contractById[id]).filter(Boolean);
+  }
+  function laterLinks(c) {
+    const docs = laterDocs(c);
+    return docs.length
+      ? docs.map(d => `<a href="#/contract/${encodeURIComponent(d.id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(d.label) : d.label)}</a>`).join(" · ")
+      : "";
+  }
+  function earlierYears(c) {
+    return c.start_date && c.end_date ? `${c.start_date.slice(0, 4)}–${c.end_date.slice(0, 4)}`
+      : (c.term_start && c.term_end ? `${c.term_start}–${c.term_end}` : "older");
+  }
+  // Short flag for a clause card from an earlier agreement.
+  function earlierCardFlag(c, compact) {
+    if (compact) return `<p class="earlier-flag earlier-flag-short" role="note"><strong>Earlier agreement (${escapeHtml(earlierYears(c))}), may be superseded.</strong> Check the later documents before relying on this clause.</p>`;
+    return `<p class="earlier-flag" role="note"><strong>Earlier agreement (${escapeHtml(earlierYears(c))}), may be superseded.</strong> Later documents keep parts of it in force and change others. Check them before relying on this clause${laterDocs(c).length ? `: ${laterLinks(c)}` : ""}.</p>`;
+  }
+
   function contractTile(contract) {
     const tile = document.createElement("a");
     tile.className = "contract-tile";
@@ -829,9 +906,9 @@
         <span class="contract-tile-clauses">${clauseCount} clause${clauseCount === 1 ? "" : "s"}</span>
         ${qualityBadge}
       </div>
-      ${gapBadges}
-      ${amendBadge}
-      ${contract.predecessor ? `<span class="contract-tile-haspred" title="${escapeHtml(contract.predecessor.label)} — published by ${escapeHtml(contract.predecessor.publisher)}">${contract.predecessor.relation === "nearest" ? "earlier agreement linked" : "underlying agreement linked"}</span>` : ""}
+      ${isEarlier(contract) ? `<span class="contract-tile-earlier">earlier agreement, may be superseded</span>` : `${gapBadges}
+      ${amendBadge}`}
+      ${hasChain(contract) ? `<span class="contract-tile-haspred">earlier agreements in database</span>` : contract.predecessor ? `<span class="contract-tile-haspred" title="${escapeHtml(contract.predecessor.label)} — published by ${escapeHtml(contract.predecessor.publisher)}">${contract.predecessor.relation === "nearest" ? "earlier agreement linked" : "underlying agreement linked"}</span>` : ""}
     `;
     return tile;
   }
@@ -849,7 +926,9 @@
     const moreNote = items.length < totalInGroup
       ? `<span class="contract-group-more">Showing ${items.length} of ${totalInGroup} matches</span>`
       : `<span class="contract-group-count">${totalInGroup} match${totalInGroup === 1 ? "" : "es"}</span>`;
+    if (isEarlier(contract)) wrap.classList.add("is-earlier");
     wrap.innerHTML = `
+      ${isEarlier(contract) ? `<p class="earlier-group-flag">Earlier agreement · ${escapeHtml(earlierYears(contract))} · may be superseded in part</p>` : ""}
       <header class="contract-group-header">
         <a class="contract-group-title" href="#/contract/${encodeURIComponent(contractId)}">
           <span class="contract-group-name">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(contract?.label || contractId) : (contract?.label || contractId))}</span>
@@ -949,7 +1028,9 @@
     const optgroups = state.unions.sectors.map(sec => `<optgroup label="${escapeHtml(sec.name)}">${
       sec.unions.flatMap(u => u.docs).filter((id, i, arr) => arr.indexOf(id) === i && !state.compareSet.has(id) && state.contractById[id])
         .map(id => `<option value="${escapeHtml(id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(state.contractById[id].label) : state.contractById[id].label)}</option>`).join("")
-    }</optgroup>`).join("");
+    }</optgroup>`).join("") + (state.earlierDocs.length ? `<optgroup label="Earlier agreements (may be superseded in part)">${
+      state.earlierDocs.filter(d => !state.compareSet.has(d.id)).sort((a, b) => a.label.localeCompare(b.label))
+        .map(d => `<option value="${escapeHtml(d.id)}">${escapeHtml(d.label)}</option>`).join("")}</optgroup>` : "");
     ctrl.innerHTML = `
       <div class="compare-picked">
         ${picked.map(id => `<span class="compare-chip">${escapeHtml(chipLabel(state.contractById[id]))} <button type="button" data-remove="${escapeHtml(id)}" aria-label="Remove">&times;</button></span>`).join("")}
@@ -987,7 +1068,7 @@
     let total = 0;
     picked.forEach(cid => {
       const c = state.contractById[cid];
-      let matches = state.clauses.filter(cl => cl.contract_id === cid && (!state.topic || (cl.topics || []).includes(state.topic)));
+      let matches = state.allClauses.filter(cl => cl.contract_id === cid && (!state.topic || (cl.topics || []).includes(state.topic)));
       if (state.query) matches = searchHits(matches) || [];
       total += matches.length;
       const col = document.createElement("div");
@@ -1065,6 +1146,36 @@
       </p>`;
   }
 
+  // The documents that together govern a unit: this one, then each earlier
+  // agreement it continues, newest first, back to the last complete contract.
+  function lineageBlock(c) {
+    const chain = (c.lineage || []).map(id => state.contractById[id]).filter(Boolean);
+    if (!chain.length) return "";
+    const item = d => `<li><a href="#/contract/${encodeURIComponent(d.id)}">${escapeHtml(window.expandContractLabel ? window.expandContractLabel(d.label) : d.label)}</a>
+      <span class="lineage-meta">${escapeHtml(termText(d))} · ${escapeHtml(d.complete ? "complete contract" : (DOC_TYPE_SHORT[d.doc_type] || "document"))}${d.gap_note ? ` · ${escapeHtml(d.gap_note)}` : ""}</span></li>`;
+    const last = chain[chain.length - 1];
+    return `
+      <aside class="lineage-box">
+        <p class="lineage-title">What governs this unit</p>
+        <p class="lineage-lead">This document changes some terms of the documents below, newest first, and keeps the rest in force. Where they conflict, the newer document governs. Older agreements are in this database and searchable, flagged as earlier wherever they appear.</p>
+        <ol class="lineage-list">
+          <li><strong>This document</strong> <span class="lineage-meta">${escapeHtml(termText(c))}</span></li>
+          ${chain.map(item).join("")}
+        </ol>
+        ${last.complete ? "" : `<p class="lineage-lead">The chain stops before a complete contract: nothing earlier for this unit is published.</p>`}
+      </aside>`;
+  }
+
+  function earlierBanner(c) {
+    const later = laterDocs(c);
+    return `
+      <aside class="earlier-banner" role="note">
+        <p><strong>Earlier agreement: parts may be superseded.</strong> Its term ran ${escapeHtml(termText(c))}. Later documents for this unit keep parts of it in force and change others; where they conflict, the later document governs. Before relying on any clause here, check whether a later document changed it.</p>
+        ${later.length ? `<p>Later documents that continue this one: ${laterLinks(c)}.</p>` : ""}
+        <p class="doc-view-predecessor-src">Published by ${escapeHtml(c.publisher || "the NYC Office of Labor Relations")}. <a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">Source PDF &#8599;</a></p>
+      </aside>`;
+  }
+
   // Wages and headcount for one contract, shown only where every number has
   // been checked: wage steps against the contract text (scripts/verify_wages.py)
   // and headcounts against a named primary source.
@@ -1101,19 +1212,21 @@
     const root = $("#results");
     root.innerHTML = "";
     if (!c) { root.innerHTML = `<p>Contract not found.</p>`; return; }
-    const items = state.clauses.filter(cl => cl.contract_id === cid);
+    const items = state.allClauses.filter(cl => cl.contract_id === cid);
     const term = (c.term_start && c.term_end) ? `${c.term_start}–${c.term_end}` : "term n/a";
     const expandedLabel = window.expandContractLabel ? window.expandContractLabel(c.label) : c.label;
     const ocrPages = new Set(items.filter(it => it.ocr).map(it => it.page));
     const totalPages = items.length ? Math.max(...items.map(it => it.page || 1)) : 0;
 
     const wrap = document.createElement("article");
-    wrap.className = "doc-view";
+    wrap.className = isEarlier(c) ? "doc-view is-earlier" : "doc-view";
     wrap.innerHTML = `
       <header class="doc-view-header">
         <p class="doc-view-back"><a href="#">← Back to all contracts</a></p>
         ${unit?.sector ? `<p class="doc-view-kicker">${SECTOR_LABELS[unit.sector] || unit.sector}${unit.headcount_verified ? " · ~" + unit.headcount.toLocaleString() + " covered" : ""}</p>` : ""}
+        ${isEarlier(c) ? `<p class="earlier-group-flag">Earlier agreement · ${escapeHtml(earlierYears(c))} · may be superseded in part</p>` : ""}
         <h2 class="doc-view-title">${escapeHtml(expandedLabel)}</h2>
+        ${isEarlier(c) ? earlierBanner(c) : ""}
         ${unit?.summary ? `<p class="doc-view-summary">${escapeHtml(unit.summary)}</p>` : ""}
         ${(state.missingByContract[cid] || []).map(g => `
           <aside class="doc-view-missing-note">
@@ -1121,12 +1234,13 @@
             <p>${escapeHtml(g.have_note)}</p>
             <p class="doc-view-amend-quote">Evidence: ${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: &ldquo;${escapeHtml(g.evidence.quote)}&rdquo; <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener">Source &#8599;</a> · <a href="#missing">All known missing documents</a></p>
           </aside>`).join("")}
-        ${c.amends_predecessor ? `
+        ${c.amends_predecessor && !isEarlier(c) ? `
           <aside class="doc-view-amend-note">
-            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.companion ? `${escapeHtml(c.companion.note)} <a href="#/contract/${encodeURIComponent(c.companion.id)}">Open it</a>.` : c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> ${c.base_note ? escapeHtml(c.base_note) : `The city does not link it from this document, but it posts earlier agreements on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages.`} <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
-            ${c.predecessor && !c.companion ? predecessorBlock(c.predecessor) : ""}
+            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${hasChain(c) ? `The earlier agreements it continues are in this database, flagged as earlier; see "What governs this unit" below.` : c.companion ? `${escapeHtml(c.companion.note)} <a href="#/contract/${encodeURIComponent(c.companion.id)}">Open it</a>.` : c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> ${c.base_note ? escapeHtml(c.base_note) : `The city does not link it from this document, but it posts earlier agreements on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages.`} <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
+            ${c.predecessor && !c.companion && !hasChain(c) ? predecessorBlock(c.predecessor) : ""}
             ${c.amends_evidence ? `<p class="doc-view-amend-quote">Language in this document: &ldquo;${escapeHtml(c.amends_evidence)}&hellip;&rdquo;</p>` : ""}
           </aside>` : ""}
+        ${lineageBlock(c)}
         ${factsCard(c, unit)}
         <div class="doc-view-meta">
           <span><strong>Type</strong> ${DOC_TYPE_SHORT[c.doc_type] || "Document"}</span>
@@ -1240,7 +1354,7 @@
   }
 
   function renderSingleClause(id) {
-    const c = state.clauses.find(c => c.id === id);
+    const c = state.allClauses.find(c => c.id === id);
     const root = $("#results");
     root.innerHTML = "";
     if (!c) { root.innerHTML = `<p>Clause not found.</p>`; return; }
@@ -1276,7 +1390,7 @@
 
   /* ---------- Random clause ---------- */
   function showRandomClause() {
-    const pool = applyFilters(state.clauses);
+    const pool = applyFilters(state.clauses.filter(c => !isEarlierId(c.contract_id)));
     if (pool.length === 0) { alert("No clauses match the current filters."); return; }
     const c = pool[Math.floor(Math.random() * pool.length)];
     location.hash = "#/clause/" + encodeURIComponent(c.id);
@@ -1309,8 +1423,10 @@
         </a>
         ${tip}
       </span>`;
+    if (isEarlier(contract)) wrap.classList.add("is-earlier");
     wrap.innerHTML = `
       ${badgeBlock}
+      ${isEarlier(contract) ? earlierCardFlag(contract, compact) : ""}
       <div class="clause-meta">
         <span>Page ${c.page}</span>
         ${c.ocr ? `<span class="ocr-flag" title="This page was reconstructed via optical character recognition; spelling may have minor errors">OCR</span>` : ""}

@@ -52,7 +52,9 @@ ORDER = ["full-agreement", "consent-determination", "moa", "unit-agreement"]
 
 
 def load():
-    contracts = json.loads((DATA / "contracts.json").read_text())
+    # Counts and lists here are about current documents; earlier agreements
+    # are described in companion-01 and flagged in their own titles.
+    contracts = [c for c in json.loads((DATA / "contracts.json").read_text()) if c.get("era") != "earlier"]
     clauses = json.loads((DATA / "clauses.json").read_text())
     topics = defaultdict(set)
     for cl in clauses:
@@ -138,6 +140,17 @@ def underlying(contracts):
         f"reading both documents. {len(none)} have no earlier agreement available. If a question cannot be "
         f"answered from an amendment, the answer is likely in the earlier agreement, which would need to be "
         f"consulted directly.\n")
+    allc = {c["id"]: c for c in json.loads((DATA / "contracts.json").read_text())}
+    chained = [c for c in contracts if any(allc.get(i, {}).get("era") == "earlier" for i in c.get("lineage", []))]
+    if chained:
+        L.append("## Earlier agreements included in this notebook\n")
+        L.append("For these documents, the older agreements they continue are sources in this notebook, each titled "
+                 "\"EARLIER AGREEMENT, MAY BE SUPERSEDED.\" Listed newest first; where they conflict, the newer "
+                 "document governs.\n")
+        for c in sorted(chained, key=lambda x: x["label"]):
+            chain = " → ".join(allc[i]["label"] for i in c["lineage"] if i in allc)
+            L.append(f"- {c['label']} → {chain}")
+        L.append("")
     L.append("## Full terms in another source in this notebook\n")
     for c in sorted(companions, key=lambda x: x["label"]):
         L.append(f"- {c['label']}: see {by_id[c['companion']['id']]['label']}")
