@@ -1,6 +1,6 @@
 # NYC municipal labor contracts — Markdown export
 
-_100 contracts. Each `<id>.md` file contains the full searchable text, segmented into clauses with page numbers, with tables preserved as pipe-delimited Markdown._
+_115 contracts. Each `<id>.md` file contains the full searchable text, segmented into clauses with page numbers, with tables preserved as pipe-delimited Markdown._
 
 Source: NYC Office of Labor Relations Recent Agreements page. Many contracts were OCR-reconstructed from image-only PDFs; per-page OCR flags are preserved in the YAML frontmatter and inline meta lines.
 
@@ -11,8 +11,19 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Association of Legislative Employees (ALE) — Executed Contract, 2021-2027](ale-executed-contract-2021-2027.md) — 2021–2027
 - [Blacksmith Memorandum of Agreement, 2021-2026](blacksmith-moa-2021-2026.md) — 2021–2026
 - [Boilermaker Memorandum of Agreement, 2021-2026](boilermaker-moa-2021-2026.md) — 2021–2026
+- [CUNY Blue Collar (IBT Local 237) Memorandum of Agreement, 2021-2027](cuny-blue-collar-ibt-local-237-moa-2021-2027.md) — 2021–2027
+- [CUNY Blue Collar Agreement, 2021-2027](cuny-blue-collar-agreement-2021-2027.md) — 2021–2027
+- [CUNY Blue and White Collar Memorandum of Agreement, 2021-2027](cuny-blue-and-white-collar-moa-2021-2027.md) — 2021–2027
+- [CUNY Educational Opportunity Centers Agreement, 2021-2027](cuny-eoc-agreement-2021-2027.md) — 2021–2027
+- [CUNY Educational Opportunity Centers Memorandum of Agreement, 2021-2027](cuny-eoc-moa-2021-2027.md) — 2021–2027
+- [CUNY IATSE Local One Memorandum of Agreement, 2023-2028](cuny-iatse-local-one-moa-2023-2028.md) — 2023–2028
+- [CUNY Student Center Agreement, 2021-2027](cuny-student-center-agreement-2021-2027.md) — 2021–2027
+- [CUNY Student Center Memorandum of Agreement, 2021-2027](cuny-student-center-moa-2021-2027.md) — 2021–2027
+- [CUNY Theatre Agreement, 2023-2028](cuny-theatre-agreement-2023-2028.md) — 2023–2028
+- [CUNY White Collar Agreement, 2021-2027](cuny-white-collar-agreement-2021-2027.md) — 2021–2027
 - [Captains' Endowment Association (NYPD) (CEA) — Unit Agreement, 2022-2027](cea-unit-agreement-2022-2027.md) — 2022–2027
 - [Carpenters Consent Determination, 2021-2027](carpenters-consent-determination-2021-2027.md) — 2021–2027
+- [Carpenters and Supervisor Carpenter Memorandum of Agreement, 2022-2027](carpenters-moa-2022-2027.md) — 2022–2027
 - [Civil Service Bar Association (CSBA) — Memorandum of Agreement, 2021-2026](csba-moa-2021-2026.md) — 2021–2026
 - [Committee of Interns and Residents (CIR) — Executed Contract, 2021-2027](cir-executed-contract-2021-2027.md) — 2021–2027
 - [Communications Workers of America (CWA) — 1180 Memorandum of Agreement, 2021-2026](cwa-1180-moa-2021-2026.md) — 2021–2027
@@ -35,6 +46,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [District Council 37 of AFSCME (DC37) — L376 Construction Laborers Memorandum of Agreement, 2021-2026](dc37-l376-construction-laborers-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L376 Highway Repairers Consent Determination, 2021-2026](dc37-l376-highway-repairers-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L924 Laborers Consent Determination, 2021-2026](dc37-l924-laborers-consent-determination-2021-2026.md) — 2021–2026
+- [District Council 37 of AFSCME (DC37) — L924 Laborers Memorandum of Agreement, 2021-2026](dc37-l924-laborers-moa-2021-2026.md) — 2021–2026
 - [District Council 37 of AFSCME (DC37) — L983 High Pressure Plant Tenders Consent Determination, 2022-2027](dc37-l983-high-pressure-plant-tenders-consent-determination-2022-2027.md) — 2022–2027
 - [District Council 37 of AFSCME (DC37) — L983 Traffic Enforcement Agent Level III and IV Memorandum of Agreement, 2021-2027](dc37-l983-traffic-enforcement-agent-level-iii-and-iv-moa-2021-2027.md) — 2021–2027
 - [District Council 37 of AFSCME (DC37) — L983 Urban Park Rangers Memorandum of Agreement, 2021-2027](dc37-l983-urban-park-rangers-moa-2021-2027.md) — 2021–2027
@@ -54,6 +66,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [International Brotherhood of Teamsters (IBT) — L237 Cement Masons Consent Determination, 2020-2025](ibt-l237-cement-masons-consent-determination-2020-2025.md) — 2020–2025
 - [International Brotherhood of Teamsters (IBT) — L237 Elevator Mechanics Consent Determination, 2024-2029](ibt-l237-elevator-mechanics-consent-determination-2024-2029.md) — 2024–2029
 - [International Brotherhood of Teamsters (IBT) — L237 Maintenance Workers Consent Determination, 2022-2027](ibt-l237-maintenance-workers-consent-determination-2022-2027.md) — 2022–2027
+- [International Brotherhood of Teamsters (IBT) — L237 Maintenance Workers Memorandum of Agreement, 2022-2027](ibt-l237-maintenance-workers-moa-2022-2027.md) — 2022–2027
 - [International Brotherhood of Teamsters (IBT) — L237 Mason’s Helpers Memorandum of Agreement, 2021-2026](ibt-l237-masons-helpers-moa-2021-2026.md) — 2021–2026
 - [International Brotherhood of Teamsters (IBT) — L237 Memorandum of Agreement, 2022-2027](ibt-l237-moa-2022-2027.md) — 2022–2027
 - [International Brotherhood of Teamsters (IBT) — L237 Plasterers Consent Determination, 2020-2025](ibt-l237-plasterers-consent-determination-2020-2025.md) — 2020–2025
@@ -80,6 +93,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Local 246 Letterer and Sign Painter Consent Determination, 2021-2026](local-246-letterer-and-sign-painter-consent-determination-2021-2026.md) — 2021–2026
 - [Local 246 Rubber Tire Repairer Consent Determination, 2021-2026](local-246-rubber-tire-repairer-consent-determination-2021-2026.md) — 2021–2026
 - [Local 246 Sheet Metal Worker Consent Determination, 2021-2026](local-246-sheet-metal-worker-consent-determination-2021-2026.md) — 2021–2026
+- [Local 246 Sheet Metal Worker Memorandum of Agreement, 2021-2026](local-246-sheet-metal-worker-moa-2021-2026.md) — 2021–2026
 - [Local 300, SEIU Memorandum of Agreement, 2022-2027](local-300-seiu-moa-2022-2027.md) — 2022–2027
 - [Local 306 Audiovisual Aide Technicians Memorandum of Agreement, 2022-2027](local-306-audiovisual-aide-technicians-moa-2022-2027.md) — 2022–2027
 - [Local 40 Bridge Repairer Consent Determination, 2022-2025](local-40-bridge-repairer-consent-determination-2022-2025.md) — 2022–2025
@@ -101,6 +115,7 @@ Source: NYC Office of Labor Relations Recent Agreements page. Many contracts wer
 - [Uniformed Firefighters Association (UFA) — Memorandum of Agreement, 2017-2020](ufa-moa-2017-2020.md) — 2017–2020
 - [Uniformed Sanitation Chiefs Association (USCA) — Unit Agreement, 2022-2027](usca-unit-agreement-2022-2027.md) — 2023–2028
 - [Uniformed Sanitationmen's Association (USA) — Executed Contract, 2022-2028](usa-executed-contract-2022-2028.md) — 2022–2028
+- [Uniformed Sanitationmen's Association (USA) — Sanitation Worker Memorandum of Economic Agreement, 2022-2028](usa-sanitation-worker-economic-agreement-2022-2028.md) — 2022–2028
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Dockbuilders Memorandum of Agreement, 2022-2027](ubcj-dockbuilders-moa-2022-2027.md) — 2022–2027
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Riggers Memorandum of Agreement, 2022-2027](ubcj-riggers-moa-2022-2027.md) — 2022–2027
 - [United Brotherhood of Carpenters and Joiners (UBCJ) — Ship Carpenter Memorandum of Agreement, 2022-2027](ubcj-ship-carpenter-moa-2022-2027.md) — 2022–2027

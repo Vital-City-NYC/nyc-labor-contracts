@@ -92,7 +92,8 @@
     {
      "name": "Uniformed Sanitationmen's Association (USA), Teamsters Local 831",
      "docs": [
-      "usa-executed-contract-2022-2028"
+      "usa-executed-contract-2022-2028",
+      "usa-sanitation-worker-economic-agreement-2022-2028"
      ]
     },
     {
@@ -168,6 +169,36 @@
      "docs": [
       "local-891-school-custodians"
      ]
+    },
+    {
+     "name": "CUNY blue- and white-collar staff: DC 37 locals, Teamsters Local 237, SEIU Local 300, IATSE Local 306 and NYSNA",
+     "docs": [
+      "cuny-white-collar-agreement-2021-2027",
+      "cuny-blue-collar-agreement-2021-2027",
+      "cuny-blue-and-white-collar-moa-2021-2027",
+      "cuny-blue-collar-ibt-local-237-moa-2021-2027"
+     ]
+    },
+    {
+     "name": "CUNY Educational Opportunity Centers staff, DC 37 Local 384",
+     "docs": [
+      "cuny-eoc-agreement-2021-2027",
+      "cuny-eoc-moa-2021-2027"
+     ]
+    },
+    {
+     "name": "CUNY student center staff, DC 37 Local 1597",
+     "docs": [
+      "cuny-student-center-agreement-2021-2027",
+      "cuny-student-center-moa-2021-2027"
+     ]
+    },
+    {
+     "name": "CUNY college theater staff, IATSE Local One",
+     "docs": [
+      "cuny-theatre-agreement-2023-2028",
+      "cuny-iatse-local-one-moa-2023-2028"
+     ]
     }
    ]
   },
@@ -221,7 +252,8 @@
       "dc37-l1157-supervisor-highway-repairers-moa-2021-2026",
       "dc37-l376-construction-laborers-moa-2021-2026",
       "dc37-l376-highway-repairers-moa-2021-2026",
-      "dc37-l924-laborers-consent-determination-2021-2026"
+      "dc37-l924-laborers-consent-determination-2021-2026",
+      "dc37-l924-laborers-moa-2021-2026"
      ]
     },
     {
@@ -242,6 +274,7 @@
       "ibt-l237-cement-masons-consent-determination-2020-2025",
       "ibt-l237-elevator-mechanics-consent-determination-2024-2029",
       "ibt-l237-maintenance-workers-consent-determination-2022-2027",
+      "ibt-l237-maintenance-workers-moa-2022-2027",
       "ibt-l237-masons-helpers-moa-2021-2026",
       "ibt-l237-plasterers-consent-determination-2020-2025",
       "ibt-l237-roofers-moa-2020-2025",
@@ -289,6 +322,7 @@
       "local-246-letterer-and-sign-painter-consent-determination-2021-2026",
       "local-246-rubber-tire-repairer-consent-determination-2021-2026",
       "local-246-sheet-metal-worker-consent-determination-2021-2026",
+      "local-246-sheet-metal-worker-moa-2021-2026",
       "joint-cert-l246-and-l15-motor-grader-operators-wage-indenture-2020-2025",
       "joint-cert-l246-and-l15-tractor-operators-wage-indenture-2020-2025"
      ]
@@ -339,6 +373,7 @@
      "name": "New York City District Council of Carpenters (UBCJA)",
      "docs": [
       "carpenters-consent-determination-2021-2027",
+      "carpenters-moa-2022-2027",
       "ubcj-dockbuilders-moa-2022-2027",
       "ubcj-riggers-moa-2022-2027",
       "ubcj-ship-carpenter-moa-2022-2027"

@@ -60,7 +60,7 @@ def doc_about():
     return f"""# About this corpus — NYC municipal labor contracts
 
 {BANNER}
-This notebook contains the full text of {manifest['contracts']} collective bargaining agreements covering New York City municipal employees: every agreement listed on the New York City Office of Labor Relations "Recent Agreements" page, plus five documents published elsewhere: agreements for the Uniformed Firefighters Association, the Uniformed Fire Officers Association and the New York State Nurses Association (from the office's download server) and two Professional Staff Congress agreements (from the City University of New York).
+This notebook contains the full text of {manifest['contracts']} collective bargaining agreements covering New York City municipal employees: every agreement listed on the New York City Office of Labor Relations "Recent Agreements" page, plus 20 documents published elsewhere: agreements for the Uniformed Firefighters Association, the Uniformed Fire Officers Association and the New York State Nurses Association and five memoranda that sit on the office's download server without a link from any of its pages, and 12 City University of New York agreements for faculty (Professional Staff Congress) and non-faculty staff.
 
 ## How the text was produced
 

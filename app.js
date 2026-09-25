@@ -609,8 +609,10 @@
   function missingPanel() {
     const gaps = state.missing.unpublished || [];
     const noUnderlying = state.contracts
-      .filter(c => c.amends_predecessor && !c.predecessor)
+      .filter(lacksBase)
       .sort((a, b) => a.label.localeCompare(b.label));
+    const nLinked = state.contracts.filter(linkedOnly).length;
+    const nOutside = noUnderlying.length + nLinked;
     const label = c => escapeHtml(window.expandContractLabel ? window.expandContractLabel(c.label) : c.label);
     const names = gaps.map(g => g.short_name).filter(Boolean);
     const panel = document.createElement("details");
@@ -619,7 +621,7 @@
     panel.innerHTML = `
       <summary>
         <span class="missing-panel-title">Known missing documents</span>
-        <span class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? " is" : "s are"} unpublished${names.length ? ` (${names.map(escapeHtml).join(", ")})` : ""}, and ${noUnderlying.length} amendments rely on an older agreement that isn't here.</span>
+        <span class="missing-panel-sub">${gaps.length} current agreement${gaps.length === 1 ? " is" : "s are"} unpublished${names.length ? ` (${names.map(escapeHtml).join(", ")})` : ""}, and ${nOutside} amendments rely on an older agreement that isn't in this database.</span>
         <span class="missing-panel-toggle" aria-hidden="true"></span>
       </summary>
       <div class="missing-panel-body">
@@ -631,13 +633,15 @@
               · <a href="${escapeHtml(g.evidence.url)}" target="_blank" rel="noopener" title="${escapeHtml(g.evidence.publisher)}, ${escapeHtml(g.evidence.date)}: ${escapeHtml(g.evidence.quote)}">Evidence &#8599;</a>
             </li>`).join("")}
           <li>
-            <strong>Underlying agreements.</strong> ${noUnderlying.length} amendments change only some terms and keep an older agreement in force for the rest, including grievances, discipline and seniority. That older agreement is not in this database, so a search here can miss provisions that still apply. The Office of Labor Relations posts earlier agreements for all of these units on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages. These documents carry a pink "underlying agreement missing" tag.
+            <strong>Underlying agreements.</strong> ${nOutside} amendments change only some terms and keep an older agreement in force for the rest, including grievances, discipline and seniority. That older agreement is not in this database, so a search here can miss provisions that still apply.
+            ${nLinked ? `For ${nLinked} of them, the document's page links the earlier agreement the city published, checked by reading both documents.` : ""}
+            ${noUnderlying.length ? `For ${noUnderlying.length === nOutside ? "all of them" : `the other ${noUnderlying.length}`}, look on the Office of Labor Relations <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages; these carry a pink "underlying agreement missing" tag.
             <details class="missing-underlying-wrap">
-              <summary>List all ${noUnderlying.length}</summary>
+              <summary>List ${noUnderlying.length === 1 ? "it" : `all ${noUnderlying.length}`}</summary>
               <ul class="missing-underlying">
                 ${noUnderlying.map(c => `<li><a href="#/contract/${encodeURIComponent(c.id)}">${label(c)}</a></li>`).join("")}
               </ul>
-            </details>
+            </details>` : ""}
           </li>
         </ul>
         <p class="missing-checked">Last checked ${escapeHtml(state.missing.checked || "")}. <a href="methodology.html#gaps">How this list is kept</a>.</p>
@@ -696,10 +700,15 @@
     return who ? `${who}: ${docShortLabel(c)}` : docShortLabel(c);
   }
 
+  // An amendment whose base terms are nowhere in this database or linked.
+  function lacksBase(c) { return c.amends_predecessor && !c.predecessor && !c.companion; }
+  // An amendment linked to an earlier published agreement that is not in the database.
+  function linkedOnly(c) { return c.amends_predecessor && c.predecessor && !c.companion; }
+
   function docBadges(c) {
     const gaps = (state.missingByContract[c.id] || [])
       .map(g => `<span class="contract-tile-missing" title="${escapeHtml(g.missing)}">${escapeHtml(g.badge)}</span>`).join("");
-    const under = c.amends_predecessor && !c.predecessor
+    const under = lacksBase(c)
       ? `<span class="contract-tile-missing" title="This document keeps an older agreement in force for everything it doesn't change. That older agreement is not in this database.">underlying agreement missing</span>` : "";
     return gaps + under;
   }
@@ -807,7 +816,7 @@
       ? `<span class="contract-tile-ocr fair" title="This contract had some OCR errors. Most have been corrected; verify quotes against the source PDF.">some OCR errors</span>`
       : "";
     const amendBadge = !contract.amends_predecessor ? ""
-      : contract.predecessor
+      : !lacksBase(contract)
       ? `<span class="contract-tile-amends" title="This document expressly leaves an underlying agreement in force and changes only the terms stated in it.">amends a prior agreement</span>`
       : `<span class="contract-tile-missing" title="This document expressly leaves an underlying agreement in force and changes only the terms stated in it. That underlying agreement is not in this database.">underlying agreement missing</span>`;
     const gapBadges = (state.missingByContract[contract.id] || [])
@@ -822,7 +831,7 @@
       </div>
       ${gapBadges}
       ${amendBadge}
-      ${contract.predecessor ? `<span class="contract-tile-haspred" title="${escapeHtml(contract.predecessor.label)} — published by ${escapeHtml(contract.predecessor.publisher)}">underlying agreement linked</span>` : ""}
+      ${contract.predecessor ? `<span class="contract-tile-haspred" title="${escapeHtml(contract.predecessor.label)} — published by ${escapeHtml(contract.predecessor.publisher)}">${contract.predecessor.relation === "nearest" ? "earlier agreement linked" : "underlying agreement linked"}</span>` : ""}
     `;
     return tile;
   }
@@ -1039,6 +1048,23 @@
     });
   }
 
+  // The earlier agreement a document amends, as published by the city (not in
+  // this database). "nearest" links were checked by reading both documents.
+  function predecessorBlock(p) {
+    const nearest = p.relation === "nearest";
+    const kindNote = nearest && p.kind && p.kind !== "full"
+      ? " That document is itself an amendment of a still earlier contract." : "";
+    const base = p.base && p.base.url
+      ? `<span class="doc-view-predecessor-src">Earlier full contract: <a href="${escapeHtml(p.base.url)}" target="_blank" rel="noopener">${escapeHtml(p.base.label)} &#8599;</a></span>` : "";
+    return `
+      <p class="doc-view-predecessor">
+        <strong>${nearest ? "Earlier agreement for this unit" : "Read the underlying agreement"}:</strong>
+        <a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">${escapeHtml(p.label)} &#8599;</a>
+        <span class="doc-view-predecessor-src">Published by ${escapeHtml(p.publisher)}${p.term ? `; term ${escapeHtml(p.term)}` : ""}. Not in this database, and the city does not link it from this document.${kindNote}${p.note ? ` ${escapeHtml(p.note)}` : ""}</span>
+        ${base}
+      </p>`;
+  }
+
   // Wages and headcount for one contract, shown only where every number has
   // been checked: wage steps against the contract text (scripts/verify_wages.py)
   // and headcounts against a named primary source.
@@ -1097,13 +1123,8 @@
           </aside>`).join("")}
         ${c.amends_predecessor ? `
           <aside class="doc-view-amend-note">
-            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> The city does not link it from this document, but it posts earlier agreements on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages. <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
-            ${c.predecessor ? `
-              <p class="doc-view-predecessor">
-                <strong>Read the underlying agreement:</strong>
-                <a href="${escapeHtml(c.predecessor.url)}" target="_blank" rel="noopener">${escapeHtml(c.predecessor.label)} &#8599;</a>
-                <span class="doc-view-predecessor-src">Published by ${escapeHtml(c.predecessor.publisher)}, and checked when this site was built. The city does not link it from this document.</span>
-              </p>` : ""}
+            <p><strong>This is an amendment, not a complete contract.</strong> It changes the specific terms set out below and expressly leaves the rest of an underlying agreement in force, so provisions on grievance procedure, discipline, seniority and similar subjects may govern these workers without appearing anywhere in this document. ${c.companion ? `${escapeHtml(c.companion.note)} <a href="#/contract/${encodeURIComponent(c.companion.id)}">Open it</a>.` : c.predecessor ? "" : `<strong>That underlying agreement is missing from this database.</strong> ${c.base_note ? escapeHtml(c.base_note) : `The city does not link it from this document, but it posts earlier agreements on its <a href="https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page" target="_blank" rel="noopener">2017-2021</a> and <a href="https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page" target="_blank" rel="noopener">2010-2017</a> agreement pages.`} <a href="#missing">All known missing documents</a> · <a href="methodology.html#doc-types">Where to look for it</a>.`}</p>
+            ${c.predecessor && !c.companion ? predecessorBlock(c.predecessor) : ""}
             ${c.amends_evidence ? `<p class="doc-view-amend-quote">Language in this document: &ldquo;${escapeHtml(c.amends_evidence)}&hellip;&rdquo;</p>` : ""}
           </aside>` : ""}
         ${factsCard(c, unit)}

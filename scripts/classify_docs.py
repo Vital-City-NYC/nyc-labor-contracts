@@ -36,6 +36,7 @@ AMENDS_RE = re.compile(
     r"|predecessor\s+(?:separate\s+)?unit\s+agreement[^.]{0,120}?continued"
     r"|all\s+other\s+terms[^.]{0,120}?(?:remain|continue)"
     r"|shall\s+be\s+continued\s+except\s+as\s+modified"
+    r"|shall\s+continue\s+as\s+modified\s+by"
     r"|remain\s+in\s+full\s+force\s+and\s+effect\s+except"
     r"|except\s+as\s+(?:modified|amended|changed)\s+(?:herein|by\s+this)"
     r")",
@@ -83,6 +84,17 @@ def classify(contract, text, headings):
     n_articles = len(ARTICLE_RE.findall(text)) + sum(
         1 for h in headings if ARTICLE_HEAD_RE.match(h or ""))
 
+    # The document's own title decides first. Many trade MOAs mention "the
+    # predecessor Consent Determination" in their text, which used to pull them
+    # into the consent-determination bucket; wage indentures open "This
+    # INDENTURE made...".
+    head = text[:700]
+    if re.search(r"\bINDENTURE\b", head):
+        return "consent-determination", amends, evidence
+    if re.search(r"memorandum\s+of\s+(?:economic\s+)?agreement", head, re.I) \
+            and not re.search(r"before\s+the\s+comptroller|consent\s+determination", head, re.I):
+        return "moa", amends, evidence
+
     # Consent determinations and wage indentures are their own instrument.
     if CONSENT_RE.search(text[:6000]) or "consent determination" in contract["label"].lower() \
             or "wage indenture" in contract["label"].lower():
@@ -91,6 +103,11 @@ def classify(contract, text, headings):
     # Uniformed unit-bargaining letters under the coalition agreement.
     if UNIT_RE.search(text[:6000]):
         return "unit-agreement", amends, evidence
+
+    # An executed contract with a full article structure is a standalone
+    # agreement even when it is short (e.g. a small unit's contract).
+    if re.search(r"executed\s+contract", text[:3000], re.I) and n_articles >= 12 and not amends:
+        return "full-agreement", amends, evidence
 
     # A document with a real article structure and substantial length is a
     # standalone agreement even if it also contains amending language.

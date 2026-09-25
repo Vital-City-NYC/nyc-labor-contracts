@@ -124,28 +124,41 @@ def doc_types(contracts, topics):
 
 
 def underlying(contracts):
-    linked = [c for c in contracts if c.get("predecessor")]
-    n_amend = sum(1 for c in contracts if c.get("amends_predecessor"))
-    n_amend_unlinked = sum(1 for c in contracts if c.get("amends_predecessor") and not c.get("predecessor"))
+    amends = [c for c in contracts if c.get("amends_predecessor")]
+    companions = [c for c in amends if c.get("companion")]
+    linked = [c for c in contracts if c.get("predecessor") and not c.get("companion")]
+    none = [c for c in amends if not c.get("predecessor") and not c.get("companion")]
+    by_id = {c["id"]: c for c in contracts}
     L = [f"# Underlying agreements — where to find the contract an amendment modifies\n", BANNER]
     L.append(
-        f"{n_amend} documents in this notebook amend a prior agreement, and the city does not link that "
-        f"agreement from the amendment. Those prior agreements are public records published in other "
-        f"places. Verified links to an earlier full agreement exist for {len(linked)} documents and are "
-        f"below; {n_amend_unlinked} of the {n_amend} amendments have no link. If a "
-        f"question cannot be answered from an amendment, the answer is likely in the document listed "
-        f"here — which is **not** in this notebook and would need to be consulted directly.\n")
-    L.append("## Verified links\n")
-    L.append("| Amendment in this notebook | Underlying agreement | Published by | Link |")
+        f"{len(amends)} documents in this notebook are amendments: they change some terms and keep an "
+        f"earlier agreement in force for the rest. For {len(companions)} of them the full current terms are "
+        f"in another source in this notebook (listed first below). For {len(linked)} documents the earlier "
+        f"agreement is published by the city but is **not** in this notebook; its link is below, checked by "
+        f"reading both documents. {len(none)} have no earlier agreement available. If a question cannot be "
+        f"answered from an amendment, the answer is likely in the earlier agreement, which would need to be "
+        f"consulted directly.\n")
+    L.append("## Full terms in another source in this notebook\n")
+    for c in sorted(companions, key=lambda x: x["label"]):
+        L.append(f"- {c['label']}: see {by_id[c['companion']['id']]['label']}")
+    L.append("")
+    L.append("## Earlier agreements published by the city (not in this notebook)\n")
+    L.append("| Amendment in this notebook | Earlier agreement | Its term | Link |")
     L.append("|---|---|---|---|")
     for c in sorted(linked, key=lambda x: x["label"]):
         p = c["predecessor"]
-        L.append(f"| {c['label']} | {p['label']} | {p['publisher']} | {p['url']} |")
+        note = f" ({p['note']})" if p.get("note") else ""
+        L.append(f"| {c['label']} | {p['label']}{note} | {p.get('term') or ''} | {p['url']} |")
     L.append("")
-    L.append("## Where the others are\n")
+    if none:
+        L.append("## No earlier agreement available\n")
+        for c in none:
+            L.append(f"- {c['label']}: {c.get('base_note', '')}")
+        L.append("")
+    L.append("## Where else to look\n")
     L.append(
-        "For every remaining amendment, the Office of Labor Relations posts an earlier agreement on its "
-        "archive pages: https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page and "
+        "The Office of Labor Relations posts earlier rounds on its archive pages: "
+        "https://www.nyc.gov/site/olr/labor/labor-2017-2021-agreements.page and "
         "https://www.nyc.gov/site/olr/labor/labor-2010-2017-agreements.page (checked Sept. 25, 2026). Many "
         "of those are themselves amendments of a still earlier full contract. None are in this notebook. "
         "Other routes:\n\n"
